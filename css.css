@@ -819,7 +819,7 @@ div#co_photo_gallery {
 .co_photo_gallery_body .co_photo_gallery a {
   width: 32%;
   padding: 0 15px;
-  max-height: 250px;
+  height: 250px;
 }
 div#co_photo_gallery .co_photo_gallery_head {
   padding-bottom: 0;
@@ -871,10 +871,8 @@ div#co_photo_gallery
   a
   img {
   border: none;
-  height: auto;
-  max-width: 100%;
   border-radius: 10px;
-  /* height: 100%; */
+  height: 100%;
   object-fit: cover;
 }
 div#co_photo_gallery .co_photo_gallery_footer a {
@@ -1436,10 +1434,6 @@ div#chabad_footer {
 div#border_bottom {
   padding-bottom: 5px;
 }
-body.cco_templateless_page .footer,
-body.cco_templateless_page .footer a {
-  color: #fff;
-}
 .chabad_left_colum p {
   font-family: arial;
 }
@@ -1623,7 +1617,6 @@ div#chabad_left_colum .chabad_box_content_third .chabad_title_box {
   body div#chabad_head .NavButton {
     top: -50px;
     margin-right: 0;
-    left: 50%;
     transform: translate(-50%, -50%);
     right: unset;
   }
@@ -1750,15 +1743,20 @@ div#chabad_left_colum .chabad_box_content_third .chabad_title_box {
   }
 
   body div#chabad_head .NavButton {
-    top: -228px !important;
+    top: -101px;
     margin: auto;
   }
 
   body div#chabad_head .chabad_navigator_bar {
     margin-right: 10px;
     margin-left: 10px;
+    width: auto;
+    position: relative;
+    top: -545px;
   }
-
+  #chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
+    padding-top: 50px;
+  }
   body div#chabad_head .navLogo h1 {
     top: -652px;
   }
@@ -1810,10 +1808,6 @@ div#chabad_left_colum .chabad_box_content_third .chabad_title_box {
 
   body .chabad_banner_content .chabad_text_banner div.chabad_welcome {
     margin-top: 20px;
-  }
-
-  body .chabad_navigator_bar #menu .item.heading a:after {
-    content: ' >';
   }
 
   body div#chabad_head {

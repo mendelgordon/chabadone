@@ -1585,7 +1585,7 @@ body.mobile div#chabad_head {
 }
 body.mobile div#chabad_head .chabad_content_head {
   background: url(https://w2.chabad.org/media/images/1152/vlUT11522075.jpg)
-    center no-repeat;
+    center/cover no-repeat;
   /* background-size: auto 100%; 
  min-height: 0;
  min-height: 540px;*/
@@ -1738,6 +1738,7 @@ body.mobile div#chabad_head .navLogo h1 {
 
 body.mobile .chabad_navigator_bar .chabad_menu_content {
   width: 235px;
+  height: 85px;
   margin: auto 23px auto auto;
 }
 
@@ -1803,6 +1804,9 @@ div#co_calendar .co_calendar_body .co_calendar_gradient {
 }
 
 @media (max-width: 500px) {
+ #chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
+  padding-top: 75px;
+}
   p.HeaderTitle {
     margin-top: 139px !important;
   }

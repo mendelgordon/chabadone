@@ -1681,9 +1681,6 @@ body.mobile .FooterContainer {
 body.mobile .ProgramsContainer {
   padding: 0 15px;
 }
-.ProgramsContainer .CardsContainer {
-  flex-direction: column;
-}
 body.mobile .ProgramsContainer .CardsContainer .Yellow,
 body.mobile .ProgramsContainer .CardsContainer .Blue {
   margin-bottom: 70px;
@@ -1720,10 +1717,6 @@ div#chabad_left_colum .chabad_box_content_third .chabad_text_box {
   font-size: 16px;
 }
 
-p.HeaderTitle {
-  margin-top: 139px !important;
-}
-
 body.mobile div#chabad_head .NavButton {
   top: -101px;
   margin: auto;
@@ -1737,7 +1730,7 @@ body.mobile div#chabad_head .chabad_navigator_bar {
   top: -545px;
 }
 #chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
-  padding-top: 50px;
+  padding-top: 105px;
 }
 body.mobile div#chabad_head .navLogo h1 {
   top: -652px;
@@ -1839,5 +1832,8 @@ div#co_calendar .co_calendar_body .co_calendar_gradient {
   div#co_calendar .co_calendar_body .co_calendar_gradient {
     max-height: 500px;
     overflow: auto;
+  }
+  .ProgramsContainer .CardsContainer {
+    flex-direction: column;
   }
 }

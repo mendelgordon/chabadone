@@ -1604,4 +1604,9 @@ div#co_calendar .co_calendar_body .co_calendar_gradient {
 	max-height: 500px;
 	overflow: auto;
 }
+body div#chabad_main_content {
+    width: auto;
+    box-sizing: border-box;
+    min-width: initial;
+}
 }

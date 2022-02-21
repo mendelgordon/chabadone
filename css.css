@@ -815,9 +815,10 @@ div#co_photo_gallery {
 .co_photo_gallery_body div.co_photo_gallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .co_photo_gallery_body .co_photo_gallery a {
-  width: 32%;
+  width: 305px;
   padding: 0 15px;
   height: 250px;
 }
@@ -1623,6 +1624,7 @@ div#chabad_left_colum .chabad_box_content_third .chabad_title_box {
   body .chabad_banner_content .chabad_image_content {
     flex-direction: column;
     height: auto;
+    align-items: center;
   }
   body .chabad_banner_content .chabad_text_banner {
     float: none;
@@ -1666,9 +1668,6 @@ div#chabad_left_colum .chabad_box_content_third .chabad_title_box {
   body .chabad_text_box {
     float: none;
     padding: 0 20px;
-  }
-  body .co_photo_gallery_body .co_photo_gallery a {
-    width: 49% !important;
   }
   body div#co_photo_gallery .co_photo_gallery_head {
     font-size: 28px;
@@ -1717,14 +1716,6 @@ div#chabad_left_colum .chabad_box_content_third .chabad_title_box {
   body div#co_photo_gallery,
   body div.co_section {
     display: block;
-    width: auto;
-  }
-  body div#chabad_updates *,
-  body div#co_calendar *,
-  body div#co_photo_gallery *,
-  body div.co_section * {
-    float: none;
-    /* width: auto!important */
     width: auto;
   }
   body #content > .wrapper,

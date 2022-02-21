@@ -1809,4 +1809,10 @@ div#chabad_left_colum .chabad_box_content_third .chabad_title_box {
     max-height: 500px;
     overflow: auto;
   }
+  .g960 {
+    width: 100%
+  }
+  #BodyContainer {
+    width: auto
+  }
 }

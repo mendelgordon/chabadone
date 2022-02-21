@@ -1516,259 +1516,307 @@ div#chabad_left_colum .chabad_box_content_third .chabad_title_box {
 }
 
 /* media queries */
-@media screen and (min-width: 941px) {
-  .mobile-only {
-    display: none !important;
-  }
+body.mobile #chabad_head .chabad_content_head {
+  display: block;
+  height: 530px;
 }
-@media (max-width: 940px) {
-  .mobile-only {
-    display: block !important;
-  }
-  body #chabad_head .chabad_content_head {
-    display: block;
-    height: 530px;
-  }
-  /* Global CSS Updates */
-  body #chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
-    font-size: 50px;
-    line-height: 50px;
-  }
-  body div#chabad_head .chabad_text_head {
-    max-width: 270px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-  body div#chabad_head .chabad_logo {
-    margin-bottom: 15px;
-    padding-top: 60px;
-  }
-  body div#chabad_head .chabad_navigator_bar {
-    z-index: 1;
-  }
-  body div#chabad_head .chabad_navigator_bar ul#menu {
-    display: block;
-    height: 90px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: rgb(0 0 0 / 10%) 0 2px 8px 0;
-  }
-  body .navLogo .chabad_navigator_bar #menu .item.heading {
-    padding-right: 20px;
-    height: 90px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  body .navLogo #navigation.chabad_navigator_bar #menu li:not(.heading) {
-    text-align: center;
-  }
-  body div.chabad_left_colum,
-  div.chabad_left_column {
-    padding: 0;
-  }
-  body div.chabad_left_colum #co_body_container {
-    padding: 10px;
-  }
-  body.section_root div.chabad_left_colum #co_body_container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  body div#chabad_right_colum,
-  body div.chabad_right_colum,
-  body div.chabad_right_column {
-    padding: 0;
-  }
-  /* No Main Site Header Index */
-  body .article_index_container .co_index.article_index {
-    flex-direction: column;
-  }
-  body .article_index_container .co_index.article_index .row {
-    width: 100%;
-    padding: 0 15px;
-  }
-  body div#chabad_head {
-    margin-bottom: 40px;
-    z-index: 4;
-  }
-  body div#chabad_head .chabad_content_head {
-    background: url(https://w2.chabad.org/media/images/1152/vlUT11522075.jpg)
-      center no-repeat;
-    /* background-size: auto 100%; 
+/* Global CSS Updates */
+body.mobile #chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
+  font-size: 50px;
+  line-height: 50px;
+}
+body.mobile div#chabad_head .chabad_text_head {
+  max-width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+body.mobile div#chabad_head .chabad_logo {
+  margin-bottom: 15px;
+  padding-top: 60px;
+}
+body.mobile div#chabad_head .chabad_navigator_bar {
+  z-index: 1;
+}
+body.mobile div#chabad_head .chabad_navigator_bar ul#menu {
+  display: block;
+  height: 90px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 10%) 0 2px 8px 0;
+}
+body.mobile .navLogo .chabad_navigator_bar #menu .item.heading {
+  padding-right: 20px;
+  height: 90px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+body.mobile .navLogo #navigation.chabad_navigator_bar #menu li:not(.heading) {
+  text-align: center;
+}
+body.mobile div.chabad_left_colum,
+div.chabad_left_column {
+  padding: 0;
+}
+body.mobile div.chabad_left_colum #co_body_container {
+  padding: 10px;
+}
+body.section_root div.chabad_left_colum #co_body_container {
+  padding-left: 0;
+  padding-right: 0;
+}
+body.mobile div#chabad_right_colum,
+body.mobile div.chabad_right_colum,
+body.mobile div.chabad_right_column {
+  padding: 0;
+}
+/* No Main Site Header Index */
+body.mobile .article_index_container .co_index.article_index {
+  flex-direction: column;
+}
+body.mobile .article_index_container .co_index.article_index .row {
+  width: 100%;
+  padding: 0 15px;
+}
+body.mobile div#chabad_head {
+  margin-bottom: 40px;
+  z-index: 4;
+}
+body.mobile div#chabad_head .chabad_content_head {
+  background: url(https://w2.chabad.org/media/images/1152/vlUT11522075.jpg)
+    center no-repeat;
+  /* background-size: auto 100%; 
  min-height: 0;
  min-height: 540px;*/
-  }
-  body div#chabad_head .chabad_logo h1 a {
-    float: none;
-    display: block;
-    width: auto;
-    margin: 0 7px;
-  }
-  body div#chabad_head .navLogo {
-    width: 90%;
-    z-index: 2;
-  }
-  body div#chabad_head .navLogo h1 {
-    z-index: 12;
-  }
-  body div#chabad_head .chabad_navigator_bar ul li .sub_menu {
-    top: 36px;
-  }
-  body div#chabad_head .NavButton {
-    top: -50px;
-    margin-right: 0;
-    transform: translate(-50%, -50%);
-    right: unset;
-  }
-  body .chabad_banner_content .chabad_image_content {
-    flex-direction: column;
-    height: auto;
-    align-items: center;
-  }
-  body .chabad_banner_content .chabad_text_banner {
-    float: none;
-    width: 100%;
-  }
-  body .chabad_banner_content .chabad_text_banner div.chabad_welcome {
-    text-align: center;
-  }
-  body
-    .chabad_banner_content
-    .chabad_text_banner
-    div.chabad_text_banner_description {
-    padding: 15px 20px;
-  }
-  body .chabad_banner_content .chabad_text_banner a.chabad_more_button {
-    float: none;
-    margin: 0 auto;
-  }
-  body .FlyersContainer {
-    padding: 0 15px;
-    position: relative;
-  }
-  body .FlyersContainer .sPromo-wrap {
-    width: 100%;
-    margin-bottom: 20px;
-    position: relative;
-  }
-  body .FlyerButton1 {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  body div#chabad_left_colum .chabad_box_content_first {
-    padding: 30px;
-    background-image: none;
-  }
-  body .chabad_announce {
-    float: none;
-  }
-  body .chabad_text_box {
-    float: none;
-    padding: 0 20px;
-  }
-  body div#co_photo_gallery .co_photo_gallery_head {
-    font-size: 28px;
-  }
-  body div#co_photo_gallery .co_photo_gallery_body {
-    padding: 0;
-  }
-  body div#co_photo_gallery .co_photo_gallery_footer a {
-    /* position: absolute; */
-    bottom: 0;
-    right: 0;
-    width: 75% !important;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  body .FooterContainer {
-    font-size: 36px;
-    line-height: 46px;
-  }
-  body .ProgramsContainer {
-    padding: 0 15px;
-  }
-  .ProgramsContainer .CardsContainer {
-    flex-direction: column;
-  }
-  body .ProgramsContainer .CardsContainer .Yellow,
-  body .ProgramsContainer .CardsContainer .Blue {
-    margin-bottom: 70px;
-  }
-  body div#co_calendar {
-    padding: 35px 5px;
-  }
-  body
-    div#co_calendar
-    .co_calendar_body
-    .co_calendar_gradient
-    .co_calendar_text
-    .item {
-    width: 100% !important;
-  }
-  body div#co_calendar .co_calendar_footer {
-    height: auto;
-  }
-  body div#chabad_updates,
-  body div#co_calendar,
-  body div#co_photo_gallery,
-  body div.co_section {
-    display: block;
-    width: auto;
-  }
-  body #content > .wrapper,
-  body #footer > .wrapper,
-  body #header > .wrapper {
-    padding: 0;
-  }
-  /* New Section 3 */
-  div#chabad_left_colum .chabad_box_content_third .chabad_text_box {
-    padding: 20px 15px;
-    font-size: 16px;
-  }
+}
+body.mobile div#chabad_head .chabad_logo h1 a {
+  float: none;
+  display: block;
+  width: auto;
+  margin: 0 7px;
+}
+body.mobile div#chabad_head .navLogo {
+  width: 90%;
+  z-index: 2;
+}
+body.mobile div#chabad_head .navLogo h1 {
+  z-index: 12;
+}
+body.mobile div#chabad_head .chabad_navigator_bar ul li .sub_menu {
+  top: 36px;
+}
+body.mobile div#chabad_head .NavButton {
+  top: -50px;
+  margin-right: 0;
+  transform: translate(-50%, -50%);
+  right: unset;
+}
+body.mobile .chabad_banner_content .chabad_image_content {
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+}
+body.mobile .chabad_banner_content .chabad_text_banner {
+  float: none;
+  width: 100%;
+}
+body.mobile .chabad_banner_content .chabad_text_banner div.chabad_welcome {
+  text-align: center;
+}
+body
+  .chabad_banner_content
+  .chabad_text_banner
+  div.chabad_text_banner_description {
+  padding: 15px 20px;
+}
+body.mobile .chabad_banner_content .chabad_text_banner a.chabad_more_button {
+  float: none;
+  margin: 0 auto;
+}
+body.mobile .FlyersContainer {
+  padding: 0 15px;
+  position: relative;
+}
+body.mobile .FlyersContainer .sPromo-wrap {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+body.mobile .FlyerButton1 {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body.mobile div#chabad_left_colum .chabad_box_content_first {
+  padding: 30px;
+  background-image: none;
+}
+body.mobile .chabad_announce {
+  float: none;
+}
+body.mobile .chabad_text_box {
+  float: none;
+  padding: 0 20px;
+}
+body.mobile div#co_photo_gallery .co_photo_gallery_head {
+  font-size: 28px;
+}
+body.mobile div#co_photo_gallery .co_photo_gallery_body {
+  padding: 0;
+}
+body.mobile div#co_photo_gallery .co_photo_gallery_footer a {
+  /* position: absolute; */
+  bottom: 0;
+  right: 0;
+  width: 75% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+body.mobile .FooterContainer {
+  font-size: 36px;
+  line-height: 46px;
+}
+body.mobile .ProgramsContainer {
+  padding: 0 15px;
+}
+.ProgramsContainer .CardsContainer {
+  flex-direction: column;
+}
+body.mobile .ProgramsContainer .CardsContainer .Yellow,
+body.mobile .ProgramsContainer .CardsContainer .Blue {
+  margin-bottom: 70px;
+}
+body.mobile div#co_calendar {
+  padding: 35px 5px;
+}
+body
+  div#co_calendar
+  .co_calendar_body
+  .co_calendar_gradient
+  .co_calendar_text
+  .item {
+  width: 100% !important;
+}
+body.mobile div#co_calendar .co_calendar_footer {
+  height: auto;
+}
+body.mobile div#chabad_updates,
+body.mobile div#co_calendar,
+body.mobile div#co_photo_gallery,
+body.mobile div.co_section {
+  display: block;
+  width: auto;
+}
+body.mobile #content > .wrapper,
+body.mobile #footer > .wrapper,
+body.mobile #header > .wrapper {
+  padding: 0;
+}
+/* New Section 3 */
+div#chabad_left_colum .chabad_box_content_third .chabad_text_box {
+  padding: 20px 15px;
+  font-size: 16px;
+}
 
+p.HeaderTitle {
+  margin-top: 139px !important;
+}
+
+body.mobile div#chabad_head .NavButton {
+  top: -101px;
+  margin: auto;
+}
+
+body.mobile div#chabad_head .chabad_navigator_bar {
+  margin-right: 10px;
+  margin-left: 10px;
+  width: auto;
+  position: relative;
+  top: -545px;
+}
+#chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
+  padding-top: 50px;
+}
+body.mobile div#chabad_head .navLogo h1 {
+  top: -652px;
+}
+
+body.mobile .chabad_navigator_bar .chabad_menu_content {
+  width: 235px;
+  margin: auto 23px auto auto;
+}
+
+body.mobile div#chabad_head .chabad_navigator_bar ul#menu {
+  top: 26px;
+  box-shadow: none !important;
+}
+
+div#chabad_head .chabad_navigator_bar ul li a:not(.sub_menu_toggle) {
+  height: auto;
+  color: #4a4a4a;
+}
+
+body.mobile .chabad_navigator_bar #menu li.item {
+  background: #ffde17;
+}
+
+div#chabad_head .chabad_navigator_bar ul li a {
+  font-weight: bold;
+}
+
+.chabad_banner_content .chabad_image_banner::after {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  content: '';
+  background: url('https://w2.chabad.org/images/shluchim/minisites/themes/hebrew_school/2.0/Mask-new.png')
+    no-repeat center / cover;
+}
+
+body.mobile .chabad_navigator_bar #menu .item.heading {
+  background: white;
+}
+
+.clearfix.bh-only.align_right {
+  top: 1px;
+}
+
+body.mobile .chabad_navigator_bar #menu .item.heading a {
+  position: relative;
+  right: -56px;
+}
+
+body.mobile .chabad_banner_content .chabad_text_banner div.chabad_welcome {
+  margin-top: 20px;
+}
+
+body.mobile div#chabad_head {
+  margin-bottom: -35px;
+}
+
+div#co_calendar .co_calendar_body .co_calendar_gradient {
+  max-height: 500px;
+  overflow: auto;
+}
+.cco_templateless_template {
+  background: #4a4a4a;
+}
+
+.cco_templateless_template a {
+  font-family: 'Roboto';
+  font-weight: normal;
+}
+
+@media (max-width: 500px) {
   p.HeaderTitle {
     margin-top: 139px !important;
   }
 
-  body div#chabad_head .NavButton {
-    top: -101px;
-    margin: auto;
-  }
-
-  body div#chabad_head .chabad_navigator_bar {
-    margin-right: 10px;
-    margin-left: 10px;
-    width: auto;
-    position: relative;
-    top: -545px;
-  }
-  #chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
-    padding-top: 50px;
-  }
-  body div#chabad_head .navLogo h1 {
-    top: -652px;
-  }
-
-  body .chabad_navigator_bar .chabad_menu_content {
-    width: 235px;
-    margin: auto 23px auto auto;
-  }
-
-  body div#chabad_head .chabad_navigator_bar ul#menu {
-    top: 26px;
-    box-shadow: none !important;
-  }
-
   div#chabad_head .chabad_navigator_bar ul li a:not(.sub_menu_toggle) {
-    height: auto;
+    height: fit-content;
     color: #4a4a4a;
-  }
-
-  body .chabad_navigator_bar #menu li.item {
-    background: #ffde17;
   }
 
   div#chabad_head .chabad_navigator_bar ul li a {
@@ -1784,35 +1832,12 @@ div#chabad_left_colum .chabad_box_content_third .chabad_title_box {
       no-repeat center / cover;
   }
 
-  body .chabad_navigator_bar #menu .item.heading {
-    background: white;
-  }
-
   .clearfix.bh-only.align_right {
     top: 1px;
-  }
-
-  body .chabad_navigator_bar #menu .item.heading a {
-    position: relative;
-    right: -56px;
-  }
-
-  body .chabad_banner_content .chabad_text_banner div.chabad_welcome {
-    margin-top: 20px;
-  }
-
-  body div#chabad_head {
-    margin-bottom: -35px;
   }
 
   div#co_calendar .co_calendar_body .co_calendar_gradient {
     max-height: 500px;
     overflow: auto;
-  }
-  .g960 {
-    width: 100%
-  }
-  #BodyContainer {
-    width: auto
   }
 }

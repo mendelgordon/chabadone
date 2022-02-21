@@ -1537,6 +1537,7 @@ body.mobile div#chabad_head .chabad_logo {
 }
 body.mobile div#chabad_head .chabad_navigator_bar {
   z-index: 1;
+  height: 90px;
 }
 body.mobile div#chabad_head .chabad_navigator_bar ul#menu {
   display: block;
@@ -1597,7 +1598,6 @@ body.mobile div#chabad_head .chabad_logo h1 a {
   margin: 0 7px;
 }
 body.mobile div#chabad_head .navLogo {
-  width: 90%;
   z-index: 2;
 }
 body.mobile div#chabad_head .navLogo h1 {
@@ -1840,4 +1840,7 @@ div#co_calendar .co_calendar_body .co_calendar_gradient {
   .ProgramsContainer .CardsContainer {
     flex-direction: column;
   }
+  div#chabad_head .chabad_navigator_bar ul#menu {
+   margin-left: -20px;
+}
 }

@@ -1510,6 +1510,9 @@ body.mobile #chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
   line-height: 50px
 }
 body.mobile div#chabad_head .chabad_text_head {
+  display: none
+}
+body.mobile.section_root div#chabad_head .chabad_text_head {
   max-width: 270px;
   margin-left: auto;
   margin-right: auto;

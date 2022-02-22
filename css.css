@@ -3,6 +3,9 @@
 img {
   max-width: 100%
 }
+.co_index .item {
+  background: none;
+}
 div#chabad_main_content {
   width: 100%
 }

@@ -373,10 +373,6 @@ div#chabad_head .navLogo h1 img {
   max-width: unset
 }
 div#chabad_head .chabad_navigator_bar {
-  height: 18px;
-  margin: auto
-}
-div#chabad_main_content .chabad_navigator_bar .chabad_menu_content {
   position: relative;
   height: 85px;
   border-radius: 10px;

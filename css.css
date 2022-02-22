@@ -398,9 +398,9 @@ div#chabad_head .chabad_navigator_bar ul li {
   z-index: 2;
   /* font-family: 'Roboto', sans-serif; */
 }
-div#chabad_head .chabad_navigator_bar ul li.parent {
-  /* position: relative; */
-}
+ /*div#chabad_head .chabad_navigator_bar ul li.parent {
+  position: relative;
+} */
 div#chabad_head .chabad_navigator_bar ul li.active {
   z-index: 2;
 }
@@ -559,12 +559,12 @@ div#chabad_body_content #cco_body #PageTitle {
   font-family: Roboto;
   color: #fff;
 }
-.chabad_banner_content
+ /*.chabad_banner_content
   .chabad_text_banner
   div.chabad_text_banner_description
   p {
-  /* font-family: Roboto; */
-}
+  font-family: Roboto; 
+}*/
 .chabad_banner_content .chabad_text_banner a.chabad_more_button {
   border-radius: 100px;
   background-color: #27aae2;
@@ -748,9 +748,6 @@ div#chabad_left_colum .chabad_box_content_third .chabad_box_content_body {
   /* background: url(https://www.chabadone.org/images/shluchim/minisites/themes/hebrew_school/hebrew_title_box_layout.png) right 8px no-repeat; */
   padding-bottom: 5px;
 }
-div#chabad_left_colum .chabad_box_content_third .chabad_title_box.no_line {
-  /* display: none */
-}
 .chabad_title_box div.big_title {
   /* background: url(https://www.chabadone.org/images/shluchim/minisites/themes/hebrew_school/hebrew_arrow_quote.png) left 8px no-repeat; */
   font-size: 20px;
@@ -760,12 +757,6 @@ div#chabad_left_colum .chabad_box_content_third .chabad_title_box.no_line {
 .chabad_title_box div.medium_title {
   background: 0 0;
   font-size: 18px;
-}
-div#chabad_left_colum
-  .chabad_box_content_third
-  .chabad_title_box
-  div.medium_title {
-  /* display: none */
 }
 .chabad_text_box .gray,
 .chabad_text_box div,
@@ -922,12 +913,6 @@ div#co_photo_gallery .co_photo_gallery_footer a {
   align-items: center;
   margin-right: auto;
   margin-left: auto;
-}
-div#chabad_box_text,
-div#chabad_updates,
-div#co_calendar,
-div.co_section {
-  /* background: url(https://www.chabadone.org/images/shluchim/minisites/themes/hebrew_school/hebrew_widget_background-resp.png) right top no-repeat #EF7B52 */
 }
 div#chabad_updates {
   border-radius: 15px;
@@ -1600,7 +1585,7 @@ body.mobile div#chabad_head .navLogo {
   z-index: 2;
 }
 body.mobile div#chabad_head .navLogo h1 {
-  z-index: 12;
+  z-index: 3;
 }
 body.mobile div#chabad_head .chabad_navigator_bar ul li .sub_menu {
   top: 36px;
@@ -1732,9 +1717,9 @@ body.mobile div#chabad_head .chabad_navigator_bar {
   padding-top: 105px;
 }
 body.mobile div#chabad_head .navLogo h1 {
-  top: -652px;
+  top: -528px;
+  left: -155px;
 }
-
 body.mobile .chabad_navigator_bar .chabad_menu_content {
   width: 235px;
   height: 85px;
@@ -1745,14 +1730,12 @@ body.mobile div#chabad_head .chabad_navigator_bar ul#menu {
   top: 26px;
   box-shadow: none !important;
 }
-
+body.mobile #navigation.chabad_navigator_bar #menu li:not(.heading) {
+  padding: 0 10px 0 0;
+}
 div#chabad_head .chabad_navigator_bar ul li a:not(.sub_menu_toggle) {
   height: auto;
   color: #4a4a4a;
-}
-
-body.mobile .chabad_navigator_bar #menu li.item {
-  background: #ffde17;
 }
 
 div#chabad_head .chabad_navigator_bar ul li a {
@@ -1808,15 +1791,6 @@ div#co_calendar .co_calendar_body .co_calendar_gradient {
   }
   p.HeaderTitle {
     margin-top: 139px !important;
-  }
-
-  div#chabad_head .chabad_navigator_bar ul li a:not(.sub_menu_toggle) {
-    height: fit-content;
-    color: #4a4a4a;
-  }
-
-  div#chabad_head .chabad_navigator_bar ul li a {
-    font-weight: bold;
   }
 
   .chabad_banner_content .chabad_image_banner::after {

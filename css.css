@@ -1541,7 +1541,6 @@ body.mobile div#chabad_head .chabad_navigator_bar {
 }
 body.mobile div#chabad_head .chabad_navigator_bar ul#menu {
   display: block;
-  height: 90px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: rgb(0 0 0 / 10%) 0 2px 8px 0;
@@ -1804,9 +1803,9 @@ div#co_calendar .co_calendar_body .co_calendar_gradient {
 }
 
 @media (max-width: 500px) {
- #chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
-  padding-top: 75px;
-}
+  #chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
+    padding-top: 75px;
+  }
   p.HeaderTitle {
     margin-top: 139px !important;
   }
@@ -1841,6 +1840,9 @@ div#co_calendar .co_calendar_body .co_calendar_gradient {
     flex-direction: column;
   }
   div#chabad_head .chabad_navigator_bar ul#menu {
-   margin-left: -20px;
-}
+    margin-left: -20px;
+  }
+  div#chabad_head .chabad_navigator_bar ul#menu {
+    height: auto;
+  }
 }

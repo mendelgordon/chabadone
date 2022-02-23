@@ -22,14 +22,19 @@ div#chabad_body_content {
 #chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
   color: #ffffff;
   font-family: Domine;
-  font-size: 70px;
+  font-size: 50px;
   font-weight: bold;
   letter-spacing: 0;
-  line-height: 70px;
+  line-height: 50px;
   text-align: center;
-  max-width: 360px;
+  max-width: 800px;
   margin: 0 auto;
   padding-top: 106px
+}
+.section_root #chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
+  font-size: 70px;
+  line-height: 70px;
+  max-width: 360px;
 }
 div.chabad_left_colum,
 div.chabad_left_column {
@@ -313,12 +318,18 @@ div#chabad_main_content {
   background: 0 0
 }
 div#chabad_head .chabad_content_head {
-  min-height: 475px;
+  min-height: 315px;
   background: url(https://w2.chabad.org/media/images/1152/vlUT11522075.jpg) left
     top no-repeat;
   background-size: auto;
   text-align: center;
   background-position: center bottom
+}
+.section_root div#chabad_head .chabad_content_head {
+  min-height: 475px;
+}
+.mobile div#chabad_head .chabad_content_head {
+  min-height: 475px;
 }
 .section_root div#chabad_head .chabad_content_head {
   min-height: 600px
@@ -363,11 +374,13 @@ div#chabad_head .navLogo {
 }
 div#chabad_head .navLogo h1 {
   left: -424px;
-  top: -141px;
+  top: -105px;
   z-index: 2;
   position: absolute
 }
-
+.section_root div#chabad_head .navLogo h1 {
+  top: 141px;
+}
 div#chabad_head .navLogo h1 img {
   height: 57px;
   max-width: unset
@@ -377,9 +390,12 @@ div#chabad_head .chabad_navigator_bar {
   height: 85px;
   border-radius: 10px;
   background-color: #ffffff;
-  bottom: 154px;
+  bottom: 117px;
   max-width: 910px;
   margin: auto
+}
+.section_root div#chabad_head .chabad_navigator_bar {
+  bottom: 154px;
 }
 div#chabad_head .chabad_navigator_bar ul {
   margin: 0;
@@ -411,7 +427,8 @@ div#chabad_head .chabad_navigator_bar ul li .sub_menu {
   background: #ffde17;
   top: 60px;
   border-radius: 10px;
-  padding: 10px
+  padding: 10px;
+  min-width: 200px;
 }
 div#chabad_head .chabad_navigator_bar ul li.active .sub_menu {
   display: block
@@ -441,7 +458,8 @@ div#chabad_head .chabad_navigator_bar ul li ul li a {
   margin-bottom: 6px
 }
 div#chabad_head .chabad_navigator_bar ul li ul li a:hover {
-  background: 0 0
+  background: 0 0;
+  font-weight: bold;
 }
 div#chabad_head .chabad_navigator_bar ul li:last-child {
   border-right: none
@@ -465,9 +483,12 @@ div#chabad_head .chabad_navigator_bar ul li a.first {
 }
 div#chabad_head .NavButton {
   position: absolute;
-  top: -136px;
+  top: -100px;
   right: -419px;
   z-index: 2
+}
+.section_root div#chabad_head .NavButton {
+  top: 136px;
 }
 div#chabad_head .NavButton a {
   display: flex;
@@ -1719,7 +1740,10 @@ body.mobile div#chabad_head .chabad_navigator_bar {
   top: -400px
 }
 #chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
-  padding-top: 105px
+  padding-top: 76px
+}
+.section_root #chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
+  padding-top: 105px;
 }
 body.mobile.section_root div#chabad_head .navLogo h1 {
   top: -528px;

@@ -1758,6 +1758,9 @@ body.mobile div#chabad_head .chabad_navigator_bar {
 body.mobile div#chabad_head .navLogo h1 {
   top: -330px;
 }
+.section_root body.mobile div#chabad_head .navLogo h1 {
+  top: -530px;
+}
 body.mobile .chabad_navigator_bar .chabad_menu_content {
   width: 235px;
   height: 85px;

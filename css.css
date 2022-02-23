@@ -379,7 +379,7 @@ div#chabad_head .navLogo h1 {
   position: absolute
 }
 .section_root div#chabad_head .navLogo h1 {
-  top: 141px;
+  top: -141px;
 }
 div#chabad_head .navLogo h1 img {
   height: 57px;
@@ -488,7 +488,7 @@ div#chabad_head .NavButton {
   z-index: 2
 }
 .section_root div#chabad_head .NavButton {
-  top: 136px;
+  top: -136px;
 }
 div#chabad_head .NavButton a {
   display: flex;

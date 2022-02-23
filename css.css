@@ -1231,7 +1231,8 @@ div#co_calendar {
 .co_calendar_body {
   background-color: #fff;
   border-radius: 10px;
-  max-width: 975px;
+  max-width: 75%;
+  width: 975px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1318,11 +1319,10 @@ div#co_calendar
   .co_calendar_text
   .item
   div.co_text_calendar {
-  color: #fff;
+  color: #000;
   font-family: arial;
   font-size: 12px;
-  margin: 0;
-  padding: 0;
+  margin: 5px;
 }
 div#co_calendar .co_calendar_footer {
   height: 7px;
@@ -1526,7 +1526,7 @@ div#chabad_left_colum .chabad_box_content_third .chabad_title_box {
   font-weight: normal;
 }
 
-/* media queries */
+
 body.mobile #chabad_head .chabad_content_head {
   display: block;
   height: 530px;
@@ -1547,7 +1547,10 @@ body.mobile.section_root div#chabad_head .chabad_text_head {
 }
 body.mobile div#chabad_head .chabad_logo {
   margin-bottom: 15px;
-  padding-top: 236px;
+  padding-top: 205px;
+}
+body.mobile.section_root div#chabad_head .chabad_logo {
+ padding-top: 236px;
 }
 body.mobile div#chabad_head .chabad_navigator_bar {
   margin-right: 10px;
@@ -1852,10 +1855,6 @@ div#co_calendar .co_calendar_body .co_calendar_gradient {
   top: 1px;
 }
 
-.mobile div#co_calendar .co_calendar_body .co_calendar_gradient {
-  max-height: 500px;
-  overflow: auto;
-}
 .mobile .ProgramsContainer .CardsContainer {
   flex-direction: column;
 }

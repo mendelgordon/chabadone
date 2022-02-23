@@ -935,7 +935,8 @@ div#co_photo_gallery .co_photo_gallery_footer a {
   justify-content: center;
   align-items: center;
   margin-right: auto;
-  margin-left: auto
+  margin-left: auto;
+  cursor: pointer;
 }
 div#chabad_updates {
   border-radius: 15px;

@@ -329,7 +329,7 @@ div#chabad_head .chabad_content_head {
   min-height: 475px;
 }
 .mobile div#chabad_head .chabad_content_head {
-  min-height: 475px;
+  min-height: 400px;
 }
 .section_root div#chabad_head .chabad_content_head {
   min-height: 600px
@@ -1738,6 +1738,9 @@ body.mobile.section_root div#chabad_head .chabad_navigator_bar {
   top: -545px
 }
 body.mobile div#chabad_head .chabad_navigator_bar {
+  top: -361px
+}
+.section_root body.mobile div#chabad_head .chabad_navigator_bar {
   top: -400px
 }
 #chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
@@ -1746,8 +1749,11 @@ body.mobile div#chabad_head .chabad_navigator_bar {
 .section_root #chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
   padding-top: 105px;
 }
-body.mobile.section_root div#chabad_head .navLogo h1 {
-  top: -528px;
+body.mobile div#chabad_head .chabad_navigator_bar {
+  top: -345px
+}
+.section_root body.mobile div#chabad_head .chabad_navigator_bar {
+  top: -400px
 }
 body.mobile div#chabad_head .navLogo h1 {
   top: -382px;
@@ -1819,6 +1825,9 @@ div#co_calendar .co_calendar_body .co_calendar_gradient {
 
 @media (max-width: 500px) {
   #chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
+    padding-top: 26px;
+  }
+  .section_root #chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
     padding-top: 75px;
   }
   p.HeaderTitle {

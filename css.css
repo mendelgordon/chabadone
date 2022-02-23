@@ -371,6 +371,7 @@ div#chabad_head .navLogo {
   left: 50%;
   position: absolute;
   max-width: 910px;
+  z-index: 10;
 }
 div#chabad_head .navLogo h1 {
   left: -424px;
@@ -386,6 +387,7 @@ div#chabad_head .navLogo h1 img {
   max-width: unset;
 }
 div#chabad_head .chabad_navigator_bar {
+ z-index: 2;
   position: relative;
   height: 85px;
   border-radius: 10px;
@@ -485,7 +487,7 @@ div#chabad_head .NavButton {
   position: absolute;
   top: -100px;
   right: -419px;
-  z-index: 2;
+  z-index: 10;
 }
 .section_root div#chabad_head .NavButton {
   top: -136px;

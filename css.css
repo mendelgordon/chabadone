@@ -340,8 +340,11 @@ div#chabad_head .chabad_content_head table tr {
 }
 div#chabad_head .chabad_logo {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 47px;
   margin-bottom: 20px;
+}
+.section_root div#chabad_head .chabad_logo {
+ padding-top: 100px;
 }
 div#chabad_head .chabad_logo h1 {
   margin: 0;

@@ -1756,7 +1756,7 @@ body.mobile div#chabad_head .chabad_navigator_bar {
   top: -400px;
 }
 body.mobile div#chabad_head .navLogo h1 {
-  top: -382px;
+  top: -330px;
 }
 body.mobile .chabad_navigator_bar .chabad_menu_content {
   width: 235px;
@@ -1824,7 +1824,7 @@ div#co_calendar .co_calendar_body .co_calendar_gradient {
 }
 
 .mobile #chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
-  padding-top: 26px;
+  padding-top: 69px;
 }
 .mobile
   .section_root
@@ -1834,7 +1834,7 @@ div#co_calendar .co_calendar_body .co_calendar_gradient {
   .HeaderTitle {
   padding-top: 75px;
 }
-p.HeaderTitle {
+.mobile p.HeaderTitle {
   margin-top: 139px !important;
 }
 

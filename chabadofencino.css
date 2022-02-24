@@ -1,0 +1,14 @@
+/* style bronze silver and gold text paragraphs to look like buttons */
+#bronze, #silver, #gold {
+  font-weight: bold;
+  color: #337ab7;
+  width: fit-content;
+  padding: 0.5em;
+  border: 1px solid #FFD700;
+  border-radius: 0.5em;
+  background-color: #FFD700;
+  cursor: pointer;
+}
+#bronze:hover, #silver:hover, #gold:hover {
+  background-color: #eee;
+}

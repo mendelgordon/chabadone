@@ -1590,9 +1590,6 @@ body.mobile .chabad_navigator_bar #menu .item.heading a {
 body.mobile .chabad_banner_content .chabad_text_banner div.chabad_welcome {
    margin-top: 20px;
 }
-body.mobile div#chabad_head {
-   margin-bottom: -35px;
-}
 div#co_calendar .co_calendar_body .co_calendar_gradient {
    max-height: 500px;
    overflow: auto;

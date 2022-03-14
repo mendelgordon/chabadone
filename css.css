@@ -330,18 +330,20 @@ div#chabad_head .navLogo h1 img {
    height: 57px;
    max-width: unset;
 }
-div#chabad_head .chabad_navigator_bar {
+div#chabad_head #navigation.chabad_navigator_bar {
    z-index: 2;
-   position: relative;
+   position: absolute;
    height: 85px;
    border-radius: 10px;
    background-color: #ffffff;
-   bottom: 117px;
+   top: 226px;
    max-width: 910px;
    margin: auto;
+   right: 0;
+   left: 0;
 }
-.section_root div#chabad_head .chabad_navigator_bar {
-   bottom: 154px;
+.section_root div#chabad_head #navigation.chabad_navigator_bar {
+   top: 446px;
 }
 div#chabad_head .chabad_navigator_bar ul {
    margin: 0;

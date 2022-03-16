@@ -1529,8 +1529,8 @@ div#chabad_left_colum .chabad_box_content_third .chabad_text_box {
    padding: 20px 15px;
    font-size: 16px;
 }
-.mobile #chabad_head #navigation.chabad_navigator_bar,
-.mobile #chabad_head #navBar {
+body.mobile #chabad_head #navigation.chabad_navigator_bar,
+body.mobile #chabad_head #navBar {
    top: 56px;
    z-index: 1;
 }

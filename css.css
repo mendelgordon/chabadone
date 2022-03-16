@@ -1531,7 +1531,8 @@ div#chabad_left_colum .chabad_box_content_third .chabad_text_box {
 }
 body.mobile.section_root div#chabad_head #navigation.chabad_navigator_bar,
 body.mobile.section_root div#chabad_head #navBar {
-   top: -545px;
+   top: 56px;
+   z-index: 1;
 }
 #chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
    padding-top: 76px;
@@ -1541,7 +1542,8 @@ body.mobile.section_root div#chabad_head #navBar {
 }
 body.mobile div#chabad_head #navigation.chabad_navigator_bar,
 body.mobile div#chabad_head #navBar {
-   top: -345px;
+   top: 87px;
+   z-index: 1;
 }
 body.mobile div#chabad_head .navLogo h1 {
    top: -330px;

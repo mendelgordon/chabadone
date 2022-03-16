@@ -1529,8 +1529,8 @@ div#chabad_left_colum .chabad_box_content_third .chabad_text_box {
    padding: 20px 15px;
    font-size: 16px;
 }
-body.mobile.section_root div#chabad_head #navigation.chabad_navigator_bar,
-body.mobile.section_root div#chabad_head #navBar {
+.mobile #chabad_head #navigation.chabad_navigator_bar,
+.mobile #chabad_head #navBar {
    top: 56px;
    z-index: 1;
 }
@@ -1540,8 +1540,8 @@ body.mobile.section_root div#chabad_head #navBar {
 .section_root #chabad_head .chabad_content_head .chabad_titles .HeaderTitle {
    padding-top: 105px;
 }
-body.mobile div#chabad_head #navigation.chabad_navigator_bar,
-body.mobile div#chabad_head #navBar {
+.mobile.cco_templateless_page #chabad_head #navigation.chabad_navigator_bar,
+.mobile.cco_templateless_page #chabad_head #navBar {
    top: 87px;
    z-index: 1;
 }

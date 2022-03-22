@@ -6,7 +6,7 @@ if (Co.ArticleId === '5468598') {
    divs.forEach(div =>
       div.addEventListener('click', () => {
          setTimeout(() => {
-            if (inputRecurring) {
+            if (inputRecurring && inputRecurring.checked === false) {
                inputRecurring.click();
                inputRecurring.checked = true;
                console.log('Recurring donation clicked');

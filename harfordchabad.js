@@ -7,6 +7,7 @@ if (Co.ArticleId === '5468598') {
    let inputRecurring = document.querySelector('#inputRecurring');
    let inputRecurringLabel = document.querySelector('.fs-donate-section > div:nth-child(4) > label');
    const clickRecurring = () => {
+     console.log('clicked');
       setTimeout(() => {
          if (inputRecurring.checked === false) {
             inputRecurringLabel.click();

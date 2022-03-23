@@ -22,6 +22,8 @@ window.onload = () => {
       buttonTwo.addEventListener('click', clickRecurring);
       buttonThree.addEventListener('click', clickRecurring);
    } else if (pageURL2) {
+    let inputRecurring = document.querySelector('#inputRecurring');
+    let inputRecurringLabel = document.querySelector('.fs-donate-section > div:nth-child(4) > label');
       setTimeout(() => {
          if (inputRecurring.checked === false) {
             inputRecurringLabel.click();

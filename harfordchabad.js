@@ -2,12 +2,10 @@ if (Co.ArticleId === '5468598') {
    const buttonOne = document.querySelector('div.fs-top-tools > div > a');
    const buttonTwo = document.querySelector('div.jumbotron.fs-header > div > div > div > div:nth-child(1) > div');
    const buttonThree = document.querySelector('div.button-wrapper.col-md-6 > a');
-   const buttonFour = document.querySelector('#donors > div > div.js-donors-list > div > a');
-   // array of buttons
    let inputRecurring = document.querySelector('#inputRecurring');
    let inputRecurringLabel = document.querySelector('.fs-donate-section > div:nth-child(4) > label');
    const clickRecurring = () => {
-     console.log('clicked');
+      console.log('clicked');
       setTimeout(() => {
          if (inputRecurring.checked === false) {
             inputRecurringLabel.click();
@@ -23,5 +21,4 @@ if (Co.ArticleId === '5468598') {
    buttonOne.addEventListener('click', clickRecurring);
    buttonTwo.addEventListener('click', clickRecurring);
    buttonThree.addEventListener('click', clickRecurring);
-   buttonFour.addEventListener('click', clickRecurring);
 }

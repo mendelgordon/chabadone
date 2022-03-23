@@ -1,6 +1,6 @@
-const pageURL = window.location.href === 'https://www.harfordchabad.org/templates/fundraising/default_cdo/aid/5468598/jewish/Campaign.htm';
-const pageURL2 = window.location.href === 'https://www.harfordchabad.org/Templates/Fundraising/Default_cdo/aid/5468598/donate/1';
 window.onload = () => {
+   const pageURL = Co.ArticleId === '5468598';
+   const pageURL2 = window.location.href === 'https://www.harfordchabad.org/Templates/Fundraising/Default_cdo/aid/5468598/donate/1';
    if (pageURL) {
       const buttonOne = document.querySelector('div.fs-top-tools > div > a');
       const buttonTwo = document.querySelector('div.jumbotron.fs-header > div > div > div > div:nth-child(1) > div');
@@ -22,8 +22,8 @@ window.onload = () => {
       buttonTwo.addEventListener('click', clickRecurring);
       buttonThree.addEventListener('click', clickRecurring);
    } else if (pageURL2) {
-    let inputRecurring = document.querySelector('#inputRecurring');
-    let inputRecurringLabel = document.querySelector('.fs-donate-section > div:nth-child(4) > label');
+      let inputRecurring = document.querySelector('#inputRecurring');
+      let inputRecurringLabel = document.querySelector('.fs-donate-section > div:nth-child(4) > label');
       setTimeout(() => {
          if (inputRecurring.checked === false) {
             inputRecurringLabel.click();

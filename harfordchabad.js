@@ -1,6 +1,5 @@
 const pageURL = window.location.href === 'https://www.harfordchabad.org/templates/fundraising/default_cdo/aid/5468598/jewish/Campaign.htm';
 const pageURL2 = window.location.href === 'https://www.harfordchabad.org/Templates/Fundraising/Default_cdo/aid/5468598/donate/1';
-console.log(pageURL);
 window.onload = () => {
    if (pageURL) {
       const buttonOne = document.querySelector('div.fs-top-tools > div > a');

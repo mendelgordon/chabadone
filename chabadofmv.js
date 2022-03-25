@@ -25,6 +25,5 @@ window.onload = () => {
       document.querySelector('label[for=phone]').innerHTML = 'Phone<span class="req">*</span>';
       col2.appendChild(subscribe);
       col1.appendChild(notes);
-      document.querySelector('#js-donate-form > div:nth-child(4) #dedication').closest('.row').remove();
    }
 };

@@ -11,6 +11,6 @@
 #donate-wrapper #donate .intro-wrapper p.description {
   display: revert;
 }}
-#donate-wrapper .fa-cc-paypal {
+#donate-wrapper main form .content-box .row.pay-with i.fa-cc-paypal {
   color: #009cde;
 }

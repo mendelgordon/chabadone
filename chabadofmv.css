@@ -1,0 +1,16 @@
+#donate-wrapper main form .content-box .row.new-row {
+  margin-top: 0;
+}
+#donate-wrapper #information p {
+  margin-bottom: -10px;
+}
+#js-donate-form > div.content-box.full-row.intro-wrapper > div > p {
+  font-size:large;
+}
+@media (max-width:1000px) {
+#donate-wrapper #donate .intro-wrapper p.description {
+  display: revert;
+}}
+#donate-wrapper .fa-cc-paypal {
+  color: #009cde;
+}

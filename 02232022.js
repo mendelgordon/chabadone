@@ -39,14 +39,14 @@ gold.onclick = function () {
 };
 const addMethods = () => {
    const paymentSection = document.querySelector('.fs-payment-method');
-   const crypto = `<label class="radio-inline"><input type="radio" name="payment_method" value="Crypto" required="" data-show-block="#CustomPaymentMessage" data-show-donate-processing="False" display_name="payment type"><a href="https://www.bitdonate.com/embed/donate/chabad-of-the-valley-inc-8451564"><span>Crypto</span></a></label>`;
+   const crypto = `<label class="radio-inline"><input type="radio" name="payment_method" value="Crypto" required="" display_name="payment type"><a href="https://www.bitdonate.com/embed/donate/chabad-of-the-valley-inc-8451564"><span>Crypto</span></a></label>`;
    // if crypto wasn't yet added, add it after a delay of 0.25 seconds
    if (!paymentSection.innerHTML.includes('Crypto')) {
       setTimeout(function () {
          paymentSection.insertAdjacentHTML('beforeend', crypto);
       }, 250);
    }
-   const paypal = `<label class="radio-inline"><input type="radio" name="payment_method" value="PayPal" required="" data-show-block="#CustomPaymentMessage" data-show-donate-processing="False" display_name="payment type"><a href="https://PayPal.me/chabadofthevalley"><span>PayPal</span></a></label>`;
+   const paypal = `<label class="radio-inline"><input type="radio" name="payment_method" value="PayPal" required="" display_name="payment type"><a href="https://PayPal.me/chabadofthevalley"><span>PayPal</span></a></label>`;
    // if paypal wasn't yet added, add it after a delay of 0.25 seconds
    if (!paymentSection.innerHTML.includes('PayPal')) {
       setTimeout(function () {

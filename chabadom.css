@@ -1,3 +1,16 @@
 .fs-matchers .fs-matcher .fs-matcher-image {
   display: none;
 }
+.fs-matchers .fs-matcher {
+  padding: 0;
+}
+.fs-matcher div {
+  width: auto;
+}
+.fs-matchers .fs-matcher .fs-matcher-title {
+  text-transform: initial;
+  margin: 0;
+}
+.fs-matchers-list {
+  display: grid;
+}

@@ -48,7 +48,7 @@ const addMethods = () => {
          paymentSection.insertAdjacentHTML('beforeend', crypto);
       }, 250);
    }
-   const paypal = `<label class="radio-inline" onclick="openPaypal()><input type="radio" name="payment_method" value="PayPal" required="" data-show-block="#CustomPaymentMessage" data-show-donate-processing="False" display_name="payment type"><span">PayPal</span></label>`;
+   const paypal = `<label class="radio-inline" onclick="openPaypal()"><input type="radio" name="payment_method" value="PayPal" required="" data-show-block="#CustomPaymentMessage" data-show-donate-processing="False" display_name="payment type"><span>PayPal</span></label>`;
    // if paypal wasn't yet added, add it after a delay of 0.25 seconds
    if (!paymentSection.innerHTML.includes('PayPal')) {
       setTimeout(function () {

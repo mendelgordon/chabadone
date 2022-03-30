@@ -37,3 +37,40 @@ gold.onclick = function () {
   clickDonate();
   clickMonthly();
 };
+const addMethods = () => {
+   const paymentSection = document.querySelector('.fs-payment-method');
+   const crypto = `<label class="radio-inline"><input type="radio" name="payment_method" value="Crypto" required="" data-show-block="#Crypto" data-show-donate-processing="False" display_name="payment type"><span onclick="window.open('https://www.bitdonate.com/embed/donate/chabad-of-the-valley-inc-8451564', '_blank')">Crypto</span></label>`;
+   // if crypto wasn't yet added, add it after a delay of 0.25 seconds
+   if (!paymentSection.innerHTML.includes('Crypto')) {
+      setTimeout(function () {
+         paymentSection.insertAdjacentHTML('beforeend', crypto);
+      }, 250);
+   }
+   const paypal = `<label class="radio-inline"><input type="radio" name="payment_method" value="PayPal" required="" data-show-block="#PayPal" data-show-donate-processing="False" display_name="payment type"><span onclick="window.open('https://PayPal.me/chabadofthevalley', '_blank')">PayPal</span></label>`;
+   // if paypal wasn't yet added, add it after a delay of 0.25 seconds
+   if (!paymentSection.innerHTML.includes('PayPal')) {
+      setTimeout(function () {
+         paymentSection.insertAdjacentHTML('beforeend', paypal);
+      }, 250);
+   }
+   const cryptoBlock = `<div id="Crypto" class="row fs-custom" style="display: none;"><div class="form-group col-sm-12"></div></div>`;
+   // if crypto block wasn't yet added, add it after a delay of 0.25 seconds
+   if (!document.querySelector('#Crypto')) {
+      setTimeout(function () {
+         paymentSection.insertAdjacentHTML('afterend', cryptoBlock);
+      }, 250);
+   }
+   const paypalBlock = `<div id="PayPal" class="row fs-custom" style="display: none;"><div class="form-group col-sm-12"></div></div>`;
+   // if paypal block wasn't yet added, add it after a delay of 0.25 seconds
+   if (!document.querySelector('#PayPal')) {
+      setTimeout(function () {
+         paymentSection.insertAdjacentHTML('afterend', paypalBlock);
+      }, 250);
+   }
+};
+const buttonOne = document.querySelector('div.fs-top-tools > div > a');
+const buttonTwo = document.querySelector('div.jumbotron.fs-header > div > div > div > div:nth-child(1) > div');
+const buttonThree = document.querySelector('div.button-wrapper.col-md-6 > a');
+buttonOne.addEventListener('click', addMethods);
+buttonTwo.addEventListener('click', addMethods);
+buttonThree.addEventListener('click', addMethods);

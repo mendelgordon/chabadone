@@ -1,0 +1,2 @@
+const matchers = `<div class='row fs-matchers-list'><img src='https://chabad.netlify.app/heart-donate.png' style='grid-row: 1/2;' /><div class='fs-matcher'><h4 class='fs-matcher-title'>Robert &amp; Nancy Greenwald<br /><br />Marat &amp; Leah Kushner<br /><br />Brian Levin and Family<br /><br />Steve and Allison Shapiro<br /><br />In memory of Valery ben Zalman</h4></div></div>`;
+document.querySelector('.fs-matchers-list').innerHTML = matchers;

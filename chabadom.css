@@ -3,6 +3,8 @@
 }
 .fs-matchers .fs-matcher {
   padding: 0;
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
 .fs-matcher div {
   width: auto;
@@ -13,4 +15,7 @@
 }
 .fs-matchers .fs-matchers-list {
   display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-column-gap: 10px;
 }

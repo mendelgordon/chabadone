@@ -33,13 +33,17 @@ silver.onclick = function () {
 };
 // onclick of gold type type 250 into the input field, press donate button, and press monthly
 gold.onclick = function () {
-  input.value = 250;
-  clickDonate();
-  clickMonthly();
+   input.value = 250;
+   clickDonate();
+   clickMonthly();
 };
-const openCrypto = () => window.open('https://www.bitdonate.com/embed/donate/chabad-of-the-valley-inc-8451564', '_blank');
-const openPaypal = () => window.open('https://PayPal.me/chabadofthevalley', '_blank');
 const addMethods = () => {
+   const check = document.querySelector('.fs-payment-method > label:nth-child(2)');
+   // set classes on check to "radio-inline selected"
+   const selectCheck = () => (check.className = 'radio-inline selected');
+   check.onclick = selectCheck;
+   const openCrypto = () => window.open('https://www.bitdonate.com/embed/donate/chabad-of-the-valley-inc-8451564', '_blank') && selectCheck();
+   const openPaypal = () => window.open('https://PayPal.me/chabadofthevalley', '_blank') && selectCheck();
    const paymentSection = document.querySelector('.fs-payment-method');
    const crypto = `<label class="radio-inline" onclick="openCrypto()"><input type="radio" name="payment_method" value="Crypto" required="" data-show-block="#CustomPaymentMessage" data-show-donate-processing="False" display_name="payment type"><span>Crypto</span></label>`;
    // if crypto wasn't yet added, add it after a delay of 0.25 seconds
@@ -55,7 +59,6 @@ const addMethods = () => {
          paymentSection.insertAdjacentHTML('beforeend', paypal);
       }, 250);
    }
-   
 };
 const buttonOne = document.querySelector('div.fs-top-tools > div > a');
 const buttonTwo = document.querySelector('div.jumbotron.fs-header > div > div > div > div:nth-child(1) > div');

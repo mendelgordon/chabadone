@@ -38,21 +38,15 @@ gold.onclick = function () {
    clickMonthly();
 };
 const addMethods = () => {
-   const check = document.querySelector('.fs-payment-method > label:nth-child(2)');
-   // set classes on check to "radio-inline selected"
-   const selectCheck = () => (check.className = 'radio-inline selected');
-   check.onclick = selectCheck;
-   const openCrypto = () => window.open('https://www.bitdonate.com/embed/donate/chabad-of-the-valley-inc-8451564', '_blank') && selectCheck();
-   const openPaypal = () => window.open('https://PayPal.me/chabadofthevalley', '_blank') && selectCheck();
    const paymentSection = document.querySelector('.fs-payment-method');
-   const crypto = `<label class="radio-inline" onclick="openCrypto()"><input type="radio" name="payment_method" value="Crypto" required="" data-show-block="#CustomPaymentMessage" data-show-donate-processing="False" display_name="payment type"><span>Crypto</span></label>`;
+   const crypto = `<label class="radio-inline"><input type="radio" name="payment_method" value="Crypto" required="" data-show-block="#CustomPaymentMessage" data-show-donate-processing="False" display_name="payment type"><a href="https://www.bitdonate.com/embed/donate/chabad-of-the-valley-inc-8451564"><span>Crypto</span></a></label>`;
    // if crypto wasn't yet added, add it after a delay of 0.25 seconds
    if (!paymentSection.innerHTML.includes('Crypto')) {
       setTimeout(function () {
          paymentSection.insertAdjacentHTML('beforeend', crypto);
       }, 250);
    }
-   const paypal = `<label class="radio-inline" onclick="openPaypal()"><input type="radio" name="payment_method" value="PayPal" required="" data-show-block="#CustomPaymentMessage" data-show-donate-processing="False" display_name="payment type"><span>PayPal</span></label>`;
+   const paypal = `<label class="radio-inline"><input type="radio" name="payment_method" value="PayPal" required="" data-show-block="#CustomPaymentMessage" data-show-donate-processing="False" display_name="payment type"><a href="https://PayPal.me/chabadofthevalley"><span>PayPal</span></a></label>`;
    // if paypal wasn't yet added, add it after a delay of 0.25 seconds
    if (!paymentSection.innerHTML.includes('PayPal')) {
       setTimeout(function () {

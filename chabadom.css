@@ -19,3 +19,23 @@
   justify-content: center;
   grid-column-gap: 10px;
 }
+/* on smaller screens make the img under fs-matchers-list smaller */
+@media screen and (max-width: 525px) {
+  .fs-matchers-list img {
+    width: 100px;
+  }
+}
+/* on even smaller screens make the img under fs-matchers-list smaller */
+@media screen and (max-width: 425px) {
+  .fs-matchers .fs-matcher {
+    padding: 0;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.fs-matchers .fs-matchers-list {
+  justify-items: center;
+}
+.fs-matchers-list img {
+  margin-bottom: 12px;
+}
+}

@@ -11,6 +11,6 @@
   text-transform: initial;
   margin: 0;
 }
-.fs-matchers-list {
+.fs-matchers .fs-matchers-list {
   display: grid;
 }

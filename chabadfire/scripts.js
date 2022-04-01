@@ -1,8 +1,8 @@
 window.onload = () => {
    if (Co.ArticleId === '5388152') {
-      const slideshow = `<div id="slideshow-example" data-component="slideshow"><div role="list"><div class="slide"><img src="https://chabad.netlify.app/chabadfire/(1).jpeg" alt=""></div><div class="slide"><img src="https://chabad.netlify.app/chabadfire/(2).jpeg" alt=""></div><div class="slide"><img src="https://chabad.netlify.app/chabadfire/(3).jpeg" alt=""></div><div class="slide"><img src="https://chabad.netlify.app/chabadfire/(4).jpeg" alt=""></div><div class="slide"><img src="https://chabad.netlify.app/chabadfire/(5).jpeg" alt=""></div><div class="slide"><img src="https://chabad.netlify.app/chabadfire/(6).jpeg" alt=""></div></div></div><style>[data-component="slideshow"] .slide {display: none} [data-component="slideshow"] .slide.active {display: block}</style>`;
-      const goalGraph = document.querySelector('.fs-goal');
-      goalGraph.insertAdjacentHTML('beforebegin', slideshow);
+      const slideshow = `<div id="slideshow-example" data-component="slideshow"><div role="list"><div class="slide"><img src="https://chabad.netlify.app/chabadfire/%20(1).jpeg" alt=""></div><div class="slide"><img src="https://chabad.netlify.app/chabadfire/%20(2).jpeg" alt=""></div><div class="slide"><img src="https://chabad.netlify.app/chabadfire/%20(3).jpeg" alt=""></div><div class="slide"><img src="https://chabad.netlify.app/chabadfire/%20(4).jpeg" alt=""></div><div class="slide"><img src="https://chabad.netlify.app/chabadfire/%20(5).jpeg" alt=""></div><div class="slide"><img src="https://chabad.netlify.app/chabadfire/%20(6).jpeg" alt=""></div></div></div><style>[data-component="slideshow"] .slide {display: none;text-align:center} [data-component="slideshow"] .slide.active {display: block}.slide img {max-width:400px}</style>`;
+      const pageHeader = document.querySelector('.page-header');
+      pageHeader.insertAdjacentHTML('afterend', slideshow);
 
       var slideshows = document.querySelectorAll('[data-component="slideshow"]');
 

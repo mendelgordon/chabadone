@@ -9,6 +9,7 @@
 }
 
 .slider .slide {
+  position: absolute;
   width: 100%;
   height: 100%;
   clip-path: circle(0% at 0 50%);
@@ -20,7 +21,6 @@
 }
 
 .slider .slide img {
-  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;

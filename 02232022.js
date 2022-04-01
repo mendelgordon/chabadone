@@ -1,35 +1,31 @@
 const bronze = document.querySelector('#bronze');
 const silver = document.querySelector('#silver');
 const gold = document.querySelector('#gold');
-const input = document.querySelector(
-  '.fs-donate-amounts.js-donate-amounts > input'
-);
-const donate = document.querySelector(
-  '.fs-donate.fs-donatable > .button-wrapper > a'
-);
+const input = document.querySelector('.fs-donate-amounts.js-donate-amounts > input');
+const donate = document.querySelector('.fs-donate.fs-donatable > .button-wrapper > a');
 const clickDonate = () => {
-  donate.click();
+   donate.click();
 };
 const clickMonthly = () => {
-  const monthly = document.querySelector('#inputRecurring');
-  // if monthly was not yet pressed, press monthly after a delay of 0.25 seconds
-  if (!monthly.checked) {
-    setTimeout(function () {
-      monthly.click();
-    }, 250);
-  }
+   const monthly = document.querySelector('#inputRecurring');
+   // if monthly was not yet pressed, press monthly after a delay of 0.25 seconds
+   if (!monthly.checked) {
+      setTimeout(function () {
+         monthly.click();
+      }, 250);
+   }
 };
 // onclick of bronze type type 108 into the input field, press donate button, and press monthly
 bronze.onclick = function () {
-  input.value = 108;
-  clickDonate();
-  clickMonthly();
+   input.value = 108;
+   clickDonate();
+   clickMonthly();
 };
 // onclick of silver type type 180 into the input field, press donate button, and press monthly
 silver.onclick = function () {
-  input.value = 180;
-  clickDonate();
-  clickMonthly();
+   input.value = 180;
+   clickDonate();
+   clickMonthly();
 };
 // onclick of gold type type 250 into the input field, press donate button, and press monthly
 gold.onclick = function () {
@@ -37,26 +33,11 @@ gold.onclick = function () {
    clickDonate();
    clickMonthly();
 };
-const addMethods = () => {
-   const paymentSection = document.querySelector('.fs-payment-method');
-   const crypto = `<label class="radio-inline"><input type="radio" name="payment_method" value="Crypto" required="" display_name="payment type"><a href="https://www.bitdonate.com/embed/donate/chabad-of-the-valley-inc-8451564"><span>Crypto</span></a></label>`;
-   // if crypto wasn't yet added, add it after a delay of 0.25 seconds
-   if (!paymentSection.innerHTML.includes('Crypto')) {
-      setTimeout(function () {
-         paymentSection.insertAdjacentHTML('beforeend', crypto);
-      }, 250);
-   }
-   const paypal = `<label class="radio-inline"><input type="radio" name="payment_method" value="PayPal" required="" display_name="payment type"><a href="https://PayPal.me/chabadofthevalley"><span>PayPal</span></a></label>`;
-   // if paypal wasn't yet added, add it after a delay of 0.25 seconds
-   if (!paymentSection.innerHTML.includes('PayPal')) {
-      setTimeout(function () {
-         paymentSection.insertAdjacentHTML('beforeend', paypal);
-      }, 250);
-   }
-};
-const buttonOne = document.querySelector('div.fs-top-tools > div > a');
-const buttonTwo = document.querySelector('div.jumbotron.fs-header > div > div > div > div:nth-child(1) > div');
-const buttonThree = document.querySelector('div.button-wrapper.col-md-6 > a');
-buttonOne.addEventListener('click', addMethods);
-buttonTwo.addEventListener('click', addMethods);
-buttonThree.addEventListener('click', addMethods);
+const buttonSection = document.querySelector('.donate-flex');
+const paymentMethods = `<div class="donate-flex new-methods"><div class="donate-button "><div class="donate-button-text"><a href="https://PayPal.me/chabadofthevalley" style="color:inherit"><span>Donate with PayPal</span></a></div></div><div class="donate-button"><div class="donate-button-text"><a href="https://www.bitdonate.com/embed/donate/chabad-of-the-valley-inc-8451564" style="color:inherit"><span>Donate with Crypto</span></a></div></div></div>`;
+// if paymentMethods wasn't yet added, add it after a delay of 0.25 seconds
+if (!document.querySelector('.new-methods')) {
+   setTimeout(function () {
+      buttonSection.insertAdjacentHTML('afterend', paymentMethods);
+   }, 250);
+}

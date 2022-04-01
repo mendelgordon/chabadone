@@ -1,8 +1,6 @@
 .slider {
   position: relative;
-  background: #000116;
-  width: 800px;
-  min-height: 500px;
+  width: 450px;
   margin: auto;
   overflow: hidden;
   border-radius: 10px;
@@ -17,7 +15,7 @@
 
 .slider .slide.active {
   clip-path: circle(150% at 0 50%);
-  transition: 2s;
+  transition: 0s;
 }
 
 .slider .slide img {
@@ -27,7 +25,7 @@
 }
 
 .navigation {
-  height: 500px;
+  height: 215px;
   display: flex;
   align-items: center;
   justify-content: space-between;

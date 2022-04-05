@@ -34,7 +34,7 @@ gold.onclick = function () {
    clickMonthly();
 };
 const buttonSection = document.querySelector('.donate-flex');
-const paymentMethods = `<div class="donate-flex new-methods"><div class="donate-button "><div class="donate-button-text"><a href="https://PayPal.me/chabadofthevalley" style="color:inherit"><span>Donate with PayPal</span></a></div></div><div class="donate-button"><div class="donate-button-text"><a href="https://www.bitdonate.com/embed/donate/chabad-of-the-valley-inc-8451564" style="color:inherit"><span>Donate with Crypto</span></a></div></div></div>`;
+const paymentMethods = `<div class="donate-flex new-methods"><div class="donate-button "><div class="donate-button-text"><a href="https://paypal.com/us/fundraiser/charity/14535" style="color:inherit"><span>Donate with PayPal</span></a></div></div><div class="donate-button"><div class="donate-button-text"><a href="https://www.bitdonate.com/embed/donate/chabad-of-the-valley-inc-8451564" style="color:inherit"><span>Donate with Crypto</span></a></div></div></div>`;
 // if paymentMethods wasn't yet added, add it after a delay of 0.25 seconds
 if (!document.querySelector('.new-methods')) {
    setTimeout(function () {

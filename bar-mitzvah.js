@@ -66,20 +66,6 @@
             return x * -1;
         }
 
-
-        // Initialize 'Slanted Line' Functionality 
-
-        const celebrationsMatter = document.getElementById('celebrations-matter'),
-            slantedUnderline = document.getElementById('slantedUnderline');
-
-        function adjustSlantedLine() {
-            slantedUnderline.style.width = celebrationsMatter.offsetWidth + 'px';
-        };
-
-        adjustSlantedLine();
-        window.addEventListener('resize', adjustSlantedLine);
-
-
         // Initialize 'Read More' Button Functionality
 
         const BREAKPOINT = 767.98;

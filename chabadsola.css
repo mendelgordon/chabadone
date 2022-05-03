@@ -1,7 +1,3 @@
-/* #js-donate-form>div.content-box.full-row.intro-wrapper>div>p {
-  font-size: large;
-}  */
-
 @media (max-width:1000px) {
   #donate-wrapper #donate .intro-wrapper p.description {
     display: revert;

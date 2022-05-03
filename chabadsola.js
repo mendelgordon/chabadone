@@ -1,0 +1,10 @@
+/* when the document loads, run the function */
+window.addEventListener('DOMContentLoaded', () => {
+   try {
+      const donateDescription = document.querySelector('#js-donate-form > div.content-box.full-row.intro-wrapper > div > p');
+      const newDonateDescription = `<a href="/5430417">To donate with Venmo click here</a><br /><a href="https://www.theeidenproject.org">To donate toward construction of the new building click here</a><br /><a href="/3438459">To reserve for Friday night dinner click here</a>`;
+      donateDescription.innerHTML = newDonateDescription;
+   } catch (error) {
+      console.log(error);
+   }
+});

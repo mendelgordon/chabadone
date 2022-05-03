@@ -3,3 +3,6 @@
     display: revert;
   }
 }
+#js-donate-form>div.content-box.full-row.intro-wrapper>div>p {
+  font-size: large;
+}

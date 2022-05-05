@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+
+:root {
+  --descrip-torah: 'The beautiful Torah covering will have your family\'s name prominently embroidered on it';
+  --descrip-crown: 'The beautiful sterling silver crown with your family name engraved will be prominently displayed above the Torah';
+  --descrip-handles: 'Dedicate the Torah rollers with your family name engraved on the Eitz Chaim';
+  --descrip-yad: 'Silver pointer used by Torah readers - engraved with your family\'s name on it';
+  --descrip-sefer: 'Dedicate one complete book of the five books of the Torah. This level of dedication includes special Torah recognition for your family';
+  --descrip-special-section: 'Dedicate a special section in honor of your family and/or in memory of loved ones';
+  --descrip-chazak: 'Dedicate the final verse of each Book of Torah. Chazak Chazak. (5 available)';
+  --descrip-parsha: 'Endow a Torah portion for yourself, a loved one or in honor of a special occasion';
+  --descrip-aliya: 'A complete Aliya, one of the seven segments of each Torah portion';
+  --descrip-chapter: 'Dedicate a chapter for yourself and/or your loved ones';
+  --descrip-verse: 'Endow a Torah verse that has special meaning to you, a friend or a loved one';
+  --descrip-word: 'Each word in the Torah bears tremendous meaning and timeless lessons';
+  --descrip-letter: 'Every letter is vital for a Torah to be complete';
+  --primary-color: #603813;
+  --alternate-color: #9f6802;
+  --accent-color: #e2d5b5;
+  --font-sans-serif: 'Jost', sans-serif;
+}
+
+body,
+.co_body .content p {
+  font-family: var(--font-sans-serif);
+  font-size: 18px;
+}
+
+body {
+  background: white !important;
+}
+
+div#cco_body .content_tditle_container .overlay {
+  display: none;
+}
+
+a.breadcrumbs__crumb,
+.breadcrumbs__divider {
+  display: none;
+}
+
+.chabad_header a img {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+a.header-link {
+  display: flex;
+  align-items: center;
+  height: 350px;
+  max-width: 975px;
+  margin: auto;
+  color: var(--primary-color);
+  justify-content: space-between;
+}
+
+a.header-link:hover {
+  text-decoration: none;
+}
+
+#header-text {
+  max-width: 652px;
+  font-style: italic;
+  font-size: 22px;
+}
+
+#header-text img {
+  margin-bottom: 15px;
+}
+
+.chabad_header:before {
+  content: '×‘"×”';
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #9f6800;
+  font-size: 14px;
+}
+
+div.widget_header {
+  display: none;
+}
+
+td.chabad_text_head {
+  box-sizing: border-box;
+  float: none;
+  vertical-align: middle;
+}
+
+td.chabad_text_head img {
+  float: right;
+}
+
+#chabad_head .chabad_navigator_bar {
+  background: #603813;
+}
+
+.mobile #chabad_head .chabad_navigator_bar {
+  width: 100%;
+  height: auto;
+}
+
+#chabad_main_content .chabad_navigator_bar .chabad_menu_content {
+  height: 100%;
+}
+
+#menu li {
+  font-size: 0;
+}
+
+#chabad_head .chabad_navigator_bar ul#menu {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mobile ul#menu {
+  border-bottom: 1px solid #bba68c;
+  border-top: 1px solid #bba68c;
+}
+
+div#chabad_head .chabad_navigator_bar ul li {
+  color: transparent;
+}
+
+div#chabad_head .chabad_navigator_bar ul li .sub_menu {
+  display: none;
+  position: absolute;
+  top: 36px;
+}
+
+div#chabad_head .chabad_navigator_bar ul li ul {
+  padding: 0;
+}
+
+div#chabad_head .chabad_navigator_bar ul li ul li {
+  border-bottom: 1px solid #FFFFFF;
+  border-right: none;
+  float: none;
+  font-size: 12px;
+  height: auto;
+  line-height: 17px;
+  min-height: 23px;
+  padding: 3px 0;
+}
+
+div#chabad_head .chabad_navigator_bar ul li.active .sub_menu {
+  display: block;
+}
+
+div#chabad_head .chabad_navigator_bar ul li ul li:last-child {
+  border: none;
+}
+
+div#chabad_head .chabad_navigator_bar ul li ul li a {
+  display: inline-block;
+  float: none;
+  font-size: 12px;
+  height: auto;
+  max-width: 220px;
+  min-width: 80px;
+  padding: 2px 15px 0 15px;
+}
+
+div#chabad_head .chabad_navigator_bar ul li ul li a:hover {
+  background: none;
+}
+
+.chabad_navigator_bar ul li a {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-sans-serif);
+  font-size: 28px;
+  text-transform: uppercase;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.chabad_navigator_bar ul li a:hover {
+  background: #603813;
+  color: white;
+}
+
+.chabad_navigator_bar ul li a.arrow {
+  background: url('') no-repeat right center;
+  padding-right: 26px;
+}
+
+div#chabad_head .chabad_navigator_bar a.parent:hover:before,
+div#chabad_head .chabad_navigator_bar a.parent.selected:before {
+  content: '';
+  height: 2px;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+div#chabad_head .chabad_navigator_bar a.parent.selected:before,
+div#chabad_head .chabad_navigator_bar a.parent.selected:after {
+  background: #ccaf7b;
+}
+
+div#chabad_head .chabad_navigator_bar a.parent:hover:before,
+div#chabad_head .chabad_navigator_bar a.parent:hover:after {
+  background: white;
+}
+
+div#chabad_head .chabad_navigator_bar a.parent.selected:after,
+div#chabad_head .chabad_navigator_bar a.parent:hover:after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+div#chabad_head .chabad_navigator_bar ul li a.first {
+  padding-left: 0;
+}
+
+body.mobile div#chabad_head .chabad_navigator_bar {
+  width: auto;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  float: none;
+}
+
+body.mobile .chabad_navigator_bar .chabad_menu_content li a {
+  font-size: 16px;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+body.mobile .co_body img,
+body.mobile #chabad_main_content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.co_content_container {
+  padding: 0;
+}
+
+
+h1,
+.co_body h1,
+H2.form-header,
+.article-header__title,
+.article-header h1 {
+  font-family: var(--font-sans-serif);
+  color: #603813;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 50px;
+  border-bottom: 2px solid #e2d5b4;
+  margin-bottom: 20px;
+}
+
+/* DONATE FORM */
+
+#formContainer .co_body .content .form-all li,
+.form-checkbox-item LABEL,
+.form-grading-label,
+.form-radio-item LABEL,
+.co_body .content .form-all li {
+  font-size: 18px;
+}
+
+#label_7 {
+  font-size: 15px;
+}
+
+.form-header-group {
+  margin: 0;
+  padding: 0;
+}
+
+div#formContainer .form-label-top,
+.form-label-left label {
+  font-size: 20px;
+}
+
+.form-label-auto label,
+.form-label-top label,
+.form-label-left label,
+.form-label-right label {
+  font-family: var(--font-sans-serif);
+  text-transform: uppercase;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  background: #896839;
+  padding: 5px;
+  width: 109%;
+  display: inline-block;
+  margin-bottom: 4px;
+  /* padding-left: 14px; */
+  margin-left: -35px;
+}
+
+.form-label-top label:nth-child(1) {
+  padding-left: 14px;
+}
+
+.mobile .form-label-top label {
+  margin: 0;
+}
+
+.form-all .label-message {
+  background: none;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-left: 0;
+  width: 100%;
+}
+
+.form-line {
+  background-color: #f3f0ec;
+  width: 600px;
+  margin: 20px auto;
+  padding-left: 20px;
+}
+
+body.mobile .form-line {
+  width: 95vw;
+}
+
+.mobile .form-input-wide {
+  padding: 0 10px;
+}
+
+div#cid_3 label,
+div#cid_4 label {
+  font-size: 22px;
+  font-family: var(--font-sans-serif);
+  color: #603813;
+  margin-left: 10px;
+}
+
+#id_3 .form-checkbox:after,
+#id_4 .form-radio:after {
+  content: '\f096';
+  font-family: FontAwesome;
+  background: #f3f0ed;
+  font-size: 23px;
+  position: relative;
+  color: #c2a571;
+  bottom: 8px;
+  left: -2px;
+}
+
+#id_3 .form-checkbox:checked:after,
+#id_4 .form-radio:checked:after {
+  content: "\f046";
+  color: #886839;
+}
+
+#label_10>label:first-child:after {
+  content: '*';
+  margin-left: 10px;
+  color: #ff180f;
+}
+
+/* Other */
+input#input_6 {
+  margin-left: 10px;
+}
+
+div#cid_6 .form-radio-item:last-child {
+  margin-top: 10px;
+}
+
+/*SUBMIT*/
+
+li#id_2 {
+  background: transparent;
+  border: 0;
+}
+
+.co_body .content .form-all li {
+  font-family: var(--font-sans-serif);
+}
+
+#open-letter {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 50px;
+}
+
+div#open-letter p:first-child {
+  font-style: italic;
+}
+
+#open-letter strong {
+  color: var(--primary-color);
+}
+
+#BodyContainer {
+  width: 100%;
+}
+
+.poweredby {
+  padding: 60px 70px;
+}
+
+.g960.footer {
+  text-align: left;
+  width: 100%;
+  background: #fef0d3;
+  margin-left: 0;
+  margin-top: 40px;
+  background-image: url(https://www.chabad.org/media/images/1141/pORQ11416776.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.footer3 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.footer-title {
+  font-weight: bold;
+  display: block;
+  font-size: 26px;
+}
+
+.footer3:before {
+  content: 'The Waterways Community Torah Campaign is a project of ';
+  display: block;
+  margin-bottom: 7px;
+}
+
+/* form */
+label.label-message[for='input_5'] {
+  border-bottom: 1px solid #896839;
+  border-top: 1px solid #896839;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  margin-top: 20px;
+  font-style: normal;
+  color: #603813;
+  font-size: 16px;
+}
+
+#community-torah-intro {
+  max-width: 500px;
+  margin: auto;
+}
+
+div#community-torah-intro h3 {
+  font-size: 30px;
+  color: #603813;
+  font-family: var(--font-sans-serif);
+}
+
+#community-torah-intro p {
+  text-align: right;
+}
+
+
+li#id_1,
+li#id_5 {
+  background: no-repeat;
+  border: 0;
+  width: 100%;
+}
+
+div#text_1 p {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  color: #603813;
+}
+
+div#text_5 p {
+  font-size: 15px;
+  font-style: italic;
+  color: #603813;
+}
+
+#cid_3 .form-checkbox-item {
+  margin-bottom: 20px;
+}
+
+#cid_3 .form-checkbox-item label:after {
+  display: block;
+  font-size: 16px;
+  color: #9f6800;
+}
+
+#label_input_3_0:after {
+  content: var(--descrip-torah);
+}
+
+#label_input_3_1:after {
+  content: var(--descrip-crown);
+}
+
+#label_input_3_2:after {
+  content: var(--descrip-handles);
+}
+
+#label_input_3_3:after {
+  content: var(--descrip-yad);
+}
+
+#label_input_3_4:after {
+  content: var(--descrip-sefer);
+}
+
+#label_input_3_5:after {
+  content: var(--descrip-special-section);
+}
+
+#label_input_3_6:after {
+  content: var(--descrip-chazak);
+}
+
+#label_input_3_7:after {
+  content: var(--descrip-parsha);
+}
+
+#label_input_3_8:after {
+  content: var(--descrip-chapter);
+}
+
+#label_input_3_9:after {
+  content: var(--descrip-aliya);
+}
+
+#label_input_3_10:after {
+  content: var(--descrip-verse);
+}
+
+#label_input_3_11:after {
+  content: var(--descrip-word);
+}
+
+#label_input_3_12:after {
+  content: var(--descrip-letter);
+}
+
+.form-all .label-message {
+  color: #9f6800;
+}
+
+
+.form-radio-other-input {
+  margin-left: 10px;
+}
+
+.form-required {
+  display: none;
+}
+
+#letter-pullquote {
+  float: right;
+  width: 300px;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 20px;
+  color: #603813;
+  text-align: right;
+}
+
+.reserved-dedication input[type=checkbox] {
+  pointer-events: none;
+}
+
+.reserved-dedication .form-checkbox:after {
+  content: "\f046" !important;
+  color: #dbcbaf !important;
+}
+
+@media (max-width: 650px) {
+  .form-label-top label {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .form-line,
+  .co_body .content .form-all .form-line {
+    padding: 0;
+  }
+}

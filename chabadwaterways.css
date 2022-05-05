@@ -26,7 +26,8 @@ body,
   font-size: 18px;
 }
 
-body {
+body,
+.cco_templateless_page #chabad_main_content {
   background: white !important;
 }
 
@@ -81,6 +82,14 @@ div.widget_header {
   display: none;
 }
 
+.chabad_header .headerTitle {
+  font-family: var(--font-sans-serif);
+  color: #ffffff;
+  background: #896839;
+  padding: 0 23px !important;
+  display: inline-block;
+  margin: 66px;
+}
 td.chabad_text_head {
   box-sizing: border-box;
   float: none;
@@ -89,154 +98,6 @@ td.chabad_text_head {
 
 td.chabad_text_head img {
   float: right;
-}
-
-#chabad_head .chabad_navigator_bar {
-  background: #603813;
-}
-
-.mobile #chabad_head .chabad_navigator_bar {
-  width: 100%;
-  height: auto;
-}
-
-#chabad_main_content .chabad_navigator_bar .chabad_menu_content {
-  height: 100%;
-}
-
-#menu li {
-  font-size: 0;
-}
-
-#chabad_head .chabad_navigator_bar ul#menu {
-  height: auto;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.mobile ul#menu {
-  border-bottom: 1px solid #bba68c;
-  border-top: 1px solid #bba68c;
-}
-
-div#chabad_head .chabad_navigator_bar ul li {
-  color: transparent;
-}
-
-div#chabad_head .chabad_navigator_bar ul li .sub_menu {
-  display: none;
-  position: absolute;
-  top: 36px;
-}
-
-div#chabad_head .chabad_navigator_bar ul li ul {
-  padding: 0;
-}
-
-div#chabad_head .chabad_navigator_bar ul li ul li {
-  border-bottom: 1px solid #FFFFFF;
-  border-right: none;
-  float: none;
-  font-size: 12px;
-  height: auto;
-  line-height: 17px;
-  min-height: 23px;
-  padding: 3px 0;
-}
-
-div#chabad_head .chabad_navigator_bar ul li.active .sub_menu {
-  display: block;
-}
-
-div#chabad_head .chabad_navigator_bar ul li ul li:last-child {
-  border: none;
-}
-
-div#chabad_head .chabad_navigator_bar ul li ul li a {
-  display: inline-block;
-  float: none;
-  font-size: 12px;
-  height: auto;
-  max-width: 220px;
-  min-width: 80px;
-  padding: 2px 15px 0 15px;
-}
-
-div#chabad_head .chabad_navigator_bar ul li ul li a:hover {
-  background: none;
-}
-
-.chabad_navigator_bar ul li a {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-sans-serif);
-  font-size: 28px;
-  text-transform: uppercase;
-  color: white;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-.chabad_navigator_bar ul li a:hover {
-  background: #603813;
-  color: white;
-}
-
-.chabad_navigator_bar ul li a.arrow {
-  background: url('') no-repeat right center;
-  padding-right: 26px;
-}
-
-div#chabad_head .chabad_navigator_bar a.parent:hover:before,
-div#chabad_head .chabad_navigator_bar a.parent.selected:before {
-  content: '';
-  height: 2px;
-  width: 100%;
-  display: block;
-  margin: auto;
-}
-
-div#chabad_head .chabad_navigator_bar a.parent.selected:before,
-div#chabad_head .chabad_navigator_bar a.parent.selected:after {
-  background: #ccaf7b;
-}
-
-div#chabad_head .chabad_navigator_bar a.parent:hover:before,
-div#chabad_head .chabad_navigator_bar a.parent:hover:after {
-  background: white;
-}
-
-div#chabad_head .chabad_navigator_bar a.parent.selected:after,
-div#chabad_head .chabad_navigator_bar a.parent:hover:after {
-  content: '';
-  height: 2px;
-  width: 100%;
-  display: block;
-  margin: auto;
-}
-
-div#chabad_head .chabad_navigator_bar ul li a.first {
-  padding-left: 0;
-}
-
-body.mobile div#chabad_head .chabad_navigator_bar {
-  width: auto;
-  height: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  float: none;
-}
-
-body.mobile .chabad_navigator_bar .chabad_menu_content li a {
-  font-size: 16px;
-  display: inline-block;
-  font-weight: bold;
-  text-decoration: none;
 }
 
 body.mobile .co_body img,
@@ -324,7 +185,7 @@ div#formContainer .form-label-top,
 
 .form-line {
   background-color: #f3f0ec;
-  width: 600px;
+  width: 90%;
   margin: 20px auto;
   padding-left: 20px;
 }

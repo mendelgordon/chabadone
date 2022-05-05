@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
       donateDescription.innerHTML = newDonateDescription;
       document.querySelector('label[for=donation_subtype]').innerHTML = 'Apply Donation To...<span class="req">*</span>';
       document.querySelector('select[name=donation_subtype]').required = 1;
+      document.querySelector('#subscribe').checked = 0;
    } catch (error) {
       console.log(error);
    }

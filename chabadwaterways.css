@@ -188,6 +188,11 @@ body.mobile .form-line {
   width: 90vw;
 }
 
+.form-line:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .mobile .form-input-wide {
   padding: 0 10px;
 }

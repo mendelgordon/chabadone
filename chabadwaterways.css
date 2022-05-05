@@ -118,8 +118,9 @@ H2.form-header,
   border-bottom: 2px solid #e2d5b4;
   margin-bottom: 20px;
 }
-
-/* DONATE FORM */
+div.chabad_left_column {
+  max-width: 98vw;
+}
 
 #formContainer .co_body .content .form-all li,
 .form-checkbox-item LABEL,

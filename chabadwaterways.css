@@ -100,12 +100,6 @@ td.chabad_text_head img {
   float: right;
 }
 
-body.mobile .co_body img,
-body.mobile #chabad_main_content img {
-  max-width: 100%;
-  height: auto;
-}
-
 .co_content_container {
   padding: 0;
 }

@@ -12,11 +12,9 @@ window.addEventListener('DOMContentLoaded', () => {
       console.log(error);
    }
    /* SOLA tent membership page */
-   try {
-      const tentMembership = document.querySelector('input[value=Monthly]');
-      tentMembership.checked = 1;
-      tentMembership.closest('.form-line').style.display = 'none';
-   } catch (error) {
-      console.log(error);
-   }
+      if (Co.ArticleId == '5511888') {
+         const tentMembership = document.querySelector('input[value=Monthly]');
+         tentMembership.checked = 1;
+         tentMembership.closest('.form-line').style.display = 'none';
+      }
 });

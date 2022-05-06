@@ -255,6 +255,7 @@ li#id_2 {
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 50px;
+  text-align: left;
 }
 
 div#open-letter p:first-child {

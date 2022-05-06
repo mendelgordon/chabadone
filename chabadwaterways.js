@@ -13,4 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
       });
       document.querySelector('#Head1').insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="https://chabad.netlify.app/chabadwaterways.css" />');
    }
+   if (Co.ArticleId == '5512724' || Co.ArticleId == '5512752') {
+      document.querySelector('#Head1').insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="https://chabad.netlify.app/chabadwaterways.css" />');
+   }
 });

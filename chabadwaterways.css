@@ -82,13 +82,14 @@ div.widget_header {
   display: none;
 }
 
-.chabad_header .headerTitle {
-  font-family: var(--font-sans-serif);
+#chabad_head div.chabad_header div.headerTitle {
+  font-family: var(--font-sans-serif) !important;
   color: #ffffff;
-  background: #896839;
+  background: rgb(137 104 57 / 87%);
   padding: 0 23px !important;
   display: inline-block;
-  margin: 66px;
+  margin: 72px;
+    font-size: 50px;
 }
 td.chabad_text_head {
   box-sizing: border-box;

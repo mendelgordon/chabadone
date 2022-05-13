@@ -1,7 +1,8 @@
-window.onload = () => {
-   try {
-      document.querySelector('.mainconbox div form').innerHTML = document.querySelector('.mainconbox div form').innerHTML.replaceAll('$', '£');
-   } catch (e) {
-      console.log(e);
-   }
-};
+if (window.location.pathname === '/portal') {
+   window.addEventListener('load', () => {
+      let el = document.querySelector('.mainconbox div form');
+      if (el) {
+         el.innerHTML = el.innerHTML.replaceAll('$', '£');
+      }
+   });
+}

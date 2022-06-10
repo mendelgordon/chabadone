@@ -1,0 +1,14 @@
+/* show description text on mobile on donate */
+@media (max-width: 1000px) {
+  #donate-wrapper #donate .intro-wrapper p.description {
+    display: block;
+  }
+}
+
+/* hide arrow on donate page */
+.monthly-note {
+  display: none;
+}
+#donate-wrapper #donate.screen-1 main .frequency-toggle-wrapper #frequency-toggle {
+  margin-bottom: 20px;
+}

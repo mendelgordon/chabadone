@@ -39,7 +39,7 @@
 
 .prev-btn,
 .next-btn {
-  z-index: 999;
+  z-index: 2;
   font-size: 2em;
   color: #222;
   background: rgba(255, 255, 255, 0.8);
@@ -58,13 +58,13 @@
 }
 
 .navigation-visibility {
-  z-index: 999;
+  z-index: 2;
   display: flex;
   justify-content: center;
 }
 
 .navigation-visibility .slide-icon {
-  z-index: 999;
+  z-index: 2;
   background: rgba(255, 255, 255, 0.5);
   width: 20px;
   height: 10px;

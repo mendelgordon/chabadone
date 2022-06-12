@@ -47,9 +47,7 @@ body {
 .fs-countdown .fs-countdown-widget .fs-countdown-unit .fs-countdown-description,
 .fs-matchers .fs-matcher .fs-matcher-title,
 .fs-partners .fs-partner-container .fs-partner .fs-partner-name,
-.progress-flex .check-mark,
-.fs-goal .fs-goal-text strong,
-.fs-goal .fs-goal-graph-container .fs-goal-graph-text {
+.progress-flex .check-mark {
   color: var(--blue-three);
 }
 .fs-footer .row > div:nth-of-type(3) h3 {

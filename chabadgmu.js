@@ -7,6 +7,6 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   if (window.location.href.includes("5549418")) {
-    document.querySelector(".fs-footer address").innerHTML = "'\n<h3>Chabad of George Mason University</h3>\n4858 Sideburn Road Fairfax, VA 22032\n<br>\n414-807-4533\n'";
+    document.querySelector(".fs-footer address").innerHTML = "\n<h3>Chabad of George Mason University</h3>\n4858 Sideburn Road Fairfax, VA 22032\n<br>\n414-807-4533\n";
   }
 });

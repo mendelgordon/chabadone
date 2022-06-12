@@ -12,3 +12,178 @@
 #donate-wrapper #donate.screen-1 main .frequency-toggle-wrapper #frequency-toggle {
   margin-bottom: 20px;
 }
+
+/* color fundraiser page */
+body {
+  --blue-one: hsl(146, 61%, 76%);
+  --blue-two: hsl(146, 59%, 42%);
+  --blue-three: hsl(146, 60%, 52%);
+  --blue-four: hsl(146, 65%, 24%);
+  --blue-four-shadow: inset 0 0 0 2px hsl(146, 65%, 24%);
+  --blue-four-transparent: hsla(146, 65%, 24%, 0.949);
+  --blue-five: hsl(146, 53%, 68%);
+  --blue-six: hsl(146, 52%, 47%);
+  --gold: hsl(47, 73%, 59%);
+  --light-gray: hsl(0, 0%, 95%);
+  --medium-gray: hsl(0, 0%, 40%);
+  --dark-gray: hsl(0, 0%, 55%);
+}
+.donar-section,
+.fs-donate,
+.fs-partners .fs-partner-container .fs-partner,
+.fs-partners .fs-partner-container .fs-partner .fs-partner-dedication {
+  background-color: var(--blue-one);
+}
+.fs-donate .fs-donate-amounts {
+  color: var(--blue-two);
+}
+.fs-donate .fs-donate-amounts .fs-amount:focus {
+  border-color: var(--blue-two);
+}
+.fs-bonus .fs-goal .fs-original-goal:before,
+.fs-goal .fs-goal-graph-container .fs-goal-graph .fs-goal-graph-fill {
+  background: var(--blue-three);
+}
+.fs-countdown .fs-countdown-widget .fs-countdown-unit .fs-countdown-description,
+.fs-matchers .fs-matcher .fs-matcher-title,
+.fs-partners .fs-partner-container .fs-partner .fs-partner-name,
+.progress-flex .check-mark,
+.fs-goal .fs-goal-text strong,
+.fs-goal .fs-goal-graph-container .fs-goal-graph-text {
+  color: var(--blue-three);
+}
+.fs-footer .row > div:nth-of-type(3) h3 {
+  color: var(--blue-three);
+}
+.donate-button .donate-button-text:hover,
+.progress-flex .progress .progress-bar {
+  background: var(--blue-three);
+}
+.fs-header .page-header h1 small,
+.fs-header .page-header h2,
+.fs-countdown h3 strong,
+.fs-countdown .fs-countdown-widget .fs-countdown-sep,
+.fs-about h4,
+.fs-partners h3 span,
+.fs-footer .row > div:nth-of-type(2) h3,
+.donate-members .donates_user .team-up,
+.btns-flex .view-btn:hover,
+.fs-full-donate-form .fs-donate-body .fs-effective-donation-container .fs-effective-donation-amount-container {
+  color: var(--gold);
+}
+.fs-goal,
+.fs-full-donate-form .fs-donate-body .fs-donation-options .fs-donation-option.fs-other label.selected:before,
+.fs-full-donate-form .fs-donate-body .fs-donation-options .fs-donation-option.selected .fs-option-name > div:before,
+.fs-thank-you .fs-title .fs-check,
+.fs-bonus-badge,
+.btns-flex .view-btn {
+  background-color: var(--gold);
+}
+.btns-flex .view-btn:hover {
+  border-color: var(--gold);
+}
+.fs-countdown,
+.fs-goal .fs-goal-graph-container .fs-goal-graph .fs-goal-graph-fill .fs-goal-graph-fill-bonus,
+.fs-btn,
+.create-team,
+.fs-full-donate-form .fs-donate-body .fs-donate-section .fs-payment-method .radio-inline input:checked + span,
+.donate-members .donates_user .donate-A,
+.team-donate-btn,
+.btns-flex .donate-btns,
+.progress-flex .extra-bar,
+.donate-now {
+  background-color: var(--blue-four);
+}
+.fs-header:before {
+  background: var(--blue-four-transparent);
+}
+.fs-full-donate-form .fs-donate-body .fs-donate-section .fs-payment-method .radio-inline span,
+.fs-full-donate-form .fs-donate-body .fs-donate-section .radio input:checked ~ span,
+.fs-full-donate-form .fs-donate-body .fs-donate-section .radio-inline input:checked ~ span,
+.fs-full-donate-form .fs-donate-body .fs-donate-section .checkbox input:checked ~ label,
+.fs-full-donate-form .fs-donate-body .fs-donate-section .checkbox-inline input:checked ~ label,
+.fs-full-donate-form .fs-donate-body .fs-donate-section h3,
+.fs-footer .row > div:nth-of-type(1) h3,
+.fs-partners .fs-partner-container .fs-partner .fs-partner-donation-amount,
+.fs-partners h3,
+.fs-about h3,
+.fs-donate .fs-donate-amounts .fs-amount,
+.fs-matchers .fs-matchers-intro strong,
+.fs-full-donate-form .fs-donate-body .fs-donate-section .fs-custom,
+.fs-full-donate-form .fs-donate-body .fs-donate-section .fs-paypal,
+.fs-full-donate-form .fs-donate-body .fs-donate-section .form-group.infield-label input.form-control:focus,
+.fs-full-donate-form .fs-donate-body .fs-donate-section .form-group.placeholder-focus label,
+.fs-full-donate-form .fs-donate-body .fs-donate-section .form-group select.form-control:focus,
+.fs-full-donate-form .fs-donate-body .fs-effective-donation-container .fs-effective-donation-description,
+.fs-thank-you .fs-sub,
+.donar-section .nav-tabs .nav-item.active .nav-link,
+.donate-members .donates_user .left_userd .user-name,
+.team-members .team-users .user-name,
+.team-members .team-users .user-name a,
+.team-members .team-users .donor-team span,
+.progress-flex .S-label span,
+.btns-flex .donate-btns:hover,
+.team-members .team-header {
+  color: var(--blue-four);
+}
+.fs-matchers .fs-matcher .fs-matcher-image .fs-image-wrap-ratio::after {
+  -webkit-box-shadow: var(--blue-four-shadow);
+  -moz-box-shadow: var(--blue-four-shadow);
+  box-shadow: var(--blue-four-shadow);
+}
+.fs-partners .fs-partner-container:hover .fs-partner .fs-partner-dedication,
+.fs-full-donate-form .fs-donate-body .fs-donate-section .form-group.infield-label input.form-control:focus,
+.fs-full-donate-form .fs-donate-body .fs-donate-section .form-group select.form-control:focus,
+.donar-section .nav-tabs .nav-item.active .nav-link,
+.donar-section .nav-tabs .nav-item:hover .nav-link {
+  border-bottom-color: var(--blue-four);
+}
+.fs-full-donate-form .fs-donate-body .fs-donate-section .fs-payment-method .radio-inline span,
+.donate-members .donates_user:hover,
+.btns-flex .donate-btns:hover {
+  border-color: var(--blue-four);
+}
+.fs-full-donate-form .fs-donate-body .fs-donate-section .fs-payment-method .radio-inline input:checked + span:before {
+  border-top-color: var(--blue-four);
+}
+.donate-members .donates_user .donate-A .donate-triangle {
+  border-right-color: var(--blue-four);
+}
+.fs-left-border-triangle polygon,
+.fs-top-border-triangle polygon {
+  fill: var(--blue-five);
+}
+.donar-section .nav-tabs .nav-link {
+  color: var(--blue-six);
+}
+.fs-partners > div {
+  border-top-color: var(--blue-five);
+}
+.fs-partner .fs-bottom-triangle svg polygon {
+  fill: var(--blue-one);
+}
+.at-icon-wrapper {
+  background-color: var(--blue-four) !important;
+}
+.fs-header-top,
+.fs-header {
+  border-bottom-color: var(--dark-gray);
+}
+.fs-header-top .fs-logo-container {
+  border-color: var(--dark-gray);
+}
+.fs-header-top div.fs-bottom-triangle-border polygon {
+  fill: var(--dark-gray);
+}
+.fs-about-text .fs-btn-read-more,
+.fs-partners > div,
+.fs-partners .fs-btn-close-sidebar,
+.fs-footer {
+  background-color: var(--light-gray);
+}
+/* color code ends here */
+
+/* remove background image with kids from campaign page */
+.fs-header {
+  background: none;
+}

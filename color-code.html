@@ -1,0 +1,276 @@
+<div class="col color-options">
+    <input type="color" title="color" id="blue-one" value="#9cd2e7">
+    <input type="color" title="color" id="blue-two" value="#2c89aa">
+    <input type="color" title="color" id="blue-three" value="#3ba7ce">
+    <input type="color" title="color" id="blue-four" value="#023769">
+    <input type="color" title="color" id="blue-five" value="#82c0d9">
+    <input type="color" title="color" id="blue-six" value="#3a93b6">
+    <input type="color" title="color" id="gold" value="#be973c">
+    <input type="color" title="color" id="light-gray" value="#f2f2f2">
+    <input type="color" title="color" id="medium-gray" value="#666666">
+    <input type="color" title="color" id="dark-gray" value="#8c8c8c">
+</div>
+<div class="col color-code">
+    <input type="text" title="color-result" id="color-result" value="Color code will display here">
+    <button type="button" onclick="copyTextFunction()">Copy Color Code</button>
+</div>
+
+<style>
+    :root {
+        --blue-one: #9cd2e7;
+        --blue-two: #2c89aa;
+        --blue-three: #3ba7ce;
+        --blue-four: #023769;
+        --blue-four-shadow: inset 0 0 0 2px #023769;
+        --blue-four-transparent: #023769f2;
+        --blue-five: #82c0d9;
+        --blue-six: #3a93b6;
+        --gold: #be973c;
+        --light-gray: #f2f2f2;
+        --medium-gray: #666666;
+        --dark-gray: #8c8c8c;
+    }
+
+    .donar-section,
+    .fs-donate,
+    .fs-partners .fs-partner-container .fs-partner,
+    .fs-partners .fs-partner-container .fs-partner .fs-partner-dedication {
+        background-color: var(--blue-one);
+    }
+
+    .fs-donate .fs-donate-amounts {
+        color: var(--blue-two);
+    }
+
+    .fs-donate .fs-donate-amounts .fs-amount:focus {
+        border-color: var(--blue-two);
+    }
+
+    .fs-bonus .fs-goal .fs-original-goal:before,
+    .fs-goal .fs-goal-graph-container .fs-goal-graph .fs-goal-graph-fill {
+        background: var(--blue-three);
+    }
+
+    .fs-countdown .fs-countdown-widget .fs-countdown-unit .fs-countdown-description,
+    .fs-matchers .fs-matcher .fs-matcher-title,
+    .fs-partners .fs-partner-container .fs-partner .fs-partner-name,
+    .progress-flex .check-mark {
+        color: var(--blue-three);
+    }
+
+    .fs-footer .row>div:nth-of-type(3) h3 {
+        color: var(--blue-three);
+    }
+
+    .donate-button .donate-button-text:hover,
+    .progress-flex .progress .progress-bar {
+        background: var(--blue-three);
+    }
+
+    .fs-header .page-header h1 small,
+    .fs-header .page-header h2,
+    .fs-countdown h3 strong,
+    .fs-countdown .fs-countdown-widget .fs-countdown-sep,
+    .fs-about h4,
+    .fs-partners h3 span,
+    .fs-footer .row>div:nth-of-type(2) h3,
+    .donate-members .donates_user .team-up,
+    .btns-flex .view-btn:hover,
+    .fs-full-donate-form .fs-donate-body .fs-effective-donation-container .fs-effective-donation-amount-container {
+        color: var(--gold);
+    }
+
+    .fs-goal,
+    .fs-full-donate-form .fs-donate-body .fs-donation-options .fs-donation-option.fs-other label.selected:before,
+    .fs-full-donate-form .fs-donate-body .fs-donation-options .fs-donation-option.selected .fs-option-name>div:before,
+    .fs-thank-you .fs-title .fs-check,
+    .fs-bonus-badge,
+    .btns-flex .view-btn {
+        background-color: var(--gold);
+    }
+
+    .btns-flex .view-btn:hover {
+        border-color: var(--gold);
+    }
+
+    .fs-countdown,
+    .fs-goal .fs-goal-graph-container .fs-goal-graph .fs-goal-graph-fill .fs-goal-graph-fill-bonus,
+    .fs-btn,
+    .create-team,
+    .fs-full-donate-form .fs-donate-body .fs-donate-section .fs-payment-method .radio-inline input:checked+span,
+    .donate-members .donates_user .donate-A,
+    .team-donate-btn,
+    .btns-flex .donate-btns,
+    .progress-flex .extra-bar,
+    .donate-now {
+        background-color: var(--blue-four);
+    }
+
+    .fs-header:before {
+        background: var(--blue-four-transparent);
+    }
+
+    .fs-full-donate-form .fs-donate-body .fs-donate-section .fs-payment-method .radio-inline span,
+    .fs-full-donate-form .fs-donate-body .fs-donate-section .radio input:checked~span,
+    .fs-full-donate-form .fs-donate-body .fs-donate-section .radio-inline input:checked~span,
+    .fs-full-donate-form .fs-donate-body .fs-donate-section .checkbox input:checked~label,
+    .fs-full-donate-form .fs-donate-body .fs-donate-section .checkbox-inline input:checked~label,
+    .fs-full-donate-form .fs-donate-body .fs-donate-section h3,
+    .fs-footer .row>div:nth-of-type(1) h3,
+    .fs-partners .fs-partner-container .fs-partner .fs-partner-donation-amount,
+    .fs-partners h3,
+    .fs-about h3,
+    .fs-donate .fs-donate-amounts .fs-amount,
+    .fs-matchers .fs-matchers-intro strong,
+    .fs-full-donate-form .fs-donate-body .fs-donate-section .fs-custom,
+    .fs-full-donate-form .fs-donate-body .fs-donate-section .fs-paypal,
+    .fs-full-donate-form .fs-donate-body .fs-donate-section .form-group.infield-label input.form-control:focus,
+    .fs-full-donate-form .fs-donate-body .fs-donate-section .form-group.placeholder-focus label,
+    .fs-full-donate-form .fs-donate-body .fs-donate-section .form-group select.form-control:focus,
+    .fs-full-donate-form .fs-donate-body .fs-effective-donation-container .fs-effective-donation-description,
+    .fs-thank-you .fs-sub,
+    .donar-section .nav-tabs .nav-item.active .nav-link,
+    .donate-members .donates_user .left_userd .user-name,
+    .team-members .team-users .user-name,
+    .team-members .team-users .user-name a,
+    .team-members .team-users .donor-team span,
+    .progress-flex .S-label span,
+    .btns-flex .donate-btns:hover,
+    .team-members .team-header {
+        color: var(--blue-four);
+    }
+
+    .fs-matchers .fs-matcher .fs-matcher-image .fs-image-wrap-ratio::after {
+        -webkit-box-shadow: var(--blue-four-shadow);
+        -moz-box-shadow: var(--blue-four-shadow);
+        box-shadow: var(--blue-four-shadow);
+    }
+
+    .fs-partners .fs-partner-container:hover .fs-partner .fs-partner-dedication,
+    .fs-full-donate-form .fs-donate-body .fs-donate-section .form-group.infield-label input.form-control:focus,
+    .fs-full-donate-form .fs-donate-body .fs-donate-section .form-group select.form-control:focus,
+    .donar-section .nav-tabs .nav-item.active .nav-link,
+    .donar-section .nav-tabs .nav-item:hover .nav-link {
+        border-bottom-color: var(--blue-four);
+    }
+
+    .fs-full-donate-form .fs-donate-body .fs-donate-section .fs-payment-method .radio-inline span,
+    .donate-members .donates_user:hover,
+    .btns-flex .donate-btns:hover {
+        border-color: var(--blue-four);
+    }
+
+    .fs-full-donate-form .fs-donate-body .fs-donate-section .fs-payment-method .radio-inline input:checked+span:before {
+        border-top-color: var(--blue-four);
+    }
+
+    .donate-members .donates_user .donate-A .donate-triangle {
+        border-right-color: var(--blue-four);
+    }
+
+    .fs-left-border-triangle polygon,
+    .fs-top-border-triangle polygon {
+        fill: var(--blue-five);
+    }
+
+    .donar-section .nav-tabs .nav-link {
+        color: var(--blue-six);
+    }
+
+    .fs-partners>div {
+        border-top-color: var(--blue-five);
+    }
+
+    .fs-partner .fs-bottom-triangle svg polygon {
+        fill: var(--blue-one);
+    }
+
+    .at-icon-wrapper {
+        background-color: var(--blue-four) !important;
+    }
+
+    .fs-header-top,
+    .fs-header {
+        border-bottom-color: var(--dark-gray);
+    }
+
+    .fs-header-top .fs-logo-container {
+        border-color: var(--dark-gray);
+    }
+
+    .fs-header-top div.fs-bottom-triangle-border polygon {
+        fill: var(--dark-gray);
+    }
+
+    .fs-about-text .fs-btn-read-more,
+    .fs-partners>div,
+    .fs-partners .fs-btn-close-sidebar,
+    .fs-footer {
+        background-color: var(--light-gray);
+    }
+
+    .color-options input {
+        min-width: 100px;
+        min-height: 75px;
+        margin: 10px;
+    }
+
+    .color-code button {
+        margin: 10px;
+    }
+
+    .color-code,
+    .color-options {
+        text-align: center;
+    }
+</style>
+
+<script>
+    document.documentElement.style.cssText = `--blue-one: #9cd2e7;--blue-two: #2c89aa;--blue-three: #3ba7ce;--blue-four: #023769;--blue-four-shadow: inset 0 0 0 2px #023769;--blue-four-transparent: #023769f2;--blue-five: #82c0d9;--blue-six: #3a93b6;--gold: #be973c;--light-gray: #f2f2f2;--medium-gray: #666666;--dark-gray: #8c8c8c;`
+
+    // whenever a user changes the value of an input field, set the value to the css property of the same name
+
+    if (colorChangeInputs) { console.log('colorChangeInputs added') } else { var colorChangeInputs }
+
+    colorChangeInputs = document.querySelectorAll(".color-options input");
+
+    colorChangeInputs.forEach((input) => {
+        input.addEventListener("change", (e) => {
+            const chosenColorValue = e.target.value;
+            const colorName = e.target.getAttribute("id");
+            const rootStyle = document.documentElement.style;
+            if (colorName === "blue-four") {
+                /* --blue-four: #023769;
+            --blue-four-shadow: inset 0 0 0 2px #023769;
+            --blue-four-transparent: #023769f2; */
+                rootStyle.setProperty(`--${colorName}`, chosenColorValue);
+                rootStyle.setProperty(`--${colorName}-shadow`, `inset 0 0 0 2px ${chosenColorValue}`);
+                rootStyle.setProperty(`--${colorName}-transparent`, `${chosenColorValue}f2`);
+            } else if (colorName) {
+                rootStyle.setProperty(`--${colorName}`, chosenColorValue);
+            }
+        });
+    });
+
+    function copyTextFunction() {
+        /* Get the text field */
+        var copyText = document.getElementById("color-result");
+        copyText.value = `:root{${document.documentElement.style.cssText}}.donar-section,.fs-donate,.fs-partners .fs-partner-container .fs-partner,.fs-partners .fs-partner-container .fs-partner .fs-partner-dedication{background-color:var(--blue-one)}.fs-donate .fs-donate-amounts{color:var(--blue-two)}.fs-donate .fs-donate-amounts .fs-amount:focus{border-color:var(--blue-two)}.donate-button .donate-button-text:hover,.fs-bonus .fs-goal .fs-original-goal:before,.fs-goal .fs-goal-graph-container .fs-goal-graph .fs-goal-graph-fill,.progress-flex .progress .progress-bar{background:var(--blue-three)}.fs-countdown .fs-countdown-widget .fs-countdown-unit .fs-countdown-description,.fs-footer .row>div:nth-of-type(3) h3,.fs-matchers .fs-matcher .fs-matcher-title,.fs-partners .fs-partner-container .fs-partner .fs-partner-name,.progress-flex .check-mark{color:var(--blue-three)}.btns-flex .view-btn:hover,.donate-members .donates_user .team-up,.fs-about h4,.fs-countdown .fs-countdown-widget .fs-countdown-sep,.fs-countdown h3 strong,.fs-footer .row>div:nth-of-type(2) h3,.fs-full-donate-form .fs-donate-body .fs-effective-donation-container .fs-effective-donation-amount-container,.fs-header .page-header h1 small,.fs-header .page-header h2,.fs-partners h3 span{color:var(--gold)}.btns-flex .view-btn,.fs-bonus-badge,.fs-full-donate-form .fs-donate-body .fs-donation-options .fs-donation-option.fs-other label.selected:before,.fs-full-donate-form .fs-donate-body .fs-donation-options .fs-donation-option.selected .fs-option-name>div:before,.fs-goal,.fs-thank-you .fs-title .fs-check{background-color:var(--gold)}.btns-flex .view-btn:hover{border-color:var(--gold)}.btns-flex .donate-btns,.create-team,.donate-members .donates_user .donate-A,.donate-now,.fs-btn,.fs-countdown,.fs-full-donate-form .fs-donate-body .fs-donate-section .fs-payment-method .radio-inline input:checked+span,.fs-goal .fs-goal-graph-container .fs-goal-graph .fs-goal-graph-fill .fs-goal-graph-fill-bonus,.progress-flex .extra-bar,.team-donate-btn{background-color:var(--blue-four)}.fs-header:before{background:var(--blue-four-transparent)}.btns-flex .donate-btns:hover,.donar-section .nav-tabs .nav-item.active .nav-link,.donate-members .donates_user .left_userd .user-name,.fs-about h3,.fs-donate .fs-donate-amounts .fs-amount,.fs-footer .row>div:first-of-type h3,.fs-full-donate-form .fs-donate-body .fs-donate-section .checkbox input:checked~label,.fs-full-donate-form .fs-donate-body .fs-donate-section .checkbox-inline input:checked~label,.fs-full-donate-form .fs-donate-body .fs-donate-section .form-group select.form-control:focus,.fs-full-donate-form .fs-donate-body .fs-donate-section .form-group.infield-label input.form-control:focus,.fs-full-donate-form .fs-donate-body .fs-donate-section .form-group.placeholder-focus label,.fs-full-donate-form .fs-donate-body .fs-donate-section .fs-custom,.fs-full-donate-form .fs-donate-body .fs-donate-section .fs-payment-method .radio-inline span,.fs-full-donate-form .fs-donate-body .fs-donate-section .fs-paypal,.fs-full-donate-form .fs-donate-body .fs-donate-section .radio input:checked~span,.fs-full-donate-form .fs-donate-body .fs-donate-section .radio-inline input:checked~span,.fs-full-donate-form .fs-donate-body .fs-donate-section h3,.fs-full-donate-form .fs-donate-body .fs-effective-donation-container .fs-effective-donation-description,.fs-matchers .fs-matchers-intro strong,.fs-partners .fs-partner-container .fs-partner .fs-partner-donation-amount,.fs-partners h3,.fs-thank-you .fs-sub,.progress-flex .S-label span,.team-members .team-header,.team-members .team-users .donor-team span,.team-members .team-users .user-name,.team-members .team-users .user-name a{color:var(--blue-four)}.fs-matchers .fs-matcher .fs-matcher-image .fs-image-wrap-ratio::after{-webkit-box-shadow:var(--blue-four-shadow);-moz-box-shadow:var(--blue-four-shadow);box-shadow:var(--blue-four-shadow)}.donar-section .nav-tabs .nav-item.active .nav-link,.donar-section .nav-tabs .nav-item:hover .nav-link,.fs-full-donate-form .fs-donate-body .fs-donate-section .form-group select.form-control:focus,.fs-full-donate-form .fs-donate-body .fs-donate-section .form-group.infield-label input.form-control:focus,.fs-partners .fs-partner-container:hover .fs-partner .fs-partner-dedication{border-bottom-color:var(--blue-four)}.btns-flex .donate-btns:hover,.donate-members .donates_user:hover,.fs-full-donate-form .fs-donate-body .fs-donate-section .fs-payment-method .radio-inline span{border-color:var(--blue-four)}.fs-full-donate-form .fs-donate-body .fs-donate-section .fs-payment-method .radio-inline input:checked+span:before{border-top-color:var(--blue-four)}.donate-members .donates_user .donate-A .donate-triangle{border-right-color:var(--blue-four)}.fs-left-border-triangle polygon,.fs-top-border-triangle polygon{fill:var(--blue-five)}.donar-section .nav-tabs .nav-link{color:var(--blue-six)}.fs-partners>div{border-top-color:var(--blue-five)}.fs-partner .fs-bottom-triangle svg polygon{fill:var(--blue-one)}.at-icon-wrapper{background-color:var(--blue-four)!important}.fs-header,.fs-header-top{border-bottom-color:var(--dark-gray)}.fs-header-top .fs-logo-container{border-color:var(--dark-gray)}.fs-header-top div.fs-bottom-triangle-border polygon{fill:var(--dark-gray)}.fs-about-text .fs-btn-read-more,.fs-footer,.fs-partners .fs-btn-close-sidebar,.fs-partners>div{background-color:var(--light-gray)}`;
+
+        /* Select the text field */
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        navigator.clipboard.writeText(copyText.value);
+
+        /* Alert the copied text */
+        alert("Copied the color code! Now paste it in the Campaign Theme (Advanced) box in the campaign website settings.");
+    }
+
+</script>
+
+
+<h3>Header Text</h3>
+
+<h4>Smaller Header Text</h4>

@@ -1,5 +1,5 @@
 /* when the document loads, run the function */
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
 	/* new donate page */
 	if (window.location.href.includes(4970020)) {
 		const donateDescription = document.querySelector("#js-donate-form > div.content-box.full-row.intro-wrapper > div > p");

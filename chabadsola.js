@@ -1,7 +1,7 @@
 /* when the document loads, run the function */
 window.addEventListener("DOMContentLoaded", () => {
 	/* new donate page */
-	if (Co.ArticleId == "4970020") {
+	if (window.location.href.includes(4970020)) {
 		const donateDescription = document.querySelector("#js-donate-form > div.content-box.full-row.intro-wrapper > div > p");
 		const newDonateDescription = `<a href="/thesolatent">For The SOLA Tent click here</a><br /><a href="/crypto">To donate in Crypto click here <img src="https://thegivingblock.com/wp-content/uploads/2021/07/Bitcoin-btc-Logo.png" style="height:14px"></a><br /><a href="/5430417">To donate with Venmo click here <img src="https://cdn1.venmo.com/marketing/images/branding/venmo-icon.svg" style="height: 14px;"></a><br /><a href="https://www.theeidenproject.org">To donate to the Eiden Project click here</a><br /><a href="/3438459">To reserve for Friday night dinner click here</a>`;
 		donateDescription.innerHTML = newDonateDescription;
@@ -11,14 +11,14 @@ window.addEventListener("DOMContentLoaded", () => {
 		return;
 	}
 	/* SOLA tent membership page */
-	if (Co.ArticleId == "5511888") {
+	if (window.location.href.includes(5511888)) {
 		const tentMembership = document.querySelector("input[value=Monthly]");
 		tentMembership.checked = 1;
 		tentMembership.closest(".form-line").style.display = "none";
 		return;
 	}
 	/* SOLA tent new combined form */
-	if (Co.ArticleId == "5511892") {
+	if (window.location.href.includes(5511892)) {
 		const intention = document.querySelector("#input_8");
 		if (window.location.href.includes("tribe")) {
 			intention.selectedIndex = 1;
@@ -42,7 +42,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		}
 	}
 	/* redirect old donate page to new donate page */
-	if (Co.ArticleId == "3434581") {
+	if (window.location.href.includes(3434581)) {
 		window.location.href = "/donate";
 		return;
 	}

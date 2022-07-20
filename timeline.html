@@ -1,0 +1,512 @@
+<script>/**
+* Timeline - a horizontal / vertical timeline component
+* v. 1.2.0
+* Copyright Mike Collins
+* MIT License
+*/
+ "use strict"; var _slicedToArray = function (e, t) { if (Array.isArray(e)) return e; if (Symbol.iterator in Object(e)) return function (e, t) { var i = [], n = !0, l = !1, s = void 0; try { for (var a, r = e[Symbol.iterator](); !(n = (a = r.next()).done) && (i.push(a.value), !t || i.length !== t); n = !0); } catch (e) { l = !0, s = e } finally { try { !n && r.return && r.return() } finally { if (l) throw s } } return i }(e, t); throw new TypeError("Invalid attempt to destructure non-iterable instance") }; function timeline(e, v) { var g = [], p = "Timeline:", t = window.innerWidth, i = void 0, o = 0, b = { forceVerticalMode: { type: "integer", defaultValue: 600 }, horizontalStartPosition: { type: "string", acceptedValues: ["bottom", "top"], defaultValue: "top" }, mode: { type: "string", acceptedValues: ["horizontal", "vertical"], defaultValue: "vertical" }, moveItems: { type: "integer", defaultValue: 1 }, rtlMode: { type: "boolean", acceptedValues: [!0, !1], defaultValue: !1 }, startIndex: { type: "integer", defaultValue: 0 }, verticalStartPosition: { type: "string", acceptedValues: ["left", "right"], defaultValue: "left" }, verticalTrigger: { type: "string", defaultValue: "15%" }, visibleItems: { type: "integer", defaultValue: 3 } }; function n(e, t, i) { t.classList.add(i), e.parentNode.insertBefore(t, e), t.appendChild(e) } function l(e, t) { var i = e.getBoundingClientRect(), n = window.innerHeight || document.documentElement.clientHeight, l = b.verticalTrigger.defaultValue.match(/(\d*\.?\d*)(.*)/), s = t.unit, a = t.value, r = n; if ("px" === s && n <= a) { console.warn('The value entered for the setting "verticalTrigger" is larger than the window height. The default value will be used instead.'); var o = _slicedToArray(l, 3); a = o[1], s = o[2] } return "px" === s ? r = parseInt(r - a, 10) : "%" === s && (r = parseInt(r * ((100 - a) / 100), 10)), i.top <= r && i.left <= (window.innerWidth || document.documentElement.clientWidth) && 0 <= i.top + i.height && 0 <= i.left + i.width } function d(e, t) { e.style.webkitTransform = t, e.style.msTransform = t, e.style.transform = t } function c(e) { var t = "translate3d(-" + e.items[o].offsetLeft + "px, 0, 0)"; d(e.scroller, t) } function s(e) { var s, t, i, n, l, a, r; o = e.settings.rtlMode ? e.items.length > e.settings.visibleItems ? e.items.length - e.settings.visibleItems : 0 : e.settings.startIndex, e.timelineEl.classList.add("timeline--horizontal"), s = e, window.innerWidth > s.settings.forceVerticalMode && (s.itemWidth = s.wrap.offsetWidth / s.settings.visibleItems, s.items.forEach(function (e) { e.style.width = s.itemWidth + "px" }), s.scrollerWidth = s.itemWidth * s.items.length, s.scroller.style.width = s.scrollerWidth + "px", function () { var n = 0, l = 0; s.items.forEach(function (e, t) { e.style.height = "auto"; var i = e.offsetHeight; t % 2 == 0 ? l = l < i ? i : l : n = n < i ? i : n }); var i = "translateY(" + l + "px)"; s.items.forEach(function (e, t) { t % 2 == 0 ? (e.style.height = l + "px", "bottom" === s.settings.horizontalStartPosition ? (e.classList.add("timeline__item--bottom"), d(e, i)) : e.classList.add("timeline__item--top")) : (e.style.height = n + "px", "bottom" !== s.settings.horizontalStartPosition ? (e.classList.add("timeline__item--bottom"), d(e, i)) : e.classList.add("timeline__item--top")) }), s.scroller.style.height = l + n + "px" }()), c(e), function (e) { if (e.items.length > e.settings.visibleItems) { var t = document.createElement("button"), i = document.createElement("button"), n = e.items[0].offsetHeight; t.className = "timeline-nav-button timeline-nav-button--prev", i.className = "timeline-nav-button timeline-nav-button--next", t.textContent = "Previous", i.textContent = "Next", t.style.top = n + "px", i.style.top = n + "px", 0 === o ? t.disabled = !0 : o === e.items.length - e.settings.visibleItems && (i.disabled = !0), e.timelineEl.appendChild(t), e.timelineEl.appendChild(i) } }(e), function (e) { var t = e.timelineEl.querySelector(".timeline-divider"); t && e.timelineEl.removeChild(t); var i = e.items[0].offsetHeight, n = document.createElement("span"); n.className = "timeline-divider", n.style.top = i + "px", e.timelineEl.appendChild(n) }(e), i = (t = e).timelineEl.querySelectorAll(".timeline-nav-button"), n = t.timelineEl.querySelector(".timeline-nav-button--prev"), l = t.timelineEl.querySelector(".timeline-nav-button--next"), a = t.items.length - t.settings.visibleItems, r = parseInt(t.settings.moveItems, 10), [].forEach.call(i, function (e) { e.addEventListener("click", function (e) { e.preventDefault(), 0 === (o = this.classList.contains("timeline-nav-button--next") ? o += r : o -= r) || o < 0 ? (o = 0, n.disabled = !0, l.disabled = !1) : o === a || a < o ? (o = a, n.disabled = !1, l.disabled = !0) : (n.disabled = !1, l.disabled = !1), c(t) }) }) } function a() { g.forEach(function (e) { e.timelineEl.style.opacity = 0, e.timelineEl.classList.contains("timeline--loaded") || e.items.forEach(function (e) { n(e.querySelector(".timeline__content"), document.createElement("div"), "timeline__content__wrap"), n(e.querySelector(".timeline__content__wrap"), document.createElement("div"), "timeline__item__inner") }), function (e) { e.timelineEl.classList.remove("timeline--horizontal", "timeline--mobile"), e.scroller.removeAttribute("style"), e.items.forEach(function (e) { e.removeAttribute("style"), e.classList.remove("animated", "fadeIn", "timeline__item--left", "timeline__item--right") }); var t = e.timelineEl.querySelectorAll(".timeline-nav-button");[].forEach.call(t, function (e) { e.parentNode.removeChild(e) }) }(e), window.innerWidth <= e.settings.forceVerticalMode && e.timelineEl.classList.add("timeline--mobile"), "horizontal" === e.settings.mode && window.innerWidth > e.settings.forceVerticalMode ? s(e) : function (i) { var n = 0; i.items.forEach(function (e, t) { e.classList.remove("animated", "fadeIn"), !l(e, i.settings.verticalTrigger) && 0 < t ? e.classList.add("animated") : n = t, t % 2 == ("left" === i.settings.verticalStartPosition ? 1 : 0) && window.innerWidth > i.settings.forceVerticalMode ? e.classList.add("timeline__item--right") : e.classList.add("timeline__item--left") }); for (var e = 0; e < n; e += 1)i.items[e].classList.remove("animated", "fadeIn"); window.addEventListener("scroll", function () { i.items.forEach(function (e) { l(e, i.settings.verticalTrigger) && e.classList.add("fadeIn") }) }) }(e), e.timelineEl.classList.add("timeline--loaded"), setTimeout(function () { e.timelineEl.style.opacity = 1 }, 500) }) } e.length && [].forEach.call(e, function (e) { var t = e.id ? "#" + e.id : "." + e.className, i = "could not be found as a direct descendant of", n = e.dataset, l = void 0, s = void 0, a = void 0, r = {}; try { if (!(l = e.querySelector(".timeline__wrap"))) throw new Error(p + " .timeline__wrap " + i + " " + t); if (!(s = l.querySelector(".timeline__items"))) throw new Error(p + " .timeline__items " + i + " .timeline__wrap"); a = [].slice.call(s.children, 0) } catch (e) { return console.warn(e.message), !1 } Object.keys(b).forEach(function (e) { var t, i; r[e] = b[e].defaultValue, n[e] ? r[e] = n[e] : v && v[e] && (r[e] = v[e]), "integer" === b[e].type ? r[e] && (t = r[e], i = e, "number" == typeof t || t % 1 == 0 || (console.warn(p + ' The value "' + t + '" entered for the setting "' + i + '" is not an integer.'), 0)) || (r[e] = b[e].defaultValue) : "string" === b[e].type && b[e].acceptedValues && -1 === b[e].acceptedValues.indexOf(r[e]) && (console.warn(p + ' The value "' + r[e] + '" entered for the setting "' + e + '" was not recognised.'), r[e] = b[e].defaultValue) }); var o = b.verticalTrigger.defaultValue.match(/(\d*\.?\d*)(.*)/), d = r.verticalTrigger.match(/(\d*\.?\d*)(.*)/), c = _slicedToArray(d, 3), m = c[1], u = c[2], f = !0; if (m || (console.warn(p + " No numercial value entered for the 'verticalTrigger' setting."), f = !1), "px" !== u && "%" !== u && (console.warn(p + " The setting 'verticalTrigger' must be a percentage or pixel value."), f = !1), "%" === u && (100 < m || m < 0) ? (console.warn(p + " The 'verticalTrigger' setting value must be between 0 and 100 if using a percentage value."), f = !1) : "px" === u && m < 0 && (console.warn(p + " The 'verticalTrigger' setting value must be above 0 if using a pixel value."), f = !1), !1 === f) { var h = _slicedToArray(o, 3); m = h[1], u = h[2] } r.verticalTrigger = { unit: u, value: m }, r.moveItems > r.visibleItems && (console.warn(p + ' The value of "moveItems" (' + r.moveItems + ') is larger than the number of "visibleItems" (' + r.visibleItems + '). The value of "visibleItems" has been used instead.'), r.moveItems = r.visibleItems), r.startIndex > a.length - r.visibleItems && a.length > r.visibleItems ? (console.warn(p + " The 'startIndex' setting must be between 0 and " + (a.length - r.visibleItems) + " for this timeline. The value of " + (a.length - r.visibleItems) + " has been used instead."), r.startIndex = a.length - r.visibleItems) : a.length <= r.visibleItems ? (console.warn(p + " The number of items in the timeline must exceed the number of visible items to use the 'startIndex' option."), r.startIndex = 0) : r.startIndex < 0 && (console.warn(p + " The 'startIndex' setting must be between 0 and " + (a.length - r.visibleItems) + " for this timeline. The value of 0 has been used instead."), r.startIndex = 0), g.push({ timelineEl: e, wrap: l, scroller: s, items: a, settings: r }) }), a(), window.addEventListener("resize", function () { clearTimeout(i), i = setTimeout(function () { var e = window.innerWidth; e !== t && (a(), t = e) }, 250) }) } window.jQuery && (window.jQuery.fn.timeline = function (e) { return timeline(this, e), this });
+</script>
+<style>
+ .timeline {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative
+ }
+
+ .timeline *,
+ .timeline :after,
+ .timeline :before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit
+ }
+
+ .timeline:not(.timeline--horizontal):before {
+  background-color: #ddd;
+  bottom: 0;
+  content: '';
+  left: 50%;
+  margin-left: -2px;
+  position: absolute;
+  top: 0;
+  width: 4px;
+  z-index: 1
+ }
+
+ .timeline__wrap {
+  overflow: hidden;
+  position: relative;
+  z-index: 2
+ }
+
+ .timeline__item {
+  font-size: 16px;
+  font-size: 1rem;
+  padding: .625rem 2.5rem .625rem 0;
+  position: relative;
+  width: 50%;
+  z-index: 2
+ }
+
+ .timeline__item:after {
+  background-color: #fff;
+  border: 4px solid #ddd;
+  border-radius: 50%;
+  content: '';
+  height: 20px;
+  position: absolute;
+  right: -10px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 50%;
+  width: 20px;
+  z-index: 1
+ }
+
+ .timeline__item.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  opacity: 0
+ }
+
+ .timeline__item.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn
+ }
+
+ .timeline__item--left {
+  left: 0
+ }
+
+ .timeline__item--right {
+  left: 50%;
+  padding: .625rem 0 .625rem 2.5rem
+ }
+
+ .timeline__item--right:after {
+  left: -10px
+ }
+
+ .timeline__item--right .timeline__content:before {
+  border-bottom: 10px solid transparent;
+  border-right: 12px solid #ccc;
+  border-left: none;
+  border-top: 10px solid transparent;
+  left: -12px
+ }
+
+ .timeline__item--right .timeline__content:after {
+  border-bottom: 9px solid transparent;
+  border-right: 11px solid #fff;
+  border-left: none;
+  border-top: 9px solid transparent;
+  left: -10px
+ }
+
+ .timeline__content {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color: #333;
+  display: block;
+  padding: 1.25rem;
+  position: relative
+ }
+
+ .timeline__content:after,
+ .timeline__content:before {
+  content: '';
+  height: 0;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 50%;
+  width: 0
+ }
+
+ .timeline__content:before {
+  border-bottom: 10px solid transparent;
+  border-left: 12px solid #ccc;
+  border-top: 10px solid transparent;
+  right: -12px;
+  z-index: 1
+ }
+
+ .timeline__content:after {
+  border-bottom: 9px solid transparent;
+  border-left: 11px solid #fff;
+  border-top: 9px solid transparent;
+  right: -10px;
+  z-index: 2
+ }
+
+ .timeline__content h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 .625rem
+ }
+
+ .timeline__content p {
+  font-size: .9375rem;
+  line-height: 1.5;
+  margin-bottom: 10px
+ }
+
+ .timeline--horizontal {
+  font-size: 0;
+  padding: 0 3.125rem;
+  overflow: hidden;
+  white-space: nowrap
+ }
+
+ .timeline--horizontal .timeline-divider {
+  background-color: #ddd;
+  display: block;
+  height: 4px;
+  left: 40px;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 40px;
+  z-index: 1
+ }
+
+ .timeline--horizontal .timeline__items {
+  -webkit-transition: all .8s;
+  -o-transition: all .8s;
+  transition: all .8s;
+  will-change: transform
+ }
+
+ .timeline--horizontal .timeline__item {
+  display: inline-block;
+  left: 0;
+  padding: 0 0 2.5rem;
+  position: relative;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  vertical-align: top;
+  white-space: normal
+ }
+
+ .timeline--horizontal .timeline__item:after {
+  left: 50%;
+  right: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 100%
+ }
+
+ .timeline--horizontal .timeline__item .timeline__item__inner {
+  display: table;
+  height: 100%;
+  width: 100%
+ }
+
+ .timeline--horizontal .timeline__item .timeline__content__wrap {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom
+ }
+
+ .timeline--horizontal .timeline__item .timeline__content:before {
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #ccc;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 100%
+ }
+
+ .timeline--horizontal .timeline__item .timeline__content:after {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 100%
+ }
+
+ .timeline--horizontal .timeline__item--bottom {
+  padding: 2.5rem 0 0
+ }
+
+ .timeline--horizontal .timeline__item--bottom:after {
+  top: 0
+ }
+
+ .timeline--horizontal .timeline__item--bottom .timeline__content__wrap {
+  vertical-align: top
+ }
+
+ .timeline--horizontal .timeline__item--bottom .timeline__content:before {
+  border-bottom: 12px solid #ccc;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: none;
+  bottom: 100%;
+  top: auto
+ }
+
+ .timeline--horizontal .timeline__item--bottom .timeline__content:after {
+  border-bottom: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: none;
+  bottom: 100%;
+  top: auto
+ }
+
+ .timeline-nav-button {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  cursor: pointer;
+  display: block;
+  height: 40px;
+  outline: 0;
+  position: absolute;
+  text-indent: -9999px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 50%;
+  width: 40px;
+  z-index: 10
+ }
+
+ .timeline-nav-button:disabled {
+  opacity: .5;
+  pointer-events: none
+ }
+
+ .timeline-nav-button:before {
+  background-position: center center;
+  background-repeat: no-repeat;
+  content: '';
+  display: block;
+  height: 14px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  width: 8px
+ }
+
+ .timeline-nav-button--prev {
+  left: 0
+ }
+
+ .timeline-nav-button--prev:before {
+  background-image: url(../images/arrow-left.svg)
+ }
+
+ .timeline-nav-button--next {
+  right: 0
+ }
+
+ .timeline-nav-button--next:before {
+  background-image: url(../images/arrow-right.svg)
+ }
+
+ .timeline--mobile {
+  padding: 0
+ }
+
+ .timeline--mobile:before {
+  left: 10px !important;
+  margin: 0 !important
+ }
+
+ .timeline--mobile .timeline__item {
+  left: 0;
+  padding-left: 40px;
+  padding-right: 0;
+  width: 100%
+ }
+
+ .timeline--mobile .timeline__item:after {
+  left: 2px;
+  margin: 0
+ }
+
+ .timeline--mobile .timeline__item .timeline__content:before {
+  left: -12px;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid #ccc;
+  border-left: none;
+  border-top: 12px solid transparent
+ }
+
+ .timeline--mobile .timeline__item .timeline__content:after {
+  left: -10px;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #fff;
+  border-left: none;
+  border-top: 10px solid transparent
+ }
+
+ @-webkit-keyframes fadeIn {
+  0% {
+   opacity: 0;
+   top: 70px
+  }
+
+  100% {
+   opacity: 1;
+   top: 0
+  }
+ }
+
+ @keyframes fadeIn {
+  0% {
+   opacity: 0;
+   top: 70px
+  }
+
+  100% {
+   opacity: 1;
+   top: 0
+  }
+ }
+
+ @-webkit-keyframes liftUp {
+  0% {
+   top: 0
+  }
+
+  100% {
+   top: -15px
+  }
+ }
+
+ @keyframes liftUp {
+  0% {
+   top: 0
+  }
+
+  100% {
+   top: -15px
+  }
+ }
+</style>
+
+<div class="timeline">
+ <div class="timeline__wrap">
+  <div class="timeline__items">
+   <div class="timeline__item">
+    <div class="timeline__content">
+     <h2>2015 - 1,400 Websites</h2>
+     <p></p>
+    </div>
+   </div>
+   <div class="timeline__item">
+    <div class="timeline__content">
+     <h2>2011 - 1,300 Websites</h2>
+     <p></p>
+    </div>
+   </div>
+   <div class="timeline__item">
+    <div class="timeline__content">
+     <h2>2010 - 1,250 Websites</h2>
+     <p></p>
+    </div>
+   </div>
+   <div class="timeline__item">
+    <div class="timeline__content">
+     <h2>2009</h2>
+     <p>1,200 Websites</p>
+    </div>
+   </div>
+   <div class="timeline__item">
+    <div class="timeline__content">
+     <h2>2008</h2>
+     <p>1,000 Websites</p>
+    </div>
+   </div>
+   <div class="timeline__item">
+    <div class="timeline__content">
+     <h2>2007</h2>
+     <p>900 Websites</p>
+     <p>Blogs, Latest Photos, Windows Vista and Hebrew Support added</p>
+     <p>New Site Control Editor Launched</p>
+     <p>Event system out of beta</p>
+     <p>File storage limits increased</p>
+    </div>
+   </div>
+   <div class="timeline__item">
+    <div class="timeline__content">
+     <h2>2006</h2>
+     <p>600 Websites</p>
+     <p>A/V upload capabilities, email forwarding, kids zone, site banners, administrative section, and the event
+      system (in beta) added
+     </p>
+     <p>Three new Site Designs and the day school template launched</p>
+    </div>
+   </div>
+   <div class="timeline__item">
+    <div class="timeline__content">
+     <h2>2005</h2>
+     <p>400 Websites</p>
+     <p>Support for recurring events and instant credit card processing added</p>
+     <p>New Camp and preschool Websites unveiled</p>
+     <p>New Site Control Editor Launched</p>
+    </div>
+   </div>
+   <div class="timeline__item">
+    <div class="timeline__content">
+     <h2>2004</h2>
+     <p>300 Websites</p>
+     <p>Multiple Upload Functionality, Secure Forms, Online Form Submission Storage, event calendar
+      and Password protection ability added</p>
+     <p>First custom site (JewishLithuania) created</p>
+     <p>MyChabad.org Forum and Site Control 3.0 Launched</p>
+    </div>
+   </div>
+   <div class="timeline__item">
+    <div class="timeline__content">
+     <h2>2003</h2>
+     <p>200 Websites</p>
+     <p>Online Web Forms, local Shabbos times, PDF and video Uploading, Photo Galleries, Virtual Paths,
+      Template Gallery, and Spell Checker added</p>
+     <p>Site Control Version 2.0 Launched</p>
+     <p>Mordechai Sandhaus joins the Development Team</p>
+     <p>Judaica Store partnership Launched</p>
+    </div>
+   </div>
+   <div class="timeline__item">
+    <div class="timeline__content">
+     <h2>2002</h2>
+     <p>Chabad Centers Online Launched – Debut of Site Control</p>
+     <p>Web Publishing and Traffic Statistics added</p>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+
+<script>
+ timeline(document.querySelectorAll('.timeline'), {
+  verticalStartPosition: 'right',
+  verticalTrigger: '100px'
+ });
+</script>

@@ -1,5 +1,6 @@
 #iconsarea {
 	padding: 100px 10px;
+	background: revert;
 }
 
 #iconsarea h5 {
@@ -14,8 +15,4 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-}
-
-.hp-table > :nth-of-type(2n) {
-	background: revert;
 }

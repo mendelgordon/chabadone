@@ -7,4 +7,10 @@
 	line-height: 1.3em;
 	display: block;
 	font-family: Muli, sans-serif;
+	font-weight: 800;
+	margin-bottom: 40px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }

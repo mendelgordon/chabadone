@@ -32,8 +32,6 @@
 }
 
 .timeline__item {
-	font-size: 16px;
-	font-size: 1rem;
 	padding: 0.625rem 2.5rem 0.625rem 0;
 	position: relative;
 	width: 50%;

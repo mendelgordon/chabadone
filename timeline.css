@@ -12,7 +12,7 @@
 }
 
 .timeline:not(.timeline--horizontal):before {
-	background-color: #ddd;
+	background-color: #3498db;
 	bottom: 0;
 	content: "";
 	left: 50%;

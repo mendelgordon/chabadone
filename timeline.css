@@ -2,6 +2,8 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	position: relative;
+	max-width: 950px;
+	margin: auto;
 }
 
 .timeline *,

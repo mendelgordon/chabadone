@@ -51,11 +51,12 @@ window.addEventListener("DOMContentLoaded", () => {
 			});
 			newRow.addEventListener("focusin", () => {
 				newRow.parentNode.classList.add("focused");
-		});
-		newRow.addEventListener("focusout", () => {
-			newRow.parentNode.classList.remove("focused");
-		});
-		return;
+			});
+			newRow.addEventListener("focusout", () => {
+				newRow.parentNode.classList.remove("focused");
+			});
+			return;
+		}
 	}
 	/* SOLA tent membership page */
 	if (window.location.href.includes(5511888)) {

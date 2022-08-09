@@ -17,29 +17,29 @@ window.addEventListener("DOMContentLoaded", () => {
 		if (notes) {
 			notes.innerHTML = "Dedication or Note (e.g. Kiddush, Shteibel, or SOLA)";
 		}
-		const newRow = document.createElement("div");
-		newRow.classList.add("row", "new-row");
-		const col1 = document.createElement("div");
-		col1.classList.add("col", "flex-1");
-		const fieldWrapper = document.createElement("div");
-		fieldWrapper.classList.add("field-wrapper", "js-field-wrapper", "no-value");
-		const label = document.createElement("label");
-		label.setAttribute("for", "x_recurrences");
-		label.innerHTML = "Number of Recurrences";
-		const input = document.createElement("input");
-		input.setAttribute("id", "recurrences");
-		input.setAttribute("name", "x_recurrences");
-		input.setAttribute("type", "text");
-		input.setAttribute("display_name", "recurrences");
-		input.classList.add("active");
-		fieldWrapper.appendChild(label);
-		fieldWrapper.appendChild(input);
-		col1.appendChild(fieldWrapper);
-		newRow.appendChild(col1);
-		/* add an input field asking	for the number of months after the notes */
-		notes.closest(".content-box").insertBefore(newRow, notes.closest(".row"));
-		newRow.style.display = "none";
 		if (recurring && notes) {
+			const newRow = document.createElement("div");
+			newRow.classList.add("row", "new-row");
+			const col1 = document.createElement("div");
+			col1.classList.add("col", "flex-1");
+			const fieldWrapper = document.createElement("div");
+			fieldWrapper.classList.add("field-wrapper", "js-field-wrapper", "no-value");
+			const label = document.createElement("label");
+			label.setAttribute("for", "x_recurrences");
+			label.innerHTML = "Number of Recurrences";
+			const input = document.createElement("input");
+			input.setAttribute("id", "recurrences");
+			input.setAttribute("name", "x_recurrences");
+			input.setAttribute("type", "text");
+			input.setAttribute("display_name", "recurrences");
+			input.classList.add("active");
+			fieldWrapper.appendChild(label);
+			fieldWrapper.appendChild(input);
+			col1.appendChild(fieldWrapper);
+			newRow.appendChild(col1);
+			/* add an input field asking	for the number of months after the notes */
+			notes.closest(".content-box").insertBefore(newRow, notes.closest(".row"));
+			newRow.style.display = "none";
 			recurring.addEventListener("click", () => {
 				newRow.style.display = "flex";
 			});

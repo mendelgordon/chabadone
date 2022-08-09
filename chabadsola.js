@@ -26,7 +26,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			fieldWrapper.classList.add("field-wrapper", "js-field-wrapper", "no-value");
 			const label = document.createElement("label");
 			label.setAttribute("for", "x_recurrences");
-			label.innerHTML = "Number of Recurrences";
+			label.innerHTML = "Number of Months";
 			const input = document.createElement("input");
 			input.setAttribute("id", "recurrences");
 			input.setAttribute("name", "x_recurrences");

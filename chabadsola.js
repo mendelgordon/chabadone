@@ -26,7 +26,7 @@ window.addEventListener("load", () => {
 				const col1 = document.createElement("div");
 				col1.classList.add("col", "flex-1");
 				const fieldWrapper = document.createElement("div");
-				fieldWrapper.classList.add("field-wrapper", "js-field-wrapper", "no-value");
+				fieldWrapper.classList.add("field-wrapper", "js-field-wrapper", "focused");
 				const label = document.createElement("label");
 				label.setAttribute("for", "x_recurrences");
 				label.innerHTML = "Number of Recurrences";

@@ -106,9 +106,14 @@
 	border: 1px solid #ccc;
 	border-radius: 10px;
 	color: #333;
-	display: block;
+	display: flex;
 	padding: 1.25rem;
 	position: relative;
+	align-items: stretch;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	min-height: 400px;
 }
 
 .timeline__content:after,

@@ -32,7 +32,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			input.setAttribute("name", "x_recurrences");
 			input.setAttribute("type", "text");
 			input.setAttribute("display_name", "recurrences");
-			input.classList.add("active");
+			input.classList.add("active", "recurrences-input");
 			fieldWrapper.appendChild(label);
 			fieldWrapper.appendChild(input);
 			col1.appendChild(fieldWrapper);
@@ -40,15 +40,14 @@ window.addEventListener("DOMContentLoaded", () => {
 			/* add an input field asking	for the number of months after the notes */
 			notes.closest(".content-box").insertBefore(newRow, notes.closest(".row"));
 			newRow.style.display = "none";
+			const recurrencesInput = document.querySelector(".recurrences-input");
 			recurring.addEventListener("click", () => {
 				newRow.style.display = "flex";
 			});
 			oneTime.addEventListener("click", () => {
 				/* remove the input field asking for the number of months after the notes */
-				if (newRow) {
 					newRow.style.display = "none";
-					newRow.value = "";
-				}
+					recurrencesInput.value = "";
 			});
 			newRow.addEventListener("focusin", () => {
 				newRow.parentNode.classList.add("focused");

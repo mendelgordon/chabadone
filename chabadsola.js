@@ -40,7 +40,7 @@ window.addEventListener("load", () => {
 				fieldWrapper.appendChild(input);
 				col1.appendChild(fieldWrapper);
 				newRow.appendChild(col1);
-				notes.closest(".row").parentNode.insertBefore(newRow, notes);
+				notes.closest(".content-box").insertBefore(newRow, notes.closest(".row"));
 			});
 			oneTime.addEventListener("click", () => {
 				/* remove the input field asking for the number of months after the notes */

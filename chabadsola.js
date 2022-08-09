@@ -13,40 +13,39 @@ window.addEventListener("load", () => {
 		}
 		const recurring = document.querySelector("#frequency-toggle .monthly");
 		const oneTime = document.querySelector("#frequency-toggle .one-time");
-		const recurringInput = document.querySelector("input[name='x_recurring']");
 		const notes = document.querySelector("label[for=notes]");
 		if (notes) {
 			notes.innerHTML = "Dedication or Note (e.g. Kiddush, Shteibel, or SOLA)";
 		}
-		if (recurring && oneTime && recurringInput && notes) {
+		const newRow = document.createElement("div");
+		newRow.classList.add("row", "new-row", "recurring-row");
+		const col1 = document.createElement("div");
+		col1.classList.add("col", "flex-1");
+		const fieldWrapper = document.createElement("div");
+		fieldWrapper.classList.add("field-wrapper", "js-field-wrapper");
+		const label = document.createElement("label");
+		label.setAttribute("for", "x_recurrences");
+		label.innerHTML = "Number of Recurrences";
+		const input = document.createElement("input");
+		input.setAttribute("id", "recurrences");
+		input.setAttribute("name", "x_recurrences");
+		input.setAttribute("type", "text");
+		input.setAttribute("display_name", "recurrences");
+		input.classList.add("active");
+		fieldWrapper.appendChild(label);
+		fieldWrapper.appendChild(input);
+		col1.appendChild(fieldWrapper);
+		newRow.appendChild(col1);
+		/* add an input field asking	for the number of months after the notes */
+		notes.closest(".content-box").insertBefore(newRow, notes.closest(".row"));
+		if (recurring && notes) {
 			recurring.addEventListener("click", () => {
-				/* add an input field asking	for the number of months after the notes */
-				const newRow = document.createElement("div");
-				newRow.classList.add("row", "new-row", "recurring-row");
-				const col1 = document.createElement("div");
-				col1.classList.add("col", "flex-1");
-				const fieldWrapper = document.createElement("div");
-				fieldWrapper.classList.add("field-wrapper", "js-field-wrapper", "focused");
-				const label = document.createElement("label");
-				label.setAttribute("for", "x_recurrences");
-				label.innerHTML = "Number of Recurrences";
-				const input = document.createElement("input");
-				input.setAttribute("id", "recurrences");
-				input.setAttribute("name", "x_recurrences");
-				input.setAttribute("type", "text");
-				input.setAttribute("display_name", "recurrences");
-				input.classList.add("active");
-				fieldWrapper.appendChild(label);
-				fieldWrapper.appendChild(input);
-				col1.appendChild(fieldWrapper);
-				newRow.appendChild(col1);
-				notes.closest(".content-box").insertBefore(newRow, notes.closest(".row"));
+				newRow.style.display = "flex";
 			});
 			oneTime.addEventListener("click", () => {
 				/* remove the input field asking for the number of months after the notes */
-				const newRow = document.querySelector(".recurring-row");
 				if (newRow) {
-					newRow.remove();
+					newRow.style.display = "none";
 				}
 			});
 		}

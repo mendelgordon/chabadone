@@ -47,6 +47,7 @@ window.addEventListener("DOMContentLoaded", () => {
 				/* remove the input field asking for the number of months after the notes */
 				if (newRow) {
 					newRow.style.display = "none";
+					newRow.value = "";
 				}
 			});
 			newRow.addEventListener("focusin", () => {

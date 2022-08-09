@@ -29,7 +29,7 @@ window.addEventListener("load", () => {
 				fieldWrapper.classList.add("field-wrapper", "js-field-wrapper", "no-value");
 				const label = document.createElement("label");
 				label.setAttribute("for", "x_recurrences");
-				label.innerHTML = "Number of months the donation should continue for";
+				label.innerHTML = "Number of Recurrences";
 				const input = document.createElement("input");
 				input.setAttribute("id", "recurrences");
 				input.setAttribute("name", "x_recurrences");

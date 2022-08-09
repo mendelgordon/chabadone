@@ -109,7 +109,7 @@
 	display: flex;
 	padding: 1.25rem;
 	position: relative;
-	align-items: stretch;
+	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	flex-wrap: wrap;

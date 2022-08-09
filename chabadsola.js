@@ -2,10 +2,54 @@
 window.addEventListener("load", () => {
 	/* new donate page */
 	if (window.location.href.includes(4970020)) {
-		const donateDescription = document.querySelector("#js-donate-form > div.content-box.full-row.intro-wrapper > div > p");
+		const donateDescription = document.querySelector("#js-donate-form div.content-box p.description");
 		const newDonateDescription = `<a href="/thesolatent">For The SOLA Tent click here</a><br /><a href="/crypto">To donate in Crypto click here <img src="https://thegivingblock.com/wp-content/uploads/2021/07/Bitcoin-btc-Logo.png" style="height:14px"></a><br /><a href="/5430417">To donate with Venmo click here <img src="https://cdn1.venmo.com/marketing/images/branding/venmo-icon.svg" style="height: 14px;"></a><br /><a href="https://www.theeidenproject.org">To donate to the Eiden Project click here</a><br /><a href="/3438459">To reserve for Friday night dinner click here</a>`;
-		donateDescription.innerHTML = newDonateDescription;
-		document.querySelector("#subscribe").checked = 0;
+		if (donateDescription) {
+			donateDescription.innerHTML = newDonateDescription;
+		}
+		const subscribe = document.querySelector("#subscribe");
+		if (subscribe) {
+			subscribe.checked = 0;
+		}
+		const recurring = document.querySelector("#frequency-toggle .monthly");
+		const oneTime = document.querySelector("#frequency-toggle .one-time");
+		const recurringInput = document.querySelector("input[name='x_recurring']");
+		const notes = document.querySelector("label[for=notes]");
+		if (notes) {
+			notes.innerHTML = "Dedication or Note (e.g. Kiddush, Shteibel, or SOLA)";
+		}
+		if (recurring && oneTime && recurringInput && notes) {
+			recurring.addEventListener("click", () => {
+				/* add an input field asking	for the number of months after the notes */
+				const newRow = document.createElement("div");
+				newRow.classList.add("row", "new-row", "recurring-row");
+				const col1 = document.createElement("div");
+				col1.classList.add("col", "flex-1");
+				const fieldWrapper = document.createElement("div");
+				fieldWrapper.classList.add("field-wrapper", "js-field-wrapper", "no-value");
+				const label = document.createElement("label");
+				label.setAttribute("for", "x_recurrences");
+				label.innerHTML = "Number of months the donation should continue for";
+				const input = document.createElement("input");
+				input.setAttribute("id", "recurrences");
+				input.setAttribute("name", "x_recurrences");
+				input.setAttribute("type", "text");
+				input.setAttribute("display_name", "recurrences");
+				input.classList.add("active");
+				fieldWrapper.appendChild(label);
+				fieldWrapper.appendChild(input);
+				col1.appendChild(fieldWrapper);
+				newRow.appendChild(col1);
+				notes.closest(".row").parentNode.insertBefore(newRow, notes);
+			});
+			oneTime.addEventListener("click", () => {
+				/* remove the input field asking for the number of months after the notes */
+				const newRow = document.querySelector(".recurring-row");
+				if (newRow) {
+					newRow.remove();
+				}
+			});
+		}
 		return;
 	}
 	/* SOLA tent membership page */

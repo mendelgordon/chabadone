@@ -18,7 +18,7 @@ window.addEventListener("load", () => {
 			notes.innerHTML = "Dedication or Note (e.g. Kiddush, Shteibel, or SOLA)";
 		}
 		const newRow = document.createElement("div");
-		newRow.classList.add("row", "new-row", "recurring-row");
+		newRow.classList.add("row", "new-row");
 		const col1 = document.createElement("div");
 		col1.classList.add("col", "flex-1");
 		const fieldWrapper = document.createElement("div");

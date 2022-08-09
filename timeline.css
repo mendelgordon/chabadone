@@ -156,6 +156,13 @@
 	margin-bottom: 10px;
 }
 
+.timeline__inner {
+	background-color: white;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+}
+
 .timeline--horizontal {
 	font-size: 0;
 	padding: 0 3.125rem;

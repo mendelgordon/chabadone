@@ -38,6 +38,7 @@ window.addEventListener("load", () => {
 		newRow.appendChild(col1);
 		/* add an input field asking	for the number of months after the notes */
 		notes.closest(".content-box").insertBefore(newRow, notes.closest(".row"));
+		newRow.style.display = "none";
 		if (recurring && notes) {
 			recurring.addEventListener("click", () => {
 				newRow.style.display = "flex";

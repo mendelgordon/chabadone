@@ -57,14 +57,14 @@
 		left: 0;
 		border-top-left-radius: 10px;
 		border-bottom-left-radius: 10px;
-		border-left: 1px solid #ccc;
+		border-left-color: #ccc;
 	}
 
 	.timeline__item--right img {
 		right: 0;
 		border-top-right-radius: 10px;
 		border-bottom-right-radius: 10px;
-		border-right: 1px solid #ccc;
+		border-right-color: #ccc;
 	}
 
 	.timeline__item--left ul,

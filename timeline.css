@@ -22,20 +22,20 @@
 	position: absolute;
 	top: 0;
 	width: 4px;
-	/* z-index: 1; */
+	z-index: 1;
 }
 
 .timeline__wrap {
 	overflow: hidden;
 	position: relative;
-	/* z-index: 2; */
+	z-index: 2;
 }
 
 .timeline__item {
 	padding: 0.625rem 2.5rem 0.625rem 0;
 	position: relative;
 	width: 50%;
-	/* z-index: 2; */
+	z-index: 2;
 }
 
 .timeline__item img {
@@ -57,7 +57,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	
+
 	/* A bit of padding around image */
 	padding: 1em;
 
@@ -129,7 +129,7 @@
 	transform: translateY(-50%);
 	top: 50%;
 	width: 20px;
-	/* z-index: 1; */
+	z-index: 1;
 }
 
 .timeline__item.animated {
@@ -201,7 +201,7 @@
 	border-left: 12px solid #ccc;
 	border-top: 10px solid transparent;
 	right: -12px;
-	/* z-index: 1; */
+	z-index: 1;
 }
 
 .timeline__content:after {
@@ -209,7 +209,7 @@
 	border-left: 11px solid #fff;
 	border-top: 9px solid transparent;
 	right: -10px;
-	/* z-index: 2; */
+	z-index: 2;
 }
 
 .timeline__content h2 {
@@ -241,7 +241,7 @@
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 	right: 40px;
-	/* z-index: 1; */
+	z-index: 1;
 }
 
 .timeline--horizontal .timeline__items {
@@ -358,7 +358,7 @@
 	transform: translateY(-50%);
 	top: 50%;
 	width: 40px;
-	/* z-index: 10; */
+	z-index: 10;
 }
 
 .timeline-nav-button:disabled {

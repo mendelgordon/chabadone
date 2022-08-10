@@ -89,6 +89,7 @@
 		position: absolute;
 		object-position: top;
 		top: 0;
+		max-height: initial;
 	}
 
 	.timeline__item--left img {

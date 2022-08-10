@@ -55,10 +55,14 @@
 
 	.timeline__item--left img {
 		left: 0;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
 	}
 
 	.timeline__item--right img {
 		right: 0;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
 	}
 
 	.timeline__item--left ul,

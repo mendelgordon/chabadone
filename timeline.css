@@ -45,22 +45,20 @@
 }
 
 @media screen and (min-width: 1000px) {
-	.timeline__item--left img {
+	.timeline__content img {
 		width: 44%;
 		height: 100%;
 		position: absolute;
-		top: 0;
-		left: 0;
 		object-position: top;
+		top: 0;
+	}
+
+	.timeline__item--left img {
+		left: 0;
 	}
 
 	.timeline__item--right img {
-		width: 44%;
-		height: 100%;
-		position: absolute;
-		top: 0;
 		right: 0;
-		object-position: top;
 	}
 
 	.timeline__item--left ul,

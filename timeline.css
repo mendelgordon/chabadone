@@ -63,11 +63,11 @@
 		object-position: top;
 	}
 
-	.timeline__item--left ul {
+	.timeline__item--left ul, .timeline__item--left h2 {
 		margin-left: 200px;
 	}
 
-	.timeline__item--right ul {
+	.timeline__item--right ul, .timeline__item--right h2 {
 		margin-right: 200px;
 	}
 }

@@ -64,12 +64,12 @@
 	}
 
 	.timeline__item--left ul,
-	.timeline__item--left h2 {
+	.timeline__item--left .timeline__content h2 {
 		margin-left: 200px;
 	}
 
 	.timeline__item--right ul,
-	.timeline__item--right h2 {
+	.timeline__item--right .timeline__content h2 {
 		margin-right: 200px;
 	}
 }

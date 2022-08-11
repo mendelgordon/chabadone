@@ -1,6 +1,10 @@
-.content {
+.co_body {
 	max-width: 1200px;
 	margin: auto;
+}
+
+.content h3 b {
+	display: none;
 }
 
 .timeline {

@@ -15,7 +15,8 @@ window.addEventListener("DOMContentLoaded", () => {
 		const oneTime = document.querySelector("#frequency-toggle .one-time");
 		const notes = document.querySelector("label[for=notes]");
 		if (notes) {
-			notes.innerHTML = "Dedication or Note (e.g. Kiddush, Shteibel, or SOLA)";
+			notes.innerHTML = "Dedication or Note<span class='req'>*</span> (e.g. Kiddush, Shteibel, or SOLA)";
+			notes.required	= true;
 		}
 		if (recurring && notes) {
 			const newRow = document.createElement("div");
@@ -43,11 +44,13 @@ window.addEventListener("DOMContentLoaded", () => {
 			const recurrencesInput = document.querySelector(".recurrences-input");
 			recurring.addEventListener("click", () => {
 				newRow.style.display = "flex";
+				recurrencesInput.required = true;
 			});
 			oneTime.addEventListener("click", () => {
 				/* remove the input field asking for the number of months after the notes */
 					newRow.style.display = "none";
 					recurrencesInput.value = "";
+					recurrencesInput.required = false;
 			});
 			newRow.addEventListener("focusin", () => {
 				newRow.parentNode.classList.add("focused");

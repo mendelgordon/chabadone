@@ -1,7 +1,6 @@
-#header .branding-search {
+#header .branding-search a {
  content: url(https://www.chabadjls.org/media/images/1200/jILh12006925.png);
- height: 85%;
- max-height: 100px;
+ max-height: 80px;
 }
 @media screen and (max-width: 460px) {
  #header .cs-mobile-menu-open {

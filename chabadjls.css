@@ -1,0 +1,10 @@
+#header_container .branding-search {
+ content: url(/media/images/1200/jILh12006925.png?rnd=o8D7sCT1xd4967L);
+ height: 85%;
+ max-height: 100px;
+}
+@media screen and (max-width: 460px) {
+ #header_container .cs-mobile-menu-open {
+  top: 0%;
+ }
+}

@@ -1,6 +1,6 @@
 const popupSubscribeMessage = document.querySelector("#PopupSubscribeMessage");
 if (popupSubscribeMessage) {
-	const firstLastNameInputs = '<div class="clearfix" style="padding: 4px 0;"><input type="text" maxlength="50" class="co_global_input float_left active" style="width: 49%;" value="" required="" display_name="Name" id="Fname" name="fname" placeholder="Name"><input type="text" maxlength="50" class="co_global_input float_right active" style="width: 49%;" value="" required="" display_name="Location" id="Lname" name="lname" placeholder="Location"></div>';
+	const firstLastNameInputs = '<div class="clearfix" style="padding: 4px 0;"><input type="text" maxlength="50" class="co_global_input float_left active" style="width: 49%;" value="" required="" display_name="Name" id="Fname" name="fname" placeholder="Name"><input type="text" maxlength="50" class="co_global_input float_right active" style="width: 49%;" value="" required="" display_name="Address" id="Lname" name="lname" placeholder="Address"></div>';
 	const popupSubscribeForm = document.querySelector("#PopupSubscribeMessage form div div");
 	if (popupSubscribeForm) {
 		popupSubscribeForm.style.height = "auto";
@@ -17,8 +17,8 @@ if (homeSubscribeMessage) {
 		firstNameInputLabel.innerHTML = "Name";
 		firstNameInput.placeholder = "Name";
 		firstNameInput.vmessage = "Please enter name";
-		lastNameInputLabel.innerHTML = "Location";
-		lastNameInput.placeholder = "Location";
-		lastNameInput.vmessage = "Please enter location";
+		lastNameInputLabel.innerHTML = "Address";
+		lastNameInput.placeholder = "Address";
+		lastNameInput.vmessage = "Please enter address";
 	}
 }

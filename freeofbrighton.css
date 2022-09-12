@@ -12,6 +12,7 @@ body {
 #header .branding-search a {
  content: url(https://creativesls.com/cs4u_ca/free/t5/images/logo-banner.png);
  max-height: 80px;
+ filter: invert(60%) sepia(100%) saturate(568%) hue-rotate(359deg) brightness(102%) contrast(105%);
 }
 @media screen and (max-width: 460px) {
  #header .cs-mobile-menu-open {

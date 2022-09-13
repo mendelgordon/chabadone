@@ -1,0 +1,5 @@
+/* hide blog sidebar */
+#co_ads_container.ads.g260:has(.recent-listing) {
+display: none;
+}
+

@@ -4,3 +4,7 @@
 display: none;
 }
 
+/* hide whatsapp button link ad */
+#whatsapp-widget .ww-icon .ww-link {
+display: none;
+}

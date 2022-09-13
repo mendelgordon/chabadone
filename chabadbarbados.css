@@ -1,5 +1,6 @@
 /* hide blog sidebar */
-#co_ads_container.ads.g260:has(.recent-listing) {
+#co_ads_container.ads.g260:has(.recent-listing),
+.message.older-posts {
 display: none;
 }
 

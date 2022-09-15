@@ -16,6 +16,8 @@
  background-color: #f5deb361;
  border-radius: 36px;
  padding: 25px;
+ border: 2px gray;
+ border-style: inset;
 }
 .hero-split img {
  border-radius: 17px;

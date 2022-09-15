@@ -1,9 +1,11 @@
-/* import https://chabad.netlify.app/MinionPro-Regular.otf as a font */
-
+/* import https://chabad.netlify.app/MinionPro-Regular.otf as a font to be used on the chabadbinghamfarms.com page where this css file is added with a link tag */
 @font-face {
-  font-family: MinionPro;
-  src: url(https://chabad.netlify.app/MinionPro-Regular.otf);
+  font-family: 'Minion Pro';
+  src: url('https://chabad.netlify.app/MinionPro-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
 }
+
 .master-content-wrapper {display: none !important;}
 .image {
  max-width: 30%!important;
@@ -25,7 +27,7 @@ p,
  font-size: 1.4em !important;
 }
 h1.heading {
- font-family: MinionPro, Arial, Helvetica, sans-serif;
+ font-family: 'Minion Pro', Arial, Helvetica, sans-serif;
 }
 
 .hero-heading-right {

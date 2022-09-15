@@ -1,4 +1,4 @@
-/*body*//*
+/*body*/ /*
 body {
 	background: url(https://creativesls.com/cs4u_ca/free/t5/images/back-logo.jpg) top center fixed repeat-x !important;
 }
@@ -10,14 +10,14 @@ body {
 } 
 /*header*/
 #header .branding-search a {
- content: url(https://creativesls.com/cs4u_ca/free/t5/images/logo-banner.png);
- max-height: 80px;
- filter: brightness(0) saturate(100%) invert(60%) sepia(100%) saturate(568%) hue-rotate(359deg) brightness(102%) contrast(105%);
+	content: url(https://creativesls.com/cs4u_ca/free/t5/images/logo-banner.png);
+	max-height: 80px;
+	filter: brightness(0) saturate(100%) invert(73%) sepia(14%) saturate(1351%) hue-rotate(171deg) brightness(104%) contrast(96%);
 }
 @media screen and (max-width: 460px) {
- #header .cs-mobile-menu-open {
-  top: 0%;
- }
+	#header .cs-mobile-menu-open {
+		top: 0%;
+	}
 }
 /*.cco_body #header_branding {
 	background-image: none;
@@ -158,7 +158,7 @@ background-color: #838182;
 }
 .promo_slider a.cycle-nextNav {
 	/* right: -10px!important; */
-	/* left: auto; */
+/* left: auto; */
 /*	background-position: -75px 0;
 }
 

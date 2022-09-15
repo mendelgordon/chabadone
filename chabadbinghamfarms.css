@@ -1,4 +1,4 @@
-.master-content-wrapper {display: none;}
+.master-content-wrapper {display: none !important;}
 .hero-heading-right {
  position: relative;
  padding: 80px 30px;

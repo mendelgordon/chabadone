@@ -5,13 +5,13 @@
  border-radius: 232px !important;
 }
 .hero-wrapper {
- background-color: wheat;
+ background-color: #f5deb361;
  border-radius: 36px;
  padding: 25px;
 }
 .hero-split img {
  border-radius: 17px;
- max-width: 50vw !important;
+ max-width: 409px !important;
  width: 100%;
 }
 p,

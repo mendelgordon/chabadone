@@ -18,3 +18,8 @@ display: none;
 #calendar.day .item .content {
  width: 100%;
 }
+
+/* hide about header on home page */
+.widget-4.message.custom.v380.feed .widget_header h5 {
+ display: none;
+}

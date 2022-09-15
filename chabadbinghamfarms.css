@@ -1,4 +1,8 @@
 .master-content-wrapper {display: none !important;}
+.hero-split img {border-radius: 35px;}
+.image {
+ max-width: 30%!important;
+}
 .hero-heading-right {
  position: relative;
  padding: 80px 30px;
@@ -90,7 +94,7 @@
 }
 
 .image {
- max-width: 30%!important;
+ max-width: 30%;
  margin-bottom: 60px;
  border-radius: 0px;
  mix-blend-mode: darken;

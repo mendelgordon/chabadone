@@ -11,6 +11,8 @@
 }
 .hero-split img {
  border-radius: 17px;
+ max-width: 50vw !important;
+ width: 100%;
 }
 p,
 .button-primary {

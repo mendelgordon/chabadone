@@ -95,7 +95,7 @@
 }
 
 .image {
- max-width: 30%;
+ max-width: 30%!important;
  margin-bottom: 60px;
  border-radius: 0px;
  mix-blend-mode: darken;

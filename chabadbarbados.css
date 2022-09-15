@@ -13,3 +13,8 @@ display: none;
 .cs-f-social-icons {
  font-size: 50px;
 }
+
+/* fix calendar issue */
+#calendar.day .item .content {
+ width: 100%;
+}

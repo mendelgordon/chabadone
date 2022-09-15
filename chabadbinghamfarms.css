@@ -150,7 +150,7 @@ html .co_body .container .hero-wrapper div.hero-split p {
  align-items: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
  .container {
    max-width: 728px;
  }

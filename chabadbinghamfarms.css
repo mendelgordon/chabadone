@@ -1,8 +1,18 @@
 .master-content-wrapper {display: none !important;}
-.hero-split img {border-radius: 35px;}
 .image {
  max-width: 30%!important;
+ border: 2px solid #c3c3b0;
+ border-radius: 232px !important;
 }
+.hero-wrapper {
+ background-color: wheat;
+ border-radius: 36px;
+ padding: 25px;
+}
+.hero-split img {
+ border-radius: 17px;
+}
+
 .hero-heading-right {
  position: relative;
  padding: 80px 30px;

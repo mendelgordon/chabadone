@@ -27,7 +27,7 @@ p,
  font-size: 1.4em !important;
 }
 h1.heading,
-.hero-split p {
+.co_body .container .hero-wrapper .hero-split p {
  font-family: 'Minion Pro', Arial, Helvetica, sans-serif;
 }
 

@@ -47,7 +47,7 @@ iframe {
 		width: 100%;
 	}
 	.right-of-lakform {
-		width: 100%;
+		max-width: 100%;
 	}
 }
 

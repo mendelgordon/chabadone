@@ -38,6 +38,7 @@ iframe {
 }
 .right-of-lakform {
   width: 48%;
+  display: inline-block;
 }
 @media screen and (max-width: 700px) {
  iframe {

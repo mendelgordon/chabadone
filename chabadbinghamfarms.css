@@ -32,6 +32,10 @@ h1.heading,
 html .co_body .container .hero-wrapper div.hero-split p {
  font-family: 'Minion Pro', Arial, Helvetica, sans-serif;
 }
+iframe {
+  max-width: 500px;
+  float: left;
+}
 
 .hero-heading-right {
  position: relative;

@@ -37,10 +37,16 @@ iframe {
   float: left;
   margin: 10px;
 }
+.right-of-lakform {
+  width: 48%;
+}
 @media screen and (max-width: 700px) {
  iframe {
   width: 100%;
  }
+  .right-of-lakform {
+    width: 100%;
+  }
 }
 
 

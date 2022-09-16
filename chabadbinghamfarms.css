@@ -49,6 +49,21 @@ iframe {
 	.right-of-lakform {
 		max-width: 100%;
 	}
+  .co_body .article-body .hero-split img {
+    border-radius: 454px;
+    max-width: 409px;
+    height: 188px;
+}
+.container .hero-wrapper {
+  align-items: center;
+}
+.container .hero-split {
+  max-width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
 }
 
 .hero-heading-right {

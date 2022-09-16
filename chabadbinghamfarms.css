@@ -13,11 +13,10 @@
  border-radius: 232px !important;
 }
 .hero-wrapper {
- background-color: #f5deb361;
- border-radius: 36px;
- padding: 25px;
- border: 2px gray;
- border-style: inset;
+  background-color: #f5deb361;
+  border-radius: 36px;
+  padding: 25px;
+  border: 2px #f1a329 solid;
 }
 .hero-split img {
  border-radius: 17px;
@@ -111,15 +110,15 @@ iframe {
 }
 
 .button-primary {
- padding: 12px 25px;
- background-color: #1a1b1f;
- -webkit-transition: all 200ms ease;
- transition: all 200ms ease;
- color: #fff;
- font-size: 12px;
- line-height: 20px;
- letter-spacing: 2px;
- text-transform: uppercase;
+  padding: 12px 25px;
+  background-color: #9e6d40;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .button-primary:hover {

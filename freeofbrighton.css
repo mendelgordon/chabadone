@@ -8,7 +8,7 @@ body {
 #cco_body_wrap {
 	background-image:none!important
 } 
-/*header*/
+/*header*//*
 #header .branding-search a {
 	content: url(https://creativesls.com/cs4u_ca/free/t5/images/logo-banner.png);
 	max-height: 80px;

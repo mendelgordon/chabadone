@@ -23,6 +23,7 @@ if (window.location.href.includes("4970020")) {
 		const donateButton = document.querySelector(".js-donate-button").parentNode.parentNode;
 		/* add screen-2 class and content-box class to paypal instructions so they are hidden */
 		paypalInstructions.classList.add("screen-2", "content-box");
+		paypalInstructions.style = "";
 		donateButton.parentNode.insertBefore(paypalInstructions, donateButton);
 	}
 

@@ -21,7 +21,7 @@ if (window.location.href.includes("4970020")) {
 	const paypalInstructions = document.querySelector(".paypal-wrapper");
 	if (paypalInstructions) {
 		const donateButton = document.querySelector(".js-donate-button").parentNode.parentNode;
-		paypalInstructions.style = "";
+		paypalInstructions.removeAttribute('style');
 		/* add screen-2 class and content-box class to paypal instructions so they are hidden */
 		paypalInstructions.classList.add("screen-2", "content-box");
 		/* change innerHTML of paypal	instructions from '\n\t\t\t\t\t\t\t  Click Donate below to complete your donation on PayPal’s site....\n\t\t\t\t\t\t  ' to Click the donate icon below to complete your donation by credit card (We use PayPal to process credit card donations).*/

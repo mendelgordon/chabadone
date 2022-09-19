@@ -1,3 +1,20 @@
-form[id="5637523"] .form-label-left label {
-	color: #8f531b;
+form[id="5637523"] .form-label-left label,
+html body.cco_body form[id="5637523"] p,
+form[id="5637523"] .form-all {
+	color: #51524d;
+}
+form[id="5637523"] ::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #51524d;
+	opacity: 1; /* Firefox */
+}
+
+form[id="5637523"] :-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #51524d;
+}
+
+form[id="5637523"] ::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: #51524d;
 }

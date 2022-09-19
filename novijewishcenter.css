@@ -1,0 +1,7 @@
+@media only screen and (min-width: 1000px) {
+	#donate-wrapper main form .content-box:not(.amount-wrapper) {
+		width: 71%;
+		max-width: 96%;
+		padding: 0 2% 20px;
+	}
+}

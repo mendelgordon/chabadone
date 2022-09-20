@@ -1,6 +1,7 @@
 form[id="5637523"] .form-label-left label,
 html body.cco_body form[id="5637523"] p,
-form[id="5637523"] .form-all {
+form[id="5637523"] .form-all,
+form[id="5637523"]  .form-header-group h2 {
 	color: #51524d;
 }
 form[id="5637523"] ::placeholder {
@@ -71,4 +72,8 @@ img.fadeIn {
 	100% {
 		transform: scale(1);
 	}
+}
+
+.form-iframe {
+	margin: 0 15px;
 }

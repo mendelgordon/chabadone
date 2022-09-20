@@ -22,7 +22,7 @@ form[id="5637523"] ::-ms-input-placeholder {
 
 form[id="5637523"] .form-all,
 img.fadeIn {
-	opacity: 0;
+	opacity: 0.1;
 }
 form[id="5637523"] .form-all.fadeIn,
 img.fadeIn {

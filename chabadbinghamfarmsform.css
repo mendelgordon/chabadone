@@ -20,10 +20,6 @@ form[id="5637523"] ::-ms-input-placeholder {
 }
 /* make all form-all elements only show once the fadeIn class has been added to them, and once it's added they should scroll in from the right	*/
 
-form[id="5637523"] .form-all,
-img.fadeIn {
-	opacity: 0.1;
-}
 form[id="5637523"] .form-all.fadeIn,
 img.fadeIn {
 	-webkit-animation: slide-in-right 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;

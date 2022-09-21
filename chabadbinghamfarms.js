@@ -16,9 +16,7 @@ if (window.location.href.includes(5637523)) {
 			}
 		});
 	};
-	const options = {
-		threshold: 0.5,
-	};
+	const options = {};
 	const myObserver = new IntersectionObserver(callback, options);
 	entries.forEach((formLine) => {
 		myObserver.observe(formLine);

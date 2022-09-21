@@ -51,3 +51,19 @@ img.fadeIn {
 	/* make the text wrap even if it's a very long word */
 	word-wrap: break-word;
 }
+@media screen and (min-width: 500px) {
+	.desktop-lak {
+		display: block;
+	}
+	.mobile-lak {
+		display: none;
+	}
+}
+@media screen and (max-width: 500px) {
+	.desktop-lak {
+		display: none;
+	}
+	.mobile-lak {
+		display: block;
+	}
+}

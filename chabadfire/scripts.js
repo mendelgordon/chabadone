@@ -1,6 +1,9 @@
 const slideshow = `<div class="slider"><div class="slide active"><img src="https://w2.chabad.org/media/images/1203/aDYT12036898.jpeg"</div><div class="slide"><img src="https://w2.chabad.org/media/images/1203/kKko12036900.jpeg"</div><div class="slide"><img src="https://w2.chabad.org/media/images/1203/IkWs12036902.jpeg"</div><div class="slide"><img src="https://w2.chabad.org/media/images/1203/yYwj12036904.jpeg"</div><div class="slide"><img src="https://w2.chabad.org/media/images/1203/yYwj12036904.jpeg"</div><div class="slide"><img src="https://w2.chabad.org/media/images/1203/LyBw12036908.jpeg"</div><div class="navigation"><i class="fas fa-chevron-left prev-btn"></i><i class="fas fa-chevron-right next-btn"></i></div><div class="navigation-visibility"><div class="slide-icon active"></div><div class="slide-icon"></div><div class="slide-icon"></div><div class="slide-icon"></div><div class="slide-icon"></div><div class="slide-icon"></div></div></div>`;
 const pageHeader = document.querySelector(".page-header");
-pageHeader.insertAdjacentHTML("afterend", slideshow);
+/* after a one second delay, the slideshow will be added to the page header */
+setTimeout(() => {
+	pageHeader.insertAdjacentHTML("afterend", slideshow);
+}, 1000);
 
 const slider = document.querySelector(".slider");
 const nextBtn = document.querySelector(".next-btn");

@@ -43,7 +43,11 @@ img.fadeIn {
 }
 .contact-lak {
 	/* give the contact us section a background color and a nice border with round corners */
-	background-color: #f5f5f5;
-	border: 1px solid #e5e5e5;
+	background-color: #b5b5b2;
+	border: 1px solid #d3d38e;
 	border-radius: 5px;
+	/* make the words not so close to the border */
+	padding: 10px;
+	/* make the text wrap even if it's a very long word */
+	word-wrap: break-word;
 }

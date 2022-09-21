@@ -77,3 +77,7 @@ img.fadeIn {
 		transform: scale(1);
 	}
 }
+#LAK {
+	background-image: url(https://www.chabadbinghamfarms.com/media/images/1203/XxAJ12036579.png);
+	background-size: contain;
+}

@@ -41,3 +41,9 @@ img.fadeIn {
 	background-position: center;
 	background-attachment: fixed;
 }
+.contact-lak {
+	/* give the contact us section a background color and a nice border with round corners */
+	background-color: #f5f5f5;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+}

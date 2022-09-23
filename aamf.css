@@ -1,3 +1,6 @@
 #content #BodyContainer #co_content_container .clearfix .master-content-wrapper {
     display: none;
 }
+.article_index_container .co_index.article_index {
+ justify-content: center;
+}

@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	/* new donate page */
 	if (window.location.href.includes(4970020)) {
 		const donateDescription = document.querySelector("#js-donate-form div.content-box p.description");
-		const newDonateDescription = `<a href="/thesolatent">For The SOLA Tent click here</a><br /><a href="/crypto">To donate in Crypto click here <img src="https://thegivingblock.com/wp-content/uploads/2021/07/Bitcoin-btc-Logo.png" style="height:14px"></a><br /><a href="/5430417">To donate with Venmo click here <img src="https://cdn1.venmo.com/marketing/images/branding/venmo-icon.svg" style="height: 14px;"></a><br /><a href="https://www.theeidenproject.org">To donate to the Eiden Project click here</a><br /><a href="/3438459">To reserve for Friday night dinner click here</a>`;
+		const newDonateDescription = `<a href="/crypto">To donate in Crypto click here <img src="https://thegivingblock.com/wp-content/uploads/2021/07/Bitcoin-btc-Logo.png" style="height:14px"></a><br /><a href="/5430417">To donate with Venmo click here <img src="https://cdn1.venmo.com/marketing/images/branding/venmo-icon.svg" style="height: 14px;"></a><br /><a href="https://www.theeidenproject.org">To donate to the Eiden Project click here</a><br /><a href="/3438459">To reserve for Friday night dinner click here</a>`;
 		if (donateDescription) {
 			donateDescription.innerHTML = newDonateDescription;
 		}

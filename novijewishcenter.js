@@ -32,5 +32,11 @@ window.addEventListener("DOMContentLoaded", () => {
 			const contentBox = document.querySelector(".content-box.screen-2");
 			contentBox.appendChild(container);
 		}
+		/* replace the paypal icon with the credit card icon - meaning use the fa-credit-card-alt class instead of fa-cc-paypal class */
+		const paypalIcon = document.querySelector(".fa-cc-paypal");
+		if (paypalIcon) {
+			paypalIcon.classList.remove("fa-cc-paypal");
+			paypalIcon.classList.add("fa-credit-card-alt");
+		}
 	}
 });

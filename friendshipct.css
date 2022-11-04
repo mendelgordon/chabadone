@@ -42,3 +42,17 @@
 body :has(.comitee) .co_body .content p {
  margin: 0;
 }
+
+.co_body .content .SCHeading_2, .co_body h2, .form-header-group h2 {
+ color: #3e4f82;
+}
+
+.co_body .content .form-all .form-submit-button {
+ background: #1a73e8;
+ border-bottom: 2px solid #3e4f82;
+}
+
+.co_body .content .form-all .form-submit-button:focus, .co_body .content .form-all .form-submit-button:hover {
+ background: #105689;
+ border-color: #0a3459;
+}

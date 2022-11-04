@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Waymar';
     src: local('Waymar Script'), local('Waymar-Script'),
-        url('Waymar-Script.woff2') format('woff2'),
-        url('Waymar-Script.woff') format('woff'),
-        url('Waymar-Script.ttf') format('truetype');
+        url('./Waymar-Script.woff2') format('woff2'),
+        url('./Waymar-Script.woff') format('woff'),
+        url('./Waymar-Script.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }

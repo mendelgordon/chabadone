@@ -1,58 +1,65 @@
 #Header :is(div, p, span) {
- font-family: 'Waymar', Conv_Poly-Italic, sans-serif !important;
- color: #38598d;
+	font-family: "Waymar", Conv_Poly-Italic, sans-serif !important;
+	color: #38598d;
 }
 
 #Header img {
- width: 100%;
- height: auto;
- padding: 0;
+	width: 100%;
+	height: auto;
+	padding: 0;
 }
 
 .inline {
- display: inline;
+	display: inline;
 }
 
 #co_ads_container {
- display: none!important;
+	display: none !important;
 }
 
 #co_body_container {
- padding-top: 25px;
- padding-bottom: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 .frame {
- filter: hue-rotate(168deg);
+	filter: hue-rotate(168deg);
 }
 
 .frame-pic-container {
- filter: hue-rotate(-168deg);
+	filter: hue-rotate(-168deg);
 }
 
 #navigation.chabad_navigator_bar #menu {
- display: flex;
- justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
-.comitee, .comitee :is(span, p, div) {
- font-family: "Montserrat",sans-serif!important;
+.comitee,
+.comitee :is(span, p, div) {
+	font-family: "Montserrat", sans-serif !important;
 }
 
 body :has(.comitee) .co_body .content p {
- margin: 0;
+	margin: 0;
 }
 
-.co_body .content .SCHeading_2, .co_body h2, .form-header-group h2 {
- color: #3e4f82;
+.co_body .content .SCHeading_2,
+.co_body h2,
+.form-header-group h2,
+.co_body .content .SCHeading_3,
+.co_body h3,
+.form-header-group h3 {
+	color: #3e4f82;
 }
 
 .co_body .content .form-all .form-submit-button {
- background: #1a73e8;
- border-bottom: 2px solid #3e4f82;
+	background: #1a73e8;
+	border-bottom: 2px solid #3e4f82;
 }
 
-.co_body .content .form-all .form-submit-button:focus, .co_body .content .form-all .form-submit-button:hover {
- background: #105689;
- border-color: #0a3459;
+.co_body .content .form-all .form-submit-button:focus,
+.co_body .content .form-all .form-submit-button:hover {
+	background: #105689;
+	border-color: #0a3459;
 }

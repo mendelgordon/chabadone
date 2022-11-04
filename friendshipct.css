@@ -21,3 +21,11 @@
  padding-top: 25px;
  padding-bottom: 25px;
 }
+
+.frame {
+ filter: hue-rotate(168deg);
+}
+
+.frame-pic-container {
+ filter: hue-rotate(-168deg);
+}

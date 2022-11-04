@@ -1,5 +1,5 @@
-#Header :is(div, p) {
- font-family: 'Waymar', Conv_Poly-Italic, sans-serif;
+#Header :is(div, p, span) {
+ font-family: 'Waymar', Conv_Poly-Italic, sans-serif !important;
  color: #38598d;
 }
 

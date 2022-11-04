@@ -11,3 +11,7 @@
 .inline {
  display: inline;
 }
+
+#co_ads_container {
+ display: none!important;
+}

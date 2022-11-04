@@ -15,3 +15,8 @@
 #co_ads_container {
  display: none!important;
 }
+
+#co_body_container {
+ padding-top: 25px;
+ padding-bottom: 25px;
+}

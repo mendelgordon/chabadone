@@ -34,3 +34,7 @@
  display: flex;
  justify-content: center;
 }
+
+.comitee, .comitee :is(span, p, div) {
+ font-family: "Montserrat",sans-serif!important;
+}

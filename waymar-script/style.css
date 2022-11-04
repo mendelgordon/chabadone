@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "Waymar";
-	src: local("Waymar Script"), local("Waymar-Script"), url("https://chabad.netlify.app/waymar-script/Waymar-Script.woff2") format("woff2"), url("https://chabad.netlify.app/waymar-script/Waymar-Script.woff") format("woff"), url("https://chabad.netlify.app/waymar-script/Waymar-Script.ttf") format("truetype") !important;
+	src: url("Waymar-Script.woff2") format("woff2"), url("Waymar-Script.woff") format("woff"), url("Waymar-Script.ttf") format("truetype") !important;
 	font-weight: normal;
 	font-style: normal;
 }

@@ -38,3 +38,7 @@
 .comitee, .comitee :is(span, p, div) {
  font-family: "Montserrat",sans-serif!important;
 }
+
+body :has(.comitee) .co_body .content p {
+ margin: 0;
+}

@@ -38,17 +38,13 @@
 .comitee,
 .comitee :is(span, p, div) {
 	font-family: "Montserrat", sans-serif !important;
+	margin: 0;
+	letter-spacing: 3px;
 }
 
 .comitee {
 	margin: auto;
 	width: auto;
-}
-
-body :has(.comitee) .co_body .content p {
-	margin: 0;
-	font-family: "Montserrat", sans-serif !important;
-	letter-spacing: 3px;
 }
 
 .co_body .content .SCHeading_2,

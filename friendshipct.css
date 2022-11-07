@@ -33,7 +33,7 @@
 	object-fit: cover;
 }
 
-#navigation.chabad_navigator_bar #menu {
+body:not(.mobile) #navigation.chabad_navigator_bar #menu {
 	display: flex;
 	justify-content: center;
 }

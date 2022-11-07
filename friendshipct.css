@@ -33,6 +33,7 @@
 	object-fit: cover;
 	width: 125px;
 	height: 125px;
+	object-position: top;
 }
 
 body:not(.mobile) #navigation.chabad_navigator_bar #menu {

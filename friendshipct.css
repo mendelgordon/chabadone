@@ -40,18 +40,9 @@
 	font-family: "Montserrat", sans-serif !important;
 }
 
-@media screen and (max-width: 768px) {
-	.committee-members td {
-		display: block;
-		text-align: center;
-}
-.committee-members ul {
-	padding: 0 !important;
-}
-.committee-members li {
-	margin: auto !important;
-	list-style: none;
-}
+.comitee {
+	margin: auto;
+	width: auto;
 }
 
 body :has(.comitee) .co_body .content p {
@@ -76,4 +67,12 @@ body :has(.comitee) .co_body .content p {
 .co_body .content .form-all .form-submit-button:hover {
 	background: #105689;
 	border-color: #0a3459;
+}
+
+tr.committee-members td, .board-members {
+	display: grid;
+	justify-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 6px;
+	padding-block: 16px;
 }

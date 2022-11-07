@@ -43,7 +43,7 @@
 @media screen and (max-width: 768px) {
 	.committee-members td {
 		display: block;
-		width: 100%;
+		width: 86vw;
 		height: auto;
 	}
 }

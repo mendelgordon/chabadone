@@ -29,6 +29,10 @@
 	filter: hue-rotate(-168deg);
 }
 
+.frame-pic-container img {
+	object-fit: cover;
+}
+
 #navigation.chabad_navigator_bar #menu {
 	display: flex;
 	justify-content: center;

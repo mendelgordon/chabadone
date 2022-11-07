@@ -78,3 +78,7 @@ tr.committee-members td, .board-members {
 	gap: 6px;
 	padding-block: 16px;
 }
+
+.honorees-container {
+	margin-bottom: auto;
+}

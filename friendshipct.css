@@ -43,9 +43,12 @@ body:not(.mobile) #navigation.chabad_navigator_bar #menu {
 
 .comitee,
 .comitee :is(span, p, div) {
-	font-family: "Montserrat", sans-serif !important;
 	margin: 0 !important;
-	letter-spacing: 3px;
+}
+
+.content_page li, .content_page p, .content_page td {
+	font-family: "Montserrat", sans-serif !important;
+	letter-spacing: 2px;
 }
 
 .comitee {

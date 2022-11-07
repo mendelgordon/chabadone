@@ -1,6 +1,5 @@
-#Header :is(div, p, span) {
-	font-family: "Waymar", Conv_Poly-Italic, sans-serif !important;
-	color: #38598d;
+.chabad_navigator_bar ul li a {
+	font-family: 'MONTSERRAT', sans-serif;
 }
 
 #Header img {

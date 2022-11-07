@@ -46,7 +46,10 @@ body:not(.mobile) #navigation.chabad_navigator_bar #menu {
 	margin: 0 !important;
 }
 
-.content_page li, .content_page p, .content_page td {
+.content_page li,
+.content_page p,
+.content_page td,
+.content_page h2 {
 	font-family: "Montserrat", sans-serif !important;
 	letter-spacing: 2px;
 }

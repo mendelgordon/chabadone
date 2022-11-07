@@ -58,7 +58,8 @@
 .form-header-group h3,
 .chabad_navigator_bar ul li a.selected,
 .chabad_navigator_bar ul li a:hover,
-.chabad_navigator_bar ul li.active a.parent {
+.chabad_navigator_bar ul li.active a.parent,
+#anniversary-sub {
 	color: #3e4f82;
 }
 

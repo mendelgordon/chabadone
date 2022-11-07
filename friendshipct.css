@@ -43,12 +43,13 @@
 @media screen and (max-width: 768px) {
 	.committee-members td {
 		display: block;
-		width: 86vw;
-		height: auto;
 		text-align: center;
 }
+.committee-members ul {
+	padding: 0 !important;
+}
 .committee-members li {
-	margin: auto;
+	margin: auto !important;
 	list-style: none;
 }
 }

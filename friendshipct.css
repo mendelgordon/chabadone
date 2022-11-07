@@ -31,6 +31,8 @@
 
 .frame-pic-container img {
 	object-fit: cover;
+	width: 125px;
+	height: 125px;
 }
 
 body:not(.mobile) #navigation.chabad_navigator_bar #menu {

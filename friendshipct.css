@@ -47,6 +47,7 @@
 
 body :has(.comitee) .co_body .content p {
 	margin: 0;
+	font-family: "Montserrat", sans-serif !important;
 }
 
 .co_body .content .SCHeading_2,

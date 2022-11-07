@@ -40,6 +40,17 @@
 	font-family: "Montserrat", sans-serif !important;
 }
 
+@media screen	and (max-width: 768px) {
+.committee-members {
+	display: block;
+	}
+
+	.committee-members td {
+		width: 100%;
+		height: auto;
+	}
+}
+
 body :has(.comitee) .co_body .content p {
 	margin: 0;
 }

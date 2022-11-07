@@ -45,7 +45,12 @@
 		display: block;
 		width: 86vw;
 		height: auto;
-	}
+		text-align: center;
+}
+.committee-members li {
+	margin: auto;
+	list-style: none;
+}
 }
 
 body :has(.comitee) .co_body .content p {

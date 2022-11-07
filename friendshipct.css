@@ -1,5 +1,5 @@
 .chabad_navigator_bar ul li a {
-	font-family: 'MONTSERRAT', sans-serif;
+	font-family: "MONTSERRAT", sans-serif;
 }
 
 #Header img {
@@ -41,7 +41,7 @@
 .comitee,
 .comitee :is(span, p, div) {
 	font-family: "Montserrat", sans-serif !important;
-	margin: 0!important;
+	margin: 0 !important;
 	letter-spacing: 3px;
 }
 
@@ -55,7 +55,10 @@
 .form-header-group h2,
 .co_body .content .SCHeading_3,
 .co_body h3,
-.form-header-group h3 {
+.form-header-group h3,
+.chabad_navigator_bar ul li a.selected,
+.chabad_navigator_bar ul li a:hover,
+.chabad_navigator_bar ul li.active a.parent {
 	color: #3e4f82;
 }
 
@@ -70,7 +73,8 @@
 	border-color: #0a3459;
 }
 
-tr.committee-members td, .board-members {
+tr.committee-members td,
+.board-members {
 	display: grid;
 	justify-items: center;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

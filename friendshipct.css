@@ -28,11 +28,7 @@
 }
 
 .frame {
-	filter: hue-rotate(168deg);
-}
-
-.frame-pic-container {
-	filter: hue-rotate(-168deg);
+	background-image: url(https://www.friendshipct.org/media/images/1208/uYKN12084619.png);
 }
 
 .frame-pic-container img {

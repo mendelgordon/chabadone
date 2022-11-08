@@ -1,3 +1,9 @@
+/* hide button for form if on page with form - MG 10/28/2022 */
+#chabad_main_content:has(form) .register-button-outside {
+	display: none !important;
+}
+/* end */
+
 .chabad_navigator_bar ul li a {
 	font-family: "MONTSERRAT", sans-serif;
 }

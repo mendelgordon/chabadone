@@ -94,6 +94,12 @@ tr.committee-members td,
 	padding-block: 16px;
 }
 
+tr.committee-members td p,
+.board-members p {
+	letter-spacing: 1px;
+	margin: 0;
+}
+
 .honorees-container {
 	margin-bottom: auto;
 	height: auto;

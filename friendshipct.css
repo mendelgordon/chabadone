@@ -94,8 +94,8 @@ tr.committee-members td,
 	padding-block: 16px;
 }
 
-tr.committee-members td p,
-.board-members p {
+.co_body .content tr.committee-members td p,
+.co_body .content .board-members p {
 	letter-spacing: 1px;
 	margin: 0;
 }

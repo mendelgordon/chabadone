@@ -92,11 +92,15 @@
  .btns-flex .donate-btns,
  .progress-flex .extra-bar,
  .donate-now {
-  background-color: var(--blue-four, #023769);
+  background-color: rgb(var(--blue-four));
+ }
+
+ html {
+  --blue-four: 2, 55, 105;
  }
 
  .fs-header:before {
-  background-color: rgba(var(--blue-four, #023769), var(--transparency, .95));
+  background-color: rgba(var(--blue-four), var(--transparency, .95));
  }
 
  .fs-full-donate-form .fs-donate-body .fs-donate-section .fs-payment-method .radio-inline span,
@@ -126,13 +130,13 @@
  .progress-flex .S-label span,
  .btns-flex .donate-btns:hover,
  .team-members .team-header {
-  color: var(--blue-four, #023769);
+  color: rgb(var(--blue-four));
  }
 
  .fs-matchers .fs-matcher .fs-matcher-image .fs-image-wrap-ratio::after {
-  -webkit-box-shadow: inset 0 0 0 2px var(--blue-four, #023769);
-  -moz-box-shadow: inset 0 0 0 2px var(--blue-four, #023769);
-  box-shadow: inset 0 0 0 2px var(--blue-four, #023769);
+  -webkit-box-shadow: inset 0 0 0 2px rgb(var(--blue-four));
+  -moz-box-shadow: inset 0 0 0 2px rgb(var(--blue-four));
+  box-shadow: inset 0 0 0 2px rgb(var(--blue-four));
  }
 
  .fs-partners .fs-partner-container:hover .fs-partner .fs-partner-dedication,
@@ -140,21 +144,21 @@
  .fs-full-donate-form .fs-donate-body .fs-donate-section .form-group select.form-control:focus,
  .donar-section .nav-tabs .nav-item.active .nav-link,
  .donar-section .nav-tabs .nav-item:hover .nav-link {
-  border-bottom-color: var(--blue-four, #023769);
+  border-bottom-color: rgb(var(--blue-four));
  }
 
  .fs-full-donate-form .fs-donate-body .fs-donate-section .fs-payment-method .radio-inline span,
  .donate-members .donates_user:hover,
  .btns-flex .donate-btns:hover {
-  border-color: var(--blue-four, #023769);
+  border-color: rgb(var(--blue-four));
  }
 
  .fs-full-donate-form .fs-donate-body .fs-donate-section .fs-payment-method .radio-inline input:checked+span:before {
-  border-top-color: var(--blue-four, #023769);
+  border-top-color: rgb(var(--blue-four));
  }
 
  .donate-members .donates_user .donate-A .donate-triangle {
-  border-right-color: var(--blue-four, #023769);
+  border-right-color: rgb(var(--blue-four));
  }
 
  .fs-left-border-triangle polygon,
@@ -175,7 +179,7 @@
  }
 
  .at-icon-wrapper {
-  background-color: var(--blue-four, #023769) !important;
+  background-color: rgb(var(--blue-four)) !important;
  }
 
  .fs-header-top,
@@ -264,6 +268,25 @@
  <input id="transparency" title="transparency" type="range" min="0" max="1" step="0.01" />
 </div>
 <script>
+ function hexToRGB(h) {
+  let r = 0, g = 0, b = 0;
+
+  // 3 digits
+  if (h.length == 4) {
+   r = "0x" + h[1] + h[1];
+   g = "0x" + h[2] + h[2];
+   b = "0x" + h[3] + h[3];
+
+   // 6 digits
+  } else if (h.length == 7) {
+   r = "0x" + h[1] + h[2];
+   g = "0x" + h[3] + h[4];
+   b = "0x" + h[5] + h[6];
+  }
+
+  return +r + "," + +g + "," + +b;
+ }
+
  if (!colorChangeInputs) {
   var colorChangeInputs
  };
@@ -275,7 +298,9 @@
    const chosenColorValue = e.target.value;
    const colorName = e.target.getAttribute("id");
    const rootStyle = document.querySelector("html").style;
-   if (colorName) {
+   if (colorName === "blue-four") {
+    rootStyle.setProperty("--blue-four", hexToRGB(chosenColorValue));
+   } else if (colorName) {
     rootStyle.setProperty(`--${colorName}`, chosenColorValue);
    }
   });

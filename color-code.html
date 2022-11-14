@@ -3,13 +3,45 @@
  <input id="blue-four" title="color" type="color" value="#023769" /> <input id="blue-five" title="color" type="color"
   value="#82c0d9" /> <input id="blue-six" title="color" type="color" value="#3a93b6" />
  <input id="gold" title="color" type="color" value="#be973c" /> <input id="light-gray" title="color" type="color"
-  value="#f2f2f2" /> <input id="dark-gray" title="color" type="color" value="#8c8c8c" />
+  value="#f2f2f2" /> <input id="dark-gray" title="color" type="color" value="#8c8c8c" /> <input id="white" title="color"
+  type="color" value="#ffffff" />
 </div>
 
 <div class="col color-code">
  <button onclick="copyTextFunction()" type="button">Copy Styling Code</button>
 </div>
 <style id="color-code-css" type="text/css">
+ .fs-btn,
+ .fs-btn:hover,
+ .fs-header .page-header,
+ .donate-button .donate-button-text,
+ .fs-bonus-badge,
+ .fs-goal .fs-goal-text .fs-goal-amount,
+ .fs-goal .fs-goal-graph-container .fs-goal-graph-text span,
+ .fs-countdown,
+ .fs-header-top .fs-logo-container,
+ .fs-header-top .fs-logo-container:after,
+ .fs-header-top .fs-logo-container:before,
+ .fs-full-donate-form .fs-donate-body .fs-donation-options .fs-donation-option.fs-other label.selected,
+ .fs-full-donate-form .fs-donate-body .fs-donation-options .fs-donation-option.selected .fs-option-name>div,
+ .create-team,
+ .fs-full-donate-form .fs-donate-body .fs-donate-section .fs-payment-method .radio-inline input:checked+span,
+ .fs-thank-you .fs-title .fs-check,
+ .video-modal .modal-dialog .close,
+ .videolink:hover,
+ .donate-members .donates_user .donate-A,
+ .team-donate-btn,
+ .btns-flex .view-btn,
+ .donate-now,
+ .donate-now:hover,
+ #fs-donate-form .fs-btn-donate .cs-loader-inner {
+  color: var(--white, #ffffff);
+ }
+
+ .at-share-btn-elements span svg {
+  fill: var(--white, #ffffff) !important;
+ }
+
  .donar-section,
  .fs-donate,
  .fs-partners .fs-partner-container .fs-partner,
@@ -74,7 +106,8 @@
  .fs-thank-you .fs-title .fs-check,
  .fs-bonus-badge,
  .btns-flex .view-btn,
- .fs-full-donate-form .fs-donate-body .fs-effective-donation-container .fs-effective-donation-amount-container {
+ .fs-full-donate-form .fs-donate-body .fs-effective-donation-container .fs-effective-donation-amount-container,
+ .fs-header {
   background-color: var(--gold, #be973c);
  }
 
@@ -272,7 +305,7 @@
  <br />
  <br />
  Color overlay transparency:
- <input id="transparency" title="transparency" type="range" min="0" max="1" step="0.01" />
+ <input id="transparency" title="transparency" type="range" min="0" max="1" step="0.01" value="0.95" />
 </div>
 <script>
  function hexToRGB(h) {

@@ -6,9 +6,9 @@
   value="#f2f2f2" /> <input id="dark-gray" title="color" type="color" value="#8c8c8c" />
 </div>
 
-<div class="col color-code"><input id="color-result" title="color-result" type="text" value="Code will display here"
-  style="display: none" /><button onclick="copyTextFunction()" type="button">Copy Styling
-  Code</button></div>
+<div class="col color-code">
+ <button onclick="copyTextFunction()" type="button">Copy Styling Code</button>
+</div>
 <style id="color-code-css" type="text/css">
  .donar-section,
  .fs-donate,
@@ -230,73 +230,6 @@
   display: none !important;
  }
 </style>
-<script>
- if (!colorChangeInputs) {
-  var colorChangeInputs
- };
-
- colorChangeInputs = document.querySelectorAll(".color-options input");
-
- colorChangeInputs.forEach((input) => {
-  input.addEventListener("change", (e) => {
-   const chosenColorValue = e.target.value;
-   const colorName = e.target.getAttribute("id");
-   const rootStyle = document.documentElement.style;
-   if (colorName) {
-    rootStyle.setProperty(`--${colorName}`, chosenColorValue);
-   }
-  });
- });
-
- if (!headerImageInputs) {
-  var headerImageInputs
- };
-
- headerImageInputs = document.querySelectorAll(".header-image-options input");
-
- headerImageInputs.forEach((input) => {
-  input.addEventListener("change", (e) => {
-   const value = e.target.value;
-   const id = e.target.getAttribute("id");
-   const name = e.target.getAttribute("name");
-   const rootStyle = document.documentElement.style;
-
-   const headerImage = id === "header-image" || id === "header-image-mobile";
-   if (headerImage) {
-    rootStyle.setProperty(`--${id}`, `url(${value})`);
-   }
-
-   if (name === "cover-or-contain") {
-    rootStyle.setProperty(`--cover-or-contain`, value);
-   }
-
-   if (name === "image-repeat") {
-    rootStyle.setProperty(`--image-repeat`, value);
-   }
-
-   if (name === "transparency") {
-    rootStyle.setProperty(`--transparency`, value);
-   }
-  });
- });
-
- function copyTextFunction() {
-  /* Get the text field */
-  var copyText = document.getElementById("color-result");
-  copyText.value = `${document.getElementById("color-code-css").innerHTML}:root{${document.documentElement.style.cssText}}`;
-
-  /* Select the text field */
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-  /* Copy the text inside the text field */
-  navigator.clipboard.writeText(copyText.value);
-
-  /* Alert the copied text */
-  alert("Copied the styling code! Now paste it in the Campaign Theme (Advanced) box in the campaign website settings.");
- }
-
-</script>
 <h3>Header Text</h3>
 
 <h4>Smaller Header Text</h4>
@@ -330,3 +263,64 @@
  Color overlay transparency:
  <input id="transparency" title="transparency" type="range" min="0" max="1" step="0.01" />
 </div>
+<script>
+ if (!colorChangeInputs) {
+  var colorChangeInputs
+ };
+
+ colorChangeInputs = document.querySelectorAll(".color-options input");
+
+ colorChangeInputs.forEach((input) => {
+  input.addEventListener("change", (e) => {
+   const chosenColorValue = e.target.value;
+   const colorName = e.target.getAttribute("id");
+   const rootStyle = document.querySelector("html").style;
+   if (colorName) {
+    rootStyle.setProperty(`--${colorName}`, chosenColorValue);
+   }
+  });
+ });
+
+ if (!headerImageInputs) {
+  var headerImageInputs
+ };
+
+ headerImageInputs = document.querySelectorAll(".header-image-options input");
+
+ headerImageInputs.forEach((input) => {
+  input.addEventListener("change", (e) => {
+   const value = e.target.value;
+   const id = e.target.getAttribute("id");
+   const name = e.target.getAttribute("name");
+   const rootStyle = document.querySelector("html").style;
+
+   const headerImage = id === "header-image" || id === "header-image-mobile";
+   if (headerImage) {
+    rootStyle.setProperty(`--${id}`, `url(${value})`);
+   }
+
+   if (name === "cover-or-contain") {
+    rootStyle.setProperty(`--cover-or-contain`, value);
+   }
+
+   if (name === "image-repeat") {
+    rootStyle.setProperty(`--image-repeat`, value);
+   }
+
+   if (id === "transparency") {
+    rootStyle.setProperty(`--transparency`, value);
+   }
+  });
+ });
+
+ function copyTextFunction() {
+  const originalCss = document.getElementById("color-code-css").innerHTML;
+  const newCss = document.querySelector("html").style.cssText;
+  const newCssWithoutBackslashes = newCss.replaceAll("\\", "");
+
+  navigator.clipboard.writeText(originalCss + ':root{' + newCssWithoutBackslashes + '}');
+
+  alert("Copied the styling code! Now paste it in the Campaign Theme (Advanced) box in the campaign website settings.");
+ }
+
+</script>

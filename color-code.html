@@ -1,15 +1,13 @@
-<div class="col color-options"><input id="blue-one" title="blue-one" type="color" value="#9cd2e7" /> <input id="blue-two"
-  title="blue-two" type="color" value="#2c89aa" /> <input id="blue-three" title="blue-three" type="color" value="#3ba7ce" />
- <input id="blue-four" title="blue-four" type="color" value="#023769" /> <input id="blue-five" title="blue-five" type="color"
-  value="#82c0d9" /> <input id="blue-six" title="blue-six" type="color" value="#3a93b6" />
+<div class="col color-options"><input id="blue-one" title="blue-one" type="color" value="#9cd2e7" /> <input
+  id="blue-two" title="blue-two" type="color" value="#2c89aa" /> <input id="blue-three" title="blue-three" type="color"
+  value="#3ba7ce" />
+ <input id="blue-four" title="blue-four" type="color" value="#023769" /> <input id="blue-five" title="blue-five"
+  type="color" value="#82c0d9" /> <input id="blue-six" title="blue-six" type="color" value="#3a93b6" />
  <input id="gold" title="gold" type="color" value="#be973c" /> <input id="light-gray" title="light-gray" type="color"
-  value="#f2f2f2" /> <input id="dark-gray" title="dark-gray" type="color" value="#8c8c8c" /> <input id="white" title="white"
-  type="color" value="#ffffff" />
+  value="#f2f2f2" /> <input id="dark-gray" title="dark-gray" type="color" value="#8c8c8c" /> <input id="white"
+  title="white" type="color" value="#ffffff" />
 </div>
 
-<div class="col color-code">
- <button onclick="copyTextFunction()" type="button">Copy Styling Code</button>
-</div>
 <style id="color-code-css" type="text/css">
  .fs-btn,
  .fs-btn:hover,
@@ -274,9 +272,6 @@
   display: none !important;
  }
 </style>
-<h3>Header Text</h3>
-
-<h4>Smaller Header Text</h4>
 
 <div class="col header-image-options">
  <p>To use a custom image for the header please upload the images to your site as shown in <a
@@ -288,14 +283,16 @@
  Image for header on mobile:
  <input id="header-image-mobile" title="header-image-mobile" type="text"
   value="/images/templates/fundraising/Header-Back.jpg" />
- <br />
+ <br /> <br />
+
  <p>Image size:</p>
  <input id="cover" type="radio" name="cover-or-contain" value="cover" checked="checked" />
  <label for="cover">Cover entire header with image</label>
  <br />
  <input id="contain" type="radio" name="cover-or-contain" value="contain" />
  <label for="contain">Contain entire image in header</label>
- <br />
+ <br /> <br />
+
  <p>Image repeat:</p>
  <input type="radio" name="image-repeat" id="repeat" value="repeat" />
  <label for="repeat">Repeat</label>
@@ -307,6 +304,17 @@
  Color overlay transparency:
  <input id="transparency" title="transparency" type="range" min="0" max="1" step="0.01" value="0.95" />
 </div>
+<br /><br />
+<div class="col color-code">
+ <button onclick="copyTextFunction()" type="button">Copy Styling Code</button>
+</div>
+<br /><br />
+<div class="col color-code">
+ <p>Already copied the styling code and want to make some more changes? Press this button and paste the text at the end
+  of the Campaign Theme (Advanced) box in the campaign website settings, after all of the other text that's there:</p>
+ <button onclick="copyNewTextFunction()" type="button">Copy New Styling Code</button>
+</div>
+
 <script>
  function hexToRGB(h) {
   let r = 0, g = 0, b = 0;
@@ -388,4 +396,16 @@
   alert("Copied the styling code! Now paste it in the Campaign Theme (Advanced) box in the campaign website settings.");
  }
 
+ function copyNewTextFunction() {
+  const newCss = document.querySelector("html").style.cssText;
+  const newCssWithoutBackslashes = newCss.replaceAll("\\", "");
+
+  navigator.clipboard.writeText(':root{' + newCssWithoutBackslashes + '}');
+
+  alert("Copied the styling code! Now paste it in the bottom of the Campaign Theme (Advanced) box in the campaign website settings.");
+ }
 </script>
+
+<h3>Sample Header 3 Text</h3>
+
+<h4>Sample Header 4 Text</h4>

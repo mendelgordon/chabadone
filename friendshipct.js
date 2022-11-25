@@ -31,6 +31,6 @@ if (VOLUNTEERFORM) {
 
 		controlDisplayOfFormFields();
 
-		partTwoInput.addEventListener("change", controlDisplayOfFormFields());
+		partTwoInput.addEventListener("change", controlDisplayOfFormFields);
 	});
 }

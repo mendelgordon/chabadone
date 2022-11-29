@@ -1,8 +1,8 @@
 const nameCollection = () => {
 	const popupSubscribeMessage = document.querySelector("#PopupSubscribeMessage");
 	if (popupSubscribeMessage) {
-		popupSubscribeMessage.closest("#Fname").placeholder = "Name";
-		popupSubscribeMessage.closest("#Lname").placeholder = "Address";
+		popupSubscribeMessage.querySelector("#Fname").placeholder = "Name";
+		popupSubscribeMessage.querySelector("#Lname").placeholder = "Address";
 	}
 	const homeSubscribeMessage = document.querySelector("div.hp-row.hp_subscribe");
 	if (homeSubscribeMessage) {

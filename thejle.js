@@ -1,8 +1,12 @@
 const nameCollection = () => {
 	const popupSubscribeMessage = document.querySelector("#PopupSubscribeMessage");
 	if (popupSubscribeMessage) {
-		popupSubscribeMessage.querySelector("#Fname").placeholder = "Name";
-		popupSubscribeMessage.querySelector("#Lname").placeholder = "Address";
+		const name = popupSubscribeMessage.querySelector("#Fname");
+		name.placeholder = "Name";
+		name.display_name	= "Name";
+		const address = popupSubscribeMessage.querySelector("#Lname");
+		address.placeholder = "Address";
+		address.display_name = "Address";
 	}
 	const homeSubscribeMessage = document.querySelector("div.hp-row.hp_subscribe");
 	if (homeSubscribeMessage) {

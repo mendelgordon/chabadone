@@ -3,10 +3,10 @@ const nameCollection = () => {
 	if (popupSubscribeMessage) {
 		const name = popupSubscribeMessage.querySelector("#Fname");
 		name.placeholder = "Name";
-		name.attributes.display_name	= "Name";
+		name.attributes.display_name.value	= "Name";
 		const address = popupSubscribeMessage.querySelector("#Lname");
 		address.placeholder = "Address";
-		address.attributes.display_name = "Address";
+		address.attributes.display_name.value = "Address";
 	}
 	const homeSubscribeMessage = document.querySelector("div.hp-row.hp_subscribe");
 	if (homeSubscribeMessage) {

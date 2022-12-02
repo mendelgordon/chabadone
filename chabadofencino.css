@@ -1,15 +1,31 @@
 /* style bronze silver and gold text paragraphs to look like buttons */
-#bronze, #silver, #gold {
-  font-weight: bold;
-  color: #337ab7;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0.5em;
-  border: 1px solid #FFD700;
-  border-radius: 0.5em;
-  background-color: #FFD700;
-  cursor: pointer;
+#bronze,
+#silver,
+#gold {
+	font-weight: bold;
+	color: #337ab7;
+	width: -moz-fit-content;
+	width: fit-content;
+	padding: 0.5em;
+	border: 1px solid #ffd700;
+	border-radius: 0.5em;
+	background-color: #ffd700;
+	cursor: pointer;
 }
-#bronze:hover, #silver:hover, #gold:hover {
-  background-color: #eee;
+#bronze:hover,
+#silver:hover,
+#gold:hover {
+	background-color: #eee;
+}
+
+/* add end of year push text */
+.fs-goal::after {
+	content: "End of Year Campaign to reach our Goal!";
+	font-size: xx-large;
+	padding: 25px;
+	color: white;
+	background: #3da7ce;
+	width: 100%;
+	text-align: center;
+	font-family: "Patua One", cursive;
 }

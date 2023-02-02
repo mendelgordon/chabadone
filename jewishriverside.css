@@ -1,3 +1,10 @@
 .branding-search #header_branding .site_title {
- display: none;
+	display: none;
+}
+
+@media (max-width: 1024px) and (max-width: 460px) {
+	.header_container,
+	.site-logo-wrapper {
+		display: block;
+	}
 }

@@ -8,3 +8,9 @@
 		display: block;
 	}
 }
+
+#header_branding .site-logo-wrapper {
+	background: #ffffff;
+	width: 100px !important;
+	height: 100px !important;
+}

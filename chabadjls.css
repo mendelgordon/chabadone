@@ -2,8 +2,6 @@
  content: url(https://www.chabadjls.org/media/images/1200/jILh12006925.png);
  max-height: 80px;
 }
-@media screen and (max-width: 460px) {
- #header .cs-mobile-menu-open {
-  top: 0%;
- }
+#header.on-scroll .header-wrapper {
+ height: 100px;
 }

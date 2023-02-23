@@ -1,0 +1,1238 @@
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 0px;
+   
+    background-color: #2b3579;
+}
+.mt-4.text-xl.text-center.text-black iframe {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0px 0px 0px;
+}
+
+
+.group:hover .group-hover\:hidden {
+    display: block;
+}
+.FooterContainer::before {
+    content: "";
+    background: url(https://11871.centers.chabad.org/media/images/1218/Xxis12187505.png);
+    width: 8%;
+    height: 39%;
+    position: absolute;
+    top: -12px;
+    background-repeat: no-repeat;
+    left: -21px;
+    background-position: right;
+    z-index: 0;
+    opacity: 0.2;
+    background-size: contain;
+    transform: rotate(22deg);
+}
+.flex.justify-center.gap-2.mt-4.text-center::before {
+    content: "";
+    background: url(https://11871.centers.chabad.org/media/images/1218/mqXT12187535.png);
+    width: 8%;
+    height: 37%;
+    position: absolute;
+    top: 62px;
+    background-repeat: no-repeat;
+    left: 55px;
+    background-position: right;
+    z-index: 0;
+    opacity: 0.2;
+    background-size: contain;
+    transform: rotate(325deg);
+}
+.flex.justify-center.text-lg.text-white.text-center.uppercase::before {
+    content: "";
+    background: url(https://11871.centers.chabad.org/media/images/1218/ICtV12187536.png);
+    height: 51%;
+    position: absolute;
+    width: 8%;
+    top: 43%;
+    background-repeat: no-repeat;
+    left: 27px;
+    background-position: right;
+    z-index: 0;
+    opacity: 0.2;
+    background-size: contain;
+}
+
+a.flex.mx-auto.mt-3.text-center::before {
+    content: "";
+    background: url(https://11871.centers.chabad.org/media/images/1218/YfQv12187539.png);
+    width: 10%;
+    height: 36%;
+    position: absolute;
+    bottom:5px;
+    background-repeat: no-repeat;
+    left: 82px;
+    background-position: right;
+    z-index: 0;
+    opacity: 0.2;
+    background-size: contain;
+transform: rotate(17deg);
+}
+
+
+
+.FooterContainer::after {
+    content: "";
+    background: url(https://11871.centers.chabad.org/media/images/1218/XCTO12187566.png);
+    width: 7%;
+    height: 40%;
+    position: absolute;
+    top: 0px;
+    background-repeat: no-repeat;
+    right: 0px;
+    background-position: right;
+    z-index: 0;
+    opacity: 0.2;
+    background-size: contain;
+    transform: rotate(280deg);
+}
+.flex.justify-center.gap-2.mt-4.text-center::after {
+    content: "";
+    background: url(https://11871.centers.chabad.org/media/images/1218/pEmZ12187553.png);
+    width: 11%;
+    height: 39%;
+    position: absolute;
+    top: 38px;
+    background-repeat: no-repeat;
+    right: 70px;
+    background-position: right;
+    z-index: 0;
+    opacity: 0.2;
+    background-size: contain;
+    transform: rotate(26deg);
+}
+.flex.justify-center.text-lg.text-white.text-center.uppercase::after {
+    content: "";
+    background: url(https://11871.centers.chabad.org/media/images/1218/jYGY12187563.png);
+    height: 40%;
+    position: absolute;
+    width: 17%;
+    top: 52%;
+    background-repeat: no-repeat;
+    right: 35px;
+    background-position: right;
+    z-index: 0;
+    opacity: 0.2;
+    background-size: contain;
+}
+
+a.flex.mx-auto.mt-3.text-center::after {
+    content: "";
+    background: url(https://11871.centers.chabad.org/media/images/1218/JMTj12187570.png);
+    width: 7%;
+    height: 27%;
+    position: absolute;
+    bottom: 0px;
+    background-repeat: no-repeat;
+    right: 150px;
+    background-position: right;
+    z-index: 0;
+    opacity: 0.2;
+    background-size: contain;
+}
+
+
+
+
+
+
+
+.border-white {
+    border: 26px solid white;
+}
+.eapps-instagram-feed-title {
+   display: none !important;
+}
+.follow-i-ckids a {
+    --tw-text-opacity: 1;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 900;
+    border: solid;
+    line-height: 1.5rem;
+    padding: 1.5rem 2rem 1.5rem;
+    --tw-bg-opacity: 1;
+    background-color: #ef3d50;
+    border-radius: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    height: 2.25rem;
+    border-color: #ef3d50;
+transition:0.5s;
+}
+.follow-i-ckids a:hover {
+    background: #ff000000;
+    border-color: #fff;
+}
+.follow-i-ckids {
+    background: #2e509f;
+    padding: 80px 0px 0px 0px;
+    margin: -41px 0px 0px 0px;
+    z-index: 99999;
+    position: relative;
+}
+.internation-update-section {
+    padding: 20px 0px 40px 0px;
+}
+.p-6.text-sm.text-center.text-black.md\:pt-8.md\:p-9 {
+    height: auto;
+}
+.co_index {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.p-6.text-sm.text-center.text-black.md\:pt-8.md\:p-9 div {
+    font-size: 20px;
+}
+
+div#navigation div ul li a {
+    font-size: 16px;
+}
+.co_photo_gallery_footer a {
+    border-radius: 1rem !important;
+}
+
+.chabad_menu_content ul li a {
+    position: relative;
+}
+.chabad_menu_content ul li a:hover {
+    color: #fff;
+}
+.flex.flex-wrap.justify-center.mt-6.md\:mt-10.slider {
+    display: none;
+}
+.chabad_menu_content ul li a::before {
+    content: "";
+    display: block;
+    width: 0%;
+    padding-top: 0px;
+    border-bottom: 3px solid #fff;
+    transition: 0.5s;
+    margin: 30px 0px 0px 0px;
+    position: absolute;
+}
+
+.chabad_menu_content ul li a:hover::before {
+    content: "";
+    width: 65%;
+    
+}
+
+
+.sub_menu ul li a {
+    position: relative;
+}
+
+.sub_menu ul li a::before {
+    content: "";
+    display: block;
+    width: 0%;
+    padding-top: 0px;
+    border-bottom: 3px solid #000;
+    transition: 0.5s;
+    margin: 30px 0px 0px 0px;
+    position: absolute;
+}
+.sub_menu ul li a:hover::before {
+    content: "";
+    width: 100%;
+    
+}
+.poweredby.large_bottom_margin::after {
+    content: "";
+    width: 100%;
+    height: 150px;
+    background-image: url(https://11871.centers.chabad.org/media/images/1218/dQon12181644.png);
+    position: absolute;
+    left: 66%;
+    bottom: 32px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 9999999;
+}
+.sub_menu {
+    margin: 10px 0px 0px 0px;
+}
+
+.relative.flex.flex-col.items-center.max-w-20.px-4.py-4-5.mx-auto.conainter.md\:px-8.md\:py-24 .font-comfortaa.text-4xl.font-bold.text-center.text-white.md\:text-5xl {
+    font-size: 60px;
+}
+.relative.flex.flex-col.items-center.max-w-20.px-4.py-4-5.mx-auto.conainter.md\:px-8.md\:py-24 {
+    max-width: 100%;
+}
+
+.py-4-5 {
+    padding-bottom: 8.5rem;
+    padding-top: 11.5rem;
+}
+
+a.flex.items-center.h-12.mt-6rem.text-lg.font-bold.text-white.no-underline.bg-red.border-2.hover\:text-blue.px-7.rounded-2xl.hover\:bg-white.md\:mt-14 {
+    background: #ff000000;
+    border: 1px solid #ef3d50;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    position: relative;
+
+    outline: none;
+    z-index: 1;
+    border-radius: 1rem;
+}
+
+a.flex.items-center.h-12.mt-6rem.text-lg.font-bold.text-white.no-underline.bg-red.border-2.hover\:text-blue.px-7.rounded-2xl.hover\:bg-white.md\:mt-14:hover {
+   background:#ef3d50;
+}
+
+
+
+.py-16.md\:py-24:nth-child(2) {
+    padding: 0px 0px 40px 0px;
+}
+.set-direction-to-content h2.article-header__subtitle {
+    font-size: 25px;
+}
+
+.w-full.h-\[55\%\].group-hover\:h-full-calc.transition-all.bg-white.absolute.left-0.bottom-0.flex.flex-col.p-7 {
+    text-align: center;
+    transition: 0.7s;
+}
+
+.w-full.h-\[55\%\].group-hover\:h-full-calc.transition-all.bg-white.absolute.left-0.bottom-0.flex.flex-col.p-7 a {
+    font-size: 20px;
+    width: 48%;
+    position: relative;
+    margin: 0 auto;
+padding: 12px 0px 0px 0px;
+}
+.flex-col.flex-1.overflow-hidden.mt-7 {
+    border-bottom: 2px solid #000;
+    padding: 0px 0px 15px 0px;
+}
+
+
+a.text-sm.font-bold.text-black.no-underline.hover\:text-red.mt-7:before {
+   content: "";
+    display: block;
+    width: 0%;
+    padding-top: 0px;
+    border-bottom: 3px solid #ef3d50;
+    transition: 0.5s;
+    margin: 30px 0px 0px 0px;
+    position: absolute;
+    bottom: -7px;
+    left: 8px;
+}
+.mt-4.text-lg.font-light.text-center.text-white.md\:mt-8 {
+    font-size: 24px;
+}
+
+a.text-sm.font-bold.text-black.no-underline.hover\:text-red.mt-7:hover::before {
+    content: "";
+    width: 88%;
+}
+
+a.text-sm.font-bold.text-black.no-underline.hover\:text-green.mt-7:before {
+   content: "";
+    display: block;
+    width: 0%;
+    padding-top: 0px;
+    border-bottom: 3px solid #00a79d;
+    transition: 0.5s;
+    margin: 30px 0px 0px 0px;
+    position: absolute;
+    bottom: -7px;
+    left: 8px;
+}
+
+a.text-sm.font-bold.text-black.no-underline.hover\:text-green.mt-7:hover::before {
+    content: "";
+    width: 88%;
+}
+
+
+a.text-sm.font-bold.text-black.no-underline.hover\:text-blue.mt-7:before {
+   content: "";
+    display: block;
+    width: 0%;
+    padding-top: 0px;
+    border-bottom: 3px solid #2e509f;
+    transition: 0.5s;
+    margin: 30px 0px 0px 0px;
+    position: absolute;
+    bottom: -7px;
+    left: 8px;
+}
+
+a.text-sm.font-bold.text-black.no-underline.hover\:text-blue.mt-7:hover::before {
+    content: "";
+    width: 88%;
+}
+
+.w-full.h-\[55\%\].group-hover\:h-full-calc.transition-all.bg-white.absolute.left-0.bottom-0.flex.flex-col.p-7:hover {
+    height: 74%;
+}
+.mt-8.mb-16.md\:mt-16.md\:mb-24 {
+    position: relative;
+}
+
+
+
+.text-4xl {
+    font-size: 3.25rem;
+    line-height: 2.5rem;
+}
+
+.mb-10.font-comfortaa.text-4xl.font-bold.text-center.text-white.md\:text-5xl.md\:mb-16 {
+    padding: 0px 0px 30px 0px;
+}
+.py-16.bg-red.md\:py-24 {
+    padding: 100px 0px 100px 0px !important;
+    background: #2e509f;
+}
+
+.co_calendar_body {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    grid-template-rows: repeat(1, minmax(0, 1fr)) !important;
+    height: auto;
+    overflow: inherit;
+    margin-bottom: 0rem;
+}
+.co_calendar_body .co_calendar_gradient .co_calendar_text {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-rows: repeat(2, minmax(0, 0.5fr)) ;
+    grid-template-rows: 0.5fr 0.5fr;
+        height: inherit !important;
+    margin-left: 0rem;
+    justify-items: center;
+    min-height: 100px;
+}
+
+
+.grid_mobile.flex.flex-col.items-center.px-4.py-5.border-2.border-white.md\:px-8.md\:py-8.md\:flex-row.mt-7.rounded-3xl.bg-purple {
+    background: linear-gradient(rgba(249, 119, 76, 0.75), rgba(128, 42, 12, 0.85)), url(https://w2.chabad.org/media/images/1160/DUTM11605281.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+a.grid_column_2_3.flex.items-center.h-12.text-lg.font-bold.text-white.border-2.border-white.hover\:text-yellow.hover\:bg-white.px-7.rounded-2xl.justify-center {
+    border: 2px solid #fff;
+    background: #ff000000;
+    color: #fff;
+    transition: 0.5s;
+}
+
+a.grid_column_2_3.flex.items-center.h-12.text-lg.font-bold.text-white.border-2.border-white.hover\:text-yellow.hover\:bg-white.px-7.rounded-2xl.justify-center:hover {
+    border: 2px solid #2e509f;
+    background: #2e509f;
+    color: #fff;
+
+ 
+}
+
+
+
+a.inline-flex.items-center.justify-center.h-12.text-lg.font-bold.bg-transparent.border-2.border-purple.text-purple.hover\:text-white.px-7.rounded-2xl.hover\:bg-red{
+ border: 2px solid #2e509f;
+    background: #ff000000;
+    color: #2e509f;
+    transition: 0.5s;
+}
+
+a.inline-flex.items-center.justify-center.h-12.text-lg.font-bold.bg-transparent.border-2.border-purple.text-purple.hover\:text-white.px-7.rounded-2xl.hover\:bg-red:hover{
+border: 2px solid #2e509f;
+    background: #2e509f;
+    color: #fff;
+
+}
+
+
+a.inline-flex.items-center.justify-center.h-12.text-vm.text-lg.font-bold.text-white.border-2.text-purple.bg-white_view_more.border-white.px-7.rounded-2xl.hover\:bg-white.hover\:text-red {
+    border: 2px solid #fff;
+    background: #ff000000;
+    color: #fff;
+ transition: 0.5s;
+}
+
+
+a.inline-flex.items-center.justify-center.h-12.text-vm.text-lg.font-bold.text-white.border-2.text-purple.bg-white_view_more.border-white.px-7.rounded-2xl.hover\:bg-white.hover\:text-red:hover {
+    border: 2px solid #ef3d50;
+    background: #ef3d50;
+    color: #fff;
+
+}
+
+.co_photo_gallery_footer a:hover {
+    background: #2b3579 !important;
+    color: #fff !important;
+
+border:3px solid #2b3579 !important;
+}
+.co_photo_gallery_footer a {
+   transition:0.5s;
+}
+.absolute.right-0.flex.flex-col.justify-center.w-full.h-full.p-5.text-center.md\:w-5\/12.bg-blue.border-2.border-white.bg-opacity-100.md\:p-10.md\:text-left.slider_width.border-right-radius {
+    text-align: center;
+}
+
+.FooterContainer a.flex.mx-auto.mt-3.text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 130px;
+    width: 70%;
+}
+.FooterContainer p.ml-3.text-xs.text-white {
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+    z-index: 9;
+}
+
+.footer3 {
+    padding: 0px 0px 15px 0px;
+    border-bottom: 2px solid #ffffff2e;
+}
+.poweredby.large_bottom_margin {
+    position: relative;
+}
+
+.poweredby.large_bottom_margin::before {
+    content: "";
+    width: 100%;
+    height: 150px;
+    background-image: url(https://11871.centers.chabad.org/media/images/1218/kHcP12181638.png);
+    position: absolute;
+    left: 27%;
+    bottom: 27px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+
+.relative.flex.items-center.px-4.py-3.text-white.no-underline.md\:px-0.md\:py-0 .text-lg {
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.py-10.md\:py-16 {
+    background: linear-gradient(rgba(249, 119, 76, 0.75), rgb(0 4 131 / 85%));
+    background-attachment: fixed;
+}
+.py-10.md\:py-16 .font-comfortaa.text-4xl.font-bold.text-center.uppercase.md\:text-5xl.text-purple {
+    color: #fff;
+}
+.py-10.md\:py-16 .mt-4.text-xl.text-center.text-black {
+    color: #fff;
+}
+.all-calender {
+    padding: 40px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    color: #2b3579;
+    font-size: 2.6rem;
+    line-height: 2.5rem;
+    text-align: center;
+    font-family: Comfortaa;
+    font-weight: 700;
+}
+
+body.lang_en.dir_ltr.cco_body.cco_templateless_page.section_branch h1.article-header__title.js-article-title.js-page-title {
+    font-size: 75px;
+    font-family: Comfortaa;
+}
+body.lang_en.dir_ltr.cco_body.cco_templateless_page.section_branch .co_index .item .title a {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(43 53 121 / 58%), rgb(43 53 121 / 92%));
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    font-weight: 700;
+    text-decoration: none !important;
+    transition: all 0.3s ease-in-out;
+    height: 8rem;
+    transition: 2s;
+    background-repeat: no-repeat;
+    width: 19rem;
+    background-position: center;
+}
+.FooterContainer {
+    position: relative;
+}
+
+.co_title_calendar > a {
+    font-size: xx-large;
+    border-left: 0px solid;
+    padding-left: 0rem;
+}
+.co_calendar_body .co_calendar_gradient .item .co_date {
+    padding: 0px;
+    border-left: 0px solid;
+    padding-left: 1rem !important;
+}
+
+.testimonial_container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem !important;
+    flex-wrap: wrap;
+}
+.w-full.overflow-x-auto .max-w-5xl {
+    max-width: 75rem;
+}
+
+.md\:pb-\[150\%\] {
+    padding-bottom: 120%;
+}
+
+body.lang_en.dir_ltr.cco_body.cco_templateless_page.section_branch .article-header {
+    text-align: center;
+  background-image: linear-gradient(rgba(249, 119, 76, 0.75), rgba(128, 42, 12, 0.85));
+    padding: 190px 0;
+    color: white;
+    
+    margin-bottom: 80px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+}
+
+.co_body.article-body.cf img {
+    float: left;
+    object-fit: cover;
+    width: 250px;
+    height: 200px;
+    padding: 4px;
+    background: #00a79d00;
+    border-radius: 0rem;
+    margin: 20px 20px 20px 0;
+}
+
+ul.small-links.small-links--orange {
+    color: #fff;
+}
+
+
+#navigation.chabad_navigator_bar #menu {
+    height: 36px;
+    width: fit-content !important;
+    background-color: #2b3579 !important;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    height: auto;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    margin-left: 26rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:767px){
+
+.FooterContainer::before {
+    content: "";
+    width: 15%;
+    height: 36%;
+    background: url(https://11871.centers.chabad.org/media/images/1218/Xxis12187505.png);
+    position: absolute;
+    top: -11px;
+    background-repeat: no-repeat;
+    left: 9px;
+    background-position: right;
+    z-index: 0;
+    opacity: 0.2;
+    background-size: contain;
+}
+.flex.justify-center.gap-2.mt-4.text-center::before {
+    content: "";
+    width: 15%;
+    height: 35%;
+    background: url(https://11871.centers.chabad.org/media/images/1218/mqXT12187535.png);
+    position: absolute;
+    top: 54px;
+    background-repeat: no-repeat;
+    left: 47px;
+    background-position: right;
+    z-index: 0;
+    opacity: 0.2;
+    background-size: contain;
+    transform: rotate(325deg);
+}
+.flex.justify-center.text-lg.text-white.text-center.uppercase::before {
+    content: "";
+    height: 42%;
+    position: absolute;
+    width: 19%;
+    background: url(https://11871.centers.chabad.org/media/images/1218/ICtV12187536.png);
+    top: 42%;
+    background-repeat: no-repeat;
+    left: 8px;
+    background-position: right;
+    z-index: 0;
+    opacity: 0.2;
+    background-size: contain;
+}
+a.flex.mx-auto.mt-3.text-center::before {
+    content: "";
+    width: 14%;
+    height: 38%;
+    position: absolute;
+    background: url(https://11871.centers.chabad.org/media/images/1218/YfQv12187539.png);
+    bottom: -11px;
+    background-repeat: no-repeat;
+    left: 52px;
+    background-position: right;
+    z-index: 0;
+    opacity: 0.3;
+    background-size: contain;
+transform: rotate(17deg);
+}
+.FooterContainer::after {
+    content: "";
+    width: 23%;
+    height: 42%;
+    background: url(https://11871.centers.chabad.org/media/images/1218/XCTO12187566.png);
+    position: absolute;
+    top: -18px;
+    background-repeat: no-repeat;
+    right: -5px;
+    background-position: right;
+    z-index: 0;
+    opacity: 0.2;
+    background-size: contain;
+    /* transform: rotate(325deg); */
+}
+
+.flex.justify-center.gap-2.mt-4.text-center::after {
+    content: "";
+    width: 16%;
+    height: 39%;
+    background: url(https://11871.centers.chabad.org/media/images/1218/pEmZ12187553.png);
+    position: absolute;
+    top: 39px;
+    background-repeat: no-repeat;
+    right: 43px;
+    background-position: right;
+    z-index: 0;
+    opacity: 0.2;
+    background-size: contain;
+    transform: rotate(26deg);
+}
+.flex.justify-center.text-lg.text-white.text-center.uppercase::after {
+    content: "";
+    height: 35%;
+    background: url(https://11871.centers.chabad.org/media/images/1218/jYGY12187563.png);
+    position: absolute;
+    width: 17%;
+    top: 42%;
+    background-repeat: no-repeat;
+    right: 8px;
+    background-position: right;
+    z-index: 0;
+    opacity: 0.2;
+    background-size: contain;
+}
+a.flex.mx-auto.mt-3.text-center::after {
+    content: "";
+    width: 15%;
+    height: 34%;
+    background: url(https://11871.centers.chabad.org/media/images/1218/JMTj12187570.png);
+    position: absolute;
+    bottom: 0px;
+    background-repeat: no-repeat;
+    right: 40px;
+    background-position: right;
+    z-index: 0;
+    opacity: 0.2;
+    background-size: contain;
+}
+
+
+
+.follow-i-ckids a {
+    --tw-text-opacity: 1;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 900;
+    border: solid;
+    line-height: 1.5rem;
+    padding: 1.5rem 1rem 1.5rem;
+    --tw-bg-opacity: 1;
+    background-color: #ef3d50;
+    border-radius: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    height: 2.25rem;
+    border-color: #ef3d50;
+    transition: 0.5s;
+}
+
+body.mobile #navigation.chabad_navigator_bar #menu {
+    height: 36px;
+    width: 100% !important;
+}
+#navigation.chabad_navigator_bar #menu {
+    background-color: #2b357900 !important;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    height: auto;
+    line-height: normal;
+    display: block;
+    margin-left: 0rem;
+}
+.all-calender {
+    padding: 40px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    color: #2b3579;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    font-family: Comfortaa;
+    font-weight: 700;
+}
+
+.co_body.article-body.cf img {
+    float: left;
+    object-fit: cover;
+    width: 100%;
+    height: 270px;
+    padding: 4px;
+    background: #00a79d00;
+    border-radius: 0rem;
+    margin: 20px 20px 20px 0;
+}
+
+.flex.max-w-5xl.grid-cols-3.gap-5.px-4.mx-auto.mt-10.md\:grid.md\:gap-10.conainter.md\:px-8.md\:mt-20 {display: flex; flex-direction: column;align-items: center;
+}
+div#navigation {
+  
+    position: absolute;
+    left:130px;
+}
+div#chabad_head .chabad_navigator_bar {
+    width: 65% !important;
+    height: 2rem !important;
+}
+
+.relative.flex.items-center.px-4.py-3.text-white.no-underline.md\:px-0.md\:py-0 {
+    position: relative;
+    z-index: 99999;
+    width: 100%;
+}
+.chabad_navigator_bar {
+    max-width: 29%;
+}
+.chabad_navigator_bar img {
+    right: 40px;
+}
+div#navigation {
+    max-width: 100%;
+}
+.testimonial_container.flex.gap-4.mt-10.md\:grid-cols-3.md\:gap-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(1%);
+width:100%;
+}
+.absolute.right-0.flex.flex-col.justify-center.w-full.h-full.p-5.text-center.md\:w-5\/12.bg-blue.border-2.border-white.bg-opacity-100.md\:p-10.md\:text-left.slider_width.border-right-radius {
+    width: 100%;
+    position: absolute !important;
+    border-top-right-radius: 0px;
+    transition: 0.5s;
+    background: #00000094;
+    border: none;
+}
+
+.absolute.w-full.h-full.slide.active .absolute.inset-0 {
+    width: 100%;
+    position: inherit;
+}
+.absolute.w-full.h-full.slide.active {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: inherit;
+}
+.border-white.relative.flex-1.order-2.w-auto.mx-2.overflow-hidden.bg-white.h-72.md\:mx-14.rounded-3xl {
+    height: auto;
+}
+.absolute.w-full.h-full.slide.active .absolute.inset-0 img {
+    height: 200px;
+    border-bottom-left-radius: 0rem;
+}
+.absolute.w-full.h-full.slide.active a.inline-flex.items-center.justify-center.h-12.text-vm.text-lg.font-bold.text-white.border-2.text-purple.bg-white_view_more.border-white.px-7.rounded-2xl.hover\:bg-white.hover\:text-red {
+    padding: 0px 30px 0px 30px;
+}
+.relative.flex.flex-col.items-center.max-w-20.px-4.py-4-5.mx-auto.conainter.md\:px-8.md\:py-24 .font-comfortaa.text-4xl.font-bold.text-center.text-white.md\:text-5xl {
+    font-size: 45px;
+    line-height: 56px;
+}
+a.flex.items-center.h-12.mt-6rem.text-lg.font-bold.text-white.no-underline.bg-red.border-2.hover\:text-blue.px-7.rounded-2xl.hover\:bg-white.md\:mt-14 {
+    background: #ff000000;
+    border: 1px solid #ef3d50;
+    color: #ffffff;
+    transition: 0.5s;
+    margin: 30px 0px 0px 0px;
+}
+.py-4-5 {
+    padding-bottom: 3.5rem;
+    padding-top: 6.5rem;
+}
+.text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+.p-5.bg-white.rounded-2xl.md\:rounded-3xl.mr-2 {
+    width: 100%;
+}
+.p-6.text-sm.text-center.text-black.md\:pt-8.md\:p-9 {
+    height: auto;
+    width: 100%;
+}
+.co_calendar_body .co_calendar_gradient .co_calendar_text {
+    margin-left: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    grid-template-rows: repeat(0, minmax(0, 0.5fr)) !important;
+    grid-template-rows: 0.5fr 0.5fr;
+    height: auto;
+
+    justify-items: center;
+}
+.footer3 {
+    padding: 0px 0px 15px 0px;
+    border-bottom: 2px solid #ffffff2e;
+    height: 109px;
+}
+.poweredby.large_bottom_margin::before {
+    content: "";
+    width: 100%;
+    height: 104px;
+    background-image: url(https://11871.centers.chabad.org/media/images/1218/kHcP12181638.png);
+    position: absolute;
+    left: 3%;
+    bottom: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.chabad_menu_content ul li a::before {
+    content: "";
+    display: block;
+    width: 0%;
+    padding-top: 0px;
+    border-bottom: 3px solid #fff;
+    transition: 0.5s;
+    margin: 23px 0px 0px 0px;
+    position: absolute;
+}
+.chabad_menu_content ul li a:hover::before {
+    content: "";
+    width: 0%;
+    
+}
+.border-white {
+    border: 0px solid white;
+}
+body.mobile #navigation.chabad_navigator_bar #menu li:not(.heading) .sub_menu_toggle, body.mobile #navigation.chabad_navigator_bar #menu li:not(.heading) .sub_menu {
+    display: inline-block !important;
+    opacity: 1;
+    margin: 4px 0px 6px 0px;
+    transform: scale(1.1);
+    box-shadow: none;
+}
+body.mobile .chabad_navigator_bar .sub_menu_toggle {
+    display: inline-block;
+    position: absolute;
+    background: url(https://11871.centers.chabad.org/media/images/1217/Epxp12175879.png) center center no-repeat;
+    color: transparent;
+    width: 10px;
+    height: 15px;
+}
+body.mobile .chabad_navigator_bar #menu .item.heading.expanded a, body.mobile .chabad_navigator_bar .sub_menu_toggle.expanded {
+    background-image: url(https://11871.centers.chabad.org/media/images/1217/uaPQ12175880.png);
+}
+.sub_menu ul li a {
+    color: #fff !important;
+    margin: 0px 26px 0px 10px;
+}
+li.item.parent.arrow {
+    line-height: 0px;
+}
+
+.p-7 {
+    padding: 1.2rem;
+}
+.co_calendar_body {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+    height: auto;
+    overflow: inherit;
+    margin-bottom: 1rem;
+}
+
+
+
+
+body.lang_en.dir_ltr.cco_body.cco_templateless_page.section_branch h1.article-header__title.js-article-title.js-page-title {
+    font-size: 35px;
+}
+body.lang_en.dir_ltr.cco_body.cco_templateless_page.section_branch .article-header {
+       text-align: center;
+    background-image: linear-gradient(rgba(249, 119, 76, 0.75), rgba(128, 42, 12, 0.85));
+     padding: 80px 0 !important; 
+    /* color: white; */
+    /* background-size: 100% 54% !important; */
+    margin-bottom: 80px;
+    background-repeat: no-repeat;
+   background-attachment: inherit !important;
+    background-position: center;
+}
+
+.co_index {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 30px;
+}
+.py-16.md\:py-24:nth-child(2) {
+    padding: 0px 0px 50px 0px;
+}
+body.mobile #navigation.chabad_navigator_bar #menu li:not(.heading) {
+    padding-left: 0px;
+}
+body.mobile #navigation.chabad_navigator_bar #menu li:not(.heading) a {
+    /* display: block; */
+    text-align: left;
+    font-weight: 300;
+}
+body.mobile #navigation.chabad_navigator_bar #menu li:not(.heading) {
+    background-color: #1baaa1 !important;
+border:none;
+}
+div#chabad_head .chabad_navigator_bar ul li ul li a {
+    
+    font-size: 12px;
+    height: 10px;
+    max-width: 300px;
+    min-width: 170px;
+   
+}
+div#chabad_head .chabad_navigator_bar ul li ul {
+    padding: 0px 0px 20px 0px;
+}
+body.mobile div.chabad_navigator_bar #menu .sub_menu ul {
+    border-left: 3px solid #BEBEBE;
+    margin-left: 9px;
+}
+.co_calendar_text.calendar-width .item.medium-width {
+    display: flex;
+    flex-direction: column;
+}
+.poweredby.large_bottom_margin::after {
+    content: "";
+    width: 100%;
+    height: 94px;
+    background-image: url(https://11871.centers.chabad.org/media/images/1218/dQon12181644.png);
+    position: absolute;
+    left: 73%;
+    bottom: 32px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 9999999;
+}
+
+}
+
+
+
+
+
+
+.testimonial_container .p-5
+{
+    margin-bottom: 0rem !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1600px) and (min-width:1424px){
+.w-full.overflow-x-auto .max-w-5xl {
+    max-width: 94rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1800px) and (min-width:1624px){
+
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:2000px) and (min-width:1804px){
+
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:2300px) and (min-width:2004px){
+
+}
+
+
+
+
+
+
+
+@media(max-width:3200px) and (min-width:2304px){
+
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:5900px) and (min-width:3204px){
+
+}

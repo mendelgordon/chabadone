@@ -1100,7 +1100,9 @@ select {
 .font-sans,
 .font-sans .article-header__subtitle,
 .font-sans .article-body p,
-.co_index {
+.co_index,
+.co_body h3,
+.form-all {
 	font-family: Mukta, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 .font-serif {

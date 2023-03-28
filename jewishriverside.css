@@ -22,8 +22,11 @@
 */
 
 @media (width <= 1024px) {
+	/* STOP LOGO FROM HIDING CONTENT */
 	body.sites-article #content {
-		/* STOP LOGO FROM HIDING CONTENT */
 		margin-top: 100px;
 	}
+	#header.on-scroll, body.sites-article #header {
+		height: 100px;
+}
 }

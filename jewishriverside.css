@@ -18,3 +18,9 @@
 #header.on-scroll {
 	height: 100px;
 }
+
+@media (width <= 1024px) {
+	body.sites-article #content {
+		margin-top: 100px;
+	}
+}

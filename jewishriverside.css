@@ -1,26 +1,3 @@
-/* OLD STYLING
-.branding-search #header_branding .site_title {
-	display: none;
-}
-
-@media (max-width: 1024px) and (max-width: 460px) {
-	.header_container,
-	.site-logo-wrapper {
-		display: block;
-	}
-}
-
-#header_branding .site-logo-wrapper {
-	background: #ffffff;
-	width: 100px !important;
-	height: 100px !important;
-}
-
-#header.on-scroll {
-	height: 100px;
-}
-*/
-
 @media (max-width: 1024px) {
 	/* STOP LOGO FROM HIDING CONTENT */
 	body.sites-article #content {

@@ -5,16 +5,6 @@
 .heart-donate {
 	padding: 0;
 }
-.fs-matcher-left {
-	grid-column: 1/2;
-}
-.heart-donate {
-	grid-column: 2/3;
-}
-.fs-matcher-right {
-	grid-column: 3/4;
-	text-align: right;
-}
 .fs-matcher div {
 	width: auto;
 }
@@ -39,8 +29,10 @@
 	}
 }
 @media screen and (max-width: 520px) {
-	.fs-matchers .fs-matcher, .heart-donate {
+	.fs-matchers .fs-matcher,
+	.heart-donate {
 		grid-column: 1/2;
+    text-align: center;
 	}
 	.fs-matcher-right {
 		grid-row: 1/2;
@@ -59,8 +51,18 @@
 	}
 }
 @media screen and (min-width: 520px) {
-  .fs-matchers .fs-matcher,
-  .heart-donate {
-    grid-row: 1/2;
-  }
+	.fs-matchers .fs-matcher,
+	.heart-donate {
+		grid-row: 1/2;
+	}
+	.fs-matcher-left {
+		grid-column: 1/2;
+	}
+	.heart-donate {
+		grid-column: 2/3;
+	}
+	.fs-matcher-right {
+		grid-column: 3/4;
+		text-align: right;
+	}
 }

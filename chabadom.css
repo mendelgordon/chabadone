@@ -10,9 +10,11 @@
 }
 .heart-donate {
   grid-column: 2/3;
+  grid-row: 1/2;
 }
 .fs-matcher-left {
   grid-column: 3/4;
+  text-align: right;
 }
 .fs-matcher div {
   width: auto;

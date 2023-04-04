@@ -5,14 +5,14 @@
   padding: 0;
   grid-row: 1/2;
 }
-.fs-matcher-right {
+.fs-matcher-left {
   grid-column: 1/2;
 }
 .heart-donate {
   grid-column: 2/3;
   grid-row: 1/2;
 }
-.fs-matcher-left {
+.fs-matcher-right {
   grid-column: 3/4;
   text-align: right;
 }

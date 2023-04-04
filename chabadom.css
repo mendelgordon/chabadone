@@ -4,7 +4,6 @@
 .fs-matchers .fs-matcher,
 .heart-donate {
 	padding: 0;
-	grid-row: 1/2;
 }
 .fs-matcher-left {
 	grid-column: 1/2;
@@ -58,4 +57,10 @@
 	.heart-donate {
 		margin: 12px auto;
 	}
+}
+@media screen and (min-width: 520px) {
+  .fs-matchers .fs-matcher,
+  .heart-donate {
+    grid-row: 1/2;
+  }
 }

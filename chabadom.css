@@ -25,34 +25,22 @@ body .fs-matcher h3 {
 }
 @media screen and (max-width: 740px) {
 	.heart-donate {
-		width: 100px;
-	}
-}
-@media screen and (max-width: 630px) and (min-width: 520px) {
-	.heart-donate {
 		display: none;
 	}
 }
 @media screen and (max-width: 520px) {
-	.fs-matchers .fs-matcher,
-	.heart-donate {
+	.fs-matchers .fs-matcher {
 		grid-column: 1/2;
     text-align: center;
 	}
 	.fs-matcher-right {
 		grid-row: 1/2;
 	}
-	.heart-donate {
-		grid-row: 2/3;
-	}
 	.fs-matcher-left {
-		grid-row: 3/4;
+		grid-row: 2/3;
 	}
 	.fs-matchers .fs-matchers-list {
 		justify-items: center;
-	}
-	.heart-donate {
-		margin: 12px auto;
 	}
 }
 @media screen and (min-width: 520px) {

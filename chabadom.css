@@ -18,10 +18,10 @@
 	justify-content: center;
 	grid-column-gap: 10px;
 }
-.fs-matcher h3 {
+body .fs-matcher h3 {
   font-size: 1.5em;
   font-family: 'Patua One', sans-serif;
-  margin: 10px auto;
+  margin: 0 0 10px 0;
 }
 @media screen and (max-width: 740px) {
 	.heart-donate {

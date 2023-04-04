@@ -3,8 +3,16 @@
 }
 .fs-matchers .fs-matcher {
   padding: 0;
-  grid-column: 2/3;
   grid-row: 1/2;
+}
+.fs-matcher-right {
+  grid-column: 1/2;
+}
+.heart-donate {
+  grid-column: 2/3;
+}
+.fs-matcher-left {
+  grid-column: 3/4;
 }
 .fs-matcher div {
   width: auto;

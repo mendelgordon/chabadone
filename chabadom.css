@@ -1,3 +1,6 @@
+.fs-about img {
+	max-width: 100%;
+}
 .fs-matchers .fs-matcher .fs-matcher-image {
 	display: none;
 }
@@ -19,9 +22,9 @@
 	grid-gap: 10px;
 }
 body .fs-matcher h3 {
-  font-size: 1.5em;
-  font-family: 'Patua One', sans-serif;
-  margin: 0 0 10px 0;
+	font-size: 1.5em;
+	font-family: "Patua One", sans-serif;
+	margin: 0 0 10px 0;
 }
 @media screen and (max-width: 740px) {
 	.heart-donate {
@@ -31,7 +34,7 @@ body .fs-matcher h3 {
 @media screen and (max-width: 520px) {
 	.fs-matchers .fs-matcher {
 		grid-column: 1/2;
-    text-align: center;
+		text-align: center;
 	}
 	.fs-matcher-right {
 		grid-row: 1/2;

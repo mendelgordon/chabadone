@@ -1,7 +1,17 @@
 #header .branding-search a {
- content: url(https://www.chabadjls.org/media/images/1200/jILh12006925.png);
- max-height: 80px;
+	content: url(https://www.chabadjls.org/media/images/1200/jILh12006925.png);
+	max-height: 80px;
 }
 #header.on-scroll .header-wrapper {
- height: 100px;
+	height: 100px;
+}
+
+@media (max-width: 1024px) {
+	/* STOP LOGO FROM HIDING CONTENT */
+	body.sites-article #content {
+		margin-top: 100px;
+	}
+	body.sites-article #header {
+		height: 101px;
+	}
 }

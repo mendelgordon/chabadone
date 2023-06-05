@@ -14,11 +14,11 @@
 body.cco_body #tabContentMain .co_menu_item.multi_level .co_submenu_container{border-top-color:#5a7d9b}
 #tabContentMain .co_menu_item.multi_level:before{border-bottom:8px solid #5a7d9b}
 body.cco_body #tabContentMain .co_menu_item.hover span.parent a{color:#83e5db}
-body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a{color:#1b8176}
+body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a,body.cco_body.sites-article #tabContentMain .co_menu_item.hover span.parent a{color:#c6d8e8}
 body.cco_body #tabContentMain .co_menu_item.selected span.parent a{color:#24ab9d}
 #lightbox-wrapper #lightbox #details-panel,.co_global_button .button,.co_global_submit .button,.cs-f-social-icons a:hover,body.cco_body #tabContentMain .co_menu_item.selected a.parent:after{background:#5a7d9b}
 body.cco_body #tabContentMain .co_menu_item.selected.hover a.parent:after{background:#83e5db}
-body.cco_body #header.on-scroll #tabContentMain .co_menu_item.selected.hover a.parent:after,body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.parent:after{background:#1b8176}
+body.cco_body #header.on-scroll #tabContentMain .co_menu_item.selected.hover a.parent:after,body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.parent:after{background:#c6d8e8}
 .co_global_button .button:focus,.co_global_button .button:hover,.co_global_submit .button:focus,.co_global_submit .button:hover{background:#24ab9d}
 .co_global_button.yellow .button,.hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore:hover{background:#635454}
 .co_global_button.yellow .button:focus,.co_global_button.yellow .button:hover{background:#0b5089}

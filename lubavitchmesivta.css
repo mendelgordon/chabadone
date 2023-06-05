@@ -73,3 +73,4 @@ body.cco_body #tabContentMain .co_menu_item.donate_link.hover span.parent div a{
 .hp-row .message .wrapper .widget_content .readMore{border-color:#5a7d9b;color:#635454}
 .hp-row [class^=widget-].latest_photos .readMore span{border:2px solid #5a7d9b}
 #footer .footer_text .footer3 .footer-title,#footer .footer_text .footer3 b .footer-title{color:#5a7d9b}
+.icon .chabad_updates .widget_content .item .icon img, .icon .widget_content .item .icon img{filter: invert(48%) sepia(43%) saturate(337%) hue-rotate(166deg) brightness(89%) contrast(93%);}

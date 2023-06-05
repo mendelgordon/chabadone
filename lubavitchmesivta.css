@@ -77,3 +77,7 @@ body.cco_body #tabContentMain .co_menu_item.hover span.parent a {
     color: #0c0907;
 }
 body.cco_body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,body.cco_body #header.on-scroll #tabContentMain .co_menu_item span.parent a,.hp-table .hp-row .promo_slider .slider .cycle-caption p big{color:#ffffff}
+
+.post-body img {
+    width: -webkit-fill-available;
+}

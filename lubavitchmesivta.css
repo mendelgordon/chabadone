@@ -61,7 +61,7 @@ body.cco_body #header.on-scroll #tabContentMain .co_menu_item.selected.hover a.p
 .cal_header_buttons .co_toggle_buttons .item.selected{border:2px solid #5a7d9b;background:#5a7d9b}
 .co_body .content .form-all .form-submit-button{background:#54afcb}
 .co_body .content .form-all .form-submit-button:focus,.co_body .content .form-all .form-submit-button:hover{background:#3797b5}
-#co_ads_container #MosadInformation .small_header,.child-subtitle,.child-subtitle a,.co_body .article_navigation_text a,.co_body .content .child_title,.co_body .content .child_title a,.co_body .content .department_index .header a,.co_body .content .lt_blue a,.co_body .rounded_box a,.co_body .small_header,.co_body .small_header a,.co_body .small_header_alt,.co_body .small_header_alt a,.co_body .small_header_light,.co_body .small_header_light a,.co_content_container .small_header,.co_global_button .button a,.co_global_button a.button,.co_index .item .title,.co_index .item .title a,.comment-thread .reader-comment .comment-reply-link,.hp-table .hp-row .promo_slider .slider .cycle-caption p big,.lt_blue,.lt_blue a,.small-links__item--more a,border-bottom- .child_title a{color:#5a7d9b}
+#co_ads_container #MosadInformation .small_header,.child-subtitle,.child-subtitle a,.co_body .article_navigation_text a,.co_body .content .child_title,.co_body .content .child_title a,.co_body .content .department_index .header a,.co_body .content .lt_blue a,.co_body .rounded_box a,.co_body .small_header,.co_body .small_header a,.co_body .small_header_alt,.co_body .small_header_alt a,.co_body .small_header_light,.co_body .small_header_light a,.co_content_container .small_header,.co_global_button .button a,.co_global_button a.button,.co_index .item .title,.co_index .item .title a,.comment-thread .reader-comment .comment-reply-link,.lt_blue,.lt_blue a,.small-links__item--more a,border-bottom- .child_title a{color:#5a7d9b}
 .co_body .date_navigation{border-bottom-color:#54afcb}
 .co_body .content .department_index li:before{border-left:4px solid #635454}
 #co_department_index .co_body .clearfix{background:#cbe5fb!important}
@@ -76,4 +76,4 @@ body.cco_body #tabContentMain .co_menu_item.donate_link.hover span.parent div a{
 body.cco_body #tabContentMain .co_menu_item.hover span.parent a {
     color: #0c0907;
 }
-body.cco_body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span{color:#ffffff}
+body.cco_body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,.hp-table .hp-row .promo_slider .slider .cycle-caption p big{color:#ffffff}

@@ -71,7 +71,7 @@ body.cco_body #header.on-scroll #tabContentMain .co_menu_item.selected.hover a.p
 .co_body .content .department_index li:before{border-left:4px solid #635454}
 #co_department_index .co_body .clearfix{background:#cbe5fb!important}
 #co_department_index .co_body .clearfix .small_header{background:#635454}
-#footer{background: #dfd9c9;}
+#footer,.hp-row{background: #dfd9c9;}
 .hp-row .message .wrapper .widget_content .readMore:hover,.hp-table .hp-row .promo_slider .slider .cycle-caption .readMore:hover{background-color:#5a7d9b}
 .hp-table .hp-row .promo_slider .slider .cycle-caption .readMore{border-color:#5a7d9b}
 body.cco_body #tabContentMain .co_menu_item.donate_link.hover span.parent div a{border-color:#605a58;color:#5a7d9b}

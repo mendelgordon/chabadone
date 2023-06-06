@@ -87,10 +87,10 @@ body.cco_body #tabContentMain .co_menu_item.donate_link.hover span.parent div a{
 #footer .footer_text .footer3 .footer-title,#footer .footer_text .footer3 b .footer-title{color:#5a7d9b}
 .icon .chabad_updates .widget_content .item .icon img, .icon .widget_content .item .icon img{filter: invert(48%) sepia(43%) saturate(337%) hue-rotate(166deg) brightness(89%) contrast(93%);}
 body.cco_body #tabContentMain .co_menu_item.hover span.parent a {
-    color: #0c0907;
+    color: #f7e4d7;
 }
 body.cco_body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span{color:#ffffff}
-.hp-table .hp-row .promo_slider .slider .cycle-caption p big,#BodyContainer #co_content_container>.clearfix>.g960:not(.categorized) .article-header .article-header__title{
+.hp-table .hp-row .promo_slider .slider .cycle-caption p big,#BodyContainer #co_content_container>.clearfix>.g960:not(.categorized) .article-header .article-header__title,.branding-search #header_branding .site_title{
     color: #dfd9c9;
 }
 @media screen and (max-width:1025px){

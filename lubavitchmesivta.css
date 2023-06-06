@@ -14,7 +14,7 @@
 body.cco_body #tabContentMain .co_menu_item.multi_level .co_submenu_container{border-top-color:#5a7d9b}
 #tabContentMain .co_menu_item.multi_level:before{border-bottom:8px solid #5a7d9b}
 body.cco_body #tabContentMain .co_menu_item.hover span.parent a{color:#83e5db}
-body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a,body.cco_body.sites-article #tabContentMain .co_menu_item.hover span.parent a,.co_menu_item.multi_level .co_submenu_container a.item.hover span,.co_menu_item.multi_level .co_submenu_container a.item:hover span,body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span{color:#c6d8e8!important}
+body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a,body.cco_body.sites-article #tabContentMain .co_menu_item.hover span.parent a,.co_menu_item.multi_level .co_submenu_container a.item.hover span,.co_menu_item.multi_level .co_submenu_container a.item:hover span,body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span{color:#99b5ce!important}
 @media screen and (min-width:1025px){
     body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a,.co_menu_item.multi_level .co_submenu_container a.item.hover span,body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span, body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span {
         color: #5a7d9b!important

@@ -27,7 +27,7 @@ body.cco_body #header.on-scroll #tabContentMain .co_menu_item.selected.hover a.p
 .co_global_button .button:focus,.co_global_button .button:hover,.co_global_submit .button:focus,.co_global_submit .button:hover{background:#24ab9d}
 .co_global_button.yellow .button,.hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore:hover{background:#635454}
 .co_global_button.yellow .button:focus,.co_global_button.yellow .button:hover{background:#0b5089}
-#co_ads_container #customizable_promos .sneak_peek[class*=widget-] .widget_content h6:hover,.article_index_container .co_index.article_index .row .item .title a:hover,.content .co_index.double.nested .item .wrapper.imageOnTop>a:hover .title,.sneak-peek-container .sneak_peek .widget_content h6:hover{background:rgba(47,211,194,.6)}
+#co_ads_container #customizable_promos .sneak_peek[class*=widget-] .widget_content h6:hover,.article_index_container .co_index.article_index .row .item .title a:hover,.content .co_index.double.nested .item .wrapper.imageOnTop>a:hover .title,.sneak-peek-container .sneak_peek .widget_content h6:hover{background:#0f6cb8}
 .ribbon-wrapper .ribbon{background-color:#5a7d9b}
 .banner .widget_content.index_format .item .readMore,.hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore,.message .wrapper .widget_content .readMore{border:2px solid #635454}
 .message .wrapper .widget_content .readMore{color:#5a7d9b}

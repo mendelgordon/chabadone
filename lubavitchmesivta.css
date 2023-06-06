@@ -14,6 +14,11 @@ body.cco_body #tabContentMain .co_menu_item.multi_level .co_submenu_container{bo
 #tabContentMain .co_menu_item.multi_level:before{border-bottom:8px solid #5a7d9b}
 body.cco_body #tabContentMain .co_menu_item.hover span.parent a{color:#83e5db}
 body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a,body.cco_body.sites-article #tabContentMain .co_menu_item.hover span.parent a,.co_menu_item.multi_level .co_submenu_container a.item.hover span,.co_menu_item.multi_level .co_submenu_container a.item:hover span,body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span{color:#c6d8e8!important}
+@media screen and (min-width:1025px){
+    .co_menu_item.multi_level .co_submenu_container a.item.hover span,body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span, body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span {
+        color: #5a7d9b!important
+    }
+}
 body.cco_body #tabContentMain .co_menu_item.selected span.parent a{color:#020b0a}
 #lightbox-wrapper #lightbox #details-panel,.co_global_button .button,.co_global_submit .button,.cs-f-social-icons a:hover,body.cco_body #tabContentMain .co_menu_item.selected a.parent:after{background:#5a7d9b}
 body.cco_body #tabContentMain .co_menu_item.selected.hover a.parent:after{background:#83e5db}

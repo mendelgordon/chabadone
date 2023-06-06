@@ -18,6 +18,9 @@ body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent 
 body.cco_body #tabContentMain .co_menu_item.hover span.parent, body.cco_body #tabContentMain .co_menu_item.hover span.parent a, body.cco_body #tabContentMain .co_menu_item.hover.arrow a span {
     color: #0a3459;
 }
+.dir_ltr .co_menu_item.multi_level .co_submenu_container .menu_child.selected, .dir_rtl .co_menu_item.multi_level .co_submenu_container.reversed .menu_child.selected {
+    border-left: 1px solid #eee;
+}
 @media screen and (min-width:1025px){
     body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a,.co_menu_item.multi_level .co_submenu_container a.item.hover span,body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span, body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span {
         color: #5a7d9b!important

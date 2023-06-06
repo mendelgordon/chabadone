@@ -84,7 +84,7 @@ body.cco_body #tabContentMain .co_menu_item.hover span.parent a {
     color: #0c0907;
 }
 body.cco_body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span{color:#ffffff}
-.hp-table .hp-row .promo_slider .slider .cycle-caption p big{
+.hp-table .hp-row .promo_slider .slider .cycle-caption p big,#BodyContainer #co_content_container>.clearfix>.g960:not(.categorized) .article-header .article-header__title{
     color: #dfd9c9;
 }
 @media screen and (max-width:1025px){

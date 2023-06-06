@@ -97,3 +97,6 @@ body.cco_body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_cont
 .post-body img {
     width: -webkit-fill-available;
 }
+.article_index_container .co_index.article_index .row .item .title {
+    background: #0c4472;
+}

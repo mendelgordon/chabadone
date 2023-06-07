@@ -106,3 +106,18 @@ body.cco_body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_cont
 .article_index_container .co_index.article_index .row .item .title {
     background: #0c4472;
 }
+.hp_content_wrapper .latest_photos .widget_content ul li {
+    width: 95%;
+    height: 300px;
+}
+.latest_photos .widget_content>ul {
+    height: 330px;
+}
+/* scroll through one image at a time in the vertical list and snap the user to the next one with scroll-snap */
+.latest_photos .widget_content>ul>li {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+.latest_photos .widget_content>ul {
+    scroll-snap-type: y mandatory;
+}

@@ -121,3 +121,7 @@ body.cco_body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_cont
 .latest_photos .widget_content>ul {
     scroll-snap-type: y mandatory;
 }
+/* make homepage bochurim image lighter */
+.hp-table .hp-row-first .promo_slider .slider .slides div[caption=".caption-0"] img[style*="nnom12348987"] {
+    mix-blend-mode: overlay!important;
+}

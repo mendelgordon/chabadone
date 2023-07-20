@@ -1,6 +1,3 @@
-window.addEventListener("load", () => {
-	const anonymousCheckbox = document.querySelector("#inputAnonymous");
-	if (anonymousCheckbox) {
-		anonymousCheckbox.parentElement.remove();
-	}
-});
+const style = document.createElement("style");
+style.innerHTML = ".checkbox:has(#inputAnonymous) {display: none;}";
+document.head.appendChild(style);

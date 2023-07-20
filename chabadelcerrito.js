@@ -1,4 +1,3 @@
-
 // add a button to the header for the Chai Club
 const donateButtonOne = document.querySelector(".donate-button");
 const headerChaiClub = `<div class="donate-button"><div class="donate-button-text common-donate chai-club">Join the Monthly Giving (Chai) Club!</div></div>`;
@@ -17,10 +16,10 @@ if (!document.querySelector(".chai-club.fs-btn")) {
 
 // make the Chai Club buttons open the donate page with the monthly option selected
 const chaiClubButtons = document.querySelectorAll(".chai-club");
-const monthly = document.querySelector("#inputRecurring");
 const donateButtonTwo = document.querySelector(".fs-donate.fs-donatable > .button-wrapper > a");
 chaiClubButtons.forEach((button) => {
 	button.onclick = function () {
+		const monthly = document.querySelector("#inputRecurring");
 		// if monthly was not yet pressed, press monthly
 		if (!monthly.checked) {
 			monthly.click();

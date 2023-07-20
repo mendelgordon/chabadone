@@ -19,10 +19,9 @@ const chaiClubButtons = document.querySelectorAll(".chai-club");
 const donateButtonTwo = document.querySelector(".fs-donate.fs-donatable > .button-wrapper > a");
 chaiClubButtons.forEach((button) => {
 	button.onclick = function () {
-		const monthly = document.querySelector("#inputRecurring");
 		// if monthly was not yet pressed, press monthly
-		if (!monthly.checked) {
-			monthly.click();
+		if (document.querySelector("#inputRecurring") && !document.querySelector("#inputRecurring").checked) {
+			document.querySelector("#inputRecurring").click();
 		}
 		// open the donate page
 		donateButtonTwo.click();

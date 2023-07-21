@@ -21,8 +21,21 @@ chaiClubButtons.forEach((button) => {
 	button.onclick = function () {
 		// open the donate page
 		donateButtonTwo.click();
-		// if monthly was not yet pressed, press monthly
-		if (document.querySelector("#inputRecurring") && !document.querySelector("#inputRecurring").checked) {
+		// if monthly was not yet pressed, press monthly after 250ms
+		setTimeout(() => {
+			if (document.querySelector("#inputRecurring") && !document.querySelector("#inputRecurring").checked) {
+				document.querySelector("#inputRecurring").click();
+			}
+		}, 250);
+	};
+});
+
+// make the donate buttons (.js-action-open-donate) open the donate page with the monthly option unselected
+const donateButtons = document.querySelectorAll(".js-action-open-donate");
+donateButtons.forEach((button) => {
+	button.onclick = function () {
+		// if monthly was pressed, unpress monthly
+		if (document.querySelector("#inputRecurring") && document.querySelector("#inputRecurring").checked) {
 			document.querySelector("#inputRecurring").click();
 		}
 	};

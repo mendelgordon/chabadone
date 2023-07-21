@@ -3,7 +3,7 @@ try {
 	const donateButtonOne = document.querySelector(".donate-button");
 	const headerChaiClub = `<div class="donate-button"><div class="donate-button-text common-donate chai-club">Join the Monthly Giving (Chai) Club!</div></div>`;
 	// if headerChaiClub wasn't yet added, add it
-	if (!document.querySelector(".chai-club.common-donate")) {
+	if (!document.querySelector(".chai-club.common-donate") && donateButtonOne) {
 		donateButtonOne.insertAdjacentHTML("afterend", headerChaiClub);
 	}
 
@@ -11,7 +11,7 @@ try {
 	const donateSection = document.querySelector(".fs-donate.fs-donatable");
 	const mainChaiClub = `<div class="button-wrapper col-md-10"><div class="btn fs-btn chai-club" style="background: #3da7ce;white-space:break-spaces">Join the Monthly Giving (Chai) Club!<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div></div>`;
 	// if mainChaiClub wasn't yet added, add it
-	if (!document.querySelector(".chai-club.fs-btn")) {
+	if (!document.querySelector(".chai-club.fs-btn") && donateSection) {
 		donateSection.insertAdjacentHTML("beforeend", mainChaiClub);
 	}
 

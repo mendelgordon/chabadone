@@ -34,9 +34,11 @@ chaiClubButtons.forEach((button) => {
 const donateButtons = document.querySelectorAll(".js-action-open-donate");
 donateButtons.forEach((button) => {
 	button.onclick = function () {
-		// if monthly was pressed, unpress monthly
-		if (document.querySelector("#inputRecurring") && document.querySelector("#inputRecurring").checked) {
-			document.querySelector("#inputRecurring").click();
-		}
+		// if monthly was pressed, unpress monthly after 50ms
+		setTimeout(() => {
+			if (document.querySelector("#inputRecurring") && document.querySelector("#inputRecurring").checked) {
+				document.querySelector("#inputRecurring").click();
+			}
+		}, 50);
 	};
 });

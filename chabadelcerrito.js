@@ -42,6 +42,29 @@ try {
 			}, 50);
 		};
 	});
+
+	// update the monthly option text to include the monthly donation amount
+	const updateMonthlyText = () => {
+		const inputRecurring = document.querySelector("label[for='inputRecurring']");
+		const inputAmount = document.querySelector("input[name='x_amount']:checked");
+		const inputAmountValue = inputAmount ? `$${inputAmount.value} ` : "";
+		if (inputRecurring) {
+			inputRecurring.innerText = `I would like to donate ${inputAmountValue}monthly`;
+		}
+	};
+
+	// update the monthly option text to include the monthly donation amount when the donation amount is changed
+	const monitorDonationAmounts = () => {
+		const donationAmounts = document.querySelectorAll('input[name="x_amount"]');
+		donationAmounts.forEach((amount) => {
+			amount.addEventListener("change", updateMonthlyText);
+		});
+	};
+
+	// add the donation amount change monitor when the donation page is opened
+	donateButtons.forEach((button) => {
+		button.addEventListener("click", monitorDonationAmounts);
+	});
 } catch (error) {
 	console.error(error);
 }

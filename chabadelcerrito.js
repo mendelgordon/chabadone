@@ -20,7 +20,7 @@ try {
 	chaiClubButtons.forEach((button) => {
 		button.onclick = function () {
 			// open the donate page
-			donateButton.click();
+			donateButton.childNodes[0].click();
 			// if monthly was not yet pressed, press monthly after 250ms
 			setTimeout(() => {
 				if (document.querySelector("#inputRecurring") && !document.querySelector("#inputRecurring").checked) {

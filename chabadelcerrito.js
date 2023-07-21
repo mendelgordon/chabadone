@@ -47,7 +47,7 @@ try {
 	const updateMonthlyText = () => {
 		const inputRecurring = document.querySelector("label[for='inputRecurring']");
 		const inputAmount = document.querySelector(".fs-effective-donation-amount");
-		const inputAmountValue = inputAmount ? inputAmount / 2 + " " : "";
+		const inputAmountValue = inputAmount && !isNaN(inputAmount) ? inputAmount / 2 + " " : "";
 		if (inputRecurring) {
 			inputRecurring.innerText = `I would like to donate ${inputAmountValue}monthly`;
 		}

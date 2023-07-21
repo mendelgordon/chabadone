@@ -55,14 +55,16 @@ try {
 
 	// update the monthly option text to include the monthly donation amount when the donation amount is changed
 	const monitorDonationAmounts = () => {
-		const donationAmounts = document.querySelectorAll('input[name="x_amount"]');
-		const otherAmount = document.querySelector(".js-other-amount");
-		donationAmounts.forEach((amount) => {
-			amount.addEventListener("change", updateMonthlyText);
-		});
-		if (otherAmount) {
-			otherAmount.addEventListener("change", updateMonthlyText);
-		}
+		setTimeout(() => {
+			const donationAmounts = document.querySelectorAll('input[name="x_amount"]');
+			const otherAmount = document.querySelector(".js-other-amount");
+			donationAmounts.forEach((amount) => {
+				amount.addEventListener("change", updateMonthlyText);
+			});
+			if (otherAmount) {
+				otherAmount.addEventListener("change", updateMonthlyText);
+			}
+		}, 50);
 	};
 
 	// add the donation amount change monitor when the donation page is opened

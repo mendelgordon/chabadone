@@ -56,6 +56,7 @@ try {
 	// update the monthly option text to include the monthly donation amount when the donation amount is changed
 	const monitorDonationAmounts = () => {
 		setTimeout(() => {
+			updateMonthlyText();
 			const donationAmounts = document.querySelectorAll('input[name="x_amount"]');
 			const otherAmount = document.querySelector(".js-other-amount");
 			donationAmounts.forEach((amount) => {

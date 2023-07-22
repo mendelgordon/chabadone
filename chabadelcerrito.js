@@ -46,10 +46,10 @@ try {
 	// update the monthly option text to include the monthly donation amount
 	const updateMonthlyText = () => {
 		const inputRecurring = document.querySelector("label[for='inputRecurring']");
-		const inputAmount = document.querySelector(".fs-effective-donation-amount");
-		const inputAmountValue = inputAmount && !isNaN(inputAmount) ? inputAmount / 2 + " " : "";
+		const inputAmountField = document.querySelector(".fs-effective-donation-amount");
+		const inputAmount = inputAmountField ? `$${Number(inputAmountField.innerText.replace(/[^0-9.-]+/g, "")) / 2} ` : "";
 		if (inputRecurring) {
-			inputRecurring.innerText = `I would like to donate ${inputAmountValue}monthly`;
+			inputRecurring.innerText = `I would like to donate ${inputAmount}monthly`;
 		}
 	};
 

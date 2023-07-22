@@ -47,9 +47,9 @@ try {
 	const updateMonthlyText = () => {
 		const inputRecurring = document.querySelector("label[for='inputRecurring']");
 		const inputAmountField = document.querySelector(".fs-effective-donation-amount");
-		const inputAmount = inputAmountField ? `$${Number(inputAmountField.innerText.replace(/[^0-9.-]+/g, "")) / 2} ` : "";
+		const inputAmount = inputAmountField ? `${Number(inputAmountField.innerText.replace(/[^0-9.-]+/g, "")) / 2}` : "0";
 		if (inputRecurring) {
-			inputRecurring.innerText = `I would like to donate ${inputAmount}monthly`;
+			inputRecurring.innerText = `I would like to donate $${inputAmount} monthly`;
 		}
 	};
 

@@ -16,7 +16,7 @@ try {
 	}
 
 	// make the Chai Club buttons open the donate page with the monthly option selected
-	const chaiClubButtons = document.querySelectorAll(".chai-club");
+	const chaiClubButtons = Array.from(document.querySelectorAll(".chai-club")).concat(Array.from(document.querySelectorAll(".fs-about-text a[href='#']")));
 	chaiClubButtons.forEach((button) => {
 		button.onclick = function () {
 			// open the donate page

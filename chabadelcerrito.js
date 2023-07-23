@@ -74,15 +74,18 @@ try {
 	});
 
 	// add venmo and cashapp links to the donate page
-	const venmoLink = "https://venmo.com/code?user_id=2829341297737728336&created=1690099180";
-	const venmoQR = "https://w2.chabad.org/media/images/1240/vqgH12401008.png";
-	const cashappLink = "https://cash.app/$ChabadElCerrito";
-	const cashAppQR = "https://cash.app/qr/$ChabadElCerrito?size=100&margin=5";
-	const paymentSection = document.querySelector(".fs-payment-information");
-	const paymentSectionHTML = `<div class="fs-donate-payment-methods"><div class="fs-donate-payment-methods-title">Donate with:</div><div class="fs-donate-payment-methods-buttons"><a href="${venmoLink}" target="_blank"><img src="${venmoQR}" alt="Venmo QR Code" style="width: 100px; height: 100px; margin: 10px;"></a><a href="${cashappLink}" target="_blank"><img src="${cashAppQR}" alt="Cash App QR Code" style="width: 100px; height: 100px; margin: 10px;"></a></div></div>`;
-	if (paymentSection && !document.querySelector(".fs-donate-payment-methods")) {
-		paymentSection.insertAdjacentHTML("beforebegin", paymentSectionHTML);
-	}
+	const addVenmoAndCashApp = () => {
+		const venmoLink = "https://venmo.com/code?user_id=2829341297737728336&created=1690099180";
+		const venmoQR = "https://w2.chabad.org/media/images/1240/vqgH12401008.png";
+		const cashappLink = "https://cash.app/$ChabadElCerrito";
+		const cashAppQR = "https://cash.app/qr/$ChabadElCerrito?size=100&margin=5";
+		const paymentSection = document.querySelector(".fs-payment-information");
+		const paymentSectionHTML = `<div class="fs-donate-payment-methods"><div class="fs-donate-payment-methods-title">Donate with:</div><div class="fs-donate-payment-methods-buttons"><a href="${venmoLink}" target="_blank"><img src="${venmoQR}" alt="Venmo QR Code" style="width: 100px; height: 100px; margin: 10px;"></a><a href="${cashappLink}" target="_blank"><img src="${cashAppQR}" alt="Cash App QR Code" style="width: 100px; height: 100px; margin: 10px;"></a></div></div>`;
+		if (paymentSection && !document.querySelector(".fs-donate-payment-methods")) {
+			paymentSection.insertAdjacentHTML("beforebegin", paymentSectionHTML);
+		}
+	};
+	window.addEventListener("load", addVenmoAndCashApp);
 } catch (error) {
 	console.error(error);
 }

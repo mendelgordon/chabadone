@@ -88,7 +88,7 @@ try {
 	window.addEventListener("load", addVenmoAndCashApp);
 
 	// always show the dedication text
-	const dedicationStyles = `.donate-members .donates_user {height: fit-content;min-height: 130px}.donate-members .donates_user .description{display: block}`;
+	const dedicationStyles = `.fs-partners .fs-partner-container .fs-partner .fs-partner-dedication{max-height: unset;padding:0px!important;transition:unset;position: relative;border-bottom:unset!important;}`;
 	const dedicationStylesElement = document.createElement("style");
 	dedicationStylesElement.innerHTML = dedicationStyles;
 	document.head.appendChild(dedicationStylesElement);

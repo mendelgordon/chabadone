@@ -92,6 +92,12 @@ try {
 	const dedicationStylesElement = document.createElement("style");
 	dedicationStylesElement.innerHTML = dedicationStyles;
 	document.head.appendChild(dedicationStylesElement);
+
+	// hide campaign status text
+	const campaignStatusStyles = ` .fs-countdown, .fs-left-border-triangle, .fs-left-border-triangle, .fs-left-triangle, .fs-top-border-triangle, .fs-countdowndonate .fs-top-triangle {display:none!important}.fs-countdowndonate .fs-donate {width:100%}@media screen and (min-width: 992px) { .fs-donate .fs-donate-amounts:not(.prevent-width-set) {width:unset}}`;
+	const campaignStatusStylesElement = document.createElement("style");
+	campaignStatusStylesElement.innerHTML = campaignStatusStyles;
+	document.head.appendChild(campaignStatusStylesElement);
 } catch (error) {
 	console.error(error);
 }

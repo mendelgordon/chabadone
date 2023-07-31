@@ -1,0 +1,12 @@
+/* Makes main promo overlay transparent */
+.hp-table .hp-row-first .promo_slider .slider .slides .slide_wrapper img {
+    mix-blend-mode: initial !important;
+}
+
+/* Make text on navbar readable */
+.header-home {
+    text-align: center;
+    height: 137px;
+    background-color: hsl(0deg 0% 0% / 50%);
+    width: 100vw !important;
+}

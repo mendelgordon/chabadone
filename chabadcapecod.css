@@ -7,3 +7,10 @@
 .branding-search #header_branding.logo img {
 	filter: invert(1);
 }
+
+/* Keep the homepage main promo banner small on mobile so the words don't get cut off */
+.hp-table .hp-row-first .promo_slider .slider .slides {
+	@media (max-width: 560px) or (max-width: 500px) {
+		padding-top: 80%;
+	}
+}

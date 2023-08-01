@@ -14,3 +14,19 @@
 		padding-top: 80%;
 	}
 }
+
+@media screen and (max-width: 960px) {
+	/* Fit the sliding promos into the screen on mobile */
+	.promo_slider .slide_wrapper,
+	.hp-table > :not(:first-child) .promo_slider .wrapper,
+	.slides {
+		max-width: 100%;
+	}
+	.g960 .hp-row.hp-promos-custom .promo_slider.v380 .slide_wrapper img {
+		background-size: contain !important;
+		background-position-y: top !important;
+	}
+	.slide_wrapper {
+		background-color: inherit !important;
+	}
+}

@@ -1,0 +1,31 @@
+/* Makes main promo overlay transparent */
+.hp-table .hp-row-first .promo_slider .slider .slides .slide_wrapper img {
+	mix-blend-mode: initial !important;
+}
+
+/* Keep the homepage main promo banner small on mobile so the words don't get cut off */
+.hp-table .hp-row-first .promo_slider .slider .slides {
+	@media (max-width: 560px) or (max-width: 500px) {
+		padding-top: 80%;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	/* Fit the sliding promos into the screen on mobile */
+	.promo_slider .slide_wrapper,
+	.hp-table > :not(:first-child) .promo_slider .wrapper,
+	.slides {
+		max-width: 100%;
+	}
+	.g960 .hp-row.hp-promos-custom .promo_slider.v380 .slide_wrapper img {
+		background-size: contain !important;
+		background-position-y: top !important;
+	}
+	.slide_wrapper {
+		background-color: inherit !important;
+	}
+}
+/* Hide the branding on the homepage */
+.home:has(.hp-promos-custom) #header_branding {
+	visibility: collapse;
+}

@@ -34,3 +34,8 @@
 .home #header_branding {
 	visibility: collapse;
 }
+
+/* Show menu button on mobile before scroll */
+.cs-mobile-menu-open {
+	color: #2fd3c2;
+}

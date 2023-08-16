@@ -3,6 +3,11 @@
 	mix-blend-mode: initial !important;
 }
 
+/* Add background to header text */
+.home #header {
+	background-color: #808080db;
+}
+
 /* Keep the homepage main promo banner small on mobile so the words don't get cut off */
 .hp-table .hp-row-first .promo_slider .slider .slides {
 	@media (max-width: 560px) or (max-width: 500px) {

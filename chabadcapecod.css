@@ -41,3 +41,10 @@
 		background-image: url(https://chabadcapecod.com/media/images/1242/lobB12426318.jpg) !important;
 	}
 }
+
+/* Remove custom promo padding on mobile */
+.hp-row.hp-promos-custom {
+	@media (max-width: 850px) {
+		padding: 10px;
+	}
+}

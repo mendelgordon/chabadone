@@ -24,7 +24,7 @@
 	.slides {
 		max-width: 100%;
 	}
-	.g960 .hp-row.hp-promos-custom .promo_slider.v380 .slide_wrapper img {
+	.g960 .hp-row:nth-child(2) .promo_slider.v380 .slide_wrapper img {
 		background-size: contain !important;
 		background-position-y: top !important;
 	}

@@ -41,3 +41,10 @@
 .cs-mobile-menu-open {
 	color: #2fd3c2;
 }
+
+/* Remove large promo padding on mobile */
+.hp-row:nth-child(2) {
+	@media (max-width: 850px) {
+		padding: 10px;
+	}
+}

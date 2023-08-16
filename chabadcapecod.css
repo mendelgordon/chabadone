@@ -34,3 +34,11 @@
 .home:has(.hp-promos-custom) #header_branding {
 	visibility: collapse;
 }
+
+/* Change the hp banner image on mobile */
+@media (max-width: 850px) {
+	.slider [style*="background: url(&quot;https://w2.chabad.org/media/images/1241/LiQT12416094.jpg&quot;)"]
+	{
+		background-image: url(https://chabadcapecod.com/media/images/1242/lobB12426318.jpg);
+	}
+}

@@ -31,6 +31,6 @@
 	}
 }
 /* Hide the branding on the homepage */
-.home:has(.hp-promos-custom) #header_branding {
+.home #header_branding {
 	visibility: collapse;
 }

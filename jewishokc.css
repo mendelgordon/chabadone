@@ -4,8 +4,10 @@
 }
 
 /* Add background to desktop header text when not scrolling */
-.home:not(.mobile) #header:not(.on-scroll) {
-	background-color: #808080db;
+@media (min-width: 1025px) {
+	.home #header:not(.on-scroll) {
+		background-color: #808080db;
+	}
 }
 
 /* Keep the homepage main promo banner small on mobile so the words don't get cut off */

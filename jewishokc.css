@@ -3,8 +3,8 @@
 	mix-blend-mode: initial !important;
 }
 
-/* Add background to header text when not scrolling */
-.home #header:not(.on-scroll) {
+/* Add background to desktop header text when not scrolling */
+.home:not(.mobile) #header:not(.on-scroll) {
 	background-color: #808080db;
 }
 

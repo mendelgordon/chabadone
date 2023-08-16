@@ -3,5 +3,5 @@ div#right-sidebar {
 	display: none;
 }
 .column-middle {
-	margin-right: -48px!important;
+	margin-right: 0!important;
 }

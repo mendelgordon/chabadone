@@ -3,5 +3,9 @@ div#right-sidebar {
 	display: none;
 }
 .column-middle {
-	margin-right: 0!important;
+	margin-right: 0 !important;
+}
+/* Stop preferences button from overlapping with search button */
+a#settings-dropdown {
+	left: 0;
 }

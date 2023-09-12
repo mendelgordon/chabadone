@@ -16,4 +16,14 @@ window.addEventListener("DOMContentLoaded", () => {
 	if (window.location.href.includes(5512724) || window.location.href.includes(5512752)) {
 		document.querySelector("#Head1").insertAdjacentHTML("beforeend", '<link rel="stylesheet" href="https://chabad.netlify.app/chabadwaterways.css" />');
 	}
+	if (window.location.href.includes(5242468)) {
+		const styles = `<style>
+		.form-all .label-message {
+			font-weight: 600;
+			font-size: inherit;
+			color: #e3c188;
+		}
+		</style>`;
+		document.head.insertAdjacentHTML("beforeend", styles);
+	}
 });

@@ -23,6 +23,14 @@ window.addEventListener("DOMContentLoaded", () => {
 			font-size: inherit;
 			color: #e3c188;
 		}
+		.form-line:has(.sold) {
+			& input {
+				pointer-events: none;
+			}
+			.label-message {
+				content: "Sold";
+			}
+		}
 		</style>`;
 		document.head.insertAdjacentHTML("beforeend", styles);
 		let items = document.querySelectorAll("label");

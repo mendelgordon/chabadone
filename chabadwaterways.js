@@ -33,9 +33,9 @@ window.addEventListener("DOMContentLoaded", () => {
 				position: absolute;
 				top: 20%;
 				left: 19%;
-				color: #b2401da8; /* Customize the text color as needed */
-				font-weight: bold; /* Customize the font weight as needed */
-				font-size: 40px; /* Customize the padding as needed */
+				color: #b2401da8;
+				font-weight: bold;
+				font-size: 40px;
 				transform: rotateZ(336deg);
 			}
 		}

@@ -24,11 +24,19 @@ window.addEventListener("DOMContentLoaded", () => {
 			color: #e3c188;
 		}
 		.form-line:has(.sold) {
+			position: relative;
 			& input {
 				pointer-events: none;
 			}
-			.label-message {
+			&::after {
 				content: "Sold";
+				position: absolute;
+				top: 20%;
+				left: 19%;
+				color: #b2401da8; /* Customize the text color as needed */
+				font-weight: bold; /* Customize the font weight as needed */
+				font-size: 40px; /* Customize the padding as needed */
+				transform: rotateZ(336deg);
 			}
 		}
 		</style>`;

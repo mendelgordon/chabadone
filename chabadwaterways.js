@@ -25,5 +25,12 @@ window.addEventListener("DOMContentLoaded", () => {
 		}
 		</style>`;
 		document.head.insertAdjacentHTML("beforeend", styles);
+		let items = document.querySelectorAll("label");
+		items.forEach((element) => {
+			// only for the ones with the word sold in the label
+			if (element.innerText.includes("Sold")) {
+				element.classList.add("sold");
+			}
+		})
 	}
 });

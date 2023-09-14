@@ -22,6 +22,9 @@ window.addEventListener("DOMContentLoaded", () => {
 			font-weight: 600;
 			font-size: inherit;
 			color: #e3c188;
+			.current {
+				color: #b2401d;
+			}
 		}
 		.form-line:has(.sold) {
 			position: relative;
@@ -47,6 +50,9 @@ window.addEventListener("DOMContentLoaded", () => {
 			if (element.innerText.includes("Sold")) {
 				element.classList.add("sold");
 			}
-		})
+			if (element.innerText.includes("Current")) {
+				element.classList.add("current");
+			}
+		});
 	}
 });

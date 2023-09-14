@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			font-weight: 600;
 			font-size: inherit;
 			color: #e3c188;
-			.current {
+			&.current {
 				color: #b2401d;
 			}
 		}

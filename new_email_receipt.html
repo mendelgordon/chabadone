@@ -1,83 +1,237 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Event Reservation Receipt</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-        }
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Event Reservation Receipt</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
 
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 20px;
-        }
+		.container {
+			max-width: 600px;
+			margin: 0 auto;
+			background-color: white;
+			padding: 20px;
+		}
 
-        .logo {
-            width: 200px;
-            display: block;
-            margin: 0 auto;
-        }
+		.logo {
+			width: 200px;
+			display: block;
+			margin: 0 auto;
+		}
 
-        .title {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333333;
-            text-align: center;
-            margin-top: 30px;
-            margin-bottom: 20px;
-        }
+		.title {
+			font-size: 24px;
+			font-weight: bold;
+			color: #333333;
+			text-align: center;
+			margin-top: 30px;
+			margin-bottom: 20px;
+		}
 
-        .content {
-            font-size: 18px;
-            color: #666666;
-            line-height: 1.5;
-            margin-top: 10px;
-        }
+		.content {
+			font-size: 18px;
+			color: #666666;
+			line-height: 1.5;
+			margin-top: 10px;
+		}
 
-        .button {
-            display: block;
-            width: 200px;
-            height: 40px;
-            margin: 50px auto;
-            background-color: #0099ff;
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-            text-align: center;
-            text-decoration: none;
-            line-height: 40px;
-            border-radius: 10px;
-        }
-    </style>
+		.segment {
+			border: 1px solid #666666;
+			border-radius: 8px;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+
+		.segment-title {
+			font-size: 20px;
+			font-weight: bold;
+			color: #333333;
+			margin-bottom: 10px;
+		}
+
+		.reservation {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 10px;
+		}
+
+		.reservation div {
+			font-size: 16px;
+			color: #666666;
+			margin-bottom: 5px;
+		}
+	</style>
 </head>
 
 <body>
-    <div class="container"> <img
-            src="https://images.squarespace-cdn.com/content/v1/56962bdcd8af10829fde684a/1492038591117-7F28J09AGCOHY8IHL83E/Chabad+Logo+-+Vertical+-+Color"
-            alt="ChabadOne Logo" class="logo">
-        <h1 class="title">You're all set!</h1>
-        <p class="content">Thank you for signing up for <strong>Shabbat Dinner</strong> at <strong>Chabad of
-                Shaker Heights</strong> on <strong>Friday, September 8, 2023</strong> at <strong>7:00 PM</strong>.</p>
+	<div class="container">
+		<img src="https://images.squarespace-cdn.com/content/v1/56962bdcd8af10829fde684a/1492038591117-7F28J09AGCOHY8IHL83E/Chabad+Logo+-+Vertical+-+Color"
+			alt="ChabadOne Logo" class="logo">
 
-        <p class="content">If you have any questions or need to update your reservation, please contact <strong>Rabbi
-                Yossi Freedman</strong> at <strong>yossi@chabadshakerheights.com</strong> or <strong>(216)
-                371-2244</strong>.</p>
-        <p class="content">We look forward to seeing you soon!</p>
-        <p class="content">Sincerely,<br>Chabad of Shaker Heights</p>
-        <a href="https://chabad.org/" class="button">View Reservation Online</a>
-        <h2 class="title">Reservation Details</h2>
-        <table align="center">
-            <tr>
-                <td>All reservation details go here</td>
-            </tr>
-        </table>
-        <br /><br />
-    </div>
+		<h1 class="title">You're all set!</h1>
+
+		<p class="content">If you have any questions or need to update your reservation, please contact <b>Rabbi Yossi
+				Freedman</b> at <b>rabbi@chabadshakerheights.com</b>.</p>
+
+		<p class="content">We look forward to seeing you there!</p>
+
+		<p class="content">Sincerely,<br>Chabad of Shaker Heights</p>
+
+		<a href="https://chabad.org/">
+			<h2 class="title">Reservations</h2>
+		</a>
+
+		<div class="segment">
+			<h3 class="segment-title">Kol Nidrei</h3>
+			<p>
+				Chabad of Shaker Heights
+				<br />
+				September 24 | 7:00 PM - 8:00 PM
+			</p>
+
+			<div class="reservation">
+				<div><strong>Name:</strong> Mendel Gordon</div>
+				<div><strong>Section, Row, Seat:</strong> A, 1, 10</div>
+				<div><strong>Price Category:</strong> Main Seating - Free</div>
+				<div><strong>Machzor Required:</strong> Yes</div>
+			</div>
+
+			<div class="reservation">
+				<div><strong>Name:</strong> Levi Gordon</div>
+				<div><strong>Section, Row, Seat:</strong> A, 1, 12</div>
+				<div><strong>Price Category:</strong> Main Seating - Free</div>
+				<div><strong>Machzor Required:</strong> No</div>
+			</div>
+
+			<div class="reservation">
+				<div><strong>Name:</strong> Moshe Gordon</div>
+				<div><strong>Section, Row, Seat:</strong> A, 1, 13</div>
+				<div><strong>Price Category:</strong> Main Seating - Free</div>
+				<div><strong>Machzor Required:</strong> No</div>
+			</div>
+		</div>
+
+		<div class="segment">
+			<h3 class="segment-title">Yom Kippur Day</h3>
+			<p>
+				Chabad of Shaker Heights
+				<br />
+				September 25 | 10:00 AM - 2:00 PM
+			</p>
+
+			<div class="reservation">
+				<div><strong>Name:</strong> Mendel Gordon</div>
+				<div><strong>Section, Row, Seat:</strong> A, 1, 10</div>
+				<div><strong>Price Category:</strong> Main Seating - Free</div>
+				<div><strong>Tallis Required:</strong> Yes</div>
+				<div><strong>Machzor Required:</strong> Yes</div>
+			</div>
+
+			<div class="reservation">
+				<div><strong>Name:</strong> Levi Gordon</div>
+				<div><strong>Section, Row, Seat:</strong> A, 1, 12</div>
+				<div><strong>Price Category:</strong> Main Seating - Free</div>
+				<div><strong>Tallis Required:</strong> No</div>
+				<div><strong>Machzor Required:</strong> Yes</div>
+			</div>
+
+			<div class="reservation">
+				<div><strong>Name:</strong> Moshe Gordon</div>
+				<div><strong>Section, Row, Seat:</strong> A, 1, 13</div>
+				<div><strong>Price Category:</strong> Main Seating - Free</div>
+				<div><strong>Tallis Required:</strong> No</div>
+				<div><strong>Machzor Required:</strong> Yes</div>
+			</div>
+		</div>
+
+		<div class="segment">
+			<h3 class="segment-title">Break Fast Meal</h3>
+			<p>
+				Chabad of Shaker Heights
+				<br />
+				September 25 | 8:00 PM - 9:00 PM
+			</p>
+
+			<div class="reservation">
+				<div><strong>Name:</strong> Mendel Gordon</div>
+				<div><strong>Section, Row, Seat:</strong> A, 1, 10</div>
+				<div><strong>Price Category:</strong> Main Seating - Free</div>
+				<div><strong>Optional Donation:</strong> $18</div>
+			</div>
+
+			<div class="reservation">
+				<div><strong>Name:</strong> Levi Gordon</div>
+				<div><strong>Section, Row, Seat:</strong> A, 1, 12</div>
+				<div><strong>Price Category:</strong> Main Seating - Free</div>
+				<div><strong>Optional Donation:</strong> $18</div>
+			</div>
+
+			<div class="reservation">
+				<div><strong>Name:</strong> Moshe Gordon</div>
+				<div><strong>Section, Row, Seat:</strong> A, 1, 13</div>
+				<div><strong>Price Category:</strong> Main Seating - Free</div>
+				<div><strong>Optional Donation:</strong> $18</div>
+			</div>
+		</div>
+
+		<h2 class="title">Additional Information</h2>
+
+		<div class="segment">
+			<div class="reservation">
+				<div><strong>Per transaction question 1:</strong> Lorem, ipsum.</div>
+				<div><strong>Per transaction question 2:</strong> Lorem, ipsum.</div>
+				<div><strong>Per transaction question 3:</strong> $36</div>
+			</div>
+		</div>
+
+		<h2 class="title">Summary</h2>
+
+		<div class="segment">
+			<div class="reservation">
+				<div><strong>Subtotal for Kol Nidrei:</strong> $0.00</div>
+				<div><strong>Subtotal for Yom Kippur Day:</strong> $0.00</div>
+				<div><strong>Subtotal for Break Fast Meal:</strong> $54.00</div>
+				<div><strong>Subtotal for Additional Information:</strong> $36.00</div>
+				<div><strong>Surcharge:</strong> $3.50</div>
+				<div><strong>Donation:</strong> $50</div>
+				<div><strong>Total:</strong> $143.50</div>
+			</div>
+		</div>
+
+		<h2 class="title">Your Information</h2>
+
+		<div class="segment">
+			<div class="reservation">
+				<div><strong>Title:</strong> Rabbi</div>
+				<div><strong>First Name:</strong> Mendel</div>
+				<div><strong>Last Name:</strong> Gordon</div>
+				<div><strong>Email Address:</strong> mendel.gordon@chabad.org</div>
+				<div><strong>Billing Address:</strong> 784 Eastern Parkway</div>
+				<div><strong>City:</strong> Brooklyn</div>
+				<div><strong>State/Province:</strong> NY</div>
+				<div><strong>Post Code:</strong> 11213</div>
+				<div><strong>Country:</strong> USA</div>
+				<div><strong>Phone Number:</strong> 718-123-4567</div>
+				<div><strong>I'd like to receive email updates:</strong> Yes</div>
+			</div>
+		</div>
+
+		<h2 class="title">Payment Information</h2>
+
+		<div class="segment">
+			<div class="reservation">
+				<div><strong>Payment Method:</strong> Credit Card (Visa)</div>
+				<div><strong>Card Number:</strong> ********1234</div>
+				<div><strong>Expiration Date:</strong> 01/25</div>
+				<div><strong>Comments:</strong> I'm looking forward!</div>
+			</div>
+		</div>
+		<br /><br />
+	</div>
 </body>
 
 </html>

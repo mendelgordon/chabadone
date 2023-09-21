@@ -18,7 +18,7 @@
 		}
 
 		.logo {
-			width: 200px;
+			width: 100px;
 			display: block;
 			margin: 0 auto;
 		}
@@ -39,6 +39,20 @@
 		a:hover {
 			color: #004999;
 			text-decoration: underline;
+		}
+
+		a.button {
+			display: inline-block;
+			color: #fff;
+			background-color: #0066cc;
+			padding: 10px 20px;
+			text-decoration: none;
+			border-radius: 5px;
+			margin: 10px 0;
+		}
+
+		a.button:hover {
+			background-color: #004999;
 		}
 
 		.content {
@@ -101,11 +115,17 @@
 			alt="ChabadOne Logo" class="logo">
 
 		<h1 class="callout">You're all set! </h1>
-		<h2 class="callout"><a href="https://chabad.org/event-confirmation-link">Confirmation #471166</a></h2>
 
 		<p class="content">Thank you for signing up for the Yom Kippur event. We look forward to seeing you there!</p>
 
-		<p class="content">Sincerely,<br><a href="https://chabad.org">Chabad of Shaker Heights</a></p>
+		<p class="content"><a href="https://chabad.org/link-to-calendar.ics" class="button" download>Add Event to My
+				Calendar</a><br />
+			<a href="https://chabad.org/link-to-event" class="button">Visit Event Page</a>
+		</p>
+
+		<h2 class="callout"><a href="https://chabad.org/event-confirmation-link">Confirmation #471166</a></h2>
+
+		<br />
 
 		<h2 class="title">Reservations</h2>
 
@@ -391,6 +411,10 @@
 			</table>
 		</div>
 		<br /><br />
+
+		<footer class="content">
+			<p><a href="https://chabad.org">Chabad of Shaker Heights</a><br />(718) 123-4567</p>
+		</footer>
 	</div>
 </body>
 

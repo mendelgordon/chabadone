@@ -6,7 +6,7 @@
 	<title>Event Reservation Receipt</title>
 	<style>
 		body {
-			font-family: Arial, sans-serif;
+			font-family: Arial, Helvetica, sans-serif;
 			background-color: #f0f0f0;
 		}
 
@@ -23,20 +23,30 @@
 			margin: 0 auto;
 		}
 
-		.title {
+		.callout {
 			font-size: 24px;
 			font-weight: bold;
 			color: #333333;
 			text-align: center;
-			margin-top: 30px;
-			margin-bottom: 20px;
+			margin: 30px 0 20px 0;
+		}
+
+		a {
+			color: #0066cc;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #004999;
+			text-decoration: underline;
 		}
 
 		.content {
 			font-size: 18px;
 			color: #666666;
 			line-height: 1.5;
-			margin-top: 10px;
+			margin: 10px 0;
+			text-align: center;
 		}
 
 		.segment {
@@ -53,16 +63,34 @@
 			margin-bottom: 10px;
 		}
 
-		.reservation {
-			display: flex;
-			flex-direction: column;
-			margin-bottom: 10px;
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 15px;
 		}
 
-		.reservation div {
+		td {
+			padding: 10px;
+		}
+
+		tr {
+			background-color: #fbf8f8;
+		}
+
+		.label {
+			width: 30%;
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		.data {
+			width: 70%;
 			font-size: 16px;
 			color: #666666;
-			margin-bottom: 5px;
+		}
+
+		.odd-row {
+			background-color: white;
 		}
 	</style>
 </head>
@@ -72,18 +100,14 @@
 		<img src="https://images.squarespace-cdn.com/content/v1/56962bdcd8af10829fde684a/1492038591117-7F28J09AGCOHY8IHL83E/Chabad+Logo+-+Vertical+-+Color"
 			alt="ChabadOne Logo" class="logo">
 
-		<h1 class="title">You're all set!</h1>
+		<h1 class="callout">You're all set! </h1>
+		<h2 class="callout"><a href="https://chabad.org/event-confirmation-link">Confirmation #471166</a></h2>
 
-		<p class="content">If you have any questions or need to update your reservation, please contact <b>Rabbi Yossi
-				Freedman</b> at <b>rabbi@chabadshakerheights.com</b>.</p>
+		<p class="content">Thank you for signing up for the Yom Kippur event. We look forward to seeing you there!</p>
 
-		<p class="content">We look forward to seeing you there!</p>
+		<p class="content">Sincerely,<br><a href="https://chabad.org">Chabad of Shaker Heights</a></p>
 
-		<p class="content">Sincerely,<br>Chabad of Shaker Heights</p>
-
-		<a href="https://chabad.org/">
-			<h2 class="title">Reservations</h2>
-		</a>
+		<h2 class="title">Reservations</h2>
 
 		<div class="segment">
 			<h3 class="segment-title">Kol Nidrei</h3>
@@ -93,26 +117,56 @@
 				September 24 | 7:00 PM - 8:00 PM
 			</p>
 
-			<div class="reservation">
-				<div><strong>Name:</strong> Mendel Gordon</div>
-				<div><strong>Section, Row, Seat:</strong> A, 1, 10</div>
-				<div><strong>Price Category:</strong> Main Seating - Free</div>
-				<div><strong>Machzor Required:</strong> Yes</div>
-			</div>
-
-			<div class="reservation">
-				<div><strong>Name:</strong> Levi Gordon</div>
-				<div><strong>Section, Row, Seat:</strong> A, 1, 12</div>
-				<div><strong>Price Category:</strong> Main Seating - Free</div>
-				<div><strong>Machzor Required:</strong> No</div>
-			</div>
-
-			<div class="reservation">
-				<div><strong>Name:</strong> Moshe Gordon</div>
-				<div><strong>Section, Row, Seat:</strong> A, 1, 13</div>
-				<div><strong>Price Category:</strong> Main Seating - Free</div>
-				<div><strong>Machzor Required:</strong> No</div>
-			</div>
+			<table>
+				<tr class="odd-row">
+					<td class="label">Name:</td>
+					<td class="data">Mendel Gordon</td>
+				</tr>
+				<tr>
+					<td class="label">Section, Row, Seat:</td>
+					<td class="data">A, 1, 10</td>
+				</tr>
+				<tr class="odd-row">
+					<td class="label">Price Category:</td>
+					<td class="data">Main Seating - Free</td>
+				</tr>
+				<tr>
+					<td class="label">Machzor Required:</td>
+					<td class="data">Yes</td>
+				</tr>
+				<tr class="odd-row">
+					<td class="label">Name:</td>
+					<td class="data">Levi Gordon</td>
+				</tr>
+				<tr>
+					<td class="label">Section, Row, Seat:</td>
+					<td class="data">A, 1, 12</td>
+				</tr>
+				<tr class="odd-row">
+					<td class="label">Price Category:</td>
+					<td class="data">Main Seating - Free</td>
+				</tr>
+				<tr>
+					<td class="label">Machzor Required:</td>
+					<td class="data">No</td>
+				</tr>
+				<tr class="odd-row">
+					<td class="label">Name:</td>
+					<td class="data">Moshe Gordon</td>
+				</tr>
+				<tr>
+					<td class="label">Section, Row, Seat:</td>
+					<td class="data">A, 1, 13</td>
+				</tr>
+				<tr class="odd-row">
+					<td class="label">Price Category:</td>
+					<td class="data">Main Seating - Free</td>
+				</tr>
+				<tr>
+					<td class="label">Machzor Required:</td>
+					<td class="data">No</td>
+				</tr>
+			</table>
 		</div>
 
 		<div class="segment">
@@ -122,30 +176,70 @@
 				<br />
 				September 25 | 10:00 AM - 2:00 PM
 			</p>
-
-			<div class="reservation">
-				<div><strong>Name:</strong> Mendel Gordon</div>
-				<div><strong>Section, Row, Seat:</strong> A, 1, 10</div>
-				<div><strong>Price Category:</strong> Main Seating - Free</div>
-				<div><strong>Tallis Required:</strong> Yes</div>
-				<div><strong>Machzor Required:</strong> Yes</div>
-			</div>
-
-			<div class="reservation">
-				<div><strong>Name:</strong> Levi Gordon</div>
-				<div><strong>Section, Row, Seat:</strong> A, 1, 12</div>
-				<div><strong>Price Category:</strong> Main Seating - Free</div>
-				<div><strong>Tallis Required:</strong> No</div>
-				<div><strong>Machzor Required:</strong> Yes</div>
-			</div>
-
-			<div class="reservation">
-				<div><strong>Name:</strong> Moshe Gordon</div>
-				<div><strong>Section, Row, Seat:</strong> A, 1, 13</div>
-				<div><strong>Price Category:</strong> Main Seating - Free</div>
-				<div><strong>Tallis Required:</strong> No</div>
-				<div><strong>Machzor Required:</strong> Yes</div>
-			</div>
+			<table>
+				<tr class="odd-row">
+					<td class="label">Name:</td>
+					<td class="data">Mendel Gordon</td>
+				</tr>
+				<tr>
+					<td class="label">Section, Row, Seat:</td>
+					<td class="data">A, 1, 10</td>
+				</tr>
+				<tr class="odd-row">
+					<td class="label">Price Category:</td>
+					<td class="data">Main Seating - Free</td>
+				</tr>
+				<tr>
+					<td class="label">Tallis Required:</td>
+					<td class="data">Yes</td>
+				</tr>
+				<tr class="odd-row">
+					<td class="label">Machzor Required:</td>
+					<td class="data">Yes</td>
+				</tr>
+				<!-- Start of new reservation -->
+				<tr>
+					<td class="label">Name:</td>
+					<td class="data">Levi Gordon</td>
+				</tr>
+				<tr class="odd-row">
+					<td class="label">Section, Row, Seat:</td>
+					<td class="data">A, 1, 12</td>
+				</tr>
+				<tr>
+					<td class="label">Price Category:</td>
+					<td class="data">Main Seating - Free</td>
+				</tr>
+				<tr class="odd-row">
+					<td class="label">Tallis Required:</td>
+					<td class="data">No</td>
+				</tr>
+				<tr>
+					<td class="label">Machzor Required:</td>
+					<td class="data">Yes</td>
+				</tr>
+				<!-- Start of new reservation -->
+				<tr class="odd-row">
+					<td class="label">Name:</td>
+					<td class="data">Moshe Gordon</td>
+				</tr>
+				<tr>
+					<td class="label">Section, Row, Seat:</td>
+					<td class="data">A, 1, 13</td>
+				</tr>
+				<tr class="odd-row">
+					<td class="label">Price Category:</td>
+					<td class="data">Main Seating - Free</td>
+				</tr>
+				<tr>
+					<td class="label">Tallis Required:</td>
+					<td class="data">No</td>
+				</tr>
+				<tr class="odd-row">
+					<td class="label">Machzor Required:</td>
+					<td class="data">Yes</td>
+				</tr>
+			</table>
 		</div>
 
 		<div class="segment">
@@ -155,80 +249,146 @@
 				<br />
 				September 25 | 8:00 PM - 9:00 PM
 			</p>
-
-			<div class="reservation">
-				<div><strong>Name:</strong> Mendel Gordon</div>
-				<div><strong>Section, Row, Seat:</strong> A, 1, 10</div>
-				<div><strong>Price Category:</strong> Main Seating - Free</div>
-				<div><strong>Optional Donation:</strong> $18</div>
-			</div>
-
-			<div class="reservation">
-				<div><strong>Name:</strong> Levi Gordon</div>
-				<div><strong>Section, Row, Seat:</strong> A, 1, 12</div>
-				<div><strong>Price Category:</strong> Main Seating - Free</div>
-				<div><strong>Optional Donation:</strong> $18</div>
-			</div>
-
-			<div class="reservation">
-				<div><strong>Name:</strong> Moshe Gordon</div>
-				<div><strong>Section, Row, Seat:</strong> A, 1, 13</div>
-				<div><strong>Price Category:</strong> Main Seating - Free</div>
-				<div><strong>Optional Donation:</strong> $18</div>
-			</div>
+			<table>
+				<tr class="odd-row">
+					<td class="label">Name:</td>
+					<td class="data">Mendel Gordon</td>
+				</tr>
+				<tr>
+					<td class="label">Section, Row, Seat:</td>
+					<td class="data">A, 1, 10</td>
+				</tr>
+				<tr class="odd-row">
+					<td class="label">Price Category:</td>
+					<td class="data">Main Seating - Free</td>
+				</tr>
+				<tr>
+					<td class="label">Optional Donation:</td>
+					<td class="data">$18</td>
+				</tr>
+				<!-- Start of new reservation -->
+				<tr class="odd-row">
+					<td class="label">Name:</td>
+					<td class="data">Levi Gordon</td>
+				</tr>
+				<tr>
+					<td class="label">Section, Row, Seat:</td>
+					<td class="data">A, 1, 12</td>
+				</tr>
+				<tr class="odd-row">
+					<td class="label">Price Category:</td>
+					<td class="data">Main Seating - Free</td>
+				</tr>
+				<tr>
+					<td class="label">Optional Donation:</td>
+					<td class="data">$18</td>
+				</tr>
+				<!-- Start of new reservation -->
+				<tr class="odd-row">
+					<td class="label">Name:</td>
+					<td class="data">Moshe Gordon</td>
+				</tr>
+				<tr>
+					<td class="label">Section, Row, Seat:</td>
+					<td class="data">A, 1, 13</td>
+				</tr>
+				<tr class="odd-row">
+					<td class="label">Price Category:</td>
+					<td class="data">Main Seating - Free</td>
+				</tr>
+				<tr>
+					<td class="label">Optional Donation:</td>
+					<td class="data">$18</td>
+				</tr>
+			</table>
 		</div>
 
 		<h2 class="title">Additional Information</h2>
-
 		<div class="segment">
-			<div class="reservation">
-				<div><strong>Per transaction question 1:</strong> Lorem, ipsum.</div>
-				<div><strong>Per transaction question 2:</strong> Lorem, ipsum.</div>
-				<div><strong>Per transaction question 3:</strong> $36</div>
-			</div>
+			<table>
+				<tr class="odd-row">
+					<td class="label">Per transaction question 1:</td>
+					<td class="data">Lorem, ipsum.</td>
+				</tr>
+				<tr>
+					<td class="label">Per transaction question 2:</td>
+					<td class="data">Lorem, ipsum.</td>
+				</tr>
+				<tr class="odd-row">
+					<td class="label">Per transaction question 3:</td>
+					<td class="data">$36</td>
+				</tr>
+			</table>
 		</div>
 
 		<h2 class="title">Summary</h2>
-
 		<div class="segment">
-			<div class="reservation">
-				<div><strong>Subtotal for Kol Nidrei:</strong> $0.00</div>
-				<div><strong>Subtotal for Yom Kippur Day:</strong> $0.00</div>
-				<div><strong>Subtotal for Break Fast Meal:</strong> $54.00</div>
-				<div><strong>Subtotal for Additional Information:</strong> $36.00</div>
-				<div><strong>Surcharge:</strong> $3.50</div>
-				<div><strong>Donation:</strong> $50</div>
-				<div><strong>Total:</strong> $143.50</div>
-			</div>
+			<table>
+				<tr class="odd-row">
+					<td class="label">Subtotal:</td>
+					<td class="data">$90.00</td>
+				</tr>
+				<tr>
+					<td class="label">Surcharge:</td>
+					<td class="data">$3.50</td>
+				</tr>
+				<tr class="odd-row">
+					<td class="label">Donation:</td>
+					<td class="data">$50</td>
+				</tr>
+				<tr>
+					<td class="label">Total:</td>
+					<td class="data">$143.50</td>
+				</tr>
+			</table>
 		</div>
 
 		<h2 class="title">Your Information</h2>
-
 		<div class="segment">
-			<div class="reservation">
-				<div><strong>Title:</strong> Rabbi</div>
-				<div><strong>First Name:</strong> Mendel</div>
-				<div><strong>Last Name:</strong> Gordon</div>
-				<div><strong>Email Address:</strong> mendel.gordon@chabad.org</div>
-				<div><strong>Billing Address:</strong> 784 Eastern Parkway</div>
-				<div><strong>City:</strong> Brooklyn</div>
-				<div><strong>State/Province:</strong> NY</div>
-				<div><strong>Post Code:</strong> 11213</div>
-				<div><strong>Country:</strong> USA</div>
-				<div><strong>Phone Number:</strong> 718-123-4567</div>
-				<div><strong>I'd like to receive email updates:</strong> Yes</div>
-			</div>
+			<table>
+				<tr class="odd-row">
+					<td class="label">Name:</td>
+					<td class="data">Rabbi Mendel Gordon</td>
+				</tr>
+				<tr>
+					<td class="label">Email Address:</td>
+					<td class="data">mendel.gordon@chabad.org</td>
+				</tr>
+				<tr class="odd-row">
+					<td class="label">Billing Address:</td>
+					<td class="data">784 Eastern Parkway, Brooklyn, NY 11213 USA</td>
+				</tr>
+				<tr>
+					<td class="label">Phone Number:</td>
+					<td class="data">718-123-4567</td>
+				</tr>
+				<tr class="odd-row">
+					<td class="label">I'd like to receive email updates:</td>
+					<td class="data">Yes</td>
+				</tr>
+			</table>
 		</div>
 
 		<h2 class="title">Payment Information</h2>
-
 		<div class="segment">
-			<div class="reservation">
-				<div><strong>Payment Method:</strong> Credit Card (Visa)</div>
-				<div><strong>Card Number:</strong> ********1234</div>
-				<div><strong>Expiration Date:</strong> 01/25</div>
-				<div><strong>Comments:</strong> I'm looking forward!</div>
-			</div>
+			<table>
+				<tr class="odd-row">
+					<td class="label">Payment Method:</td>
+					<td class="data">Credit Card (Visa)</td>
+				</tr>
+				<tr>
+					<td class="label">Card Number:</td>
+					<td class="data">********1234</td>
+				</tr>
+				<tr class="odd-row">
+					<td class="label">Expiration Date:</td>
+					<td class="data">01/25</td>
+				</tr>
+				<tr>
+					<td class="label">Comments:</td>
+					<td class="data">I'm looking forward!</td>
+				</tr>
+			</table>
 		</div>
 		<br /><br />
 	</div>

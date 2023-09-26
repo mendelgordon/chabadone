@@ -8,19 +8,13 @@
 		body {
 			font-family: Arial, Helvetica, sans-serif;
 			background-color: #f0f0f0;
+			color: black;
 		}
 
 		.container {
-			max-width: 650px;
-			margin: 0 auto;
+			width: 650px;
 			background-color: white;
 			padding: 20px;
-		}
-
-		.logo {
-			width: 100px;
-			display: block;
-			margin: 0 auto;
 		}
 
 		.callout {
@@ -39,16 +33,6 @@
 		a:hover {
 			color: #004999;
 			text-decoration: underline;
-		}
-
-		a.button {
-			display: inline-block;
-			color: #fff;
-			background-color: #0066cc;
-			padding: 10px 20px;
-			text-decoration: none;
-			border-radius: 5px;
-			margin: 10px 0;
 		}
 
 		a.button:hover {
@@ -84,6 +68,7 @@
 
 		table {
 			width: 100%;
+			border-spacing: 0;
 		}
 
 		td {
@@ -103,21 +88,28 @@
 		.data {
 			width: 60%;
 			font-size: 14px;
-			color: #666666;
 		}
+	</style>
+	<style>
+		@media only screen and (max-width: 650px) {
+			table {
+				max-width: 100% !important;
+				width: 100% !important;
+			}
 
-		.odd-row {
-			background-color: #fbf8f8;
+			p {
+				word-break: break-word;
+			}
 		}
 	</style>
 </head>
 
 <body>
-	<table class="container" align="center">
+	<table class="container" align="center" width="650">
 		<tr>
-			<td>
+			<td align="center">
 				<img src="https://images.squarespace-cdn.com/content/v1/56962bdcd8af10829fde684a/1492038591117-7F28J09AGCOHY8IHL83E/Chabad+Logo+-+Vertical+-+Color"
-					alt="ChabadOne Logo" class="logo">
+					alt="Chabad Logo" width="100">
 				<h1 class="callout">You're all set!</h1>
 				<p class="content">Thank you for signing up for the Yom Kippur event. We look forward to seeing you
 					there!</p>
@@ -127,13 +119,39 @@
 				</p>
 				<p class="content"><b>Date:</b> Sep 24-26, 2023</p>
 				<br />
-				<p class="content"><a href="https://chabad.org/link-to-calendar.ics" class="button" download>Add Event
-						to My
-						Calendar</a><br />
-					<a href="https://chabad.org/link-to-event" class="button">Visit Event Page</a>
-				</p>
+				<div><!--[if mso]>
+					<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://chabad.org/link-to-calendar.ics" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="13%" stroke="f" fillcolor="#0066cc">
+					  <w:anchorlock/>
+					  <center>
+					<![endif]-->
+					<a href="https://chabad.org/link-to-calendar.ics"
+						style="background-color:#0066cc;border-radius:5px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;"
+						download>Add Event to My Calendar</a>
+					<!--[if mso]>
+					  </center>
+					</v:roundrect>
+				  <![endif]-->
+				</div>
+				<br />
+				<div><!--[if mso]>
+					<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://chabad.org/link-to-event" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="13%" stroke="f" fillcolor="#0066cc">
+					  <w:anchorlock/>
+					  <center>
+					<![endif]-->
+					<a href="https://chabad.org/link-to-event"
+						style="background-color:#0066cc;border-radius:5px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;">Visit
+						Event Page</a>
+					<!--[if mso]>
+					  </center>
+					</v:roundrect>
+				  <![endif]-->
+				</div>
 				<h2 class="callout"><a href="https://chabad.org/event-confirmation-link">Confirmation #471166</a></h2>
 				<br />
+			</td>
+		</tr>
+		<tr>
+			<td>
 				<h2 class="title">Reservations</h2>
 				<table class="segment">
 					<tr>
@@ -153,7 +171,7 @@
 						<td class="label name">Name:</td>
 						<td class="data name">Mendel Gordon</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Section, Row, Seat:</td>
 						<td class="data">A, 1, 10</td>
 					</tr>
@@ -161,7 +179,7 @@
 						<td class="label">Price Category:</td>
 						<td class="data">Main Seating - Free</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Machzor Required:</td>
 						<td class="data">Yes</td>
 					</tr>
@@ -170,7 +188,7 @@
 						<td class="label name">Name:</td>
 						<td class="data name">Levi Gordon</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Section, Row, Seat:</td>
 						<td class="data">A, 1, 12</td>
 					</tr>
@@ -178,7 +196,7 @@
 						<td class="label">Price Category:</td>
 						<td class="data">Main Seating - Free</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Machzor Required:</td>
 						<td class="data">No</td>
 					</tr>
@@ -187,7 +205,7 @@
 						<td class="label name">Name:</td>
 						<td class="data name">Moshe Gordon</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Section, Row, Seat:</td>
 						<td class="data">A, 1, 13</td>
 					</tr>
@@ -195,11 +213,12 @@
 						<td class="label">Price Category:</td>
 						<td class="data">Main Seating - Free</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Machzor Required:</td>
 						<td class="data">No</td>
 					</tr>
 				</table>
+				<!--[if gte mso 9]><table><tr><td> </td></tr></table><![endif]-->
 				<table class="segment">
 					<tr>
 						<td class="segment-title">Yom Kippur Day</td>
@@ -218,7 +237,7 @@
 						<td class="label name">Name:</td>
 						<td class="data name">Mendel Gordon</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Section, Row, Seat:</td>
 						<td class="data">A, 1, 10</td>
 					</tr>
@@ -226,7 +245,7 @@
 						<td class="label">Price Category:</td>
 						<td class="data">Main Seating - Free</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Tallis Required:</td>
 						<td class="data">Yes</td>
 					</tr>
@@ -243,7 +262,7 @@
 						<td class="label">Section, Row, Seat:</td>
 						<td class="data">A, 1, 12</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Price Category:</td>
 						<td class="data">Main Seating - Free</td>
 					</tr>
@@ -251,7 +270,7 @@
 						<td class="label">Tallis Required:</td>
 						<td class="data">No</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Machzor Required:</td>
 						<td class="data">Yes</td>
 					</tr>
@@ -260,7 +279,7 @@
 						<td class="label name">Name:</td>
 						<td class="data name">Moshe Gordon</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Section, Row, Seat:</td>
 						<td class="data">A, 1, 13</td>
 					</tr>
@@ -268,7 +287,7 @@
 						<td class="label">Price Category:</td>
 						<td class="data">Main Seating - Free</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Tallis Required:</td>
 						<td class="data">No</td>
 					</tr>
@@ -277,6 +296,7 @@
 						<td class="data">Yes</td>
 					</tr>
 				</table>
+				<!--[if gte mso 9]><table><tr><td> </td></tr></table><![endif]-->
 				<table class="segment">
 					<tr>
 						<td class="segment-title">Break Fast Meal</td>
@@ -295,7 +315,7 @@
 						<td class="label name">Name:</td>
 						<td class="data name">Mendel Gordon</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Section, Row, Seat:</td>
 						<td class="data">A, 1, 10</td>
 					</tr>
@@ -303,7 +323,7 @@
 						<td class="label">Price Category:</td>
 						<td class="data">Main Seating - Free</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Optional Donation:</td>
 						<td class="data">$18</td>
 					</tr>
@@ -312,7 +332,7 @@
 						<td class="label name">Name:</td>
 						<td class="data name">Levi Gordon</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Section, Row, Seat:</td>
 						<td class="data">A, 1, 12</td>
 					</tr>
@@ -320,7 +340,7 @@
 						<td class="label">Price Category:</td>
 						<td class="data">Main Seating - Free</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Optional Donation:</td>
 						<td class="data">$18</td>
 					</tr>
@@ -329,7 +349,7 @@
 						<td class="label name">Name:</td>
 						<td class="data name">Moshe Gordon</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Section, Row, Seat:</td>
 						<td class="data">A, 1, 13</td>
 					</tr>
@@ -337,7 +357,7 @@
 						<td class="label">Price Category:</td>
 						<td class="data">Main Seating - Free</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Optional Donation:</td>
 						<td class="data">$18</td>
 					</tr>
@@ -348,7 +368,7 @@
 						<td class="label">Per transaction question 1:</td>
 						<td class="data">Lorem, ipsum.</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Per transaction question 2:</td>
 						<td class="data">Lorem, ipsum.</td>
 					</tr>
@@ -363,7 +383,7 @@
 						<td class="label">Name:</td>
 						<td class="data">Rabbi Mendel Gordon</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Email Address:</td>
 						<td class="data">mendel.gordon@chabad.org</td>
 					</tr>
@@ -371,7 +391,7 @@
 						<td class="label">Billing Address:</td>
 						<td class="data">784 Eastern Parkway, Brooklyn, NY 11213 USA</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Phone Number:</td>
 						<td class="data">718-123-4567</td>
 					</tr>
@@ -386,7 +406,7 @@
 						<td class="label">Subtotal:</td>
 						<td class="data">$90.00</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Surcharge:</td>
 						<td class="data">$3.50</td>
 					</tr>
@@ -394,7 +414,7 @@
 						<td class="label">Donation:</td>
 						<td class="data">$50</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Total:</td>
 						<td class="data">$143.50</td>
 					</tr>
@@ -402,7 +422,7 @@
 						<td class="label">Payment Method:</td>
 						<td class="data">Credit Card (Visa)</td>
 					</tr>
-					<tr class="odd-row">
+					<tr style="background-color: #fbf8f8;">
 						<td class="label">Card Number:</td>
 						<td class="data">********1234</td>
 					</tr>
@@ -417,7 +437,7 @@
 							123-4567</a></p>
 				</footer>
 			</td>
-		</tr>
+			</td>
 	</table>
 </body>
 

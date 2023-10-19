@@ -27,7 +27,8 @@
 }
 
 .donate-members .donates_user .donate-A .donate-triangle {
-    border-left-color: var(--red)
+    border-left-color: var(--red);
+    border-right-color: var(--red);
 }
 
 .fs-countdown .fs-countdown-widget .fs-countdown-unit .fs-countdown-description,

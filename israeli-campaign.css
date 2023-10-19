@@ -1,0 +1,44 @@
+:root {
+    --red: #670822;
+    --orange: #FF9800;
+}
+
+.donar-section,
+.container-fluid.fs-goal,
+.fs-donate {
+    background-color: var(--orange);
+}
+
+.fs-header .page-header h1 small {
+    color: var(--orange);
+}
+
+.fs-donate .fs-donate-amounts,
+.donar-section .nav-tabs .nav-link {
+    color: var(--red);
+}
+
+.fs-header:before,
+.fs-countdown,
+.fs-btn,
+.fs-goal .fs-goal-graph-container .fs-goal-graph .fs-goal-graph-fill,
+.donate-members .donates_user .donate-A {
+    background-color: var(--red);
+}
+
+.donate-members .donates_user .donate-A .donate-triangle {
+    border-left-color: var(--red)
+}
+
+.fs-countdown .fs-countdown-widget .fs-countdown-unit .fs-countdown-description,
+.fs-countdown .fs-countdown-widget .fs-countdown-sep {
+    color: white;
+}
+
+.fs-countdowndonate polygon {
+    display: none;
+}
+
+.donar-section .nav-tabs .nav-item:first-child .nav-link {
+    margin-left: 15px;
+}

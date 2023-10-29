@@ -50,7 +50,7 @@ if (window.location.href.includes(6146943)) {
             paymentInfo.style.display = "flex";
             total.style.display = "block";
             completion.style.display = "block";
-            sponsorElements.scrollIntoView({ behavior: "smooth" });
+            sponsorElementsDiv.scrollIntoView({ behavior: "smooth" });
         }
         const highlightElemement = (element) => {
             element.classList.add("highlight");

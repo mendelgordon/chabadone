@@ -1,17 +1,21 @@
+/* center the form */
 #formContainer {
     max-width: 960px;
     margin: auto;
 }
 
+/* remove the line between form elements */
 .form-line {
     border-bottom: none;
 }
 
+/* highlight the form elements the user should interact with */
 .highlight {
     background-color: rgba(255, 255, 0, 0.552);
     transition: background-color 0.5s ease;
 }
 
+/* center the iframe and give it the scroll background */
 #id_14 {
     text-align: center;
     background-image: url(https://chabadofparkland.com/media/images/1251/eTUf12514209.png);
@@ -21,6 +25,7 @@
     background-repeat: no-repeat;
 }
 
+/* resize the iframe for mobile */
 @media screen and (max-width: 600px) {
     #id_14 iframe {
         max-width: 90%;
@@ -33,9 +38,9 @@
     }
 }
 
+/* add scroll background to sponsor elements */
 #id_17,
-#sponsorElements,
-#personalInfo {
+#sponsorElements {
     background-image: url(https://chabadofparkland.com/media/images/1251/eTUf12514209.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -48,16 +53,16 @@
     flex-wrap: wrap;
 }
 
-#id_13 {
+#personalInfo {
     background-image: url(https://chabadofparkland.com/media/images/1251/eTUf12514209.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     align-content: center;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 600px) {
@@ -65,24 +70,26 @@
         padding: 0;
         margin: 0;
     }
+
     #sponsorElements :not(td)>.form-sub-label-container {
         margin-bottom: 4px;
     }
+
     #sponsorElements .form-line {
         padding: 0;
         margin: 0;
     }
+
     #sponsorElements .form-label-left label {
         font-size: 14px;
     }
-    #sponsorElements, #personalInfo {
+
+    #sponsorElements {
         height: 375px;
     }
+
     #personalInfo li {
         padding: 0;
-    }
-    #id_13 {
-        padding-block: 150px;
     }
 }
 
@@ -153,21 +160,20 @@ body {
 /* hide sponsorship section on load */
 #sponsorElements,
 #personalInfo,
-#id_17,
-#id_13,
-#id_12,
-#id_2 {
+#id_17 {
     display: none;
 }
 
 div#personalInfo {
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .form-address-table {
     margin: auto;
 }
 
+/* hide footer and payment section title */
 #label_13,
 .footer {
     display: none;

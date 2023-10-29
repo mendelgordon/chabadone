@@ -19,6 +19,7 @@ if (window.location.href.includes(6146943)) {
         const pasukBtn = document.querySelector("#pasuk");
         const wordBtn = document.querySelector("#word");
         const letterBtn = document.querySelector("#letter");
+
         const sponsorSelections = "#id_5, #id_10, #id_11, #id_7, #id_8, #id_9";
         const sefer = document.querySelector("#id_5");
         const parsha = document.querySelector("#id_10");
@@ -26,11 +27,9 @@ if (window.location.href.includes(6146943)) {
         const pasuk = document.querySelector("#id_7");
         const word = document.querySelector("#id_8");
         const letter = document.querySelector("#id_9");
+
         const sponsorElements = document.querySelectorAll(sponsorSelections);
-        const personalInfo = document.querySelectorAll("#id_15, #id_16");
-        const paymentInfo = document.querySelector("#id_13");
-        const total = document.querySelector("#id_12");
-        const completion = document.querySelector("#id_2");
+        const personalInfo = document.querySelectorAll("#id_15, #id_16, #id_13, #id_12, #id_2");
         // move the sponsor elements to a new div we create called sponsorElements directly below where they were before
         const sponsorElementsDiv = document.createElement("div");
         sponsorElementsDiv.id = "sponsorElements";
@@ -47,9 +46,6 @@ if (window.location.href.includes(6146943)) {
         const showElements = () => {
             sponsorElementsDiv.style.display = "flex";
             personalInfoDiv.style.display = "flex";
-            paymentInfo.style.display = "flex";
-            total.style.display = "block";
-            completion.style.display = "block";
             sponsorElementsDiv.scrollIntoView({ behavior: "smooth" });
         }
         const highlightElemement = (element) => {

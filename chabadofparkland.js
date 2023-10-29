@@ -46,8 +46,8 @@ if (window.location.href.includes(6146943)) {
         // depending on which button is clicked, scroll to the appropriate element and show them all
         const showElements = () => {
             sponsorElementsDiv.style.display = "flex";
-            personalInfoDiv.style.display = "block";
-            paymentInfo.style.display = "block";
+            personalInfoDiv.style.display = "flex";
+            paymentInfo.style.display = "flex";
             total.style.display = "block";
             completion.style.display = "block";
         }

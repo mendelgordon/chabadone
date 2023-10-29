@@ -46,6 +46,12 @@ body {
     color: #515846;
 }
 
+@media screen and (max-width: 600px) {
+    #cid_4 {
+        font-size: initial;
+    }
+}
+
 #header_4 {
     display: inline;
     background: #dedaaf;

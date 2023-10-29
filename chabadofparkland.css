@@ -56,9 +56,10 @@
 #personalInfo {
     background: #ece7cd;
     flex-direction: column;
-    width: max-content;
-    padding: 20px;
+    padding-inline: 10px;
     border-radius: 20px;
+    margin: 10px;
+    padding-block: 50px;
 }
 
 @media screen and (max-width: 600px) {

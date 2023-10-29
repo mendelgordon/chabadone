@@ -27,7 +27,7 @@ if (window.location.href.includes(6146943)) {
         const word = document.querySelector("#id_8");
         const letter = document.querySelector("#id_9");
         const sponsorElements = document.querySelectorAll(sponsorSelections);
-        const personalInfo = document.querySelector("#id_15, #id_16");
+        const personalInfo = document.querySelectorAll("#id_15, #id_16");
         const paymentInfo = document.querySelector("#id_13");
         const total = document.querySelector("#id_12");
         const completion = document.querySelector("#id_2");
@@ -41,9 +41,7 @@ if (window.location.href.includes(6146943)) {
         const personalInfoDiv = document.createElement("div");
         personalInfoDiv.id = "personalInfo";
         document.querySelector("#id_15").insertAdjacentElement("beforebegin", personalInfoDiv);
-        personalInfoDiv.forEach((element) => {
-            personalInfoDiv.append(element)
-        })
+        personalInfoDiv.append(...personalInfo);
 
         // depending on which button is clicked, scroll to the appropriate element and show them all
         const showElements = () => {

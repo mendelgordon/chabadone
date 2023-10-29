@@ -51,9 +51,6 @@ if (window.location.href.includes(6146943)) {
         }
         const highlightElemement = (element) => {
             element.classList.add("highlight");
-            setTimeout(() => {
-                element.classList.remove("highlight");
-            }, 500);
         }
         seferBtn.addEventListener("click", () => {
             showElements();

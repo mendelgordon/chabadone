@@ -7,22 +7,6 @@
     border-bottom: none;
 }
 
-/* hide sponsorship options */
-#id_5,
-#id_10,
-#id_11,
-#id_7,
-#id_8,
-#id_9,
-#id_12,
-#id_13,
-#id_15,
-#id_16,
-#id_2,
-#id_17 {
-    display: none;
-}
-
 .highlight {
     background-color: rgba(255, 255, 0, 0.552);
     transition: background-color 0.5s ease;
@@ -49,7 +33,9 @@
     }
 }
 
-#id_17, #sponsorElements, #paymentInfo {
+#id_17,
+#sponsorElements,
+#paymentInfo {
     background-image: url(https://chabadofparkland.com/media/images/1251/eTUf12514209.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -116,4 +102,11 @@ body {
 #header_4:hover {
     background: #eee;
     transition: 0.5s;
+}
+
+/* hide sponsorship section on load */
+#sponsorElements,
+#paymentInfo,
+#id_17 {
+    display: none;
 }

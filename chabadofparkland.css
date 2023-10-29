@@ -121,3 +121,15 @@ body {
 #id_2 {
     display: none;
 }
+
+div#personalInfo {
+    flex-direction: column;
+}
+
+.form-address-table {
+    margin: auto;
+}
+
+.label_13 {
+    display: none;
+}

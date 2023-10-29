@@ -78,6 +78,9 @@
     #sponsorElements, #personalInfo {
         height: 375px;
     }
+    #personalInfo li {
+        padding: 0;
+    }
 }
 
 #id_17 button {

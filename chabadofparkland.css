@@ -54,14 +54,8 @@
 }
 
 #personalInfo {
-    background-image: url(https://chabadofparkland.com/media/images/1251/eTUf12514209.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: max-content;
-    align-items: flex-start;
+    background: #ece7cd;
     flex-direction: column;
-    margin: auto;
 }
 
 @media screen and (max-width: 600px) {

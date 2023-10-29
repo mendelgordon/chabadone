@@ -14,7 +14,8 @@
 #id_13,
 #id_15,
 #id_16,
-#id_2 {
+#id_2,
+#id_17 {
     display: none;
 }
 
@@ -65,9 +66,11 @@
         margin: 5px;
         padding: 5px;
     }
+
     #id_17 p {
         margin: 5px;
     }
+
     #id_17 {
         height: 300px;
     }

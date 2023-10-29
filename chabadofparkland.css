@@ -3,6 +3,10 @@
     margin: auto;
 }
 
+.form_line {
+    border-bottom: none;
+}
+
 /* hide sponsorship options */
 #id_5,
 #id_10,
@@ -19,13 +23,9 @@
     display: none;
 }
 
-#id_5,
-#id_10,
-#id_11,
-#id_7,
-#id_8,
-#id_9 {
-    margin-block: 50px;
+.highlight {
+    background-color: rgba(255, 255, 0, 0.552);
+    transition: background-color 0.5s ease;
 }
 
 #id_14 {

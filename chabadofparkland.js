@@ -27,7 +27,19 @@ if (window.location.href.includes(6146943)) {
         const word = document.querySelector("#id_8");
         const letter = document.querySelector("#id_9");
         const sponsorElements = document.querySelectorAll(sponsorSelections);
-        const paymentInfo = document.querySelectorAll("#id_12, #id_13, #id_15, #id_16, #id_2")
+        const paymentInfo = document.querySelectorAll("#id_12, #id_13, #id_15, #id_16, #id_2");
+        // move the sponsor elements to a new div we create called sponsorElements directly below where they were before
+        const sponsorElementsDiv = document.createElement("div");
+        sponsorElementsDiv.id = "sponsorElements";
+        document.querySelector("#id_5").insertAdjacentElement("beforebegin", sponsorElementsDiv);
+        sponsorElementsDiv.append(...sponsorElements);
+
+        // move the payment info elements to a new div we create called paymentInfo directly below where they were before
+        const paymentInfoDiv = document.createElement("div");
+        paymentInfoDiv.id = "paymentInfo";
+        document.querySelector("#id_12").insertAdjacentElement("beforebegin", paymentInfoDiv);
+        paymentInfoDiv.append(...paymentInfo);
+
         // depending on which button is clicked, scroll to the appropriate element and show them all
         const showElements = () => {
             sponsorElements.forEach((element) => {
@@ -37,29 +49,41 @@ if (window.location.href.includes(6146943)) {
                 element.style.display = "block";
             })
         }
+        const highlightElemement = (element) => {
+            element.classList.add("highlight");
+            setTimeout(() => {
+                element.classList.remove("highlight");
+            }, 500);
+        }
         seferBtn.addEventListener("click", () => {
             showElements();
             sefer.scrollIntoView({ behavior: "smooth" });
+            highlightElemement(sefer);
         })
         parshaBtn.addEventListener("click", () => {
             showElements();
             parsha.scrollIntoView({ behavior: "smooth" });
+            highlightElemement(parsha);
         })
         perekBtn.addEventListener("click", () => {
             showElements();
             perek.scrollIntoView({ behavior: "smooth" });
+            highlightElemement(perek);
         })
         pasukBtn.addEventListener("click", () => {
             showElements();
             pasuk.scrollIntoView({ behavior: "smooth" });
+            highlightElemement(pasuk);
         })
         wordBtn.addEventListener("click", () => {
             showElements();
             word.scrollIntoView({ behavior: "smooth" });
+            highlightElemement(word);
         })
         letterBtn.addEventListener("click", () => {
             showElements();
             letter.scrollIntoView({ behavior: "smooth" });
+            highlightElemement(letter);
         })
     }
     // once the page is loaded, hide the back to site bar

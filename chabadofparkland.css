@@ -130,6 +130,7 @@ div#personalInfo {
     margin: auto;
 }
 
-.label_13 {
+.label_13,
+.footer {
     display: none;
 }

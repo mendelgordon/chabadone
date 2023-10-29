@@ -50,38 +50,33 @@ if (window.location.href.includes(6146943)) {
             paymentInfo.style.display = "flex";
             total.style.display = "block";
             completion.style.display = "block";
+            sponsorElements.scrollIntoView({ behavior: "smooth" });
         }
         const highlightElemement = (element) => {
             element.classList.add("highlight");
         }
         seferBtn.addEventListener("click", () => {
             showElements();
-            sefer.scrollIntoView({ behavior: "smooth" });
             highlightElemement(sefer);
         })
         parshaBtn.addEventListener("click", () => {
             showElements();
-            parsha.scrollIntoView({ behavior: "smooth" });
             highlightElemement(parsha);
         })
         perekBtn.addEventListener("click", () => {
             showElements();
-            perek.scrollIntoView({ behavior: "smooth" });
             highlightElemement(perek);
         })
         pasukBtn.addEventListener("click", () => {
             showElements();
-            pasuk.scrollIntoView({ behavior: "smooth" });
             highlightElemement(pasuk);
         })
         wordBtn.addEventListener("click", () => {
             showElements();
-            word.scrollIntoView({ behavior: "smooth" });
             highlightElemement(word);
         })
         letterBtn.addEventListener("click", () => {
             showElements();
-            letter.scrollIntoView({ behavior: "smooth" });
             highlightElemement(letter);
         })
     }

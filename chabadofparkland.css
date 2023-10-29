@@ -13,9 +13,7 @@
     display: none;
 }
 
-#id_14,
-#id_1,
-#id_3 {
+#id_14 {
     text-align: center;
     background-image: url(https://chabadofparkland.com/media/images/1251/SKYq12514197.png);
     background-position: center;
@@ -48,13 +46,4 @@ body {
 #header_4:hover {
     background: #eee;
     transition: 0.5s;
-}
-
-img.form-image {
-    max-height: 300px;
-    width: auto;
-}
-
-.form-line {
-    border-bottom: none;
 }

@@ -39,8 +39,10 @@ if (window.location.href.includes(6146943)) {
         // move the personal info elements to a new div we create called personalInfo directly below where they were before
         const personalInfoDiv = document.createElement("div");
         personalInfoDiv.id = "personalInfo";
+        personalInfoInnerDiv = document.createElement("div");
+        personalInfoInnerDiv.id = "personalInfoInnerDiv";
         document.querySelector("#id_15").insertAdjacentElement("beforebegin", personalInfoDiv);
-        personalInfoDiv.append(...personalInfo);
+        personalInfoInnerDiv.append(...personalInfo);
 
         // depending on which button is clicked, scroll to the appropriate element and show them all
         const showElements = () => {

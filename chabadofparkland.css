@@ -56,6 +56,9 @@
 #personalInfo {
     background: #ece7cd;
     flex-direction: column;
+    width: max-content;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -155,10 +158,6 @@ body {
 #personalInfo,
 #id_17 {
     display: none;
-}
-
-.form-address-table {
-    margin: auto;
 }
 
 /* center the recaptcha */

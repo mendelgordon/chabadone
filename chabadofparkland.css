@@ -47,3 +47,7 @@ body {
     background: #eee;
     transition: 0.5s;
 }
+
+img.form-image {
+    max-width: 400px;
+}

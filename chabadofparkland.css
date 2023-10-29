@@ -63,6 +63,9 @@
     #id_17 p {
         margin: 5px;
     }
+    #id_17 {
+        height: 300px;
+    }
 }
 
 body {

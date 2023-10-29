@@ -28,7 +28,7 @@
 /* resize the iframe for mobile */
 @media screen and (max-width: 600px) {
     #id_14 iframe {
-        max-width: 90%;
+        max-width: 85%;
         aspect-ratio: 1.5/1.24;
         height: auto;
     }

@@ -65,6 +65,10 @@
     flex-direction: column;
 }
 
+#personalInfo li {
+    margin: auto;
+}
+
 @media screen and (max-width: 600px) {
     #sponsorElements .form-label-left {
         padding: 0;
@@ -171,6 +175,15 @@ div#personalInfo {
 
 .form-address-table {
     margin: auto;
+}
+
+/* center the recaptcha */
+.js-recaptcha-wrapper>div {
+    margin: auto;
+}
+
+.button-align-auto {
+    text-indent: initial;
 }
 
 /* hide footer and payment section title */

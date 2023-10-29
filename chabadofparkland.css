@@ -54,3 +54,7 @@ img.form-image {
     max-height: 300px;
     width: auto;
 }
+
+.form-line {
+    border-bottom: none;
+}

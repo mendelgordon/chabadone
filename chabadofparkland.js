@@ -41,7 +41,9 @@ if (window.location.href.includes(6146943)) {
         const personalInfoDiv = document.createElement("div");
         personalInfoDiv.id = "personalInfo";
         document.querySelector("#id_15").insertAdjacentElement("beforebegin", personalInfoDiv);
-        personalInfoDiv.append(...personalInfo);
+        personalInfoDiv.forEach((element) => {
+            personalInfoDiv.append(element)
+        })
 
         // depending on which button is clicked, scroll to the appropriate element and show them all
         const showElements = () => {

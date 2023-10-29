@@ -42,12 +42,8 @@ if (window.location.href.includes(6146943)) {
 
         // depending on which button is clicked, scroll to the appropriate element and show them all
         const showElements = () => {
-            sponsorElements.forEach((element) => {
-                element.style.display = "block";
-            })
-            paymentInfo.forEach((element) => {
-                element.style.display = "block";
-            })
+            sponsorElementsDiv.style.display = "block";
+            paymentInfoDiv.style.display = "block";
         }
         const highlightElemement = (element) => {
             element.classList.add("highlight");

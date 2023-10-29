@@ -59,9 +59,7 @@
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    align-content: center;
     align-items: flex-start;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -166,11 +164,6 @@ body {
 #personalInfo,
 #id_17 {
     display: none;
-}
-
-div#personalInfo {
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .form-address-table {

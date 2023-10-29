@@ -55,6 +55,13 @@
     font-size: 1em;
     border-radius: 10px;
     background-color: #dedaaf;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#id_17 button:hover {
+    background-color: #eee;
+    transition: 0.5s;
 }
 
 @media screen and (max-width: 600px) {

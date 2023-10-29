@@ -57,9 +57,10 @@
     background: #ece7cd;
     flex-direction: column;
     padding-inline: 10px;
-    border-radius: 20px;
-    margin: 10px;
-    padding-block: 50px;
+    border-radius: 80px;
+    margin: auto;
+    padding-top: 50px;
+    max-width: 875px;
 }
 
 #personalInfoInnerDiv {
@@ -170,7 +171,7 @@ body {
 }
 
 .button-align-auto {
-    text-indent: initial!important;
+    text-indent: initial !important;
 }
 
 /* hide footer and payment section title */

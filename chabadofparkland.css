@@ -2,3 +2,8 @@
     max-width: 960px;
     margin: auto;
 }
+
+/* inline sponsorship options */
+#id_5, #id_10, #id_11, #id_7, #id_8, #id_9 {
+    display: inline-flex;
+}

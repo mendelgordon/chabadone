@@ -15,12 +15,30 @@
 
 #id_14 {
     text-align: center;
+    background-image: url(https://chabadofparkland.com/media/images/1251/SKYq12514197.png);
+    background-position: center;
+    background-size: cover;
 }
 
 body {
     background-image: url(https://chabadofparkland.com/media/images/1251/QwDS12514196.png);
 }
 
-#cco_body {
-    background-image: url(https://chabadofparkland.com/media/images/1251/SKYq12514197.png)
+#cid_4 {
+    text-align: center;
+    font-size: x-large;
+    color: #515846;
+}
+
+/* style to look like button */
+#header_4 {
+    display: inline;
+    background: #dedaaf;
+    padding: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#header_4:hover {
+    background: #eee;
+    transition: 0.5s;
 }

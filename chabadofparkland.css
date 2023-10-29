@@ -118,6 +118,7 @@
 
 body {
     background-image: url(https://chabadofparkland.com/media/images/1251/QwDS12514196.png);
+    background-size: contain;
 }
 
 

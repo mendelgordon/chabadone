@@ -19,6 +19,15 @@
     display: none;
 }
 
+#id_5,
+#id_10,
+#id_11,
+#id_7,
+#id_8,
+#id_9 {
+    margin-block: 50px;
+}
+
 #id_14 {
     text-align: center;
     background-image: url(https://chabadofparkland.com/media/images/1251/eTUf12514209.png);

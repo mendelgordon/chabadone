@@ -58,12 +58,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
+    width: max-content;
     align-items: flex-start;
     flex-direction: column;
-}
-
-#personalInfo li {
     margin: auto;
 }
 
@@ -176,7 +173,7 @@ body {
 }
 
 .button-align-auto {
-    text-indent: initial;
+    text-indent: initial!important;
 }
 
 /* hide footer and payment section title */

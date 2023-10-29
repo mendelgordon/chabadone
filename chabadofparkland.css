@@ -55,6 +55,16 @@
     background-color: #dedaaf;
 }
 
+@media screen and (max-width: 600px) {
+    #id_17 button {
+        margin: 5px;
+        padding: 5px;
+    }
+    #id_17 p {
+        margin: 5px;
+    }
+}
+
 body {
     background-image: url(https://chabadofparkland.com/media/images/1251/QwDS12514196.png);
 }

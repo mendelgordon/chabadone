@@ -27,23 +27,29 @@ if (window.location.href.includes(6146943)) {
         const word = document.querySelector("#id_8");
         const letter = document.querySelector("#id_9");
         const sponsorElements = document.querySelectorAll(sponsorSelections);
-        const paymentInfo = document.querySelectorAll("#id_12, #id_13, #id_15, #id_16, #id_2");
+        const personalInfo = document.querySelector("#id_15, #id_16");
+        const paymentInfo = document.querySelector("#id_13");
+        const total = document.querySelector("#id_12");
+        const completion = document.querySelector("#id_2");
         // move the sponsor elements to a new div we create called sponsorElements directly below where they were before
         const sponsorElementsDiv = document.createElement("div");
         sponsorElementsDiv.id = "sponsorElements";
         document.querySelector("#id_5").insertAdjacentElement("beforebegin", sponsorElementsDiv);
         sponsorElementsDiv.append(...sponsorElements);
 
-        // move the payment info elements to a new div we create called paymentInfo directly below where they were before
-        const paymentInfoDiv = document.createElement("div");
-        paymentInfoDiv.id = "paymentInfo";
-        document.querySelector("#id_12").insertAdjacentElement("beforebegin", paymentInfoDiv);
-        paymentInfoDiv.append(...paymentInfo);
+        // move the personal info elements to a new div we create called personalInfo directly below where they were before
+        const personalInfoDiv = document.createElement("div");
+        personalInfoDiv.id = "personalInfo";
+        document.querySelector("#id_15").insertAdjacentElement("beforebegin", personalInfoDiv);
+        personalInfoDiv.append(...personalInfo);
 
         // depending on which button is clicked, scroll to the appropriate element and show them all
         const showElements = () => {
-            sponsorElementsDiv.style.display = "block";
-            paymentInfoDiv.style.display = "block";
+            sponsorElementsDiv.style.display = "flex";
+            personalInfoDiv.style.display = "block";
+            paymentInfo.style.display = "block";
+            total.style.display = "block";
+            completion.style.display = "block";
         }
         const highlightElemement = (element) => {
             element.classList.add("highlight");

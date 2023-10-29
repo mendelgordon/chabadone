@@ -35,7 +35,8 @@
 
 #id_17,
 #sponsorElements,
-#paymentInfo {
+#personalInfo,
+#id_13 {
     background-image: url(https://chabadofparkland.com/media/images/1251/eTUf12514209.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -106,7 +107,8 @@ body {
 
 /* hide sponsorship section on load */
 #sponsorElements,
-#paymentInfo,
-#id_17 {
+#personalInfo,
+#id_17,
+#id_13 {
     display: none;
 }

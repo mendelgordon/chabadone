@@ -51,6 +51,8 @@
     margin: 10px;
     padding: 20px;
     font-size: 1em;
+    border-radius: 10px;
+    background-color: #dedaaf;
 }
 
 body {
@@ -78,7 +80,7 @@ body {
     border-radius: 15px;
     cursor: pointer;
     transition: 0.5s;
-    border: 2px solid #e4e0b9;
+    border: 2px solid;
 }
 
 #header_4:hover {

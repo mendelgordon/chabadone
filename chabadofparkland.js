@@ -27,9 +27,13 @@ if (window.location.href.includes(6146943)) {
         const word = document.querySelector("#id_8");
         const letter = document.querySelector("#id_9");
         const sponsorElements = document.querySelectorAll(sponsorSelections);
+        const paymentInfo = document.querySelectorAll("#id_12, #id_13, #id_15, #id_16, #id_2")
         // depending on which button is clicked, scroll to the appropriate element and show them all
         const showElements = () => {
             sponsorElements.forEach((element) => {
+                element.style.display = "block";
+            })
+            paymentInfo.forEach((element) => {
                 element.style.display = "block";
             })
         }

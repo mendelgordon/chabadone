@@ -15,10 +15,23 @@
 
 #id_14 {
     text-align: center;
-    background-image: url(https://chabadofparkland.com/media/images/1251/SKYq12514197.png);
+    background-image: url(https://chabadofparkland.com/media/images/1251/eTUf12514209.png);
     background-position: center;
-    background-size: cover;
-    padding: 70px;
+    background-size: contain;
+    padding-block: 160px;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 600px) {
+    #id_14 iframe {
+        max-width: 90%;
+        aspect-ratio: 1.5/1.24;
+        height: auto;
+    }
+
+    #id_14 {
+        padding-block: 10px;
+    }
 }
 
 body {

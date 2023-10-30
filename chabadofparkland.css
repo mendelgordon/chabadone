@@ -172,7 +172,7 @@ body {
 
 /* make the form elements fade in */
 .fadeIn {
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.8s ease-in-out;
     transform: scale(1)!important;
 }
 

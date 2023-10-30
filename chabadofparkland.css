@@ -141,7 +141,7 @@ body {
 }
 
 #header_4 {
-    display: inline;
+    display: inline-block;
     color: #EBE6D8;
     padding: 30px;
     cursor: pointer;

@@ -167,6 +167,7 @@ body {
 #personalInfo,
 #id_17 {
     display: none;
+    transform: scale(0);
 }
 
 /* make the form elements fade in */

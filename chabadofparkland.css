@@ -184,6 +184,9 @@ body {
     height: 200px;
     background-color: #FBEFE2;
     text-align: center;
+    position: sticky;
+    bottom: 0;
+    margin: 0;
 }
 
 #id_20 img {

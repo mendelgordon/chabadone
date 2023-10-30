@@ -18,7 +18,7 @@
 /* center the iframe and give it the scroll background */
 #id_14 {
     text-align: center;
-    background-image: url(https://chabadofparkland.com/media/images/1251/eTUf12514209.png);
+    background-image: url(https://chabadofparkland.com/media/images/1251/xgOD12514866.png);
     background-position: center;
     background-size: contain;
     padding-block: 160px;
@@ -41,7 +41,7 @@
 /* add scroll background to sponsor elements */
 #id_17,
 #sponsorElements {
-    background-image: url(https://chabadofparkland.com/media/images/1251/eTUf12514209.png);
+    background-image: url(https://chabadofparkland.com/media/images/1251/xgOD12514866.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -54,7 +54,7 @@
 }
 
 #personalInfo {
-    background: #ece7cd;
+    background: #FBEFE2;
     flex-direction: column;
     padding-inline: 10px;
     border-radius: 15px;
@@ -99,8 +99,6 @@
     margin: 10px;
     padding: 20px;
     font-size: 1em;
-    border-radius: 10px;
-    background-color: #dedaaf;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -126,7 +124,7 @@
 }
 
 body {
-    background-color: #4b5320;
+    background-color: #85907D;
 }
 
 
@@ -134,7 +132,7 @@ body {
 #cid_4 {
     text-align: center;
     font-size: x-large;
-    color: #515846;
+    color: #FBEFE2;
 }
 
 @media screen and (max-width: 600px) {
@@ -145,9 +143,8 @@ body {
 
 #header_4 {
     display: inline;
-    background: #dedaaf;
+    color: #FBEFE2;
     padding: 30px;
-    border-radius: 15px;
     cursor: pointer;
     transition: 0.5s;
     border: 2px solid;

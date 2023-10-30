@@ -2,15 +2,11 @@ if (window.location.href.includes(6146943)) {
     // add https://chabad.netlify.app/chabadofparkland.css to header
     document.querySelector("#Head1").insertAdjacentHTML("beforeend", '<link rel="stylesheet" href="https://chabad.netlify.app/chabadofparkland.css" />');
     const pageFunctions = () => {
-        const ctaSelector = "#id_3, #id_1, #cid_4";
-        const sponsorSelector = "#id_17";
-        const ctaElements = document.querySelectorAll(ctaSelector);
-        const sponsorElement = document.querySelector(sponsorSelector);
-        ctaElements.forEach((element) => {
-            element.addEventListener("click", () => {
-                sponsorElement.style.display = "flex";
-                sponsorElement.scrollIntoView({ behavior: "smooth" });
-            });
+        const ctaElement = document.querySelector("#cid_4");
+        const sponsorElement = document.querySelector("#id_17");
+        ctaElement.addEventListener("click", () => {
+            sponsorElement.style.display = "flex";
+            sponsorElement.scrollIntoView({ behavior: "smooth" });
         });
 
         const seferBtn = document.querySelector("#sefer");
@@ -34,7 +30,7 @@ if (window.location.href.includes(6146943)) {
         sponsorElementsDiv.id = "sponsorElements";
         document.querySelector("#id_5").insertAdjacentElement("beforebegin", sponsorElementsDiv);
         sponsorElementsDiv.append(...sponsorElements);
-        
+
         const personalInfo = document.querySelectorAll("#id_15, #id_16, #id_13, #id_12, #id_2");
         // move the personal info elements to a new div we create called personalInfo directly below where they were before
         const personalInfoDiv = document.createElement("div");

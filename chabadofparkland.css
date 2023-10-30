@@ -62,6 +62,10 @@
     flex-wrap: wrap;
 }
 
+#sponsorElements li {
+    width: min-content;
+}
+
 #personalInfo {
     flex-direction: column;
     padding-inline: 10px;

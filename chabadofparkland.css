@@ -17,8 +17,8 @@
 
 /* highlight the form elements the user should interact with */
 .highlight {
-    background-color: rgba(255, 255, 0, 0.552);
-    transition: background-color 0.5s ease;
+    border: solid;
+    transition: border 0.5s ease;
 }
 
 /* center the iframe and give it the scroll background */

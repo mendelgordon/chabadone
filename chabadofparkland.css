@@ -93,20 +93,8 @@
         padding: 10px;
     }
 
-    #sponsorElements :not(td)>.form-sub-label-container {
-        margin-bottom: 4px;
-    }
-
-    #sponsorElements .form-label-left label {
-        font-size: 14px;
-    }
-
     #sponsorElements {
         height: 375px;
-    }
-
-    #personalInfo li {
-        padding: 0;
     }
 }
 

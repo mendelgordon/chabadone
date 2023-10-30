@@ -107,7 +107,8 @@
     font-size: 1em;
     cursor: pointer;
     transition: 0.5s;
-    background-color: none;
+    background: none;
+    border: solid 2px;
 }
 
 #id_17 button:hover {

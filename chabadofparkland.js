@@ -42,12 +42,13 @@ if (window.location.href.includes(6146943)) {
         personalInfoDiv.append(personalInfoInnerDiv);
         personalInfoInnerDiv.append(...personalInfo);
 
-        // depending on which button is clicked, scroll to the appropriate element and show them all
+        // Scroll to the appropriate element and show them all
         const showElements = () => {
-            sponsorElementsDiv.style.display = "flex";
-            sponsorElementsDiv.style.transform = "scale(1)";
-            personalInfoDiv.style.display = "flex";
-            personalInfoDiv.style.transform = "scale(1)";
+            const elements = [sponsorElementsDiv, personalInfoDiv];
+            elements.forEach(element => {
+                element.style.display = "flex";
+                element.classList.add("fadeIn");
+            });
             sponsorElementsDiv.scrollIntoView({ behavior: "smooth" });
         }
         const highlightElemement = (element) => {

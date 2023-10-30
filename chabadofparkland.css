@@ -167,8 +167,12 @@ body {
 #personalInfo,
 #id_17 {
     display: none;
-    transform: scale(0);
-    transition: 0.5s;
+}
+
+/* make the form elements fade in */
+.fade-in {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1);
 }
 
 /* center the recaptcha */

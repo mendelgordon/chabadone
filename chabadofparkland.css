@@ -173,7 +173,7 @@ body {
 /* make the form elements fade in */
 .fade-in {
     transition: transform 0.3s ease-in-out;
-    transform: scale(1);
+    transform: scale(1)!important;
 }
 
 /* center the recaptcha */

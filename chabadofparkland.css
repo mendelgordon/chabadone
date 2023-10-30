@@ -147,6 +147,9 @@ body {
     cursor: pointer;
     transition: 0.5s;
     border: 2px solid;
+    @media screen and (max-width: 600px) {
+        padding: 15px;
+    }
 }
 
 #header_4:hover {

@@ -33,13 +33,15 @@
 
 #id_14 iframe {
     border: 3px solid #EEE8D0;
+    width: 300px;
+    aspect-ratio: 624/475;
+    height: unset;
 }
 
 /* resize the iframe for mobile */
 @media screen and (max-width: 600px) {
     #id_14 iframe {
         max-width: 85%;
-        aspect-ratio: 624/475;
         height: auto;
     }
 

@@ -180,15 +180,17 @@ body {
 }
 
 /* align the footer pics to the bottom */
-#id_3,
-#id_1 {
+#id_20 {
     height: 200px;
-    display: inline-flex;
-    width: 50%;
     background-color: #FBEFE2;
+    text-align: center;
 }
 
-#id_3 img,
-#id_1 img {
-    width: 30vw;
+#id_20 img {
+    height: auto;
+    max-width: 250px;
+}
+
+#id_20 p {
+    margin: 0;
 }

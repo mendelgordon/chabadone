@@ -9,6 +9,11 @@
     border-bottom: none;
 }
 
+/* make the header closer to the top and sides */
+#id_19 {
+    padding: 0;
+}
+
 /* highlight the form elements the user should interact with */
 .highlight {
     background-color: rgba(255, 255, 0, 0.552);
@@ -21,15 +26,19 @@
     background-image: url(https://chabadofparkland.com/media/images/1251/xgOD12514866.png);
     background-position: center;
     background-size: contain;
-    padding-block: 160px;
+    padding-block: 110px;
     background-repeat: no-repeat;
+}
+
+#id_14 iframe {
+    border: 3px solid #EEE8D0;
 }
 
 /* resize the iframe for mobile */
 @media screen and (max-width: 600px) {
     #id_14 iframe {
         max-width: 85%;
-        aspect-ratio: 1.5/1.24;
+        aspect-ratio: 624/475;
         height: auto;
     }
 
@@ -122,9 +131,10 @@ body {
 }
 
 
-/* style CTA to look like button */
+/* style CTA to look like button, and space it farther from the header */
 #cid_4 {
     text-align: center;
+    padding-top: 20px;
 }
 
 #header_4 {

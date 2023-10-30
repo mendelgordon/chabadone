@@ -6,7 +6,7 @@ if (window.location.href.includes(6146943)) {
         const sponsorElement = document.querySelector("#id_17");
         ctaElement.addEventListener("click", () => {
             sponsorElement.style.display = "flex";
-            sponsorElement.style.transform = "scale(1)";
+            sponsorElement.classList.add("fadeIn");
             sponsorElement.scrollIntoView({ behavior: "smooth" });
         });
 

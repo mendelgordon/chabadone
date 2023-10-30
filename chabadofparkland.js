@@ -49,7 +49,8 @@ if (window.location.href.includes(6146943)) {
                 el.style.display = "flex";
                 el.classList.add("fadeIn");
             });
-            element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+            const scrollPosition = element.getBoundingClientRect().top + window.scrollY - 200;
+            window.scrollTo({ top: scrollPosition, behavior: "smooth" });
         }
         const highlightElemement = (element) => {
             element.classList.add("highlight");

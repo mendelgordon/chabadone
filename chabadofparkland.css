@@ -167,6 +167,8 @@ body {
 #personalInfo,
 #id_17 {
     display: none;
+    transform: scale(0);
+    transition: 0.5s;
 }
 
 /* center the recaptcha */

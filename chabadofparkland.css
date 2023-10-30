@@ -68,6 +68,10 @@
     flex-wrap: wrap;
 }
 
+#sponsorElements {
+    max-width: 650px;
+}
+
 #sponsorElements li {
     width: min-content;
 }

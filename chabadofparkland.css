@@ -89,9 +89,8 @@
 }
 
 @media screen and (max-width: 600px) {
-    #sponsorElements .form-label-left {
-        padding: 0;
-        margin: 0;
+    #sponsorElements li {
+        padding: 10px;
     }
 
     #sponsorElements :not(td)>.form-sub-label-container {
@@ -145,6 +144,8 @@ body {
 #cid_4 {
     text-align: center;
     padding-top: 20px;
+    max-width: 80%;
+    margin: auto;
 }
 
 #header_4 {
@@ -220,6 +221,10 @@ body {
     position: sticky;
     bottom: 0;
     margin: 80px 0 0 0;
+}
+
+.form-section {
+    margin: 0;
 }
 
 #id_20 img {

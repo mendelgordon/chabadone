@@ -188,7 +188,7 @@ body {
 
 #id_20 img {
     height: auto;
-    max-width: 250px;
+    max-width: min(250px,50%);
 }
 
 #id_20 p {

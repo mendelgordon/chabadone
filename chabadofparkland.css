@@ -12,6 +12,7 @@
 /* make the header closer to the top and sides */
 #id_19 {
     padding: 0;
+    margin-top: 0;
 }
 
 /* highlight the form elements the user should interact with */

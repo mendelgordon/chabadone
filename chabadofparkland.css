@@ -156,7 +156,7 @@ body {
 }
 
 /* change the color of the text */
-*:not(input),
+*:not(input, select),
 .form-sub-label,
 .form-all .label-message {
     color: #EBE6D8;

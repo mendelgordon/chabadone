@@ -172,3 +172,17 @@ body {
 .footer {
     display: none;
 }
+
+/* align the footer pics to the bottom */
+#id_3,
+#id_1 {
+    height: 200px;
+    display: inline-flex;
+    width: 50%;
+    background-color: #FBEFE2;
+}
+
+#id_3 img,
+#id_1 img {
+    width: 30vw;
+}

@@ -43,39 +43,39 @@ if (window.location.href.includes(6146943)) {
         personalInfoInnerDiv.append(...personalInfo);
 
         // Scroll to the appropriate element and show them all
-        const showElements = () => {
+        const showElements = (element) => {
             const elements = [sponsorElementsDiv, personalInfoDiv];
             elements.forEach(element => {
                 element.style.display = "flex";
                 element.classList.add("fadeIn");
             });
-            sponsorElementsDiv.scrollIntoView({ behavior: "smooth" });
+            element.scrollIntoView({ behavior: "smooth" });
         }
         const highlightElemement = (element) => {
             element.classList.add("highlight");
         }
         seferBtn.addEventListener("click", () => {
-            showElements();
+            showElements(sefer);
             highlightElemement(sefer);
         })
         parshaBtn.addEventListener("click", () => {
-            showElements();
+            showElements(parsha);
             highlightElemement(parsha);
         })
         perekBtn.addEventListener("click", () => {
-            showElements();
+            showElements(perek);
             highlightElemement(perek);
         })
         pasukBtn.addEventListener("click", () => {
-            showElements();
+            showElements(pasuk);
             highlightElemement(pasuk);
         })
         wordBtn.addEventListener("click", () => {
-            showElements();
+            showElements(word);
             highlightElemement(word);
         })
         letterBtn.addEventListener("click", () => {
-            showElements();
+            showElements(letter);
             highlightElemement(letter);
         })
     }

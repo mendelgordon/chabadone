@@ -6,7 +6,7 @@ if (window.location.href.includes(6146943)) {
         const sponsorElement = document.querySelector("#id_17");
         ctaElement.addEventListener("click", () => {
             sponsorElement.style.display = "flex";
-            sponsorElement.style.opacity = "1";
+            sponsorElement.style.transform = "scale(1)";
             sponsorElement.scrollIntoView({ behavior: "smooth" });
         });
 
@@ -45,9 +45,9 @@ if (window.location.href.includes(6146943)) {
         // depending on which button is clicked, scroll to the appropriate element and show them all
         const showElements = () => {
             sponsorElementsDiv.style.display = "flex";
-            sponsorElementsDiv.style.opacity = "1";
+            sponsorElementsDiv.style.transform = "scale(1)";
             personalInfoDiv.style.display = "flex";
-            personalInfoDiv.style.opacity = "1";
+            personalInfoDiv.style.transform = "scale(1)";
             sponsorElementsDiv.scrollIntoView({ behavior: "smooth" });
         }
         const highlightElemement = (element) => {

@@ -158,7 +158,7 @@ body {
 }
 
 /* change the color of the text */
-* {
+*, .form-sub-label {
     color: #EBE6D8;
 }
 

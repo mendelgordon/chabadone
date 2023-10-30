@@ -45,11 +45,11 @@ if (window.location.href.includes(6146943)) {
         // Scroll to the appropriate element and show them all
         const showElements = (element) => {
             const elements = [sponsorElementsDiv, personalInfoDiv];
-            elements.forEach(element => {
-                element.style.display = "flex";
-                element.classList.add("fadeIn");
+            elements.forEach(el => {
+                el.style.display = "flex";
+                el.classList.add("fadeIn");
             });
-            element.scrollIntoView({ behavior: "smooth" });
+            element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
         }
         const highlightElemement = (element) => {
             element.classList.add("highlight");

@@ -110,11 +110,6 @@
     border: solid 2px;
 }
 
-#id_17 button:hover {
-    background-color: #738d61;
-    transition: 0.5s;
-}
-
 @media screen and (max-width: 600px) {
     #id_17 button {
         margin: 5px;
@@ -153,9 +148,11 @@ body {
     }
 }
 
-#header_4:hover {
-    background: #738d61;
+#header_4:hover,
+#id_17 button:hover {
+    background: #ebe6d8;
     transition: 0.5s;
+    color: #85907d;
 }
 
 /* change the color of the text */

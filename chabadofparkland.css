@@ -57,6 +57,13 @@
     }
 }
 
+/* style the photo gallery iframe */
+iframe.live {
+    margin: 20px auto;
+    display: block;
+    max-width: 85%;
+}
+
 /* center sponsor elements */
 #id_17,
 #sponsorElements {

@@ -228,7 +228,7 @@ body {
 #formContainer:has(#form-error) #sponsorElements,
 #formContainer:has(#form-error) #personalInfo,
 #formContainer:has(#form-error) #id_17 {
-    display: block;
+    display: flex;
     transform: scale(1);
 }
 .form-line-error * {

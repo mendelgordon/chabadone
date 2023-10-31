@@ -98,7 +98,7 @@ if (window.location.href.includes(6146943)) {
         })
         // make pressing .button.live scroll to photos
         document.querySelector(".button.live").addEventListener("click", () => {
-            document.querySelector("iframe.live").scrollIntoView({ behavior: "smooth" });
+            document.querySelector("iframe.gallery").scrollIntoView({ behavior: "smooth" });
         })
     }
     // once the page is loaded, hide the back to site bar

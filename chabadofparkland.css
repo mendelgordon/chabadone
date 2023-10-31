@@ -119,6 +119,7 @@
 }
 
 @media screen and (max-width: 550px) {
+    /* make the header buttons fit better on small screens */
     .button-spacer {
         color: transparent;
     }

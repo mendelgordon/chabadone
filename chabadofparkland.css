@@ -58,11 +58,6 @@
 }
 
 /* style the photo gallery iframe */
-@media screen and (max-width: 450px) {
-    iframe.gallery {
-        transform: scale(2)
-    }
-}
 
 div.gallery {
     margin: auto;
@@ -76,6 +71,12 @@ iframe.gallery {
     transform: scale(1.5);
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width: 450px) {
+    iframe.gallery {
+        transform: scale(2)
+    }
 }
 
 /* center sponsor elements */

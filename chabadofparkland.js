@@ -82,6 +82,14 @@ if (window.location.href.includes(6146943)) {
 
         // move p.live to after #id_14 (the scroll iframe div)
         document.querySelector("#id_14").insertAdjacentElement("afterend", document.querySelector("p.live"));
+        // make pressing .button.cta trigger a click on #cid_4
+        document.querySelector(".button.cta").addEventListener("click", () => {
+            ctaElement.click();
+        })
+        // make pressing .button.live scroll to p.live
+        document.querySelector(".button.live").addEventListener("click", () => {
+            document.querySelector("p.live").scrollIntoView({ behavior: "smooth" });
+        })
     }
     // once the page is loaded, hide the back to site bar
     window.addEventListener("DOMContentLoaded", () => {

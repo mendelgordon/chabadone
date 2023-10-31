@@ -224,6 +224,23 @@ body {
     transform: scale(0);
 }
 
+/* show them if there are errors and make sure content is readable */
+#formContainer:has(#form-error) #sponsorElements,
+#formContainer:has(#form-error) #personalInfo,
+#formContainer:has(#form-error) #id_17 {
+    display: block;
+    transform: scale(1);
+}
+.form-line-error * {
+    color: red;
+}
+
+#form-error, .form-error-js {
+    padding: 15px;
+    font-size: 20px;
+    background: #fbefe2;
+}
+
 /* make the form elements fade in */
 @keyframes fade-in {
     0% {

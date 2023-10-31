@@ -83,17 +83,15 @@ if (window.location.href.includes(6146943)) {
         // move p.live to after #id_14 (the scroll iframe div)
         document.querySelector("#id_14").insertAdjacentElement("afterend", document.querySelector("p.live"));
         // add photo iframe
+        const div = document.createElement('div');
+        div.className = 'gallery';
+        document.querySelector("#id_14").insertAdjacentElement("beforebegin", div);
         const iframe = document.createElement('iframe');
         iframe.src = 'https://docs.google.com/presentation/d/e/2PACX-1vRFKr8cLNAhBSiusAHLZulS9o7loPzrYabCxCZ7k2QOER18QMw-pKgf-ziXVybyLPqDHYdvdoTas4qz/embed?start=true&loop=true&delayms=2000';
         iframe.frameBorder = '0';
-        iframe.width = '480px';
-        iframe.height = '299px';
-        iframe.allowfullscreen = 'true';
-        iframe.mozallowfullscreen = 'true';
-        iframe.webkitallowfullscreen = 'true';
+        iframe.allowFullscreen = 'true';
         iframe.className = 'gallery';
-        // put it before #id_14
-        document.querySelector("#id_14").insertAdjacentElement("beforebegin", iframe);
+        div.append(iframe);
         // make pressing .button.cta trigger a click on #cid_4
         document.querySelector(".button.cta").addEventListener("click", () => {
             ctaElement.click();

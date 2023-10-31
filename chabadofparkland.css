@@ -109,12 +109,6 @@
 }
 
 /* style header buttons */
-.button.cta::before,
-.button.cta::after {
-    content: '|';
-    margin: 0 10px;
-}
-
 .button a {
     text-decoration: none;
 }
@@ -122,14 +116,22 @@
 .button:hover {
     text-decoration: underline;
     cursor: pointer;
-    transition: 0.5s;
+}
+
+.button-spacer {
+    background: #EBE6D8;
+    width: 1px;
+    overflow: hidden;
 }
 
 /* center the header buttons */
 #text_22 {
     display: flex;
+    gap: 15px;
     justify-content: center;
     font-size: 20px;
+    align-items: center;
+    text-align: center;
 }
 
 @media screen and (max-width: 600px) {

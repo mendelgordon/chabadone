@@ -118,10 +118,10 @@
     cursor: pointer;
 }
 
-.button-spacer {
-    background: #EBE6D8;
-    width: 1px;
-    overflow: hidden;
+@media screen and (max-width: 550px) {
+    .button-spacer {
+        color: transparent;
+    }
 }
 
 /* center the header buttons */

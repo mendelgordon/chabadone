@@ -108,6 +108,32 @@
     border: solid 2px;
 }
 
+/* style header buttons */
+.button {
+    margin: 10px;
+    padding: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.5s;
+    background: none;
+    border: solid 2px;
+
+    & a {
+        text-decoration: none;
+    }
+}
+
+.button:hover {
+    background: #ebe6d8;
+    transition: 0.5s;
+    color: #85907d;
+}
+
+/* center the header buttons */
+#text_22 {
+    display: flex;
+}
+
 @media screen and (max-width: 600px) {
     #id_17 button {
         margin: 5px;

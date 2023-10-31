@@ -118,9 +118,13 @@
     cursor: pointer;
 }
 
-@container (height < 1.5em) {
+@media screen and (max-width: 550px) {
     .button-spacer {
         color: transparent;
+    }
+
+    #text_22 {
+        font-size: inherit;
     }
 }
 
@@ -132,7 +136,6 @@
     font-size: 20px;
     align-items: center;
     text-align: center;
-    container-type: size;
 }
 
 @media screen and (max-width: 600px) {

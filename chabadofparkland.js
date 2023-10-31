@@ -79,6 +79,9 @@ if (window.location.href.includes(6146943)) {
             showElements(letter);
             highlightElemement(letter);
         })
+
+        // move p.live to after #id_14 (the scroll iframe div)
+        document.querySelector("#id_14").insertAdjacentElement("afterend", document.querySelector("p.live"));
     }
     // once the page is loaded, hide the back to site bar
     window.addEventListener("DOMContentLoaded", () => {

@@ -65,6 +65,7 @@ div.gallery {
     max-width: 100%;
     overflow: hidden;
     height: 300px;
+    pointer-events: none;
 }
 
 iframe.gallery {

@@ -60,7 +60,7 @@
 /* style the photo gallery iframe */
 @media screen and (max-width: 450px) {
     iframe.gallery {
-        transform: scale(1.5)
+        transform: scale(2)
     }
 }
 

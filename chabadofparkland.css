@@ -186,9 +186,8 @@ body {
 /* style CTA to look like button, and space it farther from the header */
 #cid_4 {
     text-align: center;
-    padding-top: 20px;
     max-width: 80%;
-    margin: auto;
+    margin: -20px auto 0;
 }
 
 #header_4 {

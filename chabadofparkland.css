@@ -89,6 +89,10 @@ iframe.gallery {
     flex-wrap: wrap;
 }
 
+#cid_17 {
+    width: 100%;
+}
+
 #personalInfo {
     flex-direction: column;
     padding-inline: 10px;
@@ -205,11 +209,13 @@ body {
     display: flex;
     transform: scale(1);
 }
+
 .form-line-error * {
     color: red;
 }
 
-#form-error, .form-error-js {
+#form-error,
+.form-error-js {
     padding: 15px;
     font-size: 20px;
     background: #fbefe2;

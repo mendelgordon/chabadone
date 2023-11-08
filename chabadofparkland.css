@@ -95,6 +95,12 @@ div#label_23 {
     font-size: 18px;
 }
 
+.form-dropdown {
+    padding: 4px;
+    border-color: #ebe6d8;
+    border-width: 2px;
+}
+
 #cid_17 {
     width: 100%;
 }

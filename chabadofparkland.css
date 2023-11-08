@@ -143,18 +143,14 @@ iframe.gallery {
 }
 
 @media screen and (max-width: 600px) {
-    #id_17 button {
-        margin: 5px;
-        padding: 5px;
-    }
-
     #id_17 p {
         margin: 5px;
     }
+}
 
-    #id_17 {
-        height: 300px;
-    }
+#label_23, 
+#label_25 {
+    display: none;
 }
 
 body {

@@ -31,15 +31,8 @@ if (window.location.href.includes(6146943)) {
         });
 
         // add photo iframe
-        const div = document.createElement('div');
-        div.className = 'gallery';
-        document.querySelector("#id_14").insertAdjacentElement("beforebegin", div);
-        const iframe = document.createElement('iframe');
-        iframe.src = 'https://docs.google.com/presentation/d/e/2PACX-1vRFKr8cLNAhBSiusAHLZulS9o7loPzrYabCxCZ7k2QOER18QMw-pKgf-ziXVybyLPqDHYdvdoTas4qz/embed?start=true&loop=true&delayms=2000';
-        iframe.frameBorder = '0';
-        iframe.allowFullscreen = 'true';
-        iframe.className = 'gallery';
-        div.append(iframe);
+        const photos = `<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRFKr8cLNAhBSiusAHLZulS9o7loPzrYabCxCZ7k2QOER18QMw-pKgf-ziXVybyLPqDHYdvdoTas4qz/embed?start=true&amp;loop=true&amp;delayms=1500" frameborder="0" allowfullscreen="" class="gallery"></iframe>`
+        document.querySelector("#id_14").insertAdjacentElement("beforebegin", photos);
         // make pressing .button.cta trigger a click on #cid_4
         document.querySelector(".button.cta").addEventListener("click", () => {
             ctaElement.click();

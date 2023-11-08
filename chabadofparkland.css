@@ -58,22 +58,13 @@
 
 /* style the photo gallery iframe */
 
-div.gallery {
-    margin: 100px auto;
+iframe.gallery {
     width: 535px;
     max-width: 100%;
-    height: 337px;
-}
-
-iframe.gallery {
-    width: 100%;
-    height: 100%;
-}
-
-@media screen and (max-width: 450px) {
-    iframe.gallery {
-        transform: scale(2)
-    }
+    height: auto;
+    aspect-ratio: 1/0.63;
+    margin: 100px auto;
+    display: block;
 }
 
 /* center sponsor elements */

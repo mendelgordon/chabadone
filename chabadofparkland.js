@@ -24,8 +24,8 @@ if (window.location.href.includes(6146943)) {
         personalInfoInnerDiv.append(...personalInfo);
         ctaElement.addEventListener("click", () => {
             sponsorElement.style.display = "flex";
-            personalInfo.style.display = "flex";
-            personalInfo.classList.add("fadeIn");
+            personalInfoDiv.style.display = "flex";
+            personalInfoDiv.classList.add("fadeIn");
             sponsorElement.classList.add("fadeIn");
             sponsorElement.scrollIntoView({ behavior: "smooth" });
         });

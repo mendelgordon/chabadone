@@ -4,12 +4,6 @@ if (window.location.href.includes(6146943)) {
     const pageFunctions = () => {
         const ctaElement = document.querySelector("#cid_4");
         const sponsorElement = document.querySelector("#id_17");
-        ctaElement.addEventListener("click", () => {
-            sponsorElement.style.display = "flex";
-            sponsorElement.classList.add("fadeIn");
-            sponsorElement.scrollIntoView({ behavior: "smooth" });
-        });
-
         const sponsorSelections = "#id_5, #id_10, #id_23, #id_25";
 
         const sponsorElements = document.querySelectorAll(sponsorSelections);
@@ -28,6 +22,13 @@ if (window.location.href.includes(6146943)) {
         document.querySelector("#id_15").insertAdjacentElement("beforebegin", personalInfoDiv);
         personalInfoDiv.append(personalInfoInnerDiv);
         personalInfoInnerDiv.append(...personalInfo);
+        ctaElement.addEventListener("click", () => {
+            sponsorElement.style.display = "flex";
+            personalInfo.style.display = "flex";
+            personalInfo.classList.add("fadeIn");
+            sponsorElement.classList.add("fadeIn");
+            sponsorElement.scrollIntoView({ behavior: "smooth" });
+        });
 
         // add photo iframe
         const div = document.createElement('div');

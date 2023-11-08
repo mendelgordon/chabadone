@@ -59,16 +59,13 @@
 /* style the photo gallery iframe */
 
 div.gallery {
-    margin: auto;
+    margin: 100px auto;
     width: 535px;
     max-width: 100%;
-    overflow: hidden;
-    height: 300px;
-    pointer-events: none;
+    height: 337px;
 }
 
 iframe.gallery {
-    transform: scale(1.5);
     width: 100%;
     height: 100%;
 }

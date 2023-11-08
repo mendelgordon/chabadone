@@ -4,7 +4,7 @@ if (window.location.href.includes(6146943)) {
     const pageFunctions = () => {
         const ctaElement = document.querySelector("#cid_4");
         const sponsorElement = document.querySelector("#id_17");
-        const sponsorSelections = "#id_5, #id_10, #id_23, #id_25, #id_26";
+        const sponsorSelections = "#id_5, #id_10, #id_23, #id_26";
 
         const sponsorElements = document.querySelectorAll(sponsorSelections);
         // move the sponsor elements to a new div we create called sponsorElements directly below where they were before

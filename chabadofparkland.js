@@ -16,7 +16,7 @@ if (window.location.href.includes(6146943)) {
         // move the sponsor elements to a new div we create called sponsorElements directly below where they were before
         const sponsorElementsDiv = document.createElement("div");
         sponsorElementsDiv.id = "sponsorElements";
-        document.querySelector("#id_5").insertAdjacentElement("beforebegin", sponsorElementsDiv);
+        document.querySelector("#cid_17").insertAdjacentElement("beforebegin", sponsorElementsDiv);
         sponsorElementsDiv.append(...sponsorElements);
 
         const personalInfo = document.querySelectorAll("#id_15, #id_16, #id_13, #id_12, #id_2, #id_21");

@@ -80,23 +80,13 @@ iframe.gallery {
 }
 
 /* center sponsor elements */
-#id_17,
-#sponsorElements {
+#id_17 {
     height: 670px;
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-#sponsorElements {
-    max-width: 650px;
-    margin: auto;
-}
-
-#sponsorElements li {
-    width: min-content;
 }
 
 #personalInfo {
@@ -114,20 +104,6 @@ iframe.gallery {
     #sponsorElements li {
         padding: 10px;
     }
-
-    #sponsorElements {
-        height: 375px;
-    }
-}
-
-#id_17 button {
-    margin: 10px;
-    padding: 20px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: 0.5s;
-    background: none;
-    border: solid 2px;
 }
 
 /* style header buttons */
@@ -216,7 +192,6 @@ body {
 }
 
 /* hide sponsorship section on load */
-#sponsorElements,
 #personalInfo,
 #id_17 {
     display: none;

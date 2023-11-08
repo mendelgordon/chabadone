@@ -12,18 +12,10 @@ if (window.location.href.includes(6146943)) {
 
         const seferBtn = document.querySelector("#sefer");
         const parshaBtn = document.querySelector("#parsha");
-        const perekBtn = document.querySelector("#perek");
-        const pasukBtn = document.querySelector("#pasuk");
-        const wordBtn = document.querySelector("#word");
-        const letterBtn = document.querySelector("#letter");
 
-        const sponsorSelections = "#id_5, #id_10, #id_11, #id_7, #id_8, #id_9";
+        const sponsorSelections = "#id_5, #id_10";
         const sefer = document.querySelector("#id_5");
         const parsha = document.querySelector("#id_10");
-        const perek = document.querySelector("#id_11");
-        const pasuk = document.querySelector("#id_7");
-        const word = document.querySelector("#id_8");
-        const letter = document.querySelector("#id_9");
 
         const sponsorElements = document.querySelectorAll(sponsorSelections);
         // move the sponsor elements to a new div we create called sponsorElements directly below where they were before
@@ -36,7 +28,7 @@ if (window.location.href.includes(6146943)) {
         // move the personal info elements to a new div we create called personalInfo directly below where they were before
         const personalInfoDiv = document.createElement("div");
         personalInfoDiv.id = "personalInfo";
-        personalInfoInnerDiv = document.createElement("div");
+        const personalInfoInnerDiv = document.createElement("div");
         personalInfoInnerDiv.id = "personalInfoInnerDiv";
         document.querySelector("#id_15").insertAdjacentElement("beforebegin", personalInfoDiv);
         personalInfoDiv.append(personalInfoInnerDiv);
@@ -62,22 +54,6 @@ if (window.location.href.includes(6146943)) {
         parshaBtn.addEventListener("click", () => {
             showElements(parsha);
             highlightElemement(parsha);
-        })
-        perekBtn.addEventListener("click", () => {
-            showElements(perek);
-            highlightElemement(perek);
-        })
-        pasukBtn.addEventListener("click", () => {
-            showElements(pasuk);
-            highlightElemement(pasuk);
-        })
-        wordBtn.addEventListener("click", () => {
-            showElements(word);
-            highlightElemement(word);
-        })
-        letterBtn.addEventListener("click", () => {
-            showElements(letter);
-            highlightElemement(letter);
         })
 
         // move p.live to after #id_14 (the scroll iframe div)

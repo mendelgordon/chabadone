@@ -86,6 +86,11 @@ iframe.gallery {
     flex-wrap: wrap;
 }
 
+div#label_23 {
+    width: 100% !important;
+    display: block;
+}
+
 #cid_17 {
     width: 100%;
 }

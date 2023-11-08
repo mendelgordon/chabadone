@@ -4,7 +4,7 @@ if (window.location.href.includes(6146943)) {
     const pageFunctions = () => {
         const ctaElement = document.querySelector("#cid_4");
         const sponsorElement = document.querySelector("#id_17");
-        const sponsorSelections = "#id_5, #id_10, #id_23, #id_25";
+        const sponsorSelections = "#id_5, #id_10, #id_23, #id_25, #id_26";
 
         const sponsorElements = document.querySelectorAll(sponsorSelections);
         // move the sponsor elements to a new div we create called sponsorElements directly below where they were before
@@ -50,7 +50,7 @@ if (window.location.href.includes(6146943)) {
         })
 
         // add full video under rebbe video
-        const video = `<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/882485673?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="IDF Unity Torah"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`;
+        const video = `<div style="padding:56.25% 0 0 0;position:relative;max-width:535px;margin:auto"><iframe src="https://player.vimeo.com/video/882485673?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="IDF Unity Torah"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`;
         document.querySelector("#full-video").innerHTML = video;
     }
     // once the page is loaded, hide the back to site bar

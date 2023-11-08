@@ -56,8 +56,6 @@ if (window.location.href.includes(6146943)) {
             highlightElemement(parsha);
         })
 
-        // move p.live to after #id_14 (the scroll iframe div)
-        document.querySelector("#id_14").insertAdjacentElement("afterend", document.querySelector("p.live"));
         // add photo iframe
         const div = document.createElement('div');
         div.className = 'gallery';

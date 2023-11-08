@@ -10,12 +10,7 @@ if (window.location.href.includes(6146943)) {
             sponsorElement.scrollIntoView({ behavior: "smooth" });
         });
 
-        const seferBtn = document.querySelector("#sefer");
-        const parshaBtn = document.querySelector("#parsha");
-
-        const sponsorSelections = "#id_5, #id_10";
-        const sefer = document.querySelector("#id_5");
-        const parsha = document.querySelector("#id_10");
+        const sponsorSelections = "#id_5, #id_10, #id_23, #id_25";
 
         const sponsorElements = document.querySelectorAll(sponsorSelections);
         // move the sponsor elements to a new div we create called sponsorElements directly below where they were before
@@ -33,28 +28,6 @@ if (window.location.href.includes(6146943)) {
         document.querySelector("#id_15").insertAdjacentElement("beforebegin", personalInfoDiv);
         personalInfoDiv.append(personalInfoInnerDiv);
         personalInfoInnerDiv.append(...personalInfo);
-
-        // Scroll to the appropriate element and show them all
-        const showElements = (element) => {
-            const elements = [sponsorElementsDiv, personalInfoDiv];
-            elements.forEach(el => {
-                el.style.display = "flex";
-                el.classList.add("fadeIn");
-            });
-            const scrollPosition = element.getBoundingClientRect().top + window.scrollY - 200;
-            window.scrollTo({ top: scrollPosition, behavior: "smooth" });
-        }
-        const highlightElemement = (element) => {
-            element.classList.add("highlight");
-        }
-        seferBtn.addEventListener("click", () => {
-            showElements(sefer);
-            highlightElemement(sefer);
-        })
-        parshaBtn.addEventListener("click", () => {
-            showElements(parsha);
-            highlightElemement(parsha);
-        })
 
         // add photo iframe
         const div = document.createElement('div');

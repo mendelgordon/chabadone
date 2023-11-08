@@ -91,6 +91,10 @@ div#label_23 {
     display: block;
 }
 
+#sponsorElements label:first-child {
+    font-size: 18px;
+}
+
 #cid_17 {
     width: 100%;
 }

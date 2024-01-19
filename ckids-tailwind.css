@@ -147,6 +147,9 @@ div[name="co_section"][real_id^="column_promo"] {
 	width: 100%;
 	height: fit-content;
 }
+.ContentItem[name="co_editable"] {
+	height: 100%;
+}
 
 /* Hide the load more button from the IG widget */
 .eapps-instagram-feed-posts-grid-load-more-container.eapps-instagram-feed-posts-grid-load-more-enabled {

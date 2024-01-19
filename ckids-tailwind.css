@@ -156,6 +156,11 @@ div[name="co_section"][real_id^="column_promo"] {
 	display: none !important;
 }
 
+/* Hide the IG widget ad */
+.eapps-instagram-feed-container + a {
+	scale: 0;
+}
+
 /* Make sure the IG follow button doesn't overlap the IG widget */
 .follow-i-ckids {
 	margin: 0 !important;
@@ -184,4 +189,14 @@ div[name="co_section"][real_id^="column_promo"] {
 .co_calendar_body .co_calendar_gradient .co_calendar_text:not(:has(.item:not(.last))) .item.last {
 	display: block !important;
 	min-height: auto !important;
+}
+
+/* Make sure submenu nav items don't overflow when they are long */
+.chabad_navigator_bar ul li.parent .sub_menu li a {
+	white-space: normal;
+}
+
+/* Make sure template 5 shows the article title section when the template is shown */
+html:has(link[href*="template5"]) body.lang_en.dir_ltr.cco_body.section_branch .master-content-wrapper>.article-header {
+    background-image: linear-gradient(rgba(249,119,76,.75),rgba(128,42,12,.85))
 }

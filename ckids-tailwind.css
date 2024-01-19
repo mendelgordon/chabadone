@@ -196,7 +196,21 @@ div[name="co_section"][real_id^="column_promo"] {
 	white-space: normal;
 }
 
-/* Make sure template 5 shows the article title section when the template is shown */
+/* Make sure template 5 shows the article title section when the template is shown (with the proper styling) */
 html:has(link[href*="template5"]) body.lang_en.dir_ltr.cco_body.section_branch .master-content-wrapper>.article-header {
-    background-image: linear-gradient(rgba(249,119,76,.75),rgba(128,42,12,.85))
+	background-image: linear-gradient(rgba(249, 119, 76, .75), rgba(128, 42, 12, .85))
+}
+body.lang_en.dir_ltr.cco_body.section_branch h1.article-header__title.js-article-title.js-page-title {
+	font-size: 75px;
+	font-family: Comfortaa
+}
+@media (max-width: 767px) {
+	body.lang_en.dir_ltr.cco_body.section_branch h1.article-header__title.js-article-title.js-page-title {
+		font-size: 35px
+	}
+	body.lang_en.dir_ltr.cco_body.section_branch .article-header {
+		text-align: center;
+		padding: 80px 0 !important;
+		margin-bottom: 80px
+	}
 }

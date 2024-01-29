@@ -1026,3 +1026,8 @@ body.lang_en.dir_ltr.cco_body.section_branch h1.article-header__title.js-article
 	/* Make sure we don't end up with white space on the right when the screen is narrow */
 	width: 100%;
 }
+
+div#chabad_head .chabad_navigator_bar {
+	/* Stop the navigator bar from overflowing */
+    max-width: 97%;
+}

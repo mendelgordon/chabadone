@@ -217,7 +217,7 @@ body.lang_en.dir_ltr.cco_body.section_branch h1.article-header__title.js-article
 /* use :where() to make sure the specificty doesn't get raised */
 :where(html:has(link#k[href*="sites6"]) #chabad_body_page) {
 	/* Make the page full width on sites 6 */
-	#BodyContainer .body_wrapper {
+	.body_wrapper {
 		width: 100% !important;
 		padding: 0 !important;
 	}

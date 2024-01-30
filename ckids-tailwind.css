@@ -788,126 +788,24 @@
 		margin-bottom: 15px;
 	}
 
-	@keyframes slide1 {
-		0% {
-			opacity: 1;
-			transform: scale(1);
-		}
-
-		20% {
-			opacity: 1;
-			transform: scale(1.1);
-		}
-
-		21% {
-			opacity: 0;
-		}
-	}
-
-	@keyframes slide2 {
-		19% {
-			opacity: 0;
-			transform: translate(0);
-		}
-
-		20% {
-			opacity: 1;
-		}
-
-		40% {
-			opacity: 1;
-			transform: translate(0 3%);
-		}
-
-		41% {
-			opacity: 0;
-			transform: translate(0);
-		}
-	}
-
-	@keyframes slide3 {
-		39% {
-			opacity: 0;
-		}
-
-		40% {
-			opacity: 1;
-			transform: scale(1);
-		}
-
-		60% {
-			opacity: 1;
-			transform: scale(1.1);
-		}
-
-		61% {
-			opacity: 0;
-			transform: scale(1);
-		}
-	}
-
-	@keyframes slide4 {
-		59% {
-			opacity: 0;
-		}
-
-		60% {
-			opacity: 1;
-			transform: scale(1.1);
-		}
-
-		80% {
-			opacity: 1;
-			transform: scale(1);
-		}
-
-		81% {
-			opacity: 0;
-		}
-
-		82% {
-			transform: scale(1.1);
-		}
-	}
-
-	@keyframes slide5 {
-		79% {
-			opacity: 0;
-			transform: translate(0);
-		}
-
-		90% {
-			opacity: 1;
-		}
-
-		99% {
-			opacity: 1;
-		}
-
-		100% {
-			opacity: 0;
-			transform: translate(0 3%);
-		}
-	}
-
 	#first-background-image img {
-		animation: slide1 10s infinite;
+		animation: ckids-first-background-image 10s infinite;
 	}
 
 	#second-background-image img {
-		animation: slide2 10s infinite;
+		animation: ckids-second-background-image 10s infinite;
 	}
 
 	#third-background-image img {
-		animation: slide3 10s infinite;
+		animation: ckids-third-background-image 10s infinite;
 	}
 
 	#fourth-background-image img {
-		animation: slide4 10s infinite;
+		animation: ckids-fourth-background-image 10s infinite;
 	}
 
 	#fifth-background-image img {
-		animation: slide5 10s infinite;
+		animation: ckids-fifth-background-image 10s infinite;
 	}
 
 	/* Hide the load more button from the IG widget */
@@ -968,6 +866,108 @@
 	div#chabad_head .chabad_navigator_bar {
 		/* Stop the navigator bar from overflowing */
 		max-width: 97%;
+	}
+}
+
+@keyframes ckids-first-background-image {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	20% {
+		opacity: 1;
+		transform: scale(1.1);
+	}
+
+	21% {
+		opacity: 0;
+	}
+}
+
+@keyframes ckids-second-background-image {
+	19% {
+		opacity: 0;
+		transform: translate(0);
+	}
+
+	20% {
+		opacity: 1;
+	}
+
+	40% {
+		opacity: 1;
+		transform: translate(0 3%);
+	}
+
+	41% {
+		opacity: 0;
+		transform: translate(0);
+	}
+}
+
+@keyframes ckids-third-background-image {
+	39% {
+		opacity: 0;
+	}
+
+	40% {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	60% {
+		opacity: 1;
+		transform: scale(1.1);
+	}
+
+	61% {
+		opacity: 0;
+		transform: scale(1);
+	}
+}
+
+@keyframes ckids-fourth-background-image {
+	59% {
+		opacity: 0;
+	}
+
+	60% {
+		opacity: 1;
+		transform: scale(1.1);
+	}
+
+	80% {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	81% {
+		opacity: 0;
+	}
+
+	82% {
+		transform: scale(1.1);
+	}
+}
+
+@keyframes ckids-fifth-background-image {
+	79% {
+		opacity: 0;
+		transform: translate(0);
+	}
+
+	90% {
+		opacity: 1;
+	}
+
+	99% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		transform: translate(0 3%);
 	}
 }
 

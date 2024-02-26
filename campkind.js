@@ -10,5 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (registrationCounter) {
         registrationCounter.innerHTML = "Early Bird Pricing Ends In";
+        registrationCounter.style.fontSize = "15px";
     }
 });

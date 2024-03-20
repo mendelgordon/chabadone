@@ -69,6 +69,7 @@
 	--color-26: #ffffff;
 	--color-27: #000000;
 	--color-28: #000000;
+	--color-29: #ffffff;
 }
 
 #header_container .links .float_right+.float_left .topBarLink:last-child:after {
@@ -338,7 +339,8 @@ body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.paren
 }
 
 .hp-table .hp-row-first .promo_slider .slider .cycle-caption big {
-	color: var(--color-2);
+	color: var(--color-29);
+	/* was var(--color-1) */
 }
 
 .banner .widget_content.index_format .item {
@@ -788,7 +790,8 @@ body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.paren
 }
 
 .hp-table .hp-row .promo_slider .slider .cycle-caption p big {
-	color: var(--color-1)
+	color: var(--color-29);
+	/* was var(--color-1) */
 }
 
 .hp-table .hp-row .promo_slider .slider .cycle-caption .readMore {

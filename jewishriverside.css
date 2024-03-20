@@ -844,3 +844,6 @@ body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {
     border-color: white !important;
 	}
 }
+.hp-table>:nth-of-type(2) {
+    background: white;
+}

@@ -201,7 +201,8 @@ body.cco_body #tabContentMain .co_menu_item.multi_level .co_submenu_container {
 }
 
 body.cco_body #tabContentMain .co_menu_item.hover span.parent a {
-	color: var(--color-3)
+	color: var(--color-29);
+	/* was var(--color-3) */
 }
 
 body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a,

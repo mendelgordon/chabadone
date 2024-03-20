@@ -246,7 +246,7 @@ body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.paren
 
 #BodyContainer #co_content_container>.clearfix>.g960:not(.categorized) .article-header .breadcrumbs .breadcrumbs__crumb,
 #BodyContainer #co_content_container>.clearfix>.g960:not(.categorized) .article-header .breadcrumbs .breadcrumbs__divider {
-	color: var(--color-2);
+	color: white
 }
 
 #BodyContainer .no-hero-image #co_content_container .master-content-wrapper.master-content-wrapper .article-header .breadcrumbs .breadcrumbs__crumb,

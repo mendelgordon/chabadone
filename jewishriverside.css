@@ -1,9 +1,827 @@
 @media (max-width: 1024px) {
+
 	/* STOP LOGO FROM HIDING CONTENT */
 	body.sites-article #content {
 		margin-top: 100px;
 	}
+
 	body.sites-article #header {
 		height: 101px;
+	}
 }
+
+:root {
+	/* Previous colors 
+	--color-1: #2fd3c2;
+	--color-2: #0F6CB8;
+	--color-3: #83e5db;
+	--color-4: #1b8176;
+	--color-5: #24ab9d;
+	--color-6: #0b5089;
+	--color-7: rgba(47, 211, 194, .6);
+	--color-8: #cbe5fb;
+	--color-9: #fff;
+	--color-10: #07375E;
+	--color-11: #379df0;
+	--color-12: #0b538d;
+	--color-13: #4dffec;
+	--color-14: #00BDA9;
+	--color-15: #71fff0;
+	--color-16: #00574e;
+	--color-17: #b4daf9;
+	--color-18: #02B1BD;
+	--color-19: #00b7b3;
+	--color-20: #05a8c8;
+	--color-21: #0c9dd4;
+	--color-22: #59dcce;
+	--color-23: #f5fdfc;
+	--color-24: #c2f2ed;
+	--color-25: #96cbf7;
+	--color-26: #adeee7;
+	--color-27: #55abf1;
+	--color-28: #0d5ea0;
+	*/
+	--color-1: #000000;
+	--color-2: #000000;
+	--color-3: #000000;
+	--color-4: #000000;
+	--color-5: #000000;
+	--color-6: #000000;
+	--color-7: rgba(0, 0, 0, 0.6);
+	--color-8: #ffffff;
+	--color-9: #fff;
+	--color-10: #000000;
+	--color-11: #000000;
+	--color-12: #000000;
+	--color-13: #000000;
+	--color-14: #000000;
+	--color-15: #000000;
+	--color-16: #000000;
+	--color-17: #000000;
+	--color-18: #000000;
+	--color-19: #000000;
+	--color-20: #000000;
+	--color-21: #000000;
+	--color-22: #000000;
+	--color-23: #ffffff;
+	--color-24: #ffffff;
+	--color-25: #000000;
+	--color-26: #ffffff;
+	--color-27: #000000;
+	--color-28: #000000;
+}
+
+#header_container .links .float_right+.float_left .topBarLink:last-child:after {
+	color: var(--color-2);
+}
+
+#header.on-scroll #header_container .links:after,
+body.sites-article #header_container .links:after {
+	color: var(--color-1)
+}
+
+#header_container .links .topBarLink:before {
+	color: var(--color-2);
+}
+
+#header.on-scroll #header_container .links .topBarLink,
+#header.on-scroll #header_container .links .topBarLink a,
+body.sites-article #header_container .links .topBarLink,
+body.sites-article #header_container .links .topBarLink a {
+	color: var(--color-1)
+}
+
+#header.on-scroll #header_container .links .search-trigger-container .search-trigger,
+#header_container .links #HeaderSubscribeContainer a,
+#header_container .links .subscribe_box .footer_box a,
+body.sites-article #header_container .links .search-trigger-container .search-trigger {
+	color: var(--color-1)
+}
+
+#header_container .links .cco_search_header #MainSearchForm {
+	border: 1px solid var(--color-2);
+}
+
+#header.on-scroll #header_container .links .top_bar_item:after,
+body.sites-article #header_container .links .top_bar_item:after {
+	border-top: 5px solid var(--color-1)
+}
+
+#header_container .links #HeaderSubscribeContainer {
+	border-bottom-color: var(--color-1)
+}
+
+#header_container .links .subscribe_box .co_global_submit .button {
+	border-color: var(--color-2);
+}
+
+#header.on-scroll .branding-search #header_branding .site_title,
+body.sites-article .branding-search #header_branding .site_title {
+	color: var(--color-2)
+}
+
+body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
+body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,
+body #header.on-scroll .cco_body #tabContentMain .donate_link,
+body #header.on-scroll body #tabContentMain .co_menu_item span.parent,
+body #header.on-scroll body #tabContentMain .co_menu_item span.parent a,
+body #header.on-scroll body #tabContentMain .co_menu_item.hover span.parent,
+body #header.on-scroll body #tabContentMain .co_menu_item.hover span.parent a,
+body #header.on-scroll body.cco_body #tabContentMain .co_menu_item span.parent,
+body #header.on-scroll body.cco_body #tabContentMain .co_menu_item span.parent a,
+body #header.on-scroll body.cco_body #tabContentMain .co_menu_item.hover span.parent,
+body #header.on-scroll body.cco_body #tabContentMain .co_menu_item.hover span.parent a,
+body #header.on-scroll body.cco_body #tabContentMain .co_submenu_container .co_column a,
+body.cco_body #header.on-scroll #tabContentMain .co_menu_item span.parent,
+body.cco_body #header.on-scroll #tabContentMain .co_menu_item span.parent a,
+body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
+body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,
+body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent,
+body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a,
+body.cco_body #header.on-scroll #tabContentMain .co_submenu_container .co_column a,
+body.cco_body #header.on-scroll #tabContentMain .donate_link,
+body.cco_body.sites-article #tabContentMain .co_menu_item span.parent,
+body.cco_body.sites-article #tabContentMain .co_menu_item span.parent a,
+body.cco_body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
+body.cco_body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,
+body.cco_body.sites-article #tabContentMain .co_menu_item.hover span.parent,
+body.cco_body.sites-article #tabContentMain .co_menu_item.hover span.parent a,
+body.cco_body.sites-article #tabContentMain .co_submenu_container .co_column a,
+body.cco_body.sites-article #tabContentMain .donate_link,
+body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
+body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,
+body.sites-article .cco_body #tabContentMain .donate_link,
+body.sites-article body #tabContentMain .co_menu_item span.parent,
+body.sites-article body #tabContentMain .co_menu_item span.parent a,
+body.sites-article body #tabContentMain .co_menu_item.hover span.parent,
+body.sites-article body #tabContentMain .co_menu_item.hover span.parent a,
+body.sites-article body.cco_body #tabContentMain .co_menu_item span.parent,
+body.sites-article body.cco_body #tabContentMain .co_menu_item span.parent a,
+body.sites-article body.cco_body #tabContentMain .co_menu_item.hover span.parent,
+body.sites-article body.cco_body #tabContentMain .co_menu_item.hover span.parent a,
+body.sites-article body.cco_body #tabContentMain .co_submenu_container .co_column a {
+	color: var(--color-1)
+}
+
+body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a,
+body.cco_body #tabContentMain .co_menu_item.donate_link.hover span.parent a {
+	border: 2px solid var(--color-2);
+}
+
+.dir_ltr .co_menu_item.multi_level .co_submenu_container .menu_child.selected,
+.dir_rtl .co_menu_item.multi_level .co_submenu_container.reversed .menu_child.selected {
+	border-top-color: var(--color-3);
+}
+
+.dir_ltr .co_menu_item.multi_level .co_submenu_container.reversed .menu_child.selected,
+.dir_rtl .co_menu_item.multi_level .co_submenu_container .menu_child.selected {
+	border-top-color: var(--color-3);
+}
+
+.co_menu_item.multi_level .co_submenu_container a.item.hover span,
+.co_menu_item.multi_level .co_submenu_container a.item:hover span {
+	color: var(--color-1) !important
+}
+
+.co_menu_item .co_submenu_container .child_item.heading {
+	color: var(--color-2)
+}
+
+body.cco_body #tabContentMain .co_menu_item.multi_level .co_submenu_container {
+	border-top-color: var(--color-1)
+}
+
+#tabContentMain .co_menu_item.multi_level:before {
+	border-bottom: 8px solid var(--color-1)
+}
+
+#tabContentMain .co_menu_item.multi_level:after {
+	border-bottom: 8px solid var(--color-9)
+}
+
+body.cco_body #tabContentMain .co_menu_item.hover span.parent a {
+	color: var(--color-3)
+}
+
+body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a,
+body.cco_body.sites-article #tabContentMain .co_menu_item.hover span.parent a {
+	color: var(--color-4)
+}
+
+body.cco_body #tabContentMain .co_menu_item.selected span.parent a {
+	color: var(--color-5)
+}
+
+body.cco_body #tabContentMain .co_menu_item.selected a.parent:after {
+	background: var(--color-1)
+}
+
+body.cco_body #tabContentMain .co_menu_item.selected.hover a.parent:after {
+	background: var(--color-3)
+}
+
+body.cco_body #header.on-scroll #tabContentMain .co_menu_item.selected.hover a.parent:after,
+body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.parent:after {
+	background: var(--color-4)
+}
+
+.cco_body #tabContentMain .donate_link a {
+	border: 2px solid var(--color-2);
+}
+
+.cco_body #tabContentMain .donate_link a:hover {
+	color: var(--color-2)
+}
+
+.article-header__title,
+.content_title_container .content_title,
+.content_title_container h1 {
+	color: var(--color-2);
+}
+
+.header-title {
+	color: var(--color-2);
+}
+
+#BodyContainer #co_content_container>.clearfix>.g960:not(.categorized) .article-header .breadcrumbs .breadcrumbs__crumb,
+#BodyContainer #co_content_container>.clearfix>.g960:not(.categorized) .article-header .breadcrumbs .breadcrumbs__divider {
+	color: var(--color-2);
+}
+
+#BodyContainer .no-hero-image #co_content_container .master-content-wrapper.master-content-wrapper .article-header .breadcrumbs .breadcrumbs__crumb,
+#BodyContainer .no-hero-image #co_content_container .master-content-wrapper.master-content-wrapper .article-header .breadcrumbs .breadcrumbs__divider {
+	color: var(--color-1);
+}
+
+#BodyContainer .no-hero-image #co_content_container .master-content-wrapper.master-content-wrapper .article-header .article-header__title {
+	color: var(--color-2);
+}
+
+.co_local_menu .item .item_sub.selected a {
+	color: var(--color-1);
+}
+
+.secondary_navigation .header {
+	color: var(--color-2)
+}
+
+#co_ads_container .lt_blue,
+#co_ads_container .lt_blue a {
+	color: var(--color-1)
+}
+
+.Content_Title,
+.co_body .content .Content_Title,
+.co_body .content .SCHeading_1,
+.co_body h1,
+.form-header-group h1 {
+	color: var(--color-2);
+}
+
+.co_body .content .Content_Large,
+.co_body .content .SCHeading_2,
+.co_body h2,
+.form-header-group h2 {
+	color: var(--color-1)
+}
+
+.co_body .content .SCHeading_3,
+.co_body h3,
+.form-header-group h3 {
+	color: var(--color-1)
+}
+
+.co_global_button .button,
+.co_global_submit .button {
+	background: var(--color-1);
+}
+
+.co_global_button .button:focus,
+.co_global_button .button:hover,
+.co_global_submit .button:focus,
+.co_global_submit .button:hover {
+	background: var(--color-5);
+}
+
+.co_global_button.yellow .button {
+	background: var(--color-2);
+}
+
+.co_global_button.yellow .button:focus,
+.co_global_button.yellow .button:hover {
+	background: var(--color-6);
+}
+
+#lightbox-wrapper #lightbox #details-panel {
+	background: var(--color-1)
+}
+
+#co_ads_container #customizable_promos .sneak_peek[class*=widget-] .widget_content h6:hover {
+	background: var(--color-7)
+}
+
+.ribbon-wrapper .ribbon {
+	background-color: var(--color-1)
+}
+
+.chabad_updates .widget_header.widget_header h5,
+[class*=widget-] .widget_header.widget_header h5 {
+	color: var(--color-2);
+}
+
+.hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore {
+	border: 2px solid var(--color-2);
+}
+
+.hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore:hover {
+	background: var(--color-2);
+}
+
+.hp-table .hp-row-first .promo_slider .slider .cycle-caption big {
+	color: var(--color-2);
+}
+
+.banner .widget_content.index_format .item {
+	background: var(--color-18);
+	background: -moz-linear-gradient(-45deg, var(--color-14) 0, var(--color-19) 25%, var(--color-18) 50%, var(--color-20) 75%, var(--color-21) 100%);
+	background: -webkit-linear-gradient(-45deg, var(--color-14) 0, var(--color-19) 25%, var(--color-18) 50%, var(--color-20) 75%, var(--color-21) 100%);
+	background: linear-gradient(135deg, var(--color-14) 0, var(--color-19) 25%, var(--color-18) 50%, var(--color-20) 75%, var(--color-21) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--color-14)", endColorstr="var(--color-21)", GradientType=1);
+}
+
+.banner .widget_content.index_format .item .readMore,
+.message .wrapper .widget_content .readMore {
+	border: 2px solid var(--color-2);
+}
+
+.banner .widget_content.index_format .item .readMore:hover {
+	background: var(--color-2)
+}
+
+.message .wrapper .widget_content .item .title,
+.message .wrapper .widget_content .item .title a {
+	color: var(--color-2);
+}
+
+.message .wrapper .widget_content .readMore {
+	color: var(--color-1);
+}
+
+.message .wrapper .widget_content .readMore:hover {
+	background: var(--color-2);
+}
+
+.message .wrapper .widget_content.message_format h6 {
+	color: var(--color-2);
+}
+
+.sneak-peek-container .sneak_peek .widget_content h6:hover {
+	background: var(--color-7)
+}
+
+.icon .chabad_updates .widget_content .item .icon img,
+.icon .widget_content .item .icon img {
+	filter: brightness(0) saturate(100%) invert(93%) sepia(73%) saturate(2125%) hue-rotate(124deg) contrast(80%)
+}
+
+@supports (mask-position: center) or (-webkit-mask-position:center) {
+
+	.icon .chabad_updates .widget_content .item .icon.loaded a,
+	.icon .widget_content .item .icon.loaded a {
+		background: var(--color-18);
+		background: -moz-linear-gradient(-45deg, var(--color-14) 0, var(--color-19) 25%, var(--color-18) 50%, var(--color-20) 75%, var(--color-21) 100%);
+		background: -webkit-linear-gradient(-45deg, var(--color-14) 0, var(--color-19) 25%, var(--color-18) 50%, var(--color-20) 75%, var(--color-21) 100%);
+		background: linear-gradient(135deg, var(--color-14) 0, var(--color-19) 25%, var(--color-18) 50%, var(--color-20) 75%, var(--color-21) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--color-14)", endColorstr="var(--color-21)", GradientType=1);
+	}
+}
+
+.hp-table>:not(:first-child) .promo_slider .cycle-directionNav a:before {
+	color: var(--color-1);
+}
+
+.hp-table>:not(:first-child) .promo_slider .cycle-directionNav a:hover:before {
+	color: var(--color-22)
+}
+
+.hp-table>:not(:first-child) .promo_slider .cycle-caption p big {
+	color: var(--color-2);
+}
+
+.hp-table>:not(:first-child) .promo_slider .cycle-caption .readMore {
+	border: 2px solid var(--color-2);
+}
+
+.hp-table>:not(:first-child) .promo_slider .cycle-caption .readMore:hover {
+	background: var(--color-2)
+}
+
+.hp_content_wrapper .readMore {
+	border: 2px solid var(--color-2);
+	color: var(--color-1);
+}
+
+.hp_content_wrapper .readMore:hover {
+	background: var(--color-2);
+	border: 2px solid var(--color-2);
+}
+
+.hp_content_wrapper .upcoming_events .widget_content>ul>li h6,
+.hp_content_wrapper .upcoming_events .widget_content>ul>li h6 a,
+.hp_content_wrapper .widget_content>ul>li h6,
+.hp_content_wrapper .widget_content>ul>li h6 a {
+	color: var(--color-1)
+}
+
+.hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content .times_wrapper .bold.large {
+	color: var(--color-1);
+}
+
+.hp_content_wrapper [class*=widget-].candlelighting .parsha_content .bold.large {
+	font-size: 18px;
+	color: var(--color-1);
+	line-height: 1.3em
+}
+
+.hp_content_wrapper [class*=widget-].magazine .item .title,
+.hp_content_wrapper [class*=widget-].magazine .item .title a {
+	color: var(--color-1);
+}
+
+.hp_content_wrapper [class^=widget-].parsha .widget_content .title span {
+	color: var(--color-1);
+}
+
+.hp_content_wrapper .mini_slider .sectiontitle {
+	color: var(--color-2);
+}
+
+.hp_content_wrapper .mini_slider .title {
+	color: var(--color-1)
+}
+
+.hp_content_wrapper .mini_slider .anythingControls .thumbNav li a {
+	border: 1px solid var(--color-2);
+}
+
+.hp_content_wrapper .mini_slider .anythingControls .thumbNav li a.cur {
+	background: var(--color-2)
+}
+
+.hp_content_wrapper .chabad_updates .item a {
+	color: var(--color-1)
+}
+
+.hp_content_wrapper .chabad_updates .item a.readMore {
+	color: var(--color-2);
+}
+
+.hp_content_wrapper .chabad_updates .item a.readMore:hover {
+	color: var(--color-1) !important
+}
+
+.hp_content_wrapper .latest_photos .readMore span {
+	border: 2px solid var(--color-2);
+	color: var(--color-1);
+}
+
+.hp_content_wrapper .latest_photos .readMore span:hover {
+	background: var(--color-2);
+	border: 2px solid var(--color-2);
+}
+
+.hp_content_wrapper .daily_quote .widget_content .subtitle {
+	color: var(--color-1);
+}
+
+.hp_content_wrapper .accordion .widget_content .header.active {
+	color: var(--color-1)
+}
+
+.hp_content_wrapper .tabs .widget_content .header.active {
+	color: var(--color-1);
+}
+
+.latest_photos .readMore span {
+	border: 2px solid var(--color-2);
+	color: var(--color-1);
+}
+
+.latest_photos .readMore span:hover {
+	background: var(--color-2);
+	border: 2px solid var(--color-2);
+}
+
+.hp-table .hp_subscribe {
+	background: var(--color-18);
+	background: -moz-linear-gradient(-45deg, var(--color-14) 0, var(--color-19) 25%, var(--color-18) 50%, var(--color-20) 75%, var(--color-21) 100%);
+	background: -webkit-linear-gradient(-45deg, var(--color-14) 0, var(--color-19) 25%, var(--color-18) 50%, var(--color-20) 75%, var(--color-21) 100%);
+	background: linear-gradient(135deg, var(--color-14) 0, var(--color-19) 25%, var(--color-18) 50%, var(--color-20) 75%, var(--color-21) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--color-14)", endColorstr="var(--color-21)", GradientType=1)
+}
+
+.hp_subscribe .wrapper #formContainer fieldset input {
+	color: var(--color-1);
+}
+
+.hp_subscribe .wrapper #formContainer fieldset input[type=submit] {
+	border-color: var(--color-2);
+}
+
+.hp_subscribe .wrapper #formContainer fieldset input[type=submit]:hover {
+	background: var(--color-2)
+}
+
+#footer {
+	background: unset;
+}
+
+#footer .footer_text .footer3 .footer-title,
+#footer .footer_text .footer3 b .footer-title {
+	color: unset;
+}
+
+.cs-f-social-icons a:hover {
+	background: var(--color-1);
+}
+
+.mobile .center_logo a span {
+	color: var(--color-2);
+}
+
+.mobile .menu .menu_button {
+	color: var(--color-1)
+}
+
+.menu .search .search_field,
+.mobile .menu .menu_button #MenuIcon span,
+.mobile .menu .menu_button #SearchIcon {
+	background: var(--color-1)
+}
+
+.mobile .promo_slider .cycle-controlNav .circle {
+	border: 1px solid var(--color-2)
+}
+
+.mobile .promo_slider .cycle-controlNav .circle.selected {
+	background: var(--color-2)
+}
+
+.mobile .promo_slider .slide_wrapper .caption {
+	color: var(--color-1)
+}
+
+@media (max-width: 1024px) {
+	.on-scroll .cs-mobile-menu-open {
+		color: var(--color-1);
+	}
+
+	.not-homepage body .cs-mobile-menu-open,
+	body:not(.home) .cs-mobile-menu-open {
+		color: var(--color-1)
+	}
+}
+
+@media (max-width: 1024px) {
+	.site-nav-wrapper {
+		background: var(--color-1);
+	}
+}
+
+#calendar_header .cal_secondary_header {
+	color: var(--color-2);
+}
+
+.cal_header_buttons .cal_button .button {
+	background: var(--color-2)
+}
+
+
+.cal_header_info a {
+	color: var(--color-2);
+	border-bottom-color: var(--color-2)
+}
+
+#calendar .item,
+#calendar .item .content .title,
+#calendar .item .content .title a,
+#calendar .item .header a,
+#calendar .item a,
+#calendar .list_item .title,
+#calendar .list_item .title a,
+#calendar.day .halachic_times .header,
+#calendar.day .item .content .main div.title {
+	color: var(--color-1)
+}
+
+#calendar .item.holiday {
+	background: var(--color-23)
+}
+
+#calendar.day .halachic_times .header {
+	background: var(--color-24)
+}
+
+@supports (display: grid) {
+	#CalendarContentContainer .year_view .month .month_header {
+		background: var(--color-1);
+	}
+
+	#CalendarContentContainer .year_view .month .day_name td {
+		background: var(--color-2);
+	}
+}
+
+#calendarPicker .header .active_date,
+#calendarPicker a,
+.list_view .list_info {
+	color: var(--color-2)
+}
+
+#calendarWrapper.gregorian #CivilCal,
+#calendarWrapper.jewish #JewishCal {
+	background-color: var(--color-2)
+}
+
+#CalendarToggle {
+	border-color: var(--color-2)
+}
+
+.cco_body .label_green {
+	border-color: var(--color-10);
+	color: var(--color-10);
+	background: var(--color-25) !important
+}
+
+.cco_body .label_purple {
+	border-color: var(--color-1);
+	color: var(--color-1);
+	background: var(--color-26) !important
+}
+
+.cco_body .label_blue {
+	border-color: var(--color-27);
+	color: var(--color-27);
+	background: var(--color-8) !important
+}
+
+.cco_body .label_navy {
+	border-color: var(--color-2);
+	color: var(--color-2);
+	background: var(--color-17) !important
+}
+
+.cco_body .label_brown {
+	border-color: var(--color-16);
+	color: var(--color-16);
+	background: var(--color-15) !important
+}
+
+.cco_body .label_orange {
+	border-color: var(--color-14);
+	color: var(--color-14);
+	background: var(--color-13) !important
+}
+
+.cco_body .label_lime {
+	border-color: var(--color-12);
+	color: var(--color-12);
+	background: var(--color-11) !important
+}
+
+.cal_header_buttons .cal_button .button {
+	border: 2px solid var(--color-28);
+}
+
+
+.cal_header_buttons .co_toggle_buttons .item {
+	border: 2px solid var(--color-1);
+	color: var(--color-1);
+}
+
+.cal_header_buttons .co_toggle_buttons .item.selected {
+	border: 2px solid var(--color-1);
+	background: var(--color-1);
+}
+
+#co_ads_container #MosadInformation .small_header {
+	color: var(--color-1)
+}
+
+.feedback_form .blue,
+.feedback_form .blue a {
+	color: var(--color-2)
+}
+
+.article_index_container .co_index.article_index .row .item .title a:hover {
+	background: var(--color-7)
+}
+
+.content .co_index.double.nested .item .wrapper.imageOnTop>a:hover .title {
+	background: var(--color-7)
+}
+
+.child_title a {
+	color: var(--color-1)
+}
+
+.child-subtitle,
+.child-subtitle a,
+.co_body .article_navigation_text a,
+.co_body .small_header,
+.co_body .small_header a,
+.co_body .small_header_alt,
+.co_body .small_header_alt a,
+.co_body .small_header_light,
+.co_body .small_header_light a,
+.co_content_container .small_header,
+.co_index .item .title,
+.co_index .item .title a,
+.comment-thread .reader-comment .comment-reply-link,
+.small-links__item--more a {
+	color: var(--color-1)
+}
+
+.co_body .content .child_title,
+.co_body .content .child_title a {
+	color: var(--color-1)
+}
+
+.co_global_button .button a,
+.co_global_button a.button {
+	color: var(--color-1);
+}
+
+.co_body .content .lt_blue a,
+.lt_blue,
+.lt_blue a {
+	color: var(--color-1)
+}
+
+.co_body .content .department_index .header a {
+	color: var(--color-1)
+}
+
+.co_body .content .department_index li:before {
+	border-left: 4px solid var(--color-2)
+}
+
+#co_department_index .co_body .clearfix {
+	background: var(--color-8) !important;
+}
+
+#co_department_index .co_body .clearfix .small_header {
+	background: var(--color-2);
+}
+
+.co_body .rounded_box a {
+	color: var(--color-1)
+}
+
+.hp-row .message .wrapper .widget_content .readMore:hover,
+.hp-table .hp-row .promo_slider .slider .cycle-caption .readMore:hover {
+	background-color: var(--color-1)
+}
+
+.banner-updates .widget_content .item.first .synopsis {
+	color: var(--color-9);
+}
+
+.hp-table .hp-row .promo_slider .slider .cycle-caption p big {
+	color: var(--color-1)
+}
+
+.hp-table .hp-row .promo_slider .slider .cycle-caption .readMore {
+	border-color: var(--color-1)
+}
+
+body.cco_body #tabContentMain .co_menu_item.donate_link.hover span.parent div a {
+	border-color: var(--color-1);
+	color: var(--color-1)
+}
+
+body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {
+	border-color: var(--color-1)
+}
+
+.hp-row .message .wrapper .widget_content .readMore {
+	border-color: var(--color-1);
+	color: var(--color-2)
+}
+
+.hp-row [class^=widget-].latest_photos .readMore span {
+	border: 2px solid var(--color-1)
+}
+
+.hp-row [class^=widget-].latest_photos .readMore:hover span span:hover {
+	background: var(--color-1)
+}
+
+#footer {
+	background: var(--color-10)
+}
+
+#footer .footer_text .footer3 .footer-title,
+#footer .footer_text .footer3 b .footer-title {
+	color: var(--color-1)
 }

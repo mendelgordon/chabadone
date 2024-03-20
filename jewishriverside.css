@@ -843,3 +843,9 @@ body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {
 #footer .footer_text .footer3 b .footer-title {
 	color: var(--color-1)
 }
+
+@media screen and (max-width: 1025px) {
+	.site-nav-wrapper * {
+		color: white !important;
+	}
+}

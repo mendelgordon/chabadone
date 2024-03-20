@@ -141,7 +141,7 @@ body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent,
 body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a,
 body.cco_body #header.on-scroll #tabContentMain .co_submenu_container .co_column a,
 body.cco_body #header.on-scroll #tabContentMain .donate_link {
-	color: var(--color-29);
+	color: black;
 	/* was var(--color-1) */
 }
 
@@ -212,7 +212,7 @@ body.cco_body #tabContentMain .co_menu_item.hover span.parent a {
 
 body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a,
 body.cco_body.sites-article #tabContentMain .co_menu_item.hover span.parent a {
-	color: var(--color-29);
+	color: black;
 	/* was var(--color-4) */
 }
 
@@ -812,9 +812,9 @@ body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.paren
 }
 
 body.cco_body #tabContentMain .co_menu_item.donate_link.hover span.parent div a {
-	border-color: var(--color-29);
+	border-color: black;
 	/* was var(--color-1) */
-	color: var(--color-29);
+	color: black;
 	/* was var(--color-1) */
 }
 

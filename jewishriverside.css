@@ -208,11 +208,13 @@ body.cco_body #tabContentMain .co_menu_item.hover span.parent a {
 
 body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a,
 body.cco_body.sites-article #tabContentMain .co_menu_item.hover span.parent a {
-	color: var(--color-4)
+	color: var(--color-29);
+	/* was var(--color-4) */
 }
 
 body.cco_body #tabContentMain .co_menu_item.selected span.parent a {
-	color: var(--color-5)
+	color: var(--color-29);
+	/* was var(--color-5) */
 }
 
 body.cco_body #tabContentMain .co_menu_item.selected a.parent:after {

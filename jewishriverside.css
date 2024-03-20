@@ -140,7 +140,12 @@ body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_
 body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent,
 body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a,
 body.cco_body #header.on-scroll #tabContentMain .co_submenu_container .co_column a,
-body.cco_body #header.on-scroll #tabContentMain .donate_link,
+body.cco_body #header.on-scroll #tabContentMain .donate_link {
+	color: var(--color-29);
+	/* was var(--color-1) */
+}
+
+
 body.cco_body.sites-article #tabContentMain .co_menu_item span.parent,
 body.cco_body.sites-article #tabContentMain .co_menu_item span.parent a,
 body.cco_body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
@@ -161,8 +166,7 @@ body.sites-article body.cco_body #tabContentMain .co_menu_item span.parent a,
 body.sites-article body.cco_body #tabContentMain .co_menu_item.hover span.parent,
 body.sites-article body.cco_body #tabContentMain .co_menu_item.hover span.parent a,
 body.sites-article body.cco_body #tabContentMain .co_submenu_container .co_column a {
-	color: var(--color-29);
-	/* was var(--color-1) */
+	color: var(--color-1);
 }
 
 body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a,

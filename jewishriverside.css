@@ -161,7 +161,8 @@ body.sites-article body.cco_body #tabContentMain .co_menu_item span.parent a,
 body.sites-article body.cco_body #tabContentMain .co_menu_item.hover span.parent,
 body.sites-article body.cco_body #tabContentMain .co_menu_item.hover span.parent a,
 body.sites-article body.cco_body #tabContentMain .co_submenu_container .co_column a {
-	color: var(--color-1)
+	color: var(--color-29);
+	/* was var(--color-1) */
 }
 
 body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a,
@@ -796,12 +797,15 @@ body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.paren
 }
 
 .hp-table .hp-row .promo_slider .slider .cycle-caption .readMore {
-	border-color: var(--color-1)
+	border-color: var(--color-29);
+	/* was var(--color-1) */
 }
 
 body.cco_body #tabContentMain .co_menu_item.donate_link.hover span.parent div a {
-	border-color: var(--color-1);
-	color: var(--color-1)
+	border-color: var(--color-29);
+	/* was var(--color-1) */
+	color: var(--color-29);
+	/* was var(--color-1) */
 }
 
 body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {

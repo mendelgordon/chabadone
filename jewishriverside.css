@@ -1,15 +1,3 @@
-@media (max-width: 1024px) {
-
-	/* STOP LOGO FROM HIDING CONTENT */
-	body.sites-article #content {
-		margin-top: 100px;
-	}
-
-	body.sites-article #header {
-		/* height: 101px; */
-	}
-}
-
 :root {
 	/* Previous colors 
 	--color-1: #2fd3c2;
@@ -846,7 +834,8 @@ body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {
 
 @media screen and (max-width: 1024px) {
 	body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item, body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span, body #header.on-scroll .cco_body #tabContentMain .donate_link, body #header.on-scroll body #tabContentMain .co_menu_item span.parent, body #header.on-scroll body #tabContentMain .co_menu_item span.parent a, body #header.on-scroll body #tabContentMain .co_menu_item.hover span.parent, body #header.on-scroll body #tabContentMain .co_menu_item.hover span.parent a, body #header.on-scroll body.cco_body #tabContentMain .co_menu_item span.parent, body #header.on-scroll body.cco_body #tabContentMain .co_menu_item span.parent a, body #header.on-scroll body.cco_body #tabContentMain .co_menu_item.hover span.parent, body #header.on-scroll body.cco_body #tabContentMain .co_menu_item.hover span.parent a, body #header.on-scroll body.cco_body #tabContentMain .co_submenu_container .co_column a, body.cco_body #header.on-scroll #tabContentMain .co_menu_item span.parent, body.cco_body #header.on-scroll #tabContentMain .co_menu_item span.parent a, body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item, body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span, body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent, body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a, body.cco_body #header.on-scroll #tabContentMain .co_submenu_container .co_column a, body.cco_body #header.on-scroll #tabContentMain .donate_link
-	.site-nav-wrapper * {
+	.site-nav-wrapper *,
+	.co_menu_item.multi_level .co_submenu_container a.item.hover span, .co_menu_item.multi_level .co_submenu_container a.item:hover span{
 		color: white !important;
 	}
 }

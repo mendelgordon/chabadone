@@ -782,7 +782,7 @@ body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.paren
 
 .hp-row .message .wrapper .widget_content .readMore:hover,
 .hp-table .hp-row .promo_slider .slider .cycle-caption .readMore:hover {
-	background-color: var(--color-1)
+	background-color: unset;
 }
 
 .banner-updates .widget_content .item.first .synopsis {

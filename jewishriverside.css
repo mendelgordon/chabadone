@@ -159,7 +159,7 @@ body.sites-article body.cco_body #tabContentMain .co_submenu_container .co_colum
 
 body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a,
 body.cco_body #tabContentMain .co_menu_item.donate_link.hover span.parent a {
-	border: 2px solid var(--color-2);
+	border: 2px solid #107A8C;
 }
 
 .dir_ltr .co_menu_item.multi_level .co_submenu_container .menu_child.selected,
@@ -535,7 +535,7 @@ body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.paren
 }
 
 #footer {
-	background: unset;
+	/* background: unset; */
 }
 
 #footer .footer_text .footer3 .footer-title,
@@ -807,7 +807,8 @@ body.cco_body #tabContentMain .co_menu_item.donate_link.hover span.parent div a 
 }
 
 body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {
-	border-color: var(--color-1)
+	border-color: #107A8C;
+	border-radius: 20px;
 }
 
 .hp-row .message .wrapper .widget_content .readMore {
@@ -824,7 +825,7 @@ body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {
 }
 
 #footer {
-	background: var(--color-10)
+	background: #0A5769;
 }
 
 #footer .footer_text .footer3 .footer-title,
@@ -846,4 +847,9 @@ body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {
 }
 .hp-table>:nth-of-type(2) {
     background: white;
+}
+
+body.home #tabContentMain .co_menu_item.donate_link.hover span.parent div a {
+    color: white;
+    border-color: #107A8C;
 }

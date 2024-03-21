@@ -842,8 +842,8 @@ body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {
 		color: white !important;
 	}
 	body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {
-    border-color: white !important;
-	}
+    border-color: #107A8C;
+ }
 }
 .hp-table>:nth-of-type(2) {
     background: white;

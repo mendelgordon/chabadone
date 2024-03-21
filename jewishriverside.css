@@ -853,3 +853,7 @@ body.home #tabContentMain .co_menu_item.donate_link.hover span.parent div a {
     color: white;
     border-color: #107A8C;
 }
+
+head:has(head meta[content="3067906"]) .co_body p:last-child {
+	margin-bottom: 0;
+}

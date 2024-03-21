@@ -383,7 +383,7 @@ body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.paren
 
 .icon .chabad_updates .widget_content .item .icon img,
 .icon .widget_content .item .icon img {
-	filter: brightness(0) saturate(100%) invert(93%) sepia(73%) saturate(2125%) hue-rotate(124deg) contrast(80%)
+	filter: brightness(0) saturate(100%) invert(22%) sepia(59%) saturate(1195%) hue-rotate(154deg) brightness(98%) contrast(92%);
 }
 
 @supports (mask-position: center) or (-webkit-mask-position:center) {

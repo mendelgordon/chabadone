@@ -809,6 +809,7 @@ body.cco_body #tabContentMain .co_menu_item.donate_link.hover span.parent div a 
 body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {
 	border-color: #107A8C;
 	border-radius: 20px;
+	color: #107A8C;
 }
 
 .hp-row .message .wrapper .widget_content .readMore {

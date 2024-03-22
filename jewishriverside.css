@@ -869,7 +869,7 @@ head:has(head meta[content="3067906"]) .co_body p:last-child {
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
-	color: #0A5769
+  color: #0A5769;
 }
 
 .hp-table>:nth-of-type(2n + 1) {

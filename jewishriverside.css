@@ -106,7 +106,7 @@ body.sites-article #header_container .links .top_bar_item:after {
 
 #header.on-scroll .branding-search #header_branding .site_title,
 body.sites-article .branding-search #header_branding .site_title {
-	color: var(--color-2)
+	color: #0A5769;
 }
 
 body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
@@ -843,6 +843,7 @@ body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {
 	}
 	body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {
     border-color: #107A8C;
+    color: #107A8C;
  }
 }
 .hp-table>:nth-of-type(2) {
@@ -860,4 +861,12 @@ head:has(head meta[content="3067906"]) .co_body p:last-child {
 
 .icon .widget_content .team .title a {
     color: #006176;
+}
+
+.branding-search #header_branding .site_title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+	color: #0A5769
 }

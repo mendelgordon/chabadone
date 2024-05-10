@@ -53,7 +53,7 @@ if (window.location.href.includes(6430627)) {
      */
     function generateMatchersContent() {
         // Array of matching donors sorted alphabetically
-        const matchingDonors = ["Marat & Leah Kushner", "Brian Levin & Family", "Steve & Allison Shapiro", "In memory of Valery ben Zalman"].sort();
+        const matchingDonors = ["Marat & Leah Kushner", "Brian Levin & Family", "Steve & Allison Shapiro<br />In memory of Valery ben Zalman"].sort();
         // Array of community pillars sorted alphabetically
         const communityPillars = ["Ben & Jesse Terner", "Elliott & Nava Gorbaty", "Jody Maier", "Moshe & Jodie Schwartz", "Natalio & Giselle Pincever"].sort();
 

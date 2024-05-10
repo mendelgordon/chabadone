@@ -7,9 +7,10 @@ if (window.location.href.includes(6430627)) {
      *
      * @param {Array} items - The list items.
      * @param {string} className - The class name for the list container.
+     * @param {string} listTitle - The title for the list.
      * @return {string} - The HTML for the list.
      */
-    function generateListHTML(items, className) {
+    function generateListHTML(items, className, listTitle) {
         // Concatenate the list items with line breaks and spaces between them.
         const listItems = items.join('<br /><br />');
 
@@ -17,6 +18,7 @@ if (window.location.href.includes(6430627)) {
         const listHTML = `
             <div class='${className}'>
                 <!-- List container -->
+                <h3>${listTitle}</h3>
                 <h4 class='fs-matcher-title'>
                     <!-- List title -->
                     ${listItems}
@@ -64,11 +66,11 @@ if (window.location.href.includes(6430627)) {
       <!-- Matchers content -->
       <div class='row fs-matchers-list'>
         <!-- List of matching donors -->
-        ${generateListHTML(matchingDonors, 'fs-matcher fs-matcher-right')}
+        ${generateListHTML(matchingDonors, 'fs-matcher fs-matcher-right', 'Matching Donors')}
         <!-- Hearts donate image -->
         <img src='/media/images/1276/EfiK12767809.png' class='heart-donate' />
         <!-- List of community pillars -->
-        ${generateListHTML(communityPillars, 'fs-matcher fs-matcher-left')}
+        ${generateListHTML(communityPillars, 'fs-matcher fs-matcher-left', 'Community Pillars')}
       </div>
     `;
 

@@ -14,7 +14,6 @@ if (window.location.href.includes(6430627)) {
         // Concatenate the list items with line breaks and spaces between them.
         const listItems = items.join('<br /><br />');
 
-        // Generate the HTML for the list container.
         const listHTML = `
             <div class='${className}'>
                 <!-- List container -->
@@ -36,14 +35,11 @@ if (window.location.href.includes(6430627)) {
      * @param {string} content - The HTML content to be inserted.
      */
     function insertContent(selector, content) {
-        // Find the element in the DOM based on the selector
         const element = document.querySelector(selector);
 
-        // If the element exists, insert the content
         if (element) {
             element.innerHTML = content;
         } else {
-            // If the element doesn't exist, log an error message
             console.error(`Element with selector "${selector}" not found.`);
         }
     }
@@ -63,13 +59,9 @@ if (window.location.href.includes(6430627)) {
 
         // Generate the HTML for the matchers content
         const matchersContent = `
-      <!-- Matchers content -->
       <div class='row fs-matchers-list'>
-        <!-- List of matching donors -->
         ${generateListHTML(matchingDonors, 'fs-matcher fs-matcher-right', 'Matching Donors')}
-        <!-- Hearts donate image -->
         <img src='/media/images/1276/EfiK12767809.png' class='heart-donate' />
-        <!-- List of community pillars -->
         ${generateListHTML(communityPillars, 'fs-matcher fs-matcher-left', 'Community Pillars')}
       </div>
     `;

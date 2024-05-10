@@ -52,10 +52,18 @@ if (window.location.href.includes(6430627)) {
      * The matchers content is then inserted into the DOM using the insertContent function.
      */
     function generateMatchersContent() {
-        // Array of matching donors sorted alphabetically
-        const matchingDonors = ["Marat & Leah Kushner", "Brian Levin & Family", "Steve & Allison Shapiro<br /><br />In memory of Valery ben Zalman"].sort();
-        // Array of community pillars sorted alphabetically
-        const communityPillars = ["Ben & Jesse Terner", "Elliott & Nava Gorbaty", "Jody Maier", "Moshe & Jodie Schwartz", "Natalio & Giselle Pincever"].sort();
+        const matchingDonors = [
+            "Marat & Leah Kushner",
+            "Brian Levin & Family",
+            "Steve & Allison Shapiro<br /><br />In memory of Valery ben Zalman"
+        ];
+        const communityPillars = [
+            "Elliott & Nava Gorbaty",
+            "Jody Maier",
+            "Natalio & Giselle Pincever",
+            "Moshe & Jodie Schwartz",
+            "Ben & Jesse Terner"
+        ];
 
         // Generate the HTML for the matchers content
         const matchersContent = `

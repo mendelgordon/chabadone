@@ -55,11 +55,11 @@ if (window.location.href.includes(6430627)) {
         const matchingDonors = [
             "Marat & Leah Kushner",
             "Brian Levin & Family",
+            "Jody Maier",
             "Steve & Allison Shapiro<br /><br />In memory of Valery ben Zalman"
         ];
         const communityPillars = [
             "Elliott & Nava Gorbaty",
-            "Jody Maier",
             "Natalio & Giselle Pincever",
             "Moshe & Jodie Schwartz",
             "Ben & Jesse Terner"

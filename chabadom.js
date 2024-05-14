@@ -60,6 +60,7 @@ if (window.location.href.includes(6430627)) {
         ];
         const communityPillars = [
             "Elliott & Nava Gorbaty",
+            "The Klein Foundation",
             "Natalio & Giselle Pincever",
             "Moshe & Jodie Schwartz",
             "Ben & Jesse Terner"

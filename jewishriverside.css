@@ -888,3 +888,14 @@ head:has(head meta[content="3067906"]) .co_body p:last-child {
 .article-header .breadcrumbs {
 	display: none;
 }
+
+div#photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div#cco_body:has(#photos) {
+    margin: auto;
+    float: unset;
+}

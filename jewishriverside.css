@@ -883,3 +883,8 @@ head:has(head meta[content="3067906"]) .co_body p:last-child {
 .icon .widget_content .item .title a {
     color: #00667b;
 }
+
+
+.article-header .breadcrumbs {
+	display: none;
+}

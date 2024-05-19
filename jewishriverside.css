@@ -912,3 +912,8 @@ div#cco_body:has(#photos) {
         margin-inline: 5px;
     }
 }
+
+#photos .photo {
+	float: unset;
+	border: none;
+}

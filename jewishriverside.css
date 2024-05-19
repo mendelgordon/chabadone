@@ -899,3 +899,9 @@ div#cco_body:has(#photos) {
     margin: auto;
     float: unset;
 }
+
+@media (max-width: 1140px) {
+    #co_body_container {
+        margin-inline: 15px;
+    }
+}

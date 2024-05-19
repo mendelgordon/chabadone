@@ -893,6 +893,7 @@ div#photos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+	margin: auto;
 }
 
 div#cco_body:has(#photos) {

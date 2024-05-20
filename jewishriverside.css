@@ -953,7 +953,8 @@ div#cco_body:has(#photos) {
 	display: none;
 }
 
-#header_branding .site-logo-wrapper {
+#header_branding,
+.site-logo-wrapper {
 	display: contents;
 }
 

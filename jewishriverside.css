@@ -933,3 +933,7 @@ div#cco_body:has(#photos) {
 #header_container .links:after {
     color: #2fd3c2;
 }
+
+#header_branding .site-logo-wrapper {
+    background: 0 0;
+}

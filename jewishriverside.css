@@ -925,7 +925,8 @@ div#cco_body:has(#photos) {
 	color: black !important;
 }
 
-body.menu-open .parent {
+body.menu-open .parent,
+#header_container .links .search-trigger-container .search-trigger {
 	color: white !important;
 }
 
@@ -935,4 +936,8 @@ body.menu-open .parent {
 
 .cs-mobile-menu-open {
 	color: var(--color-1);
+}
+
+#header_container .links .top_bar_item:after {
+    border-top: 5px solid #2fd3c2;
 }

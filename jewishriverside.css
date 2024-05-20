@@ -534,10 +534,6 @@ body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.paren
 	background: var(--color-2)
 }
 
-#footer {
-	/* background: unset; */
-}
-
 #footer .footer_text .footer3 .footer-title,
 #footer .footer_text .footer3 b .footer-title {
 	color: unset;

@@ -1,34 +1,4 @@
 :root {
-	/* Previous colors 
-	--color-1: #2fd3c2;
-	--color-2: #0F6CB8;
-	--color-3: #83e5db;
-	--color-4: #1b8176;
-	--color-5: #24ab9d;
-	--color-6: #0b5089;
-	--color-7: rgba(47, 211, 194, .6);
-	--color-8: #cbe5fb;
-	--color-9: #fff;
-	--color-10: #07375E;
-	--color-11: #379df0;
-	--color-12: #0b538d;
-	--color-13: #4dffec;
-	--color-14: #00BDA9;
-	--color-15: #71fff0;
-	--color-16: #00574e;
-	--color-17: #b4daf9;
-	--color-18: #02B1BD;
-	--color-19: #00b7b3;
-	--color-20: #05a8c8;
-	--color-21: #0c9dd4;
-	--color-22: #59dcce;
-	--color-23: #f5fdfc;
-	--color-24: #c2f2ed;
-	--color-25: #96cbf7;
-	--color-26: #adeee7;
-	--color-27: #55abf1;
-	--color-28: #0d5ea0;
-	*/
 	--color-1: #000000;
 	--color-2: #000000;
 	--color-3: #000000;
@@ -949,4 +919,16 @@ div#cco_body:has(#photos) {
 .branding-search #header_branding.logo img {
     width: revert-layer;
 	height: 100%;
+}
+
+.parent {
+	color: black !important;
+}
+
+body.menu-open .parent {
+	color: white !important;
+}
+
+.header-wrapper {
+	height: unset !important;
 }

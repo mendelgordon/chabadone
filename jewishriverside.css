@@ -937,3 +937,16 @@ div#cco_body:has(#photos) {
 #header_branding .site-logo-wrapper {
     background: 0 0;
 }
+
+.branding-search #header_branding .site_title {
+	display: none;
+}
+
+#header_branding .site-logo-wrapper {
+	display: contents;
+}
+
+.branding-search #header_branding.logo img {
+    width: revert-layer;
+	height: 100%;
+}

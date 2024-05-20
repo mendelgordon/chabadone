@@ -801,25 +801,66 @@ body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {
 }
 
 @media screen and (max-width: 1024px) {
-	body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item, body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span, body #header.on-scroll .cco_body #tabContentMain .donate_link, body #header.on-scroll body #tabContentMain .co_menu_item span.parent, body #header.on-scroll body #tabContentMain .co_menu_item span.parent a, body #header.on-scroll body #tabContentMain .co_menu_item.hover span.parent, body #header.on-scroll body #tabContentMain .co_menu_item.hover span.parent a, body #header.on-scroll body.cco_body #tabContentMain .co_menu_item span.parent, body #header.on-scroll body.cco_body #tabContentMain .co_menu_item span.parent a, body #header.on-scroll body.cco_body #tabContentMain .co_menu_item.hover span.parent, body #header.on-scroll body.cco_body #tabContentMain .co_menu_item.hover span.parent a, body #header.on-scroll body.cco_body #tabContentMain .co_submenu_container .co_column a, body.cco_body #header.on-scroll #tabContentMain .co_menu_item span.parent, body.cco_body #header.on-scroll #tabContentMain .co_menu_item span.parent a, body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item, body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span, body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent, body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a, body.cco_body #header.on-scroll #tabContentMain .co_submenu_container .co_column a, body.cco_body #header.on-scroll #tabContentMain .donate_link
-	.site-nav-wrapper *,
-	.co_menu_item.multi_level .co_submenu_container a.item.hover span, .co_menu_item.multi_level .co_submenu_container a.item:hover span,
+
+	body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
+	body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,
+	body #header.on-scroll .cco_body #tabContentMain .donate_link,
+	body #header.on-scroll body #tabContentMain .co_menu_item span.parent,
+	body #header.on-scroll body #tabContentMain .co_menu_item span.parent a,
+	body #header.on-scroll body #tabContentMain .co_menu_item.hover span.parent,
+	body #header.on-scroll body #tabContentMain .co_menu_item.hover span.parent a,
+	body #header.on-scroll body.cco_body #tabContentMain .co_menu_item span.parent,
+	body #header.on-scroll body.cco_body #tabContentMain .co_menu_item span.parent a,
+	body #header.on-scroll body.cco_body #tabContentMain .co_menu_item.hover span.parent,
+	body #header.on-scroll body.cco_body #tabContentMain .co_menu_item.hover span.parent a,
+	body #header.on-scroll body.cco_body #tabContentMain .co_submenu_container .co_column a,
+	body.cco_body #header.on-scroll #tabContentMain .co_menu_item span.parent,
+	body.cco_body #header.on-scroll #tabContentMain .co_menu_item span.parent a,
+	body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
+	body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,
+	body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent,
+	body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a,
+	body.cco_body #header.on-scroll #tabContentMain .co_submenu_container .co_column a,
+	body.cco_body #header.on-scroll #tabContentMain .donate_link .site-nav-wrapper *,
+	.co_menu_item.multi_level .co_submenu_container a.item.hover span,
+	.co_menu_item.multi_level .co_submenu_container a.item:hover span,
 	body.cco_body.sites-article #tabContentMain .co_menu_item.selected span.parent a,
-	body.cco_body.sites-article #tabContentMain .co_menu_item span.parent, body.cco_body.sites-article #tabContentMain .co_menu_item span.parent a, body.cco_body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item, body.cco_body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span, body.cco_body.sites-article #tabContentMain .co_menu_item.hover span.parent, body.cco_body.sites-article #tabContentMain .co_menu_item.hover span.parent a, body.cco_body.sites-article #tabContentMain .co_submenu_container .co_column a, body.cco_body.sites-article #tabContentMain .donate_link, body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item, body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span, body.sites-article .cco_body #tabContentMain .donate_link, body.sites-article body #tabContentMain .co_menu_item span.parent, body.sites-article body #tabContentMain .co_menu_item span.parent a, body.sites-article body #tabContentMain .co_menu_item.hover span.parent, body.sites-article body #tabContentMain .co_menu_item.hover span.parent a, body.sites-article body.cco_body #tabContentMain .co_menu_item span.parent, body.sites-article body.cco_body #tabContentMain .co_menu_item span.parent a, body.sites-article body.cco_body #tabContentMain .co_menu_item.hover span.parent, body.sites-article body.cco_body #tabContentMain .co_menu_item.hover span.parent a, body.sites-article body.cco_body #tabContentMain .co_submenu_container .co_column a{
+	body.cco_body.sites-article #tabContentMain .co_menu_item span.parent,
+	body.cco_body.sites-article #tabContentMain .co_menu_item span.parent a,
+	body.cco_body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
+	body.cco_body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,
+	body.cco_body.sites-article #tabContentMain .co_menu_item.hover span.parent,
+	body.cco_body.sites-article #tabContentMain .co_menu_item.hover span.parent a,
+	body.cco_body.sites-article #tabContentMain .co_submenu_container .co_column a,
+	body.cco_body.sites-article #tabContentMain .donate_link,
+	body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
+	body.sites-article #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,
+	body.sites-article .cco_body #tabContentMain .donate_link,
+	body.sites-article body #tabContentMain .co_menu_item span.parent,
+	body.sites-article body #tabContentMain .co_menu_item span.parent a,
+	body.sites-article body #tabContentMain .co_menu_item.hover span.parent,
+	body.sites-article body #tabContentMain .co_menu_item.hover span.parent a,
+	body.sites-article body.cco_body #tabContentMain .co_menu_item span.parent,
+	body.sites-article body.cco_body #tabContentMain .co_menu_item span.parent a,
+	body.sites-article body.cco_body #tabContentMain .co_menu_item.hover span.parent,
+	body.sites-article body.cco_body #tabContentMain .co_menu_item.hover span.parent a,
+	body.sites-article body.cco_body #tabContentMain .co_submenu_container .co_column a {
 		color: white !important;
 	}
+
 	body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {
-    border-color: #107A8C;
-    color: #107A8C;
- }
+		border-color: #107A8C;
+		color: #107A8C;
+	}
 }
+
 .hp-table>:nth-of-type(2) {
-    background: white;
+	background: white;
 }
 
 body.home #tabContentMain .co_menu_item.donate_link.hover span.parent div a {
-    color: white;
-    border-color: #107A8C;
+	color: white;
+	border-color: #107A8C;
 }
 
 head:has(head meta[content="3067906"]) .co_body p:last-child {
@@ -827,27 +868,27 @@ head:has(head meta[content="3067906"]) .co_body p:last-child {
 }
 
 .icon .widget_content .team .title a {
-    color: #006176;
+	color: #006176;
 }
 
 .branding-search #header_branding .site_title {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
-  color: #0A5769;
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: bold;
+	font-style: normal;
+	color: #0A5769;
 }
 
 .hp-table>:nth-of-type(2n + 1) {
-    background: #ececec;
+	background: #ececec;
 }
 
 .hp-table>:nth-of-type(2n) {
-    background: unset;
+	background: unset;
 }
 
 .icon .widget_content .item .title a {
-    color: #00667b;
+	color: #00667b;
 }
 
 
@@ -856,27 +897,27 @@ head:has(head meta[content="3067906"]) .co_body p:last-child {
 }
 
 div#photos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	margin: auto;
 }
 
 div#cco_body:has(#photos) {
-    margin: auto;
-    float: unset;
+	margin: auto;
+	float: unset;
 }
 
 @media (max-width: 1140px) {
-    #co_body_container {
-        margin-inline: 15px;
-    }
+	#co_body_container {
+		margin-inline: 15px;
+	}
 }
 
 @media only screen and (min-width: 320px) {
-    #photos .photo {
-        margin-inline: 5px;
-    }
+	#photos .photo {
+		margin-inline: 5px;
+	}
 }
 
 #photos .photo {
@@ -885,27 +926,27 @@ div#cco_body:has(#photos) {
 }
 
 #header {
-    background: #fff;
-    border-bottom: 1px solid #ddd;
-    position: fixed;
-    box-shadow: 0 0 4px #ddd;
-    width: 100%;
-    z-index: 100;
-    top: 0;
-    transition: all 0.3s;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	position: fixed;
+	box-shadow: 0 0 4px #ddd;
+	width: 100%;
+	z-index: 100;
+	top: 0;
+	transition: all 0.3s;
 }
 
 #header_container .links .topBarLink,
 #header_container .links .topBarLink a {
-    color: #2fd3c2;
+	color: #2fd3c2;
 }
 
 #header_container .links:after {
-    color: #2fd3c2;
+	color: #2fd3c2;
 }
 
 #header_branding .site-logo-wrapper {
-    background: 0 0;
+	background: 0 0;
 }
 
 .branding-search #header_branding .site_title {
@@ -917,12 +958,11 @@ div#cco_body:has(#photos) {
 }
 
 .branding-search #header_branding.logo img {
-    width: revert-layer;
+	width: revert-layer;
 	height: 100%;
 }
 
-.parent,
-#header_container .links .search-trigger-container .search-trigger {
+.parent {
 	color: black !important;
 }
 
@@ -939,5 +979,9 @@ body.menu-open .parent {
 }
 
 #header_container .links .top_bar_item:after {
-    border-top: 5px solid #2fd3c2;
+	border-top: 5px solid #2fd3c2;
+}
+
+#header_container .links .search-trigger-container .search-trigger {
+	color: #2fd3c2;
 }

@@ -4,7 +4,3 @@ if (window.location.href.includes(4970020)) {
 		subscribe.parentElement.parentElement.parentElement.remove();
 	}
 }
-const header = document.querySelector("#header");
-if (header) {
-	header.classList.add("on-scroll");
-}

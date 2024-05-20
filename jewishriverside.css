@@ -913,3 +913,23 @@ div#cco_body:has(#photos) {
 	float: unset;
 	border: none;
 }
+
+#header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    position: fixed; /* Adjust as necessary to your layout */
+    box-shadow: 0 0 4px #ddd;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    transition: all 0.3s;
+}
+
+#header_container .links .topBarLink,
+#header_container .links .topBarLink a {
+    color: #2fd3c2;
+}
+
+#header_container .links:after {
+    color: #2fd3c2;
+}

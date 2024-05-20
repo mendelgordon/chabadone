@@ -887,7 +887,7 @@ div#cco_body:has(#photos) {
 #header {
     background: #fff;
     border-bottom: 1px solid #ddd;
-    position: fixed; /* Adjust as necessary to your layout */
+    position: fixed;
     box-shadow: 0 0 4px #ddd;
     width: 100%;
     z-index: 100;
@@ -931,4 +931,8 @@ body.menu-open .parent {
 
 .header-wrapper {
 	height: unset !important;
+}
+
+.cs-mobile-menu-open {
+	color: var(--color-1);
 }

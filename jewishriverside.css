@@ -921,12 +921,12 @@ div#cco_body:has(#photos) {
 	height: 100%;
 }
 
-.parent {
+.parent,
+#header_container .links .search-trigger-container .search-trigger {
 	color: black !important;
 }
 
-body.menu-open .parent,
-#header_container .links .search-trigger-container .search-trigger {
+body.menu-open .parent {
 	color: white !important;
 }
 

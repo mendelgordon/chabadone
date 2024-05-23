@@ -889,7 +889,7 @@ div#cco_body:has(#photos) {
 	height: 100%;
 }
 
-.parent {
+#header .parent {
 	color: black !important;
 }
 

@@ -1165,3 +1165,7 @@ body.sites-article #content {
 	position: fixed;
 	box-shadow: 0 0 4px #ddd;
 }
+
+.header-wrapper {
+	align-items: center;
+}

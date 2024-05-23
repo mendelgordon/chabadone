@@ -2,7 +2,7 @@
 	color: black;
 }
 
-#header.on-scroll #header_container .links:after,
+#header#header #header_container .links:after,
 body.sites-article #header_container .links:after {
 	color: black
 }
@@ -15,7 +15,7 @@ body.sites-article #header_container .links:after {
 	color: black
 }
 
-#header.on-scroll #header_container .links .search-trigger-container .search-trigger,
+#header#header #header_container .links .search-trigger-container .search-trigger,
 #header_container .links #HeaderSubscribeContainer a,
 #header_container .links .subscribe_box .footer_box a,
 body.sites-article #header_container .links .search-trigger-container .search-trigger {
@@ -26,7 +26,7 @@ body.sites-article #header_container .links .search-trigger-container .search-tr
 	border: 1px solid black;
 }
 
-#header.on-scroll #header_container .links .top_bar_item:after,
+#header#header #header_container .links .top_bar_item:after,
 body.sites-article #header_container .links .top_bar_item:after {
 	border-top: 5px solid black
 }
@@ -39,26 +39,26 @@ body.sites-article #header_container .links .top_bar_item:after {
 	border-color: black;
 }
 
-body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
-body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,
-body #header.on-scroll .cco_body #tabContentMain .donate_link,
-body #header.on-scroll body #tabContentMain .co_menu_item span.parent,
-body #header.on-scroll body #tabContentMain .co_menu_item span.parent a,
-body #header.on-scroll body #tabContentMain .co_menu_item.hover span.parent,
-body #header.on-scroll body #tabContentMain .co_menu_item.hover span.parent a,
-body #header.on-scroll body.cco_body #tabContentMain .co_menu_item span.parent,
-body #header.on-scroll body.cco_body #tabContentMain .co_menu_item span.parent a,
-body #header.on-scroll body.cco_body #tabContentMain .co_menu_item.hover span.parent,
-body #header.on-scroll body.cco_body #tabContentMain .co_menu_item.hover span.parent a,
-body #header.on-scroll body.cco_body #tabContentMain .co_submenu_container .co_column a,
-body.cco_body #header.on-scroll #tabContentMain .co_menu_item span.parent,
-body.cco_body #header.on-scroll #tabContentMain .co_menu_item span.parent a,
-body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
-body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,
-body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent,
-body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a,
-body.cco_body #header.on-scroll #tabContentMain .co_submenu_container .co_column a,
-body.cco_body #header.on-scroll #tabContentMain .donate_link {
+body #header#header #tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
+body #header#header #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,
+body #header#header .cco_body #tabContentMain .donate_link,
+body #header#header body #tabContentMain .co_menu_item span.parent,
+body #header#header body #tabContentMain .co_menu_item span.parent a,
+body #header#header body #tabContentMain .co_menu_item.hover span.parent,
+body #header#header body #tabContentMain .co_menu_item.hover span.parent a,
+body #header#header body.cco_body #tabContentMain .co_menu_item span.parent,
+body #header#header body.cco_body #tabContentMain .co_menu_item span.parent a,
+body #header#header body.cco_body #tabContentMain .co_menu_item.hover span.parent,
+body #header#header body.cco_body #tabContentMain .co_menu_item.hover span.parent a,
+body #header#header body.cco_body #tabContentMain .co_submenu_container .co_column a,
+body.cco_body #header#header #tabContentMain .co_menu_item span.parent,
+body.cco_body #header#header #tabContentMain .co_menu_item span.parent a,
+body.cco_body #header#header #tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
+body.cco_body #header#header #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,
+body.cco_body #header#header #tabContentMain .co_menu_item.hover span.parent,
+body.cco_body #header#header #tabContentMain .co_menu_item.hover span.parent a,
+body.cco_body #header#header #tabContentMain .co_submenu_container .co_column a,
+body.cco_body #header#header #tabContentMain .donate_link {
 	color: black;
 }
 
@@ -126,7 +126,7 @@ body.cco_body #tabContentMain .co_menu_item.hover span.parent a {
 	color: white;
 }
 
-body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a,
+body.cco_body #header#header #tabContentMain .co_menu_item.hover span.parent a,
 body.cco_body.sites-article #tabContentMain .co_menu_item.hover span.parent a {
 	color: black;
 }
@@ -147,7 +147,7 @@ body.cco_body #tabContentMain .co_menu_item.selected.hover a.parent:after {
 	background: black
 }
 
-body.cco_body #header.on-scroll #tabContentMain .co_menu_item.selected.hover a.parent:after,
+body.cco_body #header#header #tabContentMain .co_menu_item.selected.hover a.parent:after,
 body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.parent:after {
 	background: black
 }
@@ -753,26 +753,26 @@ body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {
 
 @media screen and (max-width: 1024px) {
 
-	body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
-	body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,
-	body #header.on-scroll .cco_body #tabContentMain .donate_link,
-	body #header.on-scroll body #tabContentMain .co_menu_item span.parent,
-	body #header.on-scroll body #tabContentMain .co_menu_item span.parent a,
-	body #header.on-scroll body #tabContentMain .co_menu_item.hover span.parent,
-	body #header.on-scroll body #tabContentMain .co_menu_item.hover span.parent a,
-	body #header.on-scroll body.cco_body #tabContentMain .co_menu_item span.parent,
-	body #header.on-scroll body.cco_body #tabContentMain .co_menu_item span.parent a,
-	body #header.on-scroll body.cco_body #tabContentMain .co_menu_item.hover span.parent,
-	body #header.on-scroll body.cco_body #tabContentMain .co_menu_item.hover span.parent a,
-	body #header.on-scroll body.cco_body #tabContentMain .co_submenu_container .co_column a,
-	body.cco_body #header.on-scroll #tabContentMain .co_menu_item span.parent,
-	body.cco_body #header.on-scroll #tabContentMain .co_menu_item span.parent a,
-	body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
-	body.cco_body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,
-	body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent,
-	body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a,
-	body.cco_body #header.on-scroll #tabContentMain .co_submenu_container .co_column a,
-	body.cco_body #header.on-scroll #tabContentMain .donate_link .site-nav-wrapper *,
+	body #header#header #tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
+	body #header#header #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,
+	body #header#header .cco_body #tabContentMain .donate_link,
+	body #header#header body #tabContentMain .co_menu_item span.parent,
+	body #header#header body #tabContentMain .co_menu_item span.parent a,
+	body #header#header body #tabContentMain .co_menu_item.hover span.parent,
+	body #header#header body #tabContentMain .co_menu_item.hover span.parent a,
+	body #header#header body.cco_body #tabContentMain .co_menu_item span.parent,
+	body #header#header body.cco_body #tabContentMain .co_menu_item span.parent a,
+	body #header#header body.cco_body #tabContentMain .co_menu_item.hover span.parent,
+	body #header#header body.cco_body #tabContentMain .co_menu_item.hover span.parent a,
+	body #header#header body.cco_body #tabContentMain .co_submenu_container .co_column a,
+	body.cco_body #header#header #tabContentMain .co_menu_item span.parent,
+	body.cco_body #header#header #tabContentMain .co_menu_item span.parent a,
+	body.cco_body #header#header #tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
+	body.cco_body #header#header #tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,
+	body.cco_body #header#header #tabContentMain .co_menu_item.hover span.parent,
+	body.cco_body #header#header #tabContentMain .co_menu_item.hover span.parent a,
+	body.cco_body #header#header #tabContentMain .co_submenu_container .co_column a,
+	body.cco_body #header#header #tabContentMain .donate_link .site-nav-wrapper *,
 	.co_menu_item.multi_level .co_submenu_container a.item.hover span,
 	.co_menu_item.multi_level .co_submenu_container a.item:hover span,
 	body.cco_body.sites-article #tabContentMain .co_menu_item.selected span.parent a,
@@ -1104,7 +1104,7 @@ body:has(#header) {
 	justify-content: space-between;
 }
 
-#header.on-scroll .main_menu_container {
+#header#header .main_menu_container {
 	float: left;
 }
 

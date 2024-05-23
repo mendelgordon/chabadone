@@ -1134,12 +1134,12 @@ body.cco_body #tabContentMain .co_submenu_container .co_column a,
 }
 
 body.sites-article #content {
-	margin-top: 200px;
+	margin-top: 235px;
 }
 
 @keyframes shrink-header {
 	from {
-		height: 165px;
+		height: 200px;
 	}
 
 	to {
@@ -1156,6 +1156,7 @@ body.sites-article #content {
 .branding-search #header_branding.logo img {
 	object-fit: contain;
 	max-width: 100%;
+	margin: 10px;
 }
 
 .home #header {
@@ -1163,9 +1164,4 @@ body.sites-article #content {
 	border-bottom: 1px solid #ddd;
 	position: fixed;
 	box-shadow: 0 0 4px #ddd;
-}
-
-.branding-search {
-	grid-column: 1;
-	grid-row: 1 / -1;
 }

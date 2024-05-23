@@ -893,7 +893,7 @@ div#cco_body:has(#photos) {
 	color: black !important;
 }
 
-body.menu-open .parent {
+body.menu-open #header .parent {
 	color: white !important;
 }
 

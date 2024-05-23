@@ -1147,7 +1147,7 @@ body {
 	}
 
 	to {
-		height: 60px;
+		height: 80px;
 	}
 }
 
@@ -1173,4 +1173,18 @@ body {
 
 .header-wrapper {
 	align-items: center;
+}
+
+.wrapper.header-wrapper {
+    display: flex;
+}
+
+#header.on-scroll .main_menu_container {
+	float: left;
+}
+
+#header_container.header_container {
+    position: absolute;
+    right: 0;
+    top: 0;
 }

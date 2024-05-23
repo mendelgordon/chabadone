@@ -1138,7 +1138,7 @@ body.sites-article #content {
 }
 
 body {
-	margin-top: 165px
+	margin-top: min(165px, 25vh);
 }
 
 @keyframes shrink-header {
@@ -1174,7 +1174,7 @@ body {
 
 .wrapper.header-wrapper {
 	align-items: center;
-    display: flex;
+	display: flex;
 	justify-content: space-between;
 }
 
@@ -1183,7 +1183,7 @@ body {
 }
 
 #header_container.header_container {
-    position: absolute;
-    right: 0;
-    top: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
 }

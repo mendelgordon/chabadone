@@ -1193,10 +1193,9 @@ a[aria-label="Go to GetButton.io website"] {
 	display: none;
 }
 
-html:has(#k7) body {
-	div#co_menu_container {
-		height: auto;
-		top: 0;
-		text-align: center;
-	}
+html:has(#k7) div#co_menu_container {
+	height: auto;
+	top: 0;
+	text-align: center;
+
 }

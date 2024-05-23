@@ -1187,3 +1187,7 @@ body {
 	right: 0;
 	top: 0;
 }
+
+.home #feedback_bar {
+	display: none;
+}

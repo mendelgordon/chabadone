@@ -1188,6 +1188,15 @@ body {
 	top: 0;
 }
 
-.home #feedback_bar {
+.home #feedback_bar,
+a[aria-label="Go to GetButton.io website"] {
 	display: none;
+}
+
+html:has(#k7) body {
+	div#co_menu_container {
+		height: auto;
+		top: 0;
+		text-align: center;
+	}
 }

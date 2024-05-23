@@ -1066,7 +1066,7 @@ body.sites-article #content {
 	margin-top: 0;
 }
 
-body {
+body:has(#header) {
 	margin-top: min(165px, 25vh);
 }
 

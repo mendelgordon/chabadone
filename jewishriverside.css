@@ -11,10 +11,7 @@ body.sites-article #header_container .links:after {
 	color: black;
 }
 
-#header.on-scroll #header_container .links .topBarLink,
-#header.on-scroll #header_container .links .topBarLink a,
-body.sites-article #header_container .links .topBarLink,
-body.sites-article #header_container .links .topBarLink a {
+#header #header_container .links :is(.topBarLink, .topBarLink a) {
 	color: black
 }
 

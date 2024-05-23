@@ -1137,24 +1137,16 @@ body.sites-article #content {
 	margin-top: 200px;
 }
 
-@media (max-width: 1024px) {
-    .header-wrapper {
-        justify-content: center;
-        gap: 30px;
-    }
-}
-
 @keyframes shrink-header {
 	from {
-		height: 200px;
+		height: 165px;
 	}
 
 	to {
-		height: 50px;
+		height: 60px;
 	}
 }
 
-#header,
 .branding-search #header_branding.logo img {
 	animation: shrink-header linear forwards;
 	animation-timeline: scroll();
@@ -1162,10 +1154,8 @@ body.sites-article #content {
 }
 
 .branding-search #header_branding.logo img {
-    width: auto;
-    max-width: 100%;
-    object-fit: contain;
-    object-position: top;
+	object-fit: contain;
+	max-width: 100%;
 }
 
 .home #header {
@@ -1173,4 +1163,9 @@ body.sites-article #content {
 	border-bottom: 1px solid #ddd;
 	position: fixed;
 	box-shadow: 0 0 4px #ddd;
+}
+
+.branding-search {
+	grid-column: 1;
+	grid-row: 1 / -1;
 }

@@ -1171,12 +1171,10 @@ body {
 	box-shadow: 0 0 4px #ddd;
 }
 
-.header-wrapper {
-	align-items: center;
-}
-
 .wrapper.header-wrapper {
+	align-items: center;
     display: flex;
+	justify-content: space-between;
 }
 
 #header.on-scroll .main_menu_container {

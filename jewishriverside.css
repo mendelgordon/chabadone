@@ -1162,6 +1162,7 @@ body {
 	max-width: 100%;
 	padding: 10px;
 	max-height: 25vh;
+	object-position: left center;
 }
 
 .home #header {

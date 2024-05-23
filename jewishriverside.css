@@ -1154,9 +1154,23 @@ body.sites-article #content {
 	}
 }
 
-#header {
+#header,
+.branding-search #header_branding.logo img {
 	animation: shrink-header linear forwards;
 	animation-timeline: scroll();
 	animation-range: 0px 300px;
-	/* Adjust the scroll range as needed */
+}
+
+.branding-search #header_branding.logo img {
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: top;
+}
+
+.home #header {
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	position: fixed;
+	box-shadow: 0 0 4px #ddd;
 }

@@ -925,17 +925,6 @@ div#cco_body:has(#photos) {
 	border: none;
 }
 
-#header {
-	background: #fff;
-	border-bottom: 1px solid #ddd;
-	position: fixed;
-	box-shadow: 0 0 4px #ddd;
-	width: 100%;
-	z-index: 100;
-	top: 0;
-	transition: all 0.3s;
-}
-
 #header_container .links .topBarLink,
 #header_container .links .topBarLink a {
 	color: #2fd3c2;
@@ -985,4 +974,189 @@ body.menu-open .parent {
 
 #header_container .links .search-trigger-container .search-trigger {
 	color: #2fd3c2;
+}
+
+.co_body .content .form-all,
+.co_body .content p,
+.co_body h1,
+.co_body h1 a,
+.co_body h2,
+.co_body h2 a,
+.co_body h3,
+.co_body h3 a,
+.co_body h4,
+.co_body h4 a,
+.co_body h5,
+.co_body h5 a,
+.co_body h6,
+.co_body h6 a,
+.cps-container h1,
+.cps-container h2,
+.cps-container p,
+.form-all,
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+html body.cco_body,
+html body.cco_body p,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+strike,
+sub,
+summary,
+sup,
+table,
+tfoot,
+time,
+tt,
+u,
+ul,
+var,
+video,
+#tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
+#tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,
+.cco_body #tabContentMain .donate_link,
+body #tabContentMain .co_menu_item span.parent,
+body #tabContentMain .co_menu_item span.parent a,
+body #tabContentMain .co_menu_item.hover span.parent,
+body #tabContentMain .co_menu_item.hover span.parent a,
+body.cco_body #tabContentMain .co_menu_item span.parent,
+body.cco_body #tabContentMain .co_menu_item span.parent a,
+body.cco_body #tabContentMain .co_menu_item.hover span.parent,
+body.cco_body #tabContentMain .co_menu_item.hover span.parent a,
+body.cco_body #tabContentMain .co_submenu_container .co_column a,
+#tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
+#tabContentMain .co_menu_item.arrow .co_submenu_container a.item span,
+body.cco_body #tabContentMain .co_submenu_container .co_column a,
+.article-header__title,
+.content_title_container .content_title,
+.content_title_container h1,
+.header-title,
+.co_body .content .Content_Title,
+.co_body .article-body li,
+#lightbox-wrapper #lightbox #count,
+#lightbox-wrapper #lightbox #details-panel,
+.chabad_updates .widget_header.widget_header h5,
+[class*=widget-] .widget_header.widget_header h5,
+.hp-table .hp-row-first .promo_slider .slider .cycle-caption p,
+.hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore,
+.hp-table .hp-row-first .promo_slider .slider .cycle-caption big,
+.banner .widget_content.index_format .item .title,
+.banner .widget_content.index_format .item .title a,
+.banner .widget_content.index_format .item .subtitle,
+.message .wrapper .widget_content .item .title,
+.message .wrapper .widget_content .item .title a,
+.message .wrapper .widget_content .item .synopsis,
+.message .wrapper .widget_content .readMore,
+.message .wrapper .widget_content.message_format h6,
+.message .wrapper .widget_content.message_format div,
+.icon .chabad_updates .widget_content .item .title,
+.icon .chabad_updates .widget_content .item .title a,
+.icon .widget_content .item .title,
+.icon .widget_content .item .title a,
+.hp-table>:not(:first-child) .promo_slider .cycle-caption p,
+.hp_subscribe .wrapper #formContainer fieldset input::-webkit-input-placeholder,
+.hp_subscribe .wrapper #formContainer fieldset input::-moz-placeholder,
+.hp_subscribe .wrapper #formContainer fieldset input:-ms-input-placeholder,
+.hp_subscribe .wrapper #formContainer fieldset input:-moz-placeholder,
+#footer .footer_text .footer3,
+#footer .footer_text .footer3 b,
+.mobile .center_logo a span,
+.co_body .content .form-all p,
+.article_index_container .co_index.article_index .row .item .subtitle,
+.co_feature_scroller .feature_frame,
+.co_feature_scroller .feature_frame .title,
+.co_feature_scroller .feature_frame .title a,
+.co_feature_scroller .feature_frame .section a,
+.co_feature_scroller .feature_frame .subtitle a,
+.co_feature_scroller .feature_frame .byline a {
+	font-family: Montserrat, sans-serif;
+}
+
+.co_body .content .form-all .form-submit-button {
+	background: black;
+}
+
+body.sites-article #content {
+	margin-top: 200px;
+}
+
+@media (max-width: 1024px) {
+    .header-wrapper {
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@keyframes shrink-header {
+	from {
+		height: 200px;
+	}
+
+	to {
+		height: 50px;
+	}
+}
+
+#header {
+	animation: shrink-header linear forwards;
+	animation-timeline: scroll();
+	animation-range: 0px 300px;
+	/* Adjust the scroll range as needed */
 }

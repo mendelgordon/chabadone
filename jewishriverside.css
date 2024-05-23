@@ -1,82 +1,45 @@
-:root {
-	--color-1: #000000;
-	--color-2: #000000;
-	--color-3: #000000;
-	--color-4: #000000;
-	--color-5: #000000;
-	--color-6: #000000;
-	--color-7: rgba(0, 0, 0, 0.6);
-	--color-8: #ffffff;
-	--color-9: #fff;
-	--color-10: #000000;
-	--color-11: #000000;
-	--color-12: #000000;
-	--color-13: #000000;
-	--color-14: #000000;
-	--color-15: #000000;
-	--color-16: #000000;
-	--color-17: #000000;
-	--color-18: #000000;
-	--color-19: #000000;
-	--color-20: #000000;
-	--color-21: #000000;
-	--color-22: #000000;
-	--color-23: #ffffff;
-	--color-24: #ffffff;
-	--color-25: #000000;
-	--color-26: #ffffff;
-	--color-27: #000000;
-	--color-28: #000000;
-	--color-29: #ffffff;
-}
-
 #header_container .links .float_right+.float_left .topBarLink:last-child:after {
-	color: var(--color-2);
+	color: black;
 }
 
 #header.on-scroll #header_container .links:after,
 body.sites-article #header_container .links:after {
-	color: var(--color-1)
+	color: black
 }
 
 #header_container .links .topBarLink:before {
-	color: var(--color-2);
+	color: black;
 }
 
 #header.on-scroll #header_container .links .topBarLink,
 #header.on-scroll #header_container .links .topBarLink a,
 body.sites-article #header_container .links .topBarLink,
 body.sites-article #header_container .links .topBarLink a {
-	color: var(--color-1)
+	color: black
 }
 
 #header.on-scroll #header_container .links .search-trigger-container .search-trigger,
 #header_container .links #HeaderSubscribeContainer a,
 #header_container .links .subscribe_box .footer_box a,
 body.sites-article #header_container .links .search-trigger-container .search-trigger {
-	color: var(--color-1)
+	color: black
 }
 
 #header_container .links .cco_search_header #MainSearchForm {
-	border: 1px solid var(--color-2);
+	border: 1px solid black;
 }
 
 #header.on-scroll #header_container .links .top_bar_item:after,
 body.sites-article #header_container .links .top_bar_item:after {
-	border-top: 5px solid var(--color-1)
+	border-top: 5px solid black
 }
 
 #header_container .links #HeaderSubscribeContainer {
-	border-bottom-color: var(--color-1)
+	border-bottom-color: black
 }
 
 #header_container .links .subscribe_box .co_global_submit .button {
-	border-color: var(--color-2);
-}
-
-#header.on-scroll .branding-search #header_branding .site_title,
-body.sites-article .branding-search #header_branding .site_title {
-	color: #0A5769;
+	border-color: black;
 }
 
 body #header.on-scroll #tabContentMain .co_menu_item.arrow .co_submenu_container a.item,
@@ -100,7 +63,6 @@ body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent 
 body.cco_body #header.on-scroll #tabContentMain .co_submenu_container .co_column a,
 body.cco_body #header.on-scroll #tabContentMain .donate_link {
 	color: black;
-	/* was var(--color-1) */
 }
 
 
@@ -124,7 +86,7 @@ body.sites-article body.cco_body #tabContentMain .co_menu_item span.parent a,
 body.sites-article body.cco_body #tabContentMain .co_menu_item.hover span.parent,
 body.sites-article body.cco_body #tabContentMain .co_menu_item.hover span.parent a,
 body.sites-article body.cco_body #tabContentMain .co_submenu_container .co_column a {
-	color: var(--color-1);
+	color: black;
 }
 
 body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a,
@@ -134,84 +96,81 @@ body.cco_body #tabContentMain .co_menu_item.donate_link.hover span.parent a {
 
 .dir_ltr .co_menu_item.multi_level .co_submenu_container .menu_child.selected,
 .dir_rtl .co_menu_item.multi_level .co_submenu_container.reversed .menu_child.selected {
-	border-top-color: var(--color-3);
+	border-top-color: black;
 }
 
 .dir_ltr .co_menu_item.multi_level .co_submenu_container.reversed .menu_child.selected,
 .dir_rtl .co_menu_item.multi_level .co_submenu_container .menu_child.selected {
-	border-top-color: var(--color-3);
+	border-top-color: black;
 }
 
 .co_menu_item.multi_level .co_submenu_container a.item.hover span,
 .co_menu_item.multi_level .co_submenu_container a.item:hover span {
-	color: var(--color-1) !important;
+	color: black !important;
 }
 
 .co_menu_item .co_submenu_container .child_item.heading {
-	color: var(--color-2)
+	color: black
 }
 
 body.cco_body #tabContentMain .co_menu_item.multi_level .co_submenu_container {
-	border-top-color: var(--color-1)
+	border-top-color: black
 }
 
 #tabContentMain .co_menu_item.multi_level:before {
-	border-bottom: 8px solid var(--color-1)
+	border-bottom: 8px solid black
 }
 
 #tabContentMain .co_menu_item.multi_level:after {
-	border-bottom: 8px solid var(--color-9)
+	border-bottom: 8px solid white
 }
 
 body.cco_body #tabContentMain .co_menu_item.hover span.parent a {
-	color: var(--color-29);
-	/* was var(--color-3) */
+	color: white;
 }
 
 body.cco_body #header.on-scroll #tabContentMain .co_menu_item.hover span.parent a,
 body.cco_body.sites-article #tabContentMain .co_menu_item.hover span.parent a {
 	color: black;
-	/* was var(--color-4) */
 }
 
 body.cco_body #tabContentMain .co_menu_item.selected span.parent a {
-	color: var(--color-29);
-	/* was var(--color-5) */
+	color: white;
 }
 
 body.cco_body.sites-article #tabContentMain .co_menu_item.selected span.parent a {
-	color: var(--color-5);
+	color: black;
 }
 
 body.cco_body #tabContentMain .co_menu_item.selected a.parent:after {
-	background: var(--color-1)
+	background: black
 }
 
 body.cco_body #tabContentMain .co_menu_item.selected.hover a.parent:after {
-	background: var(--color-3)
+	background: black
 }
 
 body.cco_body #header.on-scroll #tabContentMain .co_menu_item.selected.hover a.parent:after,
 body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.parent:after {
-	background: var(--color-4)
+	background: black
 }
 
 .cco_body #tabContentMain .donate_link a {
-	border: 2px solid var(--color-2);
+	border: 2px solid black;
 }
 
 .cco_body #tabContentMain .donate_link a:hover {
-	color: var(--color-2)
+	color: black
 }
 
 .article-header__title,
 .content_title_container .content_title,
 .content_title_container h1 {
-	color: var(--color-2);
+	color: black;
 }
 
 .header-title {
-	color: var(--color-2);
+	color: black;
 }
 
 #BodyContainer #co_content_container>.clearfix>.g960:not(.categorized) .article-header .breadcrumbs .breadcrumbs__crumb,
@@ -221,24 +180,24 @@ body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.paren
 
 #BodyContainer .no-hero-image #co_content_container .master-content-wrapper.master-content-wrapper .article-header .breadcrumbs .breadcrumbs__crumb,
 #BodyContainer .no-hero-image #co_content_container .master-content-wrapper.master-content-wrapper .article-header .breadcrumbs .breadcrumbs__divider {
-	color: var(--color-1);
+	color: black;
 }
 
 #BodyContainer .no-hero-image #co_content_container .master-content-wrapper.master-content-wrapper .article-header .article-header__title {
-	color: var(--color-2);
+	color: black;
 }
 
 .co_local_menu .item .item_sub.selected a {
-	color: var(--color-1);
+	color: black;
 }
 
 .secondary_navigation .header {
-	color: var(--color-2)
+	color: black
 }
 
 #co_ads_container .lt_blue,
 #co_ads_container .lt_blue a {
-	color: var(--color-1)
+	color: black
 }
 
 .Content_Title,
@@ -246,109 +205,108 @@ body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.paren
 .co_body .content .SCHeading_1,
 .co_body h1,
 .form-header-group h1 {
-	color: var(--color-2);
+	color: black;
 }
 
 .co_body .content .Content_Large,
 .co_body .content .SCHeading_2,
 .co_body h2,
 .form-header-group h2 {
-	color: var(--color-1)
+	color: black
 }
 
 .co_body .content .SCHeading_3,
 .co_body h3,
 .form-header-group h3 {
-	color: var(--color-1)
+	color: black
 }
 
 .co_global_button .button,
 .co_global_submit .button {
-	background: var(--color-1);
+	background: black;
 }
 
 .co_global_button .button:focus,
 .co_global_button .button:hover,
 .co_global_submit .button:focus,
 .co_global_submit .button:hover {
-	background: var(--color-5);
+	background: black;
 }
 
 .co_global_button.yellow .button {
-	background: var(--color-2);
+	background: black;
 }
 
 .co_global_button.yellow .button:focus,
 .co_global_button.yellow .button:hover {
-	background: var(--color-6);
+	background: black;
 }
 
 #lightbox-wrapper #lightbox #details-panel {
-	background: var(--color-1)
+	background: black
 }
 
 #co_ads_container #customizable_promos .sneak_peek[class*=widget-] .widget_content h6:hover {
-	background: var(--color-7)
+	background: rgba(0, 0, 0, 0.6)
 }
 
 .ribbon-wrapper .ribbon {
-	background-color: var(--color-1)
+	background-color: black
 }
 
 .chabad_updates .widget_header.widget_header h5,
 [class*=widget-] .widget_header.widget_header h5 {
-	color: var(--color-2);
+	color: black;
 }
 
 .hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore {
-	border: 2px solid var(--color-2);
+	border: 2px solid black;
 }
 
 .hp-table .hp-row-first .promo_slider .slider .cycle-caption .readMore:hover {
-	background: var(--color-2);
+	background: black;
 }
 
 .hp-table .hp-row-first .promo_slider .slider .cycle-caption big {
-	color: var(--color-29);
-	/* was var(--color-1) */
+	color: white;
 }
 
 .banner .widget_content.index_format .item {
-	background: var(--color-18);
-	background: -moz-linear-gradient(-45deg, var(--color-14) 0, var(--color-19) 25%, var(--color-18) 50%, var(--color-20) 75%, var(--color-21) 100%);
-	background: -webkit-linear-gradient(-45deg, var(--color-14) 0, var(--color-19) 25%, var(--color-18) 50%, var(--color-20) 75%, var(--color-21) 100%);
-	background: linear-gradient(135deg, var(--color-14) 0, var(--color-19) 25%, var(--color-18) 50%, var(--color-20) 75%, var(--color-21) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--color-14)", endColorstr="var(--color-21)", GradientType=1);
+	background: black;
+	background: -moz-linear-gradient(-45deg, black 0, black 25%, black 50%, black 75%, black 100%);
+	background: -webkit-linear-gradient(-45deg, black 0, black 25%, black 50%, black 75%, black 100%);
+	background: linear-gradient(135deg, black 0, black 25%, black 50%, black 75%, black 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="black", endColorstr="black", GradientType=1);
 }
 
 .banner .widget_content.index_format .item .readMore,
 .message .wrapper .widget_content .readMore {
-	border: 2px solid var(--color-2);
+	border: 2px solid black;
 }
 
 .banner .widget_content.index_format .item .readMore:hover {
-	background: var(--color-2)
+	background: black
 }
 
 .message .wrapper .widget_content .item .title,
 .message .wrapper .widget_content .item .title a {
-	color: var(--color-2);
+	color: black;
 }
 
 .message .wrapper .widget_content .readMore {
-	color: var(--color-1);
+	color: black;
 }
 
 .message .wrapper .widget_content .readMore:hover {
-	background: var(--color-2);
+	background: black;
 }
 
 .message .wrapper .widget_content.message_format h6 {
-	color: var(--color-2);
+	color: black;
 }
 
 .sneak-peek-container .sneak_peek .widget_content h6:hover {
-	background: var(--color-7)
+	background: rgba(0, 0, 0, 0.6)
 }
 
 .icon .chabad_updates .widget_content .item .icon img,
@@ -360,148 +318,148 @@ body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.paren
 
 	.icon .chabad_updates .widget_content .item .icon.loaded a,
 	.icon .widget_content .item .icon.loaded a {
-		background: var(--color-18);
-		background: -moz-linear-gradient(-45deg, var(--color-14) 0, var(--color-19) 25%, var(--color-18) 50%, var(--color-20) 75%, var(--color-21) 100%);
-		background: -webkit-linear-gradient(-45deg, var(--color-14) 0, var(--color-19) 25%, var(--color-18) 50%, var(--color-20) 75%, var(--color-21) 100%);
-		background: linear-gradient(135deg, var(--color-14) 0, var(--color-19) 25%, var(--color-18) 50%, var(--color-20) 75%, var(--color-21) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--color-14)", endColorstr="var(--color-21)", GradientType=1);
+		background: black;
+		background: -moz-linear-gradient(-45deg, black 0, black 25%, black 50%, black 75%, black 100%);
+		background: -webkit-linear-gradient(-45deg, black 0, black 25%, black 50%, black 75%, black 100%);
+		background: linear-gradient(135deg, black 0, black 25%, black 50%, black 75%, black 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="black", endColorstr="black", GradientType=1);
 	}
 }
 
 .hp-table>:not(:first-child) .promo_slider .cycle-directionNav a:before {
-	color: var(--color-1);
+	color: black;
 }
 
 .hp-table>:not(:first-child) .promo_slider .cycle-directionNav a:hover:before {
-	color: var(--color-22)
+	color: black
 }
 
 .hp-table>:not(:first-child) .promo_slider .cycle-caption p big {
-	color: var(--color-2);
+	color: black;
 }
 
 .hp-table>:not(:first-child) .promo_slider .cycle-caption .readMore {
-	border: 2px solid var(--color-2);
+	border: 2px solid black;
 }
 
 .hp-table>:not(:first-child) .promo_slider .cycle-caption .readMore:hover {
-	background: var(--color-2)
+	background: black
 }
 
 .hp_content_wrapper .readMore {
-	border: 2px solid var(--color-2);
-	color: var(--color-1);
+	border: 2px solid black;
+	color: black;
 }
 
 .hp_content_wrapper .readMore:hover {
-	background: var(--color-2);
-	border: 2px solid var(--color-2);
+	background: black;
+	border: 2px solid black;
 }
 
 .hp_content_wrapper .upcoming_events .widget_content>ul>li h6,
 .hp_content_wrapper .upcoming_events .widget_content>ul>li h6 a,
 .hp_content_wrapper .widget_content>ul>li h6,
 .hp_content_wrapper .widget_content>ul>li h6 a {
-	color: var(--color-1)
+	color: black
 }
 
 .hp_content_wrapper [class*=widget-].candlelighting .candlelighting_content .times_wrapper .bold.large {
-	color: var(--color-1);
+	color: black;
 }
 
 .hp_content_wrapper [class*=widget-].candlelighting .parsha_content .bold.large {
 	font-size: 18px;
-	color: var(--color-1);
+	color: black;
 	line-height: 1.3em
 }
 
 .hp_content_wrapper [class*=widget-].magazine .item .title,
 .hp_content_wrapper [class*=widget-].magazine .item .title a {
-	color: var(--color-1);
+	color: black;
 }
 
 .hp_content_wrapper [class^=widget-].parsha .widget_content .title span {
-	color: var(--color-1);
+	color: black;
 }
 
 .hp_content_wrapper .mini_slider .sectiontitle {
-	color: var(--color-2);
+	color: black;
 }
 
 .hp_content_wrapper .mini_slider .title {
-	color: var(--color-1)
+	color: black
 }
 
 .hp_content_wrapper .mini_slider .anythingControls .thumbNav li a {
-	border: 1px solid var(--color-2);
+	border: 1px solid black;
 }
 
 .hp_content_wrapper .mini_slider .anythingControls .thumbNav li a.cur {
-	background: var(--color-2)
+	background: black
 }
 
 .hp_content_wrapper .chabad_updates .item a {
-	color: var(--color-1)
+	color: black
 }
 
 .hp_content_wrapper .chabad_updates .item a.readMore {
-	color: var(--color-2);
+	color: black;
 }
 
 .hp_content_wrapper .chabad_updates .item a.readMore:hover {
-	color: var(--color-1) !important
+	color: black !important
 }
 
 .hp_content_wrapper .latest_photos .readMore span {
-	border: 2px solid var(--color-2);
-	color: var(--color-1);
+	border: 2px solid black;
+	color: black;
 }
 
 .hp_content_wrapper .latest_photos .readMore span:hover {
-	background: var(--color-2);
-	border: 2px solid var(--color-2);
+	background: black;
+	border: 2px solid black;
 }
 
 .hp_content_wrapper .daily_quote .widget_content .subtitle {
-	color: var(--color-1);
+	color: black;
 }
 
 .hp_content_wrapper .accordion .widget_content .header.active {
-	color: var(--color-1)
+	color: black
 }
 
 .hp_content_wrapper .tabs .widget_content .header.active {
-	color: var(--color-1);
+	color: black;
 }
 
 .latest_photos .readMore span {
-	border: 2px solid var(--color-2);
-	color: var(--color-1);
+	border: 2px solid black;
+	color: black;
 }
 
 .latest_photos .readMore span:hover {
-	background: var(--color-2);
-	border: 2px solid var(--color-2);
+	background: black;
+	border: 2px solid black;
 }
 
 .hp-table .hp_subscribe {
-	background: var(--color-18);
-	background: -moz-linear-gradient(-45deg, var(--color-14) 0, var(--color-19) 25%, var(--color-18) 50%, var(--color-20) 75%, var(--color-21) 100%);
-	background: -webkit-linear-gradient(-45deg, var(--color-14) 0, var(--color-19) 25%, var(--color-18) 50%, var(--color-20) 75%, var(--color-21) 100%);
-	background: linear-gradient(135deg, var(--color-14) 0, var(--color-19) 25%, var(--color-18) 50%, var(--color-20) 75%, var(--color-21) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--color-14)", endColorstr="var(--color-21)", GradientType=1)
+	background: black;
+	background: -moz-linear-gradient(-45deg, black 0, black 25%, black 50%, black 75%, black 100%);
+	background: -webkit-linear-gradient(-45deg, black 0, black 25%, black 50%, black 75%, black 100%);
+	background: linear-gradient(135deg, black 0, black 25%, black 50%, black 75%, black 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="black", endColorstr="black", GradientType=1)
 }
 
 .hp_subscribe .wrapper #formContainer fieldset input {
-	color: var(--color-1);
+	color: black;
 }
 
 .hp_subscribe .wrapper #formContainer fieldset input[type=submit] {
-	border-color: var(--color-2);
+	border-color: black;
 }
 
 .hp_subscribe .wrapper #formContainer fieldset input[type=submit]:hover {
-	background: var(--color-2)
+	background: black
 }
 
 #footer .footer_text .footer3 .footer-title,
@@ -510,64 +468,64 @@ body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.paren
 }
 
 .cs-f-social-icons a:hover {
-	background: var(--color-1);
+	background: black;
 }
 
 .mobile .center_logo a span {
-	color: var(--color-2);
+	color: black;
 }
 
 .mobile .menu .menu_button {
-	color: var(--color-1)
+	color: black
 }
 
 .menu .search .search_field,
 .mobile .menu .menu_button #MenuIcon span,
 .mobile .menu .menu_button #SearchIcon {
-	background: var(--color-1)
+	background: black
 }
 
 .mobile .promo_slider .cycle-controlNav .circle {
-	border: 1px solid var(--color-2)
+	border: 1px solid black
 }
 
 .mobile .promo_slider .cycle-controlNav .circle.selected {
-	background: var(--color-2)
+	background: black
 }
 
 .mobile .promo_slider .slide_wrapper .caption {
-	color: var(--color-1)
+	color: black
 }
 
 @media (max-width: 1024px) {
 	.on-scroll .cs-mobile-menu-open {
-		color: var(--color-1);
+		color: black;
 	}
 
 	.not-homepage body .cs-mobile-menu-open,
 	body:not(.home) .cs-mobile-menu-open {
-		color: var(--color-1)
+		color: black
 	}
 }
 
 @media (max-width: 1024px) {
 	.site-nav-wrapper {
-		background: var(--color-1);
+		background: black;
 	}
 }
 
 #calendar_header .cal_secondary_header {
-	color: var(--color-2);
+	color: black;
 }
 
 .cal_header_buttons .cal_button .button {
-	background: var(--color-2)
+	background: black
 }
 
 
 .cal_header_info a {
-	color: var(--color-2);
-	border-bottom-color: var(--color-2)
+	color: black;
+	border-bottom-color: black
 }
 
 #calendar .item,
@@ -579,118 +537,118 @@ body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.paren
 #calendar .list_item .title a,
 #calendar.day .halachic_times .header,
 #calendar.day .item .content .main div.title {
-	color: var(--color-1)
+	color: black
 }
 
 #calendar .item.holiday {
-	background: var(--color-23)
+	background: white
 }
 
 #calendar.day .halachic_times .header {
-	background: var(--color-24)
+	background: white
 }
 
 @supports (display: grid) {
 	#CalendarContentContainer .year_view .month .month_header {
-		background: var(--color-1);
+		background: black;
 	}
 
 	#CalendarContentContainer .year_view .month .day_name td {
-		background: var(--color-2);
+		background: black;
 	}
 }
 
 #calendarPicker .header .active_date,
 #calendarPicker a,
 .list_view .list_info {
-	color: var(--color-2)
+	color: black
 }
 
 #calendarWrapper.gregorian #CivilCal,
 #calendarWrapper.jewish #JewishCal {
-	background-color: var(--color-2)
+	background-color: black
 }
 
 #CalendarToggle {
-	border-color: var(--color-2)
+	border-color: black
 }
 
 .cco_body .label_green {
-	border-color: var(--color-10);
-	color: var(--color-10);
-	background: var(--color-25) !important
+	border-color: black;
+	color: black;
+	background: black !important
 }
 
 .cco_body .label_purple {
-	border-color: var(--color-1);
-	color: var(--color-1);
-	background: var(--color-26) !important
+	border-color: black;
+	color: black;
+	background: white !important
 }
 
 .cco_body .label_blue {
-	border-color: var(--color-27);
-	color: var(--color-27);
-	background: var(--color-8) !important
+	border-color: black;
+	color: black;
+	background: white !important
 }
 
 .cco_body .label_navy {
-	border-color: var(--color-2);
-	color: var(--color-2);
-	background: var(--color-17) !important
+	border-color: black;
+	color: black;
+	background: black !important
 }
 
 .cco_body .label_brown {
-	border-color: var(--color-16);
-	color: var(--color-16);
-	background: var(--color-15) !important
+	border-color: black;
+	color: black;
+	background: black !important
 }
 
 .cco_body .label_orange {
-	border-color: var(--color-14);
-	color: var(--color-14);
-	background: var(--color-13) !important
+	border-color: black;
+	color: black;
+	background: black !important
 }
 
 .cco_body .label_lime {
-	border-color: var(--color-12);
-	color: var(--color-12);
-	background: var(--color-11) !important
+	border-color: black;
+	color: black;
+	background: black !important
 }
 
 .cal_header_buttons .cal_button .button {
-	border: 2px solid var(--color-28);
+	border: 2px solid black;
 }
 
 
 .cal_header_buttons .co_toggle_buttons .item {
-	border: 2px solid var(--color-1);
-	color: var(--color-1);
+	border: 2px solid black;
+	color: black;
 }
 
 .cal_header_buttons .co_toggle_buttons .item.selected {
-	border: 2px solid var(--color-1);
-	background: var(--color-1);
+	border: 2px solid black;
+	background: black;
 }
 
 #co_ads_container #MosadInformation .small_header {
-	color: var(--color-1)
+	color: black
 }
 
 .feedback_form .blue,
 .feedback_form .blue a {
-	color: var(--color-2)
+	color: black
 }
 
 .article_index_container .co_index.article_index .row .item .title a:hover {
-	background: var(--color-7)
+	background: rgba(0, 0, 0, 0.6)
 }
 
 .content .co_index.double.nested .item .wrapper.imageOnTop>a:hover .title {
-	background: var(--color-7)
+	background: rgba(0, 0, 0, 0.6)
 }
 
 .child_title a {
-	color: var(--color-1)
+	color: black
 }
 
 .child-subtitle,
@@ -707,43 +665,43 @@ body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.paren
 .co_index .item .title a,
 .comment-thread .reader-comment .comment-reply-link,
 .small-links__item--more a {
-	color: var(--color-1)
+	color: black
 }
 
 .co_body .content .child_title,
 .co_body .content .child_title a {
-	color: var(--color-1)
+	color: black
 }
 
 .co_global_button .button a,
 .co_global_button a.button {
-	color: var(--color-1);
+	color: black;
 }
 
 .co_body .content .lt_blue a,
 .lt_blue,
 .lt_blue a {
-	color: var(--color-1)
+	color: black
 }
 
 .co_body .content .department_index .header a {
-	color: var(--color-1)
+	color: black
 }
 
 .co_body .content .department_index li:before {
-	border-left: 4px solid var(--color-2)
+	border-left: 4px solid black
 }
 
 #co_department_index .co_body .clearfix {
-	background: var(--color-8) !important;
+	background: white !important;
 }
 
 #co_department_index .co_body .clearfix .small_header {
-	background: var(--color-2);
+	background: black;
 }
 
 .co_body .rounded_box a {
-	color: var(--color-1)
+	color: black
 }
 
 .hp-row .message .wrapper .widget_content .readMore:hover,
@@ -752,24 +710,20 @@ body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.paren
 }
 
 .banner-updates .widget_content .item.first .synopsis {
-	color: var(--color-9);
+	color: white;
 }
 
 .hp-table .hp-row .promo_slider .slider .cycle-caption p big {
-	color: var(--color-29);
-	/* was var(--color-1) */
+	color: white;
 }
 
 .hp-table .hp-row .promo_slider .slider .cycle-caption .readMore {
-	border-color: var(--color-29);
-	/* was var(--color-1) */
+	border-color: white;
 }
 
 body.cco_body #tabContentMain .co_menu_item.donate_link.hover span.parent div a {
 	border-color: black;
-	/* was var(--color-1) */
 	color: black;
-	/* was var(--color-1) */
 }
 
 body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {
@@ -779,16 +733,16 @@ body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {
 }
 
 .hp-row .message .wrapper .widget_content .readMore {
-	border-color: var(--color-1);
-	color: var(--color-2)
+	border-color: black;
+	color: black
 }
 
 .hp-row [class^=widget-].latest_photos .readMore span {
-	border: 2px solid var(--color-1)
+	border: 2px solid black
 }
 
 .hp-row [class^=widget-].latest_photos .readMore:hover span span:hover {
-	background: var(--color-1)
+	background: black
 }
 
 #footer {
@@ -797,7 +751,7 @@ body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {
 
 #footer .footer_text .footer3 .footer-title,
 #footer .footer_text .footer3 b .footer-title {
-	color: var(--color-1)
+	color: black
 }
 
 @media screen and (max-width: 1024px) {
@@ -871,14 +825,6 @@ head:has(head meta[content="3067906"]) .co_body p:last-child {
 	color: #006176;
 }
 
-.branding-search #header_branding .site_title {
-	font-family: "Montserrat", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: bold;
-	font-style: normal;
-	color: #0A5769;
-}
-
 .hp-table>:nth-of-type(2n + 1) {
 	background: #ececec;
 }
@@ -925,15 +871,6 @@ div#cco_body:has(#photos) {
 	border: none;
 }
 
-#header_container .links .topBarLink,
-#header_container .links .topBarLink a {
-	color: #2fd3c2;
-}
-
-#header_container .links:after {
-	color: #2fd3c2;
-}
-
 #header_branding .site-logo-wrapper {
 	background: 0 0;
 }
@@ -965,15 +902,7 @@ body.menu-open .parent {
 }
 
 .cs-mobile-menu-open {
-	color: var(--color-1);
-}
-
-#header_container .links .top_bar_item:after {
-	border-top: 5px solid #2fd3c2;
-}
-
-#header_container .links .search-trigger-container .search-trigger {
-	color: #2fd3c2;
+	color: black;
 }
 
 .co_body .content .form-all,
@@ -1154,7 +1083,7 @@ body {
 .branding-search #header_branding.logo img {
 	animation: shrink-header linear forwards;
 	animation-timeline: scroll();
-	animation-range: 0px 300px;
+	animation-range: 0px 200px;
 }
 
 .branding-search #header_branding.logo img {
@@ -1166,7 +1095,7 @@ body {
 }
 
 .home #header {
-	background: #fff;
+	background: white;
 	border-bottom: 1px solid #ddd;
 	position: fixed;
 	box-shadow: 0 0 4px #ddd;

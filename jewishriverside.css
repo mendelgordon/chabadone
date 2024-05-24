@@ -1120,7 +1120,7 @@ html:has(#k7) div#co_menu_container {
 }
 
 .menu_child.selected {
-    height: auto; /* Adjust height to fit the content */
+    height: auto!important;
 }
 
 .co_menu_item .co_submenu_container .menu_child table {

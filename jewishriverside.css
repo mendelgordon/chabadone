@@ -1102,13 +1102,12 @@ html:has(#k7) div#co_menu_container {
 }
 
 /* Capitalize all main menu options */
-.co_menu_item .parent span,
+.co_menu_item .parent > div > a,
 .co_menu_item.donate_link .parent div a {
     text-transform: uppercase;
 }
 
 /* Add hover effect for menu items */
-.co_menu_item:hover .parent span,
 .co_menu_item:hover .parent div a {
     color: #0A5769; /* Change this color as needed */
     transition: color 0.3s ease; /* Smooth transition effect */

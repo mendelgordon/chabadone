@@ -711,7 +711,8 @@ body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {
 	border-color: #107A8C;
 }
 
-a.readMore {
+a.readMore,
+a.readMore span {
     border-radius: 20px;
 }
 

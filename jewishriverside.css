@@ -1100,3 +1100,29 @@ html:has(#k7) div#co_menu_container {
 	top: 0;
 	text-align: center;
 }
+
+/* Capitalize all main menu options */
+.co_menu_item .parent span,
+.co_menu_item.donate_link .parent div a {
+    text-transform: uppercase;
+}
+
+/* Add hover effect for menu items */
+.co_menu_item:hover .parent span,
+.co_menu_item:hover .parent div a {
+    color: #0A5769; /* Change this color as needed */
+    transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Resize submenu box to fit the number of options and add shadow */
+.co_submenu_container {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.menu_child.selected {
+    height: auto; /* Adjust height to fit the content */
+}
+
+.co_menu_item .co_submenu_container .menu_child table {
+    background: white;
+}

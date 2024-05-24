@@ -854,11 +854,6 @@ div#cco_body:has(#photos) {
 	display: contents;
 }
 
-.branding-search #header_branding.logo img {
-	width: revert-layer;
-	height: 100%;
-}
-
 #header .parent {
 	color: black !important;
 }

@@ -674,9 +674,12 @@ body.cco_body.sites-article #tabContentMain .co_menu_item.selected.hover a.paren
 	color: black
 }
 
-.hp-row .message .wrapper .widget_content .readMore:hover,
 .hp-table .hp-row .promo_slider .slider .cycle-caption .readMore:hover {
-	background-color: unset;
+	background-color: black;
+}
+
+.hp-row .message .wrapper .widget_content .readMore:hover {
+    background-color: #0A5769;
 }
 
 .banner-updates .widget_content .item.first .synopsis {
@@ -703,8 +706,13 @@ body.cco_body #tabContentMain .co_menu_item.donate_link span.parent a {
 }
 
 .hp-row .message .wrapper .widget_content .readMore {
-	border-color: black;
-	color: black
+	background: #107A8C;
+	color: white;
+	border-color: #107A8C;
+}
+
+a.readMore {
+    border-radius: 20px;
 }
 
 .hp-row [class^=widget-].latest_photos .readMore span {

@@ -1029,7 +1029,13 @@ body.cco_body #tabContentMain .co_submenu_container .co_column a,
 }
 
 .co_body .content .form-all .form-submit-button {
-	background: black;
+    border-radius: 20px;
+    background: rgb(16, 122, 140); /* Base color */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.co_body .content .form-all .form-submit-button:hover {
+    background: rgb(10, 87, 105); /* Hover color */
 }
 
 body.sites-article #content {

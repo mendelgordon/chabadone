@@ -1134,6 +1134,10 @@ html:has(#k7) div#co_menu_container {
 	border: none !important;
 }
 
+#header#header {
+    border: none;
+}
+
 .dir_ltr .co_menu_item .co_submenu_container .menu_child .co_column .column_left_wrapper {
     padding: 10px;
 }

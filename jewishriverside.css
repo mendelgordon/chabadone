@@ -1108,7 +1108,7 @@ html:has(#k7) div#co_menu_container {
 }
 
 /* Add hover effect for menu items */
-.co_menu_item:hover .parent > div > a {
+body.cco_body #header#header #tabContentMain .co_menu_item:hover span.parent a {
     color: #0A5769 !important; /* Change this color as needed */
     transition: color 0.3s ease; /* Smooth transition effect */
 }

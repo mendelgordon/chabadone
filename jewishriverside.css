@@ -1119,8 +1119,8 @@ html:has(#k7) div#co_menu_container {
 	/* Smooth transition effect */
 }
 
-.child_item[data-menu-level="3"] {
-	border-block: 1px solid black;
+.menu_child table {
+    border: 1px solid black;
 }
 
 /* Resize submenu box to fit the number of options and add shadow */
@@ -1132,6 +1132,10 @@ html:has(#k7) div#co_menu_container {
 .menu_child.selected {
 	height: auto !important;
 	border: none !important;
+}
+
+.dir_ltr .co_menu_item .co_submenu_container .menu_child .co_column .column_left_wrapper {
+    padding: 10px;
 }
 
 .co_menu_item .co_submenu_container .menu_child table {

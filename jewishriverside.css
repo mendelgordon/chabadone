@@ -1127,6 +1127,7 @@ html:has(#k7) div#co_menu_container {
 
 .menu_child.selected {
 	height: auto !important;
+	border: none;
 }
 
 .co_menu_item .co_submenu_container .menu_child table {

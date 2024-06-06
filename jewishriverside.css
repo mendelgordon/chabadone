@@ -1160,7 +1160,6 @@ html:has(#k7) div#co_menu_container {
 
 body:not(.mobile) #cco_body {
 	overflow: hidden;
-	overflow: clip;
 }
 
 body:not(.mobile) .g960 article.content {

@@ -1181,7 +1181,8 @@ body:not(.mobile) .g960 article.content {
 
 #donate-wrapper main .amounts button:hover,
 #donate-wrapper main form .content-box .row.next-button-wrapper button.next-button:hover,
-#confirm-wrapper button:hover, #donate-wrapper button:hover {
+#confirm-wrapper button:hover, #donate-wrapper button:hover,
+#donate-wrapper button.donate-button:hover {
 	background-color: white;
 	color: #B08141;
 	box-shadow: none;

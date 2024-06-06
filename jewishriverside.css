@@ -1177,6 +1177,8 @@ body:not(.mobile) .g960 article.content {
 #confirm-wrapper button, #donate-wrapper button {
     background-color: #B08141;
 	color: white;
+	border-width: 2px;
+	border-style: solid;
 }
 
 #donate-wrapper main .amounts button:hover,
@@ -1210,8 +1212,8 @@ html:has(meta[content="8138"]) .co_body * {
 }
 
 html:has(meta[content="8138"]) a:has(+form) {
-	padding: 20px;
-	margin: auto;
+	padding: 20px!important;
+	margin: auto!important;
 }
 
 html:has(meta[content="8138"]) .cco_body .co_global_button .button {

@@ -1196,3 +1196,28 @@ html:has(.feedback_form) h1 {
 html:has(.feedback_form) .sidebar-local-navigation {
 	display: none;
 }
+
+html:has(meta[content="8138"]) h1 {
+	font-size: 40px!important;
+}
+
+html:has(meta[content="8138"]) .co_local_menu {
+	display: none;
+}
+
+html:has(meta[content="8138"]) .co_body * {
+	text-align: left;
+}
+
+html:has(meta[content="8138"]) a:has(+form) {
+	padding: 20px;
+	margin: auto;
+}
+
+html:has(meta[content="8138"]) .cco_body .co_global_button .button {
+	background-color: #107A8C;
+}
+
+html:has(meta[content="8138"]) .cco_body .co_global_button .button:hover {
+	background-color: #0A5769;
+}

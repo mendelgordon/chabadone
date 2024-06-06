@@ -1157,3 +1157,14 @@ html:has(#k7) div#co_menu_container {
     margin: -30px;
     padding: 0;
 }
+
+body:not(.mobile) #cco_body {
+	overflow: hidden;
+	overflow: clip;
+}
+
+body:not(.mobile) .g960 article.content {
+	padding-inline: 10px;
+	max-width: 960px;
+	margin-inline: auto;
+}

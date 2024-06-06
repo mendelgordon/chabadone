@@ -1185,3 +1185,11 @@ body:not(.mobile) .g960 article.content {
 	background-color: white;
 	color: #B08141;
 }
+
+html:has(.feedback_form) h1 {
+	text-transform: uppercase;
+}
+
+html:has(.feedback_form) .sidebar-local-navigation {
+	display: none;
+}

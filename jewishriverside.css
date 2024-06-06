@@ -1167,3 +1167,21 @@ body:not(.mobile) .g960 article.content {
 	max-width: 960px;
 	margin-inline: auto;
 }
+
+#confirm-wrapper #confirm, #donate-wrapper #donate {
+    background-color: rgb(255 255 255 / 94%);
+}
+
+#donate-wrapper main .amounts button,
+#donate-wrapper main form .content-box .row.next-button-wrapper button.next-button,
+#confirm-wrapper button, #donate-wrapper button {
+    background-color: #B08141;
+	color: white;
+}
+
+#donate-wrapper main .amounts button:hover,
+#donate-wrapper main form .content-box .row.next-button-wrapper button.next-button:hover,
+#confirm-wrapper button:hover, #donate-wrapper button:hover {
+	background-color: white;
+	color: #B08141;
+}

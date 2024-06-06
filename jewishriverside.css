@@ -1186,7 +1186,7 @@ body:not(.mobile) .g960 article.content {
 	background-color: white;
 	color: #B08141;
 	box-shadow: none;
-	border-color: #B08141;
+	border: 2px solid #B08141;
 }
 
 html:has(.feedback_form) h1 {

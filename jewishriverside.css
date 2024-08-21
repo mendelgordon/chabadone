@@ -834,7 +834,7 @@ div#cco_body:has(#photos) {
 }
 
 @media (max-width: 1140px) {
-	#co_body_container {
+	body:not(.cco_templateless_page) #co_body_container {
 		margin-inline: 15px;
 	}
 }

@@ -6,7 +6,7 @@
 }
 #donate-wrapper h1 {
   color: #de2a43;
-  font-weight: 800;
+  font-weight: 800 !important;
 }
 #donate-wrapper .button,
 #donate-wrapper .next-button,
@@ -30,8 +30,8 @@
 #donate-wrapper .button:hover,
 #donate-wrapper .next-button:hover,
 #donate-wrapper .donate-button:hover {
-  color: black;
-  border-color: black;
+  color: black !important;
+  border-color: black !important;
 }
 #donate-wrapper .footnotes .note,
 #donate-wrapper .footnotes .disclaimer,

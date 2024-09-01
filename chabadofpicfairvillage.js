@@ -55,18 +55,17 @@ if (pageURL.includes(4970020) && pageURL.includes('highholidays')) {
     const nextButton = document.querySelector("button.next-button");
     const pageTwo = document.querySelector("h1");
 
-    const scrollIntoView = function (element) {
-        setTimeout(function () {
-            element.scrollIntoView();
-        }, 300);
-    };
+    function scrollToPageTwo() {
+        pageTwo.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
 
     nextButton.addEventListener('click', function () {
-        scrollIntoView(pageTwo);
+        setTimeout(scrollToPageTwo, 300);
     });
+
     amountsButtons.forEach(function (amountsButton) {
         amountsButton.addEventListener('click', function () {
-            scrollIntoView(pageTwo);
+            setTimeout(scrollToPageTwo, 300);
         });
     });
 };

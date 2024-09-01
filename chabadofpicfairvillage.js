@@ -51,10 +51,17 @@ if (pageURL.includes(4970020) && pageURL.includes('highholidays')) {
         }
     });
 
-    const amountsBox = document.querySelector("#donate-wrapper #donate.screen-1 main form .amount-wrapper");
+    const amountsButtons = document.querySelectorAll(".js-amounts-button");
+    const nextButton = document.querySelector("button.next-button");
     const pageTwo = document.querySelector("#js-donate-form > div.content-box.full-row.amount-wrapper");
 
-    amountsBox.addEventListener('click', function () {
+
+    nextButton.addEventListener('click', function () {
         pageTwo.scrollIntoView();
+    });
+    amountsButtons.forEach(function (amountsButton) {
+        amountsButton.addEventListener('click', function () {
+            pageTwo.scrollIntoView();
+        });
     });
 }

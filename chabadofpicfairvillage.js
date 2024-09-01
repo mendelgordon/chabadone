@@ -53,7 +53,7 @@ if (pageURL.includes(4970020) && pageURL.includes('highholidays')) {
 
     const amountsButtons = document.querySelectorAll(".js-amounts-button");
     const nextButton = document.querySelector("button.next-button");
-    const pageTwo = document.querySelector("#js-donate-form > div.content-box.full-row.amount-wrapper");
+    const pageTwo = document.querySelector("h1");
 
     const scrollIntoView = function (element) {
         if (element === null) {

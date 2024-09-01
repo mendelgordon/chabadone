@@ -50,4 +50,11 @@ if (pageURL.includes(4970020) && pageURL.includes('highholidays')) {
             container.insertAdjacentHTML('afterbegin', `<aside class="image-bg"></aside>`);
         }
     });
+
+    const amountsBox = document.querySelector("#donate-wrapper #donate.screen-1 main form .amount-wrapper");
+    const pageTwo = document.querySelector("#js-donate-form > div.content-box.full-row.amount-wrapper");
+
+    amountsBox.addEventListener('click', function () {
+        pageTwo.scrollIntoView();
+    });
 }

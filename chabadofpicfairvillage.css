@@ -65,3 +65,6 @@ div#donate-wrapper::after {
 section#donate.screen-2 h1 ~ * {
   display: none !important;
 }
+#donate-wrapper main .amounts {
+  justify-content: space-around;
+}

@@ -55,13 +55,26 @@ if (pageURL.includes(4970020) && pageURL.includes('highholidays')) {
     const nextButton = document.querySelector("button.next-button");
     const pageTwo = document.querySelector("#js-donate-form > div.content-box.full-row.amount-wrapper");
 
+    const scrollIntoView = function (element) {
+        if (element === null) {
+            setTimeout(function () {
+                scrollIntoView(element);
+            }, 100);
+            return;
+        }
+        element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest'
+        });
+    };
 
     nextButton.addEventListener('click', function () {
-        pageTwo.scrollIntoView();
+        scrollIntoView(pageTwo);
     });
     amountsButtons.forEach(function (amountsButton) {
         amountsButton.addEventListener('click', function () {
-            pageTwo.scrollIntoView();
+            scrollIntoView(pageTwo);
         });
     });
-}
+};

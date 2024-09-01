@@ -35,8 +35,8 @@
 }
 #donate-wrapper .footnotes .note,
 #donate-wrapper .footnotes .disclaimer,
-#donate-wrapper div#confirm-wrapper::after,
-#donate-wrapper div#donate-wrapper::after {
+div#confirm-wrapper::after,
+div#donate-wrapper::after {
   display: none;
 }
 #donate-wrapper .footnotes {

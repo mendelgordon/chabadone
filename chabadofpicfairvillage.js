@@ -5,7 +5,7 @@ if (pageURL.includes(4970020) && pageURL.includes('highholidays')) {
 
     if (introWrapper) {
         introWrapper.innerHTML = `
-            <img src="/media/images/1289/CchY12894173.jpeg" style="max-width: min(500px, 100%); margin: auto; display: block;" class="mobile-only" alt="" />
+            <img src="/media/images/1289/fzPS12894239.jpeg" style="max-width: min(500px, 100%); margin: auto; display: block;" class="mobile-only" alt="" />
             <h1 style="font-weight: bold;">Support Our Jewish Community during the High Holidays!</h1>
             <p class="description">
               It’s been a difficult year for Jewish communities all over the world. People in our own community face challenges. Many feeling isolated and misunderstood by their friends, neighbors, and peers. The polarizing charged environment can often make one feel that there are many who are increasingly hostile toward their Jewish identity.

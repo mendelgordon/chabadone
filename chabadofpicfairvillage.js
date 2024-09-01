@@ -30,6 +30,17 @@ if (pageURL.includes(4970020) && pageURL.includes('highholidays')) {
           `;
     }
 
+    const amountsBox = document.querySelector('.amounts');
+    if (amountsBox) {
+        amountsBox.innerHTML = `
+            <button class="js-amounts-button" data-amount="180">$180</button>
+            <button class="js-amounts-button" data-amount="360">$360</button>
+            <button class="js-amounts-button" data-amount="500">$500</button>
+            <button class="js-amounts-button" data-amount="1800">$1,800</button>
+            <button class="js-amounts-button" data-amount="3600">$3,600</button>
+          `;
+    }
+
     const submitButton = document.querySelector('.js-donate-button');
 
     if (submitButton) {

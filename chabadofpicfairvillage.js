@@ -57,11 +57,7 @@ if (pageURL.includes(4970020) && pageURL.includes('highholidays')) {
 
     const scrollIntoView = function (element) {
         setTimeout(function () {
-            element.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-                inline: 'nearest'
-            });
+            element.scrollIntoView();
         }, 100);
     };
 

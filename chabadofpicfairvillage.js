@@ -37,8 +37,8 @@ if (pageURL.includes(4970020) && pageURL.includes('highholidays')) {
             const newText = document.createElement('p');
             newText.className = 'submission-additional-text';
             newText.innerHTML = `
-        Every gift counts. Whether you can give $360, $540, or more, your support will have a direct and lasting impact on the people in our community.
-        Together, we can make this year’s High Holidays a time of joy, unity, and spiritual renewal for our community.
+        Every gift counts. Whether you can give $360, $540, or more, your support will have a direct and lasting impact on the people in our community.<br/><br/>
+        Together, we can make this year’s High Holidays a time of joy, unity, and spiritual renewal for our community.<br/><br/>
         Thank you for standing with us and helping to keep Jewish traditions alive and vibrant!
       `;
 

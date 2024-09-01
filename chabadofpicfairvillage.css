@@ -54,8 +54,12 @@
 #donate-wrapper #donate .intro-wrapper p.description {
   display: block;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1001px) {
   #donate-wrapper .mobile-only {
     display: none !important;
   }
+}
+#donate-wrapper .image-bg {
+  background: #fdfdfd url(/media/images/1289/CchY12894173.jpeg) no-repeat;
+  background-size: contain;
 }

@@ -47,8 +47,7 @@ if (pageURL.includes(4970020) && pageURL.includes('highholidays')) {
 
         const container = document.querySelector('.screen-1');
         if (container) {
-            const containerImageStyle = "background-image: url(/media/images/1289/CchY12894173.jpeg); background-repeat: no-repeat; background-color: #fdfdfd; background-size: contain;";
-            container.insertAdjacentHTML('afterbegin', `<aside class="image-bg" style=${containerImageStyle}></aside>`);
+            container.insertAdjacentHTML('afterbegin', `<aside class="image-bg"></aside>`);
         }
     });
 }

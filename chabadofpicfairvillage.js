@@ -6,7 +6,6 @@ if (pageURL.includes(4970020) && pageURL.includes('highholidays')) {
     if (introWrapper) {
         introWrapper.innerHTML = `
             <img src="/media/images/1289/fzPS12894239.jpeg" style="max-width: min(500px, 100%); margin: auto; display: block;" class="mobile-only" alt="" />
-            Here is the updated HTML with the extra bold section removed:
 
 <h1 style="font-weight: bold;">Support Our Jewish Community during the High Holidays!</h1>
 

@@ -60,7 +60,7 @@ div#donate-wrapper::after {
 }
 #donate-wrapper .image-bg {
   background-color: #fdfdfd;
-  background-image: url(https://www.chabadofpicfairvillage.com/media/images/1289/fzPS12894239.jpeg), url(/media/images/1289/SfXh12894926.jpeg);
+  background-image: url(https://www.chabadofpicfairvillage.com/media/images/1289/fzPS12894239.jpeg), url(https://www.chabadofpicfairvillage.com/media/images/1289/SfXh12894926.jpeg);
   background-repeat: no-repeat;
   background-size: contain;
 }

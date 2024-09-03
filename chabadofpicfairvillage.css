@@ -4,7 +4,8 @@
 #donate-wrapper #donate {
   background-color: #fdfdfd;
 }
-#donate-wrapper h1 {
+#donate-wrapper h1,
+#donate-wrapper h2 {
   color: #de2a43;
   font-weight: 800 !important;
 }
@@ -58,9 +59,11 @@ div#donate-wrapper::after {
   }
 }
 #donate-wrapper .image-bg {
-  background: #fdfdfd url(https://www.chabadofpicfairvillage.com/media/images/1289/fzPS12894239.jpeg) no-repeat;
+  background-color: #fdfdfd;
+  background-image: url(https://www.chabadofpicfairvillage.com/media/images/1289/fzPS12894239.jpeg), url(/media/images/1289/SfXh12894926.jpeg);
+  background-repeat: no-repeat;
   background-size: contain;
-  background-position-y: 250px;
+  background-position-y: 0;
 }
 section#donate.screen-2 h1 ~ * {
   display: none !important;

@@ -63,7 +63,6 @@ div#donate-wrapper::after {
   background-image: url(https://www.chabadofpicfairvillage.com/media/images/1289/fzPS12894239.jpeg), url(/media/images/1289/SfXh12894926.jpeg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position-y: 0;
 }
 section#donate.screen-2 h1 ~ * {
   display: none !important;

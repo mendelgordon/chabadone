@@ -1,5 +1,5 @@
 function initDonatePage() {
-    const isDonatePage = window.location.href.includes(4970020);
+    const isDonatePage = window.location.href.includes(4970020) || window.location.href.includes('Donate.htm');
     if (!isDonatePage) return;
 
     const amounts = [

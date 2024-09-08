@@ -190,7 +190,7 @@ function initDonatePage() {
 
         function createRecurrencesRow() {
             const newRow = document.createElement("div");
-            newRow.classList.add("row", "new-row");
+            newRow.classList.add("row");
 
             const col = document.createElement("div");
             col.classList.add("col", "flex-1");

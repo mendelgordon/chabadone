@@ -202,14 +202,28 @@ function initDonatePage() {
             label.setAttribute("for", "recurrences");
             label.innerHTML = "Number of Months<span class='req'>*</span>";
 
-            const input = document.createElement("input");
-            input.setAttribute("id", "recurrences");
-            input.setAttribute("name", "x_recurrences");
-            input.setAttribute("type", "text");
-            input.classList.add("active", "recurrences-input");
+            const select = document.createElement("select");
+            select.setAttribute("id", "recurrences");
+            select.setAttribute("name", "x_recurrences");
+            select.classList.add("active", "recurrences-input");
+
+            const options = [
+                "", "Until I cancel", "1 Month", "2 Months", "3 Months", "4 Months", "5 Months",
+                "6 Months", "7 Months", "8 Months", "9 Months", "10 Months", "11 Months",
+                "12 Months", "13 Months", "14 Months", "15 Months", "16 Months", "17 Months",
+                "18 Months", "19 Months", "20 Months", "21 Months", "22 Months", "23 Months",
+                "24 Months"
+            ];
+
+            options.forEach(value => {
+                const option = document.createElement("option");
+                option.value = value;
+                option.textContent = value;
+                select.appendChild(option);
+            });
 
             fieldWrapper.appendChild(label);
-            fieldWrapper.appendChild(input);
+            fieldWrapper.appendChild(select);
             col.appendChild(fieldWrapper);
             newRow.appendChild(col);
 
@@ -227,11 +241,11 @@ function initDonatePage() {
 
         const recurringBtn = document.querySelector("#frequency-toggle .monthly");
         const oneTimeBtn = document.querySelector("#frequency-toggle .one-time");
-        const notesLabel = document.querySelector("label[for=notes]");
+        const paymentSection = document.querySelector(".row.pay-with");
 
-        if (recurringBtn && notesLabel) {
+        if (recurringBtn && paymentSection) {
             const newRow = createRecurrencesRow();
-            notesLabel.closest(".content-box").insertBefore(newRow, notesLabel.closest(".row"));
+            paymentSection.parentElement.insertBefore(newRow, paymentSection);
             newRow.style.display = "none";
 
             recurringBtn.addEventListener("click", () => toggleRecurrencesRow(newRow, true));

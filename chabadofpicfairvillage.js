@@ -1,6 +1,139 @@
 const pageURL = window.location.pathname;
 
 if (pageURL.includes(4970020) && pageURL.includes('highholidays')) {
+    const header = document.querySelector('#header');
+    const footer = document.querySelector('#footer');
+
+    if (header) {
+        header.outerHTML = `
+            <link rel="Stylesheet" href="/css/cco/minisites/themes/holiday/high-holiday-minisite.css?g=10&amp;v=8CE3D0E2" id="k23366" type="text/css">
+<div width="100%" class="cco_templateless_template" style="z-index:100 !important;display:block !important;left:0px !important;top:0px !important;height:30px!important;width:100% !important;line-height:30px !important; position:relative !important; margin-bottom:0 !important; padding:0;text-indent: 25px;" align="Left"><a href="//www.chabadofpicfairvillage.com" style="display:block!important;font-size:14px !important;">« Back to&nbsp;Chabad of Picfair Village</a></div>
+<style>
+#donate-wrapper {
+  background: #f6f6f2;
+}
+#donate-wrapper #donate {
+  background-color: #fdfdfd;
+}
+#donate-wrapper h1,
+#donate-wrapper h2 {
+  color: #de2a43;
+  font-weight: 800 !important;
+}
+#donate-wrapper .button,
+#donate-wrapper .next-button,
+#donate-wrapper .donate-button {
+  background-color: #627b52;
+  color: white;
+}
+#donate-wrapper .button:hover,
+#donate-wrapper .next-button:hover,
+#donate-wrapper .donate-button:hover {
+  background-color: #2E7D32;
+}
+#donate-wrapper main .amounts button {
+  background-color: #D32F2F;
+  color: white;
+}
+#donate-wrapper main .amounts button:hover {
+  box-shadow: 0 0 40px 40px #ffc4cd inset;
+  color: black;
+}
+#donate-wrapper .button:hover,
+#donate-wrapper .next-button:hover,
+#donate-wrapper .donate-button:hover {
+  color: black !important;
+  border-color: black !important;
+}
+#donate-wrapper .footnotes .note,
+#donate-wrapper .footnotes .disclaimer,
+div#confirm-wrapper::after,
+div#donate-wrapper::after {
+  display: none;
+}
+#donate-wrapper .footnotes {
+  padding-bottom: 30px;
+}
+#donate-wrapper .intro-wrapper {
+  max-width: min(800px, 100%);
+  margin: auto;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.5;
+}
+#donate-wrapper #donate .intro-wrapper p.description {
+  display: block;
+}
+@media screen and (min-width: 1001px) {
+  #donate-wrapper .mobile-only {
+    display: none !important;
+  }
+}
+#donate-wrapper .image-bg {
+  background-color: #fdfdfd;
+  background-image: url(https://www.chabadofpicfairvillage.com/media/images/1289/fzPS12894239.jpeg), url(https://www.chabadofpicfairvillage.com/media/images/1289/SfXh12894926.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top, bottom;
+}
+section#donate.screen-2 h1 ~ * {
+  display: none !important;
+}
+#donate-wrapper main .amounts {
+  justify-content: space-around;
+}
+	#content#content {
+		margin-top: 0;
+	}
+
+	.chabad_header {
+		background-size: cover;
+	}
+
+	.latest_features {
+		width: -webkit-fill-available;
+	}
+
+	#donate#donate {
+		margin-block: 0;
+	}
+</style>
+
+<div class="chabad_header">
+	<div class="headerTitle">
+		<a href="/6041681" style="text-decoration:none">
+			HIGH HOLIDAYS
+		</a>
+	</div>
+	<div class="centerName">
+		At
+		Chabad of Picfair Village
+	</div>
+</div>
+        `;
+    }
+
+    if (footer) {
+        footer.outerHTML = `
+        <div id="BodyContainer">
+	<div class="g960 footer">
+		<div class="poweredby large_bottom_margin">
+			<div class="footer3">
+				<span class="footer-title">Chabad of Picfair Village</span>
+				<div class="footer-address">
+					<span class="footer-street">1656 S Ogden Drive </span>
+					<span class="footer-city-state">Los Angeles, CA 90019</span>
+				</div>
+				<span>310-503-0060</span>
+			</div>
+			<img src="https://w2.chabad.org/images/global/spacer.gif" width="1" height="6" border="0"><br>
+			Powered by <a href="https://www.chabad.org/" target="_new" class="">Chabad.org</a> © 1993-2024 <a href="/4026210" target="_blank" class="privacy-link">Privacy Policy</a>
+		</div>
+	</div>
+</div>
+        `;
+    }
+
     const introWrapper = document.querySelector('.intro-wrapper .col');
 
     if (introWrapper) {

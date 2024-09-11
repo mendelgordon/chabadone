@@ -86,13 +86,12 @@ section#donate.screen-2 h1 ~ * {
 		margin-top: 0;
 	}
 
-	.chabad_header {
-		background-size: cover;
-	}
-
-	.latest_features {
-		width: -webkit-fill-available;
-	}
+.chabad_header {
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
 	#donate#donate {
 		margin-block: 0;

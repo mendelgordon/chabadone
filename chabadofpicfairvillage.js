@@ -101,12 +101,8 @@ section#donate.screen-2 h1 ~ * {
 <div class="chabad_header">
 	<div class="headerTitle">
 		<a href="/6041681" style="text-decoration:none">
-			HIGH HOLIDAYS
+			HIGH HOLIDAY APPEAL
 		</a>
-	</div>
-	<div class="centerName">
-		At
-		Chabad of Picfair Village
 	</div>
 </div>
         `;

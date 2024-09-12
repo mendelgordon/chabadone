@@ -1,11 +1,11 @@
 const pageURL = window.location.pathname;
 
 if (pageURL.includes(4970020) && pageURL.includes('highholidays')) {
-    const header = document.querySelector('#header');
-    const footer = document.querySelector('#footer');
+	const header = document.querySelector('#header');
+	const footer = document.querySelector('#footer');
 
-    if (header) {
-        header.outerHTML = `
+	if (header) {
+		header.outerHTML = `
             <link rel="Stylesheet" href="/css/cco/minisites/themes/holiday/high-holiday-minisite.css?g=10&amp;v=8CE3D0E2" id="k23366" type="text/css">
 <div width="100%" class="cco_templateless_template" style="z-index:100 !important;display:block !important;left:0px !important;top:0px !important;height:30px!important;width:100% !important;line-height:30px !important; position:relative !important; margin-bottom:0 !important; padding:0;text-indent: 25px;" align="Left"><a href="//www.chabadofpicfairvillage.com" style="display:block!important;font-size:14px !important;">« Back to&nbsp;Chabad of Picfair Village</a></div>
 <style>
@@ -106,10 +106,10 @@ section#donate.screen-2 h1 ~ * {
 	</div>
 </div>
         `;
-    }
+	}
 
-    if (footer) {
-        footer.outerHTML = `
+	if (footer) {
+		footer.outerHTML = `
         <div id="BodyContainer">
 	<div class="g960 footer">
 		<div class="poweredby large_bottom_margin">
@@ -127,12 +127,12 @@ section#donate.screen-2 h1 ~ * {
 	</div>
 </div>
         `;
-    }
+	}
 
-    const introWrapper = document.querySelector('.intro-wrapper .col');
+	const introWrapper = document.querySelector('.intro-wrapper .col');
 
-    if (introWrapper) {
-        introWrapper.innerHTML = `
+	if (introWrapper) {
+		introWrapper.innerHTML = `
             <img src="/media/images/1289/fzPS12894239.jpeg" style="max-width: min(500px, 100%); margin: auto; display: block;" class="mobile-only" alt="" />
 
 <h1 style="font-weight: bold;">Support Our Jewish Community during the High Holidays!</h1>
@@ -149,53 +149,68 @@ section#donate.screen-2 h1 ~ * {
 
 <p class="description"><b>Together, we can make this year’s High Holidays a time of joy, unity, and spiritual renewal for our community.</b></p>
           `;
-    }
+	}
 
-    const amountsBox = document.querySelector('.amounts');
-    if (amountsBox) {
-        amountsBox.innerHTML = `
+	const purposeSelection = document.querySelector('select[name="donation_subtype"]');
+	if (purposeSelection) {
+		const hh = purposeSelection.querySelector('option[value="High Holidays"]');
+
+		if (hh) {
+			hh.selected = true;
+		}
+
+		const wrapper = purposeSelection.closest('.field-wrapper');
+
+		if (wrapper) {
+			wrapper.classList = "js-field-wrapper field-wrapper has-value";
+		}
+	}
+
+	const amountsBox = document.querySelector('.amounts');
+	if (amountsBox) {
+		amountsBox.innerHTML = `
             <button class="js-amounts-button" type="button" data-amount="180">$180</button>
             <button class="js-amounts-button" type="button" data-amount="360">$360</button>
             <button class="js-amounts-button" type="button" data-amount="500">$500</button>
             <button class="js-amounts-button" type="button" data-amount="1800">$1,800</button>
             <button class="js-amounts-button" type="button" data-amount="3600">$3,600</button>
           `;
-    }
+	}
 
-    const submitButton = document.querySelector('.js-donate-button');
+	const submitButton = document.querySelector('.js-donate-button');
 
-    if (submitButton) {
-        const newText = document.createElement('p');
-        newText.className = 'submission-additional-text';
-        newText.innerHTML = `
+	if (submitButton) {
+		const newText = document.createElement('p');
+		newText.className = 'submission-additional-text';
+		newText.innerHTML = `
         Every gift counts. Whether you can give $180, $360, or more, your support will have a direct and lasting impact on the people in our community.<br/><br/>
         Together, we can make this year’s High Holidays a time of joy, unity, and spiritual renewal for our community.<br/><br/>
         Thank you for standing with us and helping to keep Jewish traditions alive and vibrant!
       `;
 
-        submitButton.parentElement.appendChild(newText);
-    }
+		submitButton.parentElement.appendChild(newText);
+	}
 
-    const container = document.querySelector('.screen-1');
-    if (container) {
-        container.insertAdjacentHTML('afterbegin', `<aside class="image-bg"></aside>`);
-    }
+	const container = document.querySelector('.screen-1');
+	if (container) {
+		container.insertAdjacentHTML('afterbegin', `<aside class="image-bg"></aside>`);
+	}
 
-    const amountsButtons = document.querySelectorAll(".js-amounts-button");
-    const nextButton = document.querySelector("button.next-button");
-    const pageTwo = document.querySelector("h1");
+	const amountsButtons = document.querySelectorAll(".js-amounts-button");
+	const nextButton = document.querySelector("button.next-button");
+	const pageTwo = document.querySelector("h1");
 
-    function scrollToPageTwo() {
-        pageTwo.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+	function scrollToPageTwo() {
+		pageTwo.scrollIntoView({ behavior: 'smooth', block: 'start' });
+	}
 
-    nextButton.addEventListener('click', function () {
-        setTimeout(scrollToPageTwo, 800);
-    });
+	nextButton.addEventListener('click', function () {
+		setTimeout(scrollToPageTwo, 800);
+	});
 
-    amountsButtons.forEach(function (amountsButton) {
-        amountsButton.addEventListener('click', function () {
-            setTimeout(scrollToPageTwo, 400);
-        });
-    });
+	amountsButtons.forEach(function (amountsButton) {
+		amountsButton.addEventListener('click', function () {
+			setTimeout(scrollToPageTwo, 400);
+		});
+	});
 };

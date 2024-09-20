@@ -3,15 +3,17 @@ const pageURL = window.location.pathname;
 if (pageURL.includes(4970020) && pageURL.includes('highholidays')) {
 	const newStyles = `
 <style>
+@import url('https://assets.webmk.co/holidays/hh/style.css');
 html:has(a[href="/tools/login/default.asp?aid=4970020&jewish=Donate.htm&highholidays=true&page=/templates/donate.asp"]) {
 	display: unset !important;
 }
-#donate-wrapper, #donate-wrapper #donate {
+#donate-wrapper #donate {
     background: #e9e6df;
     background: url(https://assets.webmk.co/holidays/hh/img/mesh-bg.jpg) no-repeat
     center;
     background-size: contain;
     background-color: #e9e6df;
+	margin-top: 0;
 }
 #donate-wrapper h1,
 #donate-wrapper h2 {
@@ -90,6 +92,36 @@ section#donate.screen-2 h1 ~ * {
         `;
 
 	document.head.insertAdjacentHTML('beforeend', newStyles);
+
+	const contentWrapper = document.querySelector('.co_content_container');
+
+	const newHero = `
+	<div class="master-content-wrapper ">
+					
+
+<header class="article-header cf "><div class="shofar-header">
+      <img src="https://assets.webmk.co/holidays/hh/img/shofar-icon.png" width="414" height="360" alt="Shofar">
+  </div>
+	
+	
+			<h1 class="article-header__title js-article-title js-page-title"><div class="hh-home-link">
+      <a href="https://www.chabadpalisades.com/article.asp?aid=6560921" class="shofar-title">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M21.3322 7.89395L15.7218 3.25515C13.8319 1.69262 11.1679 1.69262 9.27808 3.25515L3.6676 7.89395C2.65678 8.7297 2.08325 9.99685 2.08325 11.319V18.5529C2.08325 20.902 3.88966 22.9166 6.24992 22.9166H8.33325C9.48385 22.9166 10.4166 21.9839 10.4166 20.8333V17.4455C10.4166 16.1252 11.4084 15.1652 12.4999 15.1652C13.5915 15.1652 14.5833 16.1252 14.5833 17.4455V20.8333C14.5833 21.9839 15.516 22.9166 16.6666 22.9166H18.7499C21.1102 22.9166 22.9166 20.902 22.9166 18.5529V11.319C22.9166 9.99686 22.343 8.7297 21.3322 7.89395Z" fill="#F26242"></path>
+        </svg>
+        <div>High Holidays</div>
+      </a>
+    </div>High Holidays at Chabad of Pacific Palisades</h1>
+		
+			<div>
+				
+			</div>
+		
+</header>
+				</div>
+	`;
+
+	contentWrapper.insertAdjacentHTML('afterbegin', newHero);
 
 	const introWrapper = document.querySelector('.intro-wrapper .col');
 

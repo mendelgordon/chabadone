@@ -169,7 +169,7 @@ section#donate.screen-2 h1 ~ * {
             <button class="js-amounts-button" type="button" data-amount="1800">$1,800</button>
             <button class="js-amounts-button" type="button" data-amount="3600">$3,600</button>
             <button class="js-amounts-button" type="button" data-amount="5400">$5,400</button>
-            <button class="js-amounts-button" type="button" data-amount="100000">$100,000</button>
+            <button class="js-amounts-button" type="button" data-amount="10000">$10,000</button>
           `;
 	}
 

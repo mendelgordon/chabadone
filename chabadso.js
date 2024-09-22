@@ -57,6 +57,7 @@ div#donate-wrapper::after {
 }
 #donate-wrapper #donate .intro-wrapper p.description {
   display: block;
+  margin-block: 1em;
 }
 @media screen and (min-width: 1001px) {
   #donate-wrapper .mobile-only {

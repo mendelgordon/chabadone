@@ -67,7 +67,7 @@ function initDonatePage() {
       .button-like-div { display: inline-block; padding: 10px 20px; margin-right: 5px; background-color: #317cb8;
           color: #fff; text-align: center; cursor: pointer; border-radius: 40px; user-select: none; }
       .button-like-div:hover { background-color: #0056b3; }
-      .notify-link { text-decoration: underline; cursor: pointer; }
+      .notify-link { text-decoration: underline; cursor: pointer; font-weight: 600; font-size: 110%; color: #0000ee; }
       .notify-link:hover { text-decoration: none; }
   `;
 
@@ -90,10 +90,10 @@ function initDonatePage() {
 
         function renderUI() {
             const notesRow = document.querySelector('#notes').closest('.row');
-            notesRow.insertAdjacentElement('afterend', createElement('div', { class: 'row' }, [
+            notesRow.insertAdjacentElement('beforebegin', createElement('div', { class: 'row' }, [
                 createElement('div', { class: 'col flex-1' }, [
                     createElement('span', { class: 'notify-link' }, [
-                        createTextElement('Notify someone about this dedication?')
+                        createTextElement('Click here to mail an acknowledgement card for this donation.')
                     ])
                 ])
             ]));

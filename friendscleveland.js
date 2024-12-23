@@ -1,35 +1,7 @@
-const isMemorialPage = window.location.href.includes('6573498');
+const isMemorialPage = window.location.href.includes('embed=true');
 if (isMemorialPage) {
     const styles = '<link rel="Stylesheet" href="https://chabad.netlify.app/friendscleveland/memorial.css">';
     document.head.insertAdjacentHTML('beforeend', styles);
-}
-
-function initMemorialPage() {
-    if (!isMemorialPage) return;
-
-    const elements = {
-        donateButtonWrapper: document.querySelector('.donate-button-wrapper'),
-        donateButton: document.querySelector('.donate-button'),
-        backButton: document.querySelector('.back-button a'),
-        mainContent: document.querySelector('.main-content'),
-        sidebarForm: document.querySelector('.sidebar-form')
-    };
-
-    // @ts-ignore
-    elements.donateButton.addEventListener('click', () => toggleView(true));
-    // @ts-ignore
-    elements.backButton.addEventListener('click', () => toggleView(false));
-
-    function toggleView(donateMode) {
-        // @ts-ignore
-        elements.mainContent.classList.toggle('hidden', donateMode);
-        // @ts-ignore
-        elements.sidebarForm.classList.toggle('visible', donateMode);
-        // @ts-ignore
-        elements.donateButtonWrapper.classList.toggle('hidden', donateMode);
-        // @ts-ignore
-        elements.backButton.classList.toggle('visible', donateMode);
-    }
 }
 
 function initDonatePage() {
@@ -319,8 +291,6 @@ function initDonatePage() {
 
 if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", initDonatePage);
-    document.addEventListener("DOMContentLoaded", initMemorialPage);
 } else {
     initDonatePage();
-    initMemorialPage();
 }

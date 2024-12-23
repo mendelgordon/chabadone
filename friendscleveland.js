@@ -8,21 +8,16 @@ function initMemorialPage() {
     if (!isMemorialPage) return;
 
     const otherRadio = document.querySelector('.form-radio-other');
-    const otherInput = document.querySelector('.form-radio-other-input');
-    if (!otherRadio || !otherInput) return;
-
-    const otherRadioParent = otherRadio.closest('.form-radio-item');
-    if (!otherRadioParent) return;
+    const otherRadioParent = otherRadio?.closest('.form-radio-item');
 
     const clickRadio = (event) => {
         event.stopPropagation();
+        event.preventDefault();
         // @ts-ignore
         otherRadio.click();
-        // @ts-ignore
-        otherInput.focus();
     };
 
-    otherRadioParent.addEventListener('click', clickRadio);
+    otherRadioParent?.addEventListener('click', clickRadio);
 }
 
 function initDonatePage() {

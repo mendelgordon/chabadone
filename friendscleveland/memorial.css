@@ -1,3 +1,12 @@
+.cco_templateless_template,
+.cco_templateless_template a {
+    font-family: sans-serif;
+    font-weight: 300;
+    text-transform: capitalize;
+    background: white;
+    color: black;
+}
+
 .main-wrapper {
     display: grid;
     grid-template-columns: 2fr 1.5fr;
@@ -171,9 +180,7 @@ a.donate-button:hover {
 .form-radio-item input[type="radio"]:checked+label,
 .form-radio-other-input:enabled {
     border-color: #1a73e8;
-    background-color: #eef6ff;
     color: #1a73e8;
-    font-weight: bold;
 }
 
 /* Hover effect */

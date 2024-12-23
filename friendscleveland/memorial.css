@@ -181,6 +181,7 @@ a.donate-button:hover {
 .form-radio-other-input:enabled {
     border-color: #1a73e8;
     color: #1a73e8;
+    pointer-events: unset;
 }
 
 /* Hover effect */
@@ -194,6 +195,7 @@ a.donate-button:hover {
     font-size: 16px;
     padding: 10px;
     border-radius: 10px;
+    pointer-events: none;
 }
 
 /* Focus state for the input field */

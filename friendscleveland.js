@@ -11,8 +11,6 @@ function initMemorialPage() {
     const otherRadioParent = otherRadio?.closest('.form-radio-item');
 
     const clickRadio = (event) => {
-        event.stopPropagation();
-        event.preventDefault();
         // @ts-ignore
         otherRadio.click();
     };

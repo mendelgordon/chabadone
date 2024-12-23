@@ -9,7 +9,6 @@
 .main-content {
     grid-column: 1;
     position: sticky;
-    box-shadow: inset rgba(12, 26, 75, 0.1) -9px -9px 20px 0px, rgba(12, 26, 75, 0.08) 0px 0px 2px 2px;
 }
 
 p {
@@ -95,6 +94,9 @@ a.donate-button:hover {
 }
 
 @media (min-width: 768px) {
+    .main-content {
+        box-shadow: inset rgba(12, 26, 75, 0.1) -9px -9px 20px 0px, rgba(12, 26, 75, 0.08) 0px 0px 2px 2px;
+    }
 
     .donate-button-wrapper,
     .back-button {

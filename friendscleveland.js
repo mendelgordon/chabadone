@@ -1,3 +1,9 @@
+const isMemorialPage = window.location.href.includes('6573498');
+if (isMemorialPage) {
+    const styles = '<link rel="Stylesheet" href="https://chabad.netlify.app/friendscleveland/memorial.css">';
+    document.head.insertAdjacentHTML('beforeend', styles);
+}
+
 function initDonatePage() {
     const isDonatePage = /4970020|donate\.htm|donate\.asp/i.test(window.location.href);
     if (!isDonatePage) return;
@@ -287,12 +293,4 @@ if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", initDonatePage);
 } else {
     initDonatePage();
-}
-
-function initMemorialPage() {
-    const isMemorialPage = window.location.href.includes('6573498');
-    if (!isMemorialPage) return;
-
-    const styles = '<link rel="Stylesheet" href="https://chabad.netlify.app/friendscleveland/memorial.css">';
-    document.head.insertAdjacentHTML('beforeend', styles);
 }

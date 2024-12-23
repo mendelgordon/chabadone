@@ -192,7 +192,7 @@ a.donate-button:hover {
     display: none;
 }
 
-.form-radio-item input[type="radio"]:checked + label,
+.form-radio-item input[type="radio"]:checked+label,
 .form-radio-other-input:enabled,
 .form-radio-item:has(.form-radio-other-input:enabled) span:before {
     border-color: #1a73e8;
@@ -226,11 +226,11 @@ a.donate-button:hover {
 }
 
 /* Additional Labels or Prefix for Other Inputs */
-.form-radio-other + span {
+.form-radio-other+span {
     width: 100%;
 }
 
-.form-radio-other + span:before {
+.form-radio-other+span:before {
     content: '$';
     display: none;
     font-size: 16px;
@@ -241,4 +241,25 @@ a.donate-button:hover {
 
 .form-radio-item:has(.form-radio-other-input:placeholder-shown) span:before {
     display: none;
+}
+
+.form-input-wide input {
+    margin: 5px 0;
+    border-radius: 1ch;
+    font-size: 16px;
+    padding: 1ch;
+}
+
+.userform-form button.form-submit-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 1ch 2ch;
+    font-size: 16px;
+    border-radius: 2ch;
+    text-shadow: none;
+}
+
+.userform-form button.form-submit-button:hover {
+    background-color: #0056b3;
 }

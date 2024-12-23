@@ -109,3 +109,12 @@ a.donate-button:hover {
 .form-line {
     border-bottom: none;
 }
+
+.cco_templateless_template,
+.cco_templateless_template a {
+    font-family: sans-serif;
+    font-weight: 300;
+    text-transform: capitalize;
+    background: white;
+    color: black;
+}

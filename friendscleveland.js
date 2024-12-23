@@ -13,6 +13,8 @@ function initDonatePage() {
 
     window.addEventListener('load', () => {
         const amountsContainer = document.querySelector('.amounts');
+        if (!amountsContainer) return;
+
         amountsContainer.innerHTML = amounts.map(({ value, label }) =>
             `<button type="button" class="js-amounts-button" data-value="${value}">
                 <div>
@@ -32,13 +34,16 @@ function initDonatePage() {
 
         amountsContainer.querySelectorAll('.js-amounts-button').forEach(button => {
             button.addEventListener('click', () => {
+                // @ts-ignore
                 document.querySelector('.js-custom-amount').value = button.getAttribute('data-value');
+                // @ts-ignore
                 document.querySelector('.js-next-button').click();
             });
         });
 
         function initFloatingLabel() {
             document.querySelectorAll('.js-field-wrapper').forEach(wrapper => {
+                // @ts-ignore
                 wrapper.addEventListener('click', () => wrapper.querySelector('input,textarea,select')?.focus());
                 wrapper.addEventListener('focusin', () => {
                     document.querySelectorAll('.js-field-wrapper.focused').forEach(el => el.classList.remove('focused'));
@@ -46,6 +51,7 @@ function initDonatePage() {
                 });
                 wrapper.querySelectorAll('input,textarea,select').forEach(input => {
                     input.addEventListener('blur', () => {
+                        // @ts-ignore
                         input.closest('.js-field-wrapper').classList.remove('focused');
                         updateLabels();
                     });
@@ -57,6 +63,7 @@ function initDonatePage() {
 
         function updateLabels() {
             document.querySelectorAll('.js-field-wrapper input, .js-field-wrapper textarea, .js-field-wrapper select')
+                // @ts-ignore
                 .forEach(el => el.closest('.js-field-wrapper').classList.toggle('has-value', el.value.length > 0));
         }
 
@@ -89,7 +96,9 @@ function initDonatePage() {
         }
 
         function renderUI() {
+            // @ts-ignore
             const notesRow = document.querySelector('#notes').closest('.row');
+            // @ts-ignore
             notesRow.insertAdjacentElement('beforebegin', createElement('div', { class: 'row' }, [
                 createElement('div', { class: 'col flex-1' }, [
                     createElement('span', { class: 'notify-link' }, [
@@ -128,9 +137,11 @@ function initDonatePage() {
                 ])
             ]);
 
+            // @ts-ignore
             document.querySelector('.content-box.screen-2').appendChild(notifyModal);
             const formElement = document.querySelector('#donate-wrapper main form');
             const xNotesInput = createElement('input', { type: 'hidden', name: 'x_notes' });
+            // @ts-ignore
             formElement.appendChild(xNotesInput);
         }
 
@@ -138,11 +149,15 @@ function initDonatePage() {
             const notifyLink = document.querySelector('.notify-link');
             const modal = document.getElementById('notifyModal');
 
+            // @ts-ignore
             notifyLink.addEventListener('click', () => {
+                // @ts-ignore
                 modal.style.display = 'block';
             });
 
+            // @ts-ignore
             document.getElementById('saveNotify').addEventListener('click', () => {
+                // @ts-ignore
                 const fields = ['notifyName', 'notifyAddress'].map(id => document.getElementById(id).value);
                 if (fields.every(v => !v)) {
                     // Show error
@@ -151,19 +166,26 @@ function initDonatePage() {
                 }
 
                 const xNotesInput = document.querySelector('input[name="x_notes"]');
+                // @ts-ignore
                 xNotesInput.value = ` Notify: ${fields[0]} (${fields[1]})`;
+                // @ts-ignore
                 modal.style.display = 'none';
+                // @ts-ignore
                 notifyLink.parentElement.innerHTML = '<i class="fa fa-check-circle"></i> <span class="notify-link">Notification Saved</span>';
             });
 
+            // @ts-ignore
             document.getElementById('cancelNotify').addEventListener('click', () => {
+                // @ts-ignore
                 modal.style.display = 'none';
             });
 
             window.addEventListener('click', event => {
+                // @ts-ignore
                 if (event.target === modal) modal.style.display = 'none';
             });
 
+            // @ts-ignore
             modal.addEventListener('click', event => event.stopPropagation());
         }
 
@@ -245,10 +267,12 @@ function initDonatePage() {
 
         if (recurringBtn && paymentSection) {
             const newRow = createRecurrencesRow();
+            // @ts-ignore
             paymentSection.parentElement.insertBefore(newRow, paymentSection);
             newRow.style.display = "none";
 
             recurringBtn.addEventListener("click", () => toggleRecurrencesRow(newRow, true));
+            // @ts-ignore
             oneTimeBtn.addEventListener("click", () => toggleRecurrencesRow(newRow, false));
         }
 
@@ -263,4 +287,12 @@ if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", initDonatePage);
 } else {
     initDonatePage();
+}
+
+function initMemorialPage() {
+    const isMemorialPage = window.location.href.includes('6573498');
+    if (!isMemorialPage) return;
+
+    const styles = '<link rel="Stylesheet" href="https://chabad.netlify.app/friendscleveland/memorial.css">';
+    document.head.insertAdjacentHTML('beforeend', styles);
 }

@@ -75,10 +75,8 @@ div.donate-button-wrapper {
 }
 
 .icon-stroke {
-    vertical-align: -0.1625em;
     width: 1em;
     height: 1em;
-    stroke: currentcolor;
 }
 
 .back-button a {
@@ -87,4 +85,6 @@ div.donate-button-wrapper {
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
+    display: flex;
+    align-items: center;
 }

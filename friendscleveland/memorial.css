@@ -1,17 +1,25 @@
-div.main-wrapper {
+.main-wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 50px;
     padding: 15px;
+    height: 100vh;
 }
 
-div.main-content {
-    /* 
-    1. align left on wide screens 
-    2. hide once the user presses donate on narrower screens
-    3. show it again if the user presses back
-    */
+.main-content {
     grid-column: 1 / 2;
+    position: sticky;
+}
+
+.main-content::before {
+    content: "";
+    width: 200px;
+    height: 100%;
+    min-height: 100vh;
+    position: absolute;
+    left: 105%;
+    top: 0px;
+    box-shadow: rgba(12, 26, 75, 0.1) -16px 0px 32px -16px, rgba(12, 26, 75, 0.08) -6px 0px 2px -6px;
 }
 
 p {
@@ -19,12 +27,29 @@ p {
     line-height: 1.5;
 }
 
-div.sidebar-form {
-    /* 
-    1. align right on wide screens
-    2. only show if the user presses donate on narrower screens
-    */
+.sidebar-form {
     grid-column: 2 / 3;
+    z-index: 1;
+}
+
+@media (max-width: 767px) {
+    .main-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .main-content.hidden,
+    .sidebar-form,
+    .donate-button-wrapper.hidden,
+    .back-button {
+        display: none;
+    }
+
+    .main-content,
+    .sidebar-form.visible,
+    .donate-button-wrapper,
+    .back-button.visible {
+        display: block;
+    }
 }
 
 .candle img {
@@ -50,7 +75,7 @@ a.donate-button:hover {
     background-color: rgb(46, 102, 207);
 }
 
-div.donate-button-wrapper {
+.donate-button-wrapper {
     background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255));
     position: fixed;
     z-index: 1;

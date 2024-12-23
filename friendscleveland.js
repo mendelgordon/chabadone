@@ -4,6 +4,30 @@ if (isMemorialPage) {
     document.head.insertAdjacentHTML('beforeend', styles);
 }
 
+function initMemorialPage() {
+    if (!isMemorialPage) return;
+
+    const donateButtonWrapper = document.querySelector('.donate-button-wrapper');
+    const donateButton = document.querySelector('.donate-button');
+    const backButton = document.querySelector('.back-button a');
+    const mainContent = document.querySelector('.main-content');
+    const sidebarForm = document.querySelector('.sidebar-form');
+    if (!donateButtonWrapper || !donateButton || !backButton || !mainContent || !sidebarForm) return;
+
+    donateButton.addEventListener('click', function () {
+        mainContent.classList.add('hidden'); // Hide main content
+        sidebarForm.classList.add('visible'); // Show sidebar form
+        donateButtonWrapper.classList.add('hidden'); // Hide donate button
+        backButton.classList.add('visible'); // Show back button
+    });
+    backButton.addEventListener('click', function () {
+        mainContent.classList.remove('hidden'); // Show main content
+        sidebarForm.classList.remove('visible'); // Hide sidebar form
+        donateButtonWrapper.classList.remove('hidden'); // Show donate button
+        backButton.classList.remove('visible'); // Hide back button
+    });
+}
+
 function initDonatePage() {
     const isDonatePage = /4970020|donate\.htm|donate\.asp/i.test(window.location.href);
     if (!isDonatePage) return;
@@ -291,6 +315,8 @@ function initDonatePage() {
 
 if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", initDonatePage);
+    document.addEventListener("DOMContentLoaded", initMemorialPage);
 } else {
     initDonatePage();
+    initMemorialPage();
 }

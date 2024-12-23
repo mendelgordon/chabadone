@@ -97,7 +97,7 @@ a.donate-button:hover {
     .main-content {
         box-shadow: inset rgba(12, 26, 75, 0.1) -10px 0px 10px 0px;
         padding-right: 50px;
-        margin-bottom: 50px;
+        margin-bottom: -10px;
     }
 
     .donate-button-wrapper,

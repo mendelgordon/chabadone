@@ -38,14 +38,53 @@ a.donate-button {
     color: white;
     text-decoration: none;
     transition: background-color 0.15s ease-in-out;
-    width: 100%;
+    width: calc(100% - 40px);
     max-width: 512px;
     line-height: 24px;
-    margin: auto;
+    margin: 20px;
     display: block;
     text-align: center;
 }
 
 a.donate-button:hover {
     background-color: rgb(46, 102, 207);
+}
+
+div.donate-button-wrapper {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255));
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.me-1,
+.mx-1 {
+    margin-inline-end: 4px;
+}
+
+.icon-stroke-2 {
+    stroke-width: 2px;
+}
+
+.icon-stroke {
+    vertical-align: -0.1625em;
+    width: 1em;
+    height: 1em;
+    stroke: currentcolor;
+}
+
+.back-button a {
+    text-decoration: none;
+    color: rgb(105, 116, 132);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
 }

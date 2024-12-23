@@ -4,6 +4,27 @@ if (isMemorialPage) {
     document.head.insertAdjacentHTML('beforeend', styles);
 }
 
+function initMemorialPage() {
+    if (!isMemorialPage) return;
+
+    const otherRadio = document.querySelector('.form-radio-other');
+    const otherInput = document.querySelector('.form-radio-other-input');
+    if (!otherRadio || !otherInput) return;
+
+    const otherRadioParent = otherRadio.closest('.form-radio-item');
+    if (!otherRadioParent) return;
+
+    const clickRadio = (event) => {
+        event.stopPropagation();
+        // @ts-ignore
+        otherRadio.click();
+        // @ts-ignore
+        otherInput.focus();
+    };
+
+    otherRadioParent.addEventListener('click', clickRadio);
+}
+
 function initDonatePage() {
     const isDonatePage = /4970020|donate\.htm|donate\.asp/i.test(window.location.href);
     if (!isDonatePage) return;
@@ -291,6 +312,8 @@ function initDonatePage() {
 
 if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", initDonatePage);
+    document.addEventListener("DOMContentLoaded", initMemorialPage);
 } else {
     initDonatePage();
+    initMemorialPage();
 }

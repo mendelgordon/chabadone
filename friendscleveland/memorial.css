@@ -110,11 +110,87 @@ a.donate-button:hover {
     border-bottom: none;
 }
 
-.cco_templateless_template,
-.cco_templateless_template a {
-    font-family: sans-serif;
-    font-weight: 300;
-    text-transform: capitalize;
-    background: white;
-    color: black;
+
+/* Style for the parent container */
+.form-line {
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the labels */
+.form-label-top label {
+    color: #4a4a4a;
+}
+
+.label-message {
+    font-size: 12px;
+    color: #7a7a7a;
+    margin-top: 4px;
+}
+
+/* Styling for the button containers */
+.form-multiple-column {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 12px;
+    /* Add spacing between buttons */
+    max-width: 400px;
+    /* To limit the total width */
+}
+
+/* Styling individual buttons */
+.form-radio-item {
+    flex: 1 1 calc(25%) !important;
+    /* Responsive layout: 3 per row, with gap adjustments */
+    text-align: center;
+    position: relative;
+    margin: 0;
+    width: unset !important;
+}
+
+.form-radio-item label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c7c7c7;
+    border-radius: 10px;
+    padding: 1ch 1ch;
+    background-color: white;
+    color: #4a4a4a;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.form-radio-item input[type="radio"] {
+    display: none;
+    /* Hide radio buttons */
+}
+
+/* Active state for selected option */
+.form-radio-item input[type="radio"]:checked+label,
+.form-radio-other-input:enabled {
+    border-color: #1a73e8;
+    background-color: #eef6ff;
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.form-radio-item:hover label,
+.form-radio-other-input:focus {
+    border-color: #1a73e8;
+    background-color: #f9f9f9;
+}
+
+.form-radio-other-input {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Focus state for the input field */
+.form-radio-other-input:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 4px rgba(26, 115, 232, 0.5);
 }

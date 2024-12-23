@@ -34,11 +34,17 @@ div.sidebar-form {
 a.donate-button {
     padding: 10px 20px;
     border-radius: 10px;
-    background: #3E4F82;
+    background-color: rgb(51, 113, 230);
     color: white;
     text-decoration: none;
+    transition: background-color 0.15s ease-in-out;
+    height: 48px;
+    width: 100%;
+    max-width: 512px;
+    line-height: 24px;
+    margin: auto;
 }
 
 a.donate-button:hover {
-    opacity: 0.8;
+    background-color: rgb(46, 102, 207);
 }

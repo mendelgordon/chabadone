@@ -38,11 +38,12 @@ a.donate-button {
     color: white;
     text-decoration: none;
     transition: background-color 0.15s ease-in-out;
-    height: 48px;
     width: 100%;
     max-width: 512px;
     line-height: 24px;
     margin: auto;
+    display: block;
+    text-align: center;
 }
 
 a.donate-button:hover {

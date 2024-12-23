@@ -52,6 +52,13 @@ p {
     }
 }
 
+@media (min-width: 768px) {
+    .donate-button-wrapper,
+    .back-button {
+        display: none;
+    }
+}
+
 .candle img {
     border-radius: 20px;
 }

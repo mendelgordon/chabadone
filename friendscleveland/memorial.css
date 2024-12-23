@@ -2,25 +2,14 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 50px;
-    padding: 15px;
+    padding: 0 15px;
     height: 100vh;
 }
 
 .main-content {
     grid-column: 1;
     position: sticky;
-}
-
-.main-content::before {
-    content: "";
-    width: 200px;
-    min-height: 100vh;
-    position: absolute;
-    left: 105%;
-    top: 0;
-    box-shadow:
-        rgba(12, 26, 75, 0.1) -16px 0 32px -16px,
-        rgba(12, 26, 75, 0.08) -6px 0 2px -6px;
+    box-shadow: inset rgba(12, 26, 75, 0.1) -9px -9px 20px 0px, rgba(12, 26, 75, 0.08) 0px 0px 2px 2px;
 }
 
 p {

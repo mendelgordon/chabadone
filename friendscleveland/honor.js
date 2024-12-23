@@ -1,5 +1,4 @@
 const elements = {
-    donateButtonWrapper: document.querySelector('.donate-button-wrapper'),
     donateButton: document.querySelector('.donate-button'),
     backButton: document.querySelector('.back-button a'),
     mainContent: document.querySelector('.main-content'),
@@ -16,6 +15,6 @@ if (elements.backButton) {
 function toggleView(donateMode) {
     elements.mainContent?.classList.toggle('hidden', donateMode);
     elements.sidebarForm?.classList.toggle('visible', donateMode);
-    elements.donateButtonWrapper?.classList.toggle('hidden', donateMode);
-    elements.backButton?.classList.toggle('visible', donateMode);
+    elements.donateButton?.parentElement?.classList.toggle('hidden', donateMode);
+    elements.backButton?.parentElement?.classList.toggle('visible', donateMode);
 }

@@ -14,6 +14,11 @@ div.main-content {
     grid-column: 1 / 2;
 }
 
+p {
+    max-width: 60ch;
+    line-height: 1.5;
+}
+
 div.sidebar-form {
     /* 
     1. align right on wide screens

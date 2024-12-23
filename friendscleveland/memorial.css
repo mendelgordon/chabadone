@@ -21,7 +21,7 @@
 }
 
 p {
-    max-width: 60ch;
+    max-width: 50ch;
     line-height: 1.5;
 }
 
@@ -115,17 +115,12 @@ a.donate-button:hover {
     }
 }
 
+/* General Styles */
 .form-line {
     border-bottom: none;
-}
-
-
-/* Style for the parent container */
-.form-line {
     font-family: Arial, sans-serif;
 }
 
-/* Styling the labels */
 .form-label-top label {
     color: #4a4a4a;
 }
@@ -136,24 +131,34 @@ a.donate-button:hover {
     margin-top: 4px;
 }
 
-/* Styling for the button containers */
+/* Multi-column Layout */
 .form-multiple-column {
-    display: flex !important;
-    flex-wrap: wrap;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 12px;
-    /* Add spacing between buttons */
-    max-width: 400px;
-    /* To limit the total width */
 }
 
-/* Styling individual buttons */
+.form-multiple-column .clearfix {
+    display: none;
+}
+
+.form-multiple-column * {
+    display: block;
+    width: 100%;
+    float: unset;
+    align-self: baseline;
+}
+
+/* Radio Button Styles */
 .form-radio-item {
-    flex: 1 1 calc(25%) !important;
-    /* Responsive layout: 3 per row, with gap adjustments */
     text-align: center;
     position: relative;
     margin: 0;
-    width: unset !important;
+    width: 100% !important;
+}
+
+.form-radio-item br {
+    display: none;
 }
 
 .form-radio-item label {
@@ -171,35 +176,62 @@ a.donate-button:hover {
     transition: all 0.3s ease;
 }
 
-.form-radio-item input[type="radio"] {
-    display: none;
-    /* Hide radio buttons */
-}
-
-/* Active state for selected option */
-.form-radio-item input[type="radio"]:checked+label,
-.form-radio-other-input:enabled {
-    border-color: #1a73e8;
-    color: #1a73e8;
-    pointer-events: unset;
-}
-
-/* Hover effect */
-.form-radio-item:hover label,
-.form-radio-other-input:focus {
+.form-radio-item:hover label {
     border-color: #1a73e8;
     background-color: #f9f9f9;
 }
 
-.form-radio-other-input {
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 10px;
-    pointer-events: none;
+.form-radio-item input[type="radio"] {
+    display: none;
 }
 
-/* Focus state for the input field */
+.form-radio-item input[type="radio"]:checked + label,
+.form-radio-other-input:enabled,
+.form-radio-item:has(.form-radio-other-input:enabled) span:before {
+    border-color: #1a73e8;
+    color: #1a73e8;
+    display: block;
+}
+
+/* Other Input Styles */
+.form-radio-other-input {
+    font-size: 17px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    padding: 1ch 16px;
+    -moz-appearance: textfield;
+}
+
 .form-radio-other-input:focus {
     border-color: #1a73e8;
     box-shadow: 0 0 4px rgba(26, 115, 232, 0.5);
+}
+
+.form-radio-other-input:disabled {
+    pointer-events: none;
+}
+
+.form-radio-other-input::-webkit-outer-spin-button,
+.form-radio-other-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Additional Labels or Prefix for Other Inputs */
+.form-radio-other + span {
+    width: 100%;
+}
+
+.form-radio-other + span:before {
+    content: '$';
+    display: none;
+    font-size: 16px;
+    padding: 11.5px;
+    position: absolute;
+    left: -5px;
+}
+
+.form-radio-item:has(.form-radio-other-input:placeholder-shown) span:before {
+    display: none;
 }

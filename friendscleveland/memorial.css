@@ -1,20 +1,22 @@
-.main-wrapper {
+div.main-wrapper {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    padding: 15px;
 }
 
-.main-content {
+div.main-content {
     /* 
-    1. align right on wide screens 
+    1. align left on wide screens 
     2. hide once the user presses donate on narrower screens
     3. show it again if the user presses back
     */
     grid-row: 1 / 2;
 }
 
-.sidebar {
+div.sidebar-form {
     /* 
-    1. align left on wide screens
+    1. align right on wide screens
     2. only show if the user presses donate on narrower screens
     */
     grid-row: 2 / 3;
@@ -22,4 +24,16 @@
 
 .candle img {
     border-radius: 20px;
+}
+
+a.donate-button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #3E4F82;
+    color: white;
+    text-decoration: none;
+}
+
+a.donate-button:hover {
+    opacity: 0.8;
 }

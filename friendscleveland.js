@@ -7,25 +7,29 @@ if (isMemorialPage) {
 function initMemorialPage() {
     if (!isMemorialPage) return;
 
-    const donateButtonWrapper = document.querySelector('.donate-button-wrapper');
-    const donateButton = document.querySelector('.donate-button');
-    const backButton = document.querySelector('.back-button a');
-    const mainContent = document.querySelector('.main-content');
-    const sidebarForm = document.querySelector('.sidebar-form');
-    if (!donateButtonWrapper || !donateButton || !backButton || !mainContent || !sidebarForm) return;
+    const elements = {
+        donateButtonWrapper: document.querySelector('.donate-button-wrapper'),
+        donateButton: document.querySelector('.donate-button'),
+        backButton: document.querySelector('.back-button a'),
+        mainContent: document.querySelector('.main-content'),
+        sidebarForm: document.querySelector('.sidebar-form')
+    };
 
-    donateButton.addEventListener('click', function () {
-        mainContent.classList.add('hidden'); // Hide main content
-        sidebarForm.classList.add('visible'); // Show sidebar form
-        donateButtonWrapper.classList.add('hidden'); // Hide donate button
-        backButton.classList.add('visible'); // Show back button
-    });
-    backButton.addEventListener('click', function () {
-        mainContent.classList.remove('hidden'); // Show main content
-        sidebarForm.classList.remove('visible'); // Hide sidebar form
-        donateButtonWrapper.classList.remove('hidden'); // Show donate button
-        backButton.classList.remove('visible'); // Hide back button
-    });
+    // @ts-ignore
+    elements.donateButton.addEventListener('click', () => toggleView(true));
+    // @ts-ignore
+    elements.backButton.addEventListener('click', () => toggleView(false));
+
+    function toggleView(donateMode) {
+        // @ts-ignore
+        elements.mainContent.classList.toggle('hidden', donateMode);
+        // @ts-ignore
+        elements.sidebarForm.classList.toggle('visible', donateMode);
+        // @ts-ignore
+        elements.donateButtonWrapper.classList.toggle('hidden', donateMode);
+        // @ts-ignore
+        elements.backButton.classList.toggle('visible', donateMode);
+    }
 }
 
 function initDonatePage() {

@@ -153,7 +153,7 @@ a.donate-button:hover {
 }
 
 .form-multiple-column .clearfix {
-    display: none;
+    display: none !important;
 }
 
 .form-multiple-column * {

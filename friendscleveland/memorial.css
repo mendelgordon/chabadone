@@ -18,6 +18,9 @@
 .main-content {
     grid-column: 1;
     position: sticky;
+    display: grid;
+    align-content: center;
+    justify-items: center;
 }
 
 p {

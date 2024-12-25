@@ -104,7 +104,10 @@ a.donate-button:hover {
         display: none;
     }
 
-    .main-content,
+    .main-content {
+        display: grid;
+    }
+
     .sidebar-form.visible,
     .donate-button-wrapper,
     .back-button.visible {
@@ -278,4 +281,8 @@ a.donate-button:hover {
     .form-label-top {
         display: none;
     }
+}
+
+.footer .poweredby {
+    display: none;
 }

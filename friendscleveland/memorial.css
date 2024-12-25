@@ -266,3 +266,16 @@ a.donate-button:hover {
 .userform-form button.form-submit-button:hover {
     background-color: #0056b3;
 }
+
+.form-line:has([value="I would like to donate anonymously"]) {
+
+    .form-line:has(+ &),
+    & {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .form-label-top {
+        display: none;
+    }
+}

@@ -7,8 +7,7 @@ const elements = {
 };
 
 if (elements.backToSite) {
-    // move back to site link to the beginning of the main content
-    elements.mainContent?.insertBefore(elements.backToSite, elements.mainContent.firstChild);
+    elements.backToSite.remove();
 }
 
 if (elements.donateButton) {

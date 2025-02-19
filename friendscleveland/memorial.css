@@ -5,6 +5,7 @@
     text-transform: capitalize;
     background: white;
     color: black;
+    scale: 0;
 }
 
 .main-wrapper {
@@ -51,7 +52,7 @@ p img {
 a.donate-button {
     padding: 10px 20px;
     border-radius: 10px;
-    background-color: rgb(51, 113, 230);
+    background-color: #3E4F82;
     color: white;
     text-decoration: none;
     transition: background-color 0.15s ease-in-out;
@@ -65,7 +66,7 @@ a.donate-button {
 }
 
 a.donate-button:hover {
-    background-color: rgb(46, 102, 207);
+    background-color: #2045b5;
 }
 
 .donate-button-wrapper {
@@ -196,7 +197,7 @@ a.donate-button:hover {
 }
 
 .form-radio-item:hover label {
-    border-color: #1a73e8;
+    border-color: #2e4384;
     background-color: #f9f9f9;
 }
 
@@ -207,8 +208,8 @@ a.donate-button:hover {
 .form-radio-item input[type="radio"]:checked+label,
 .form-radio-other-input:enabled,
 .form-radio-item:has(.form-radio-other-input:enabled) span:before {
-    border-color: #1a73e8;
-    color: #1a73e8;
+    border-color: #3E4F82;
+    color: #3E4F82;
     display: block;
 }
 
@@ -226,8 +227,8 @@ a.donate-button:hover {
 }
 
 .form-radio-other-input:focus {
-    border-color: #1a73e8;
-    box-shadow: 0 0 4px rgba(26, 115, 232, 0.5);
+    border-color: #3E4F82;
+    box-shadow: 0 0 4px #3E4F82;
 }
 
 .form-radio-other-input:disabled {
@@ -266,7 +267,7 @@ a.donate-button:hover {
 }
 
 .userform-form button.form-submit-button {
-    background-color: #007BFF;
+    background-color: #3E4F82;
     color: #fff;
     border: none;
     padding: 1ch 2ch;
@@ -276,7 +277,7 @@ a.donate-button:hover {
 }
 
 .userform-form button.form-submit-button:hover {
-    background-color: #0056b3;
+    background-color: #2e4384;
 }
 
 .form-line:has([value="I would like to donate anonymously"]) {

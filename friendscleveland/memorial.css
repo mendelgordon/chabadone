@@ -124,7 +124,7 @@ a.donate-button:hover {
 
 @media (min-width: 768px) {
     .main-content {
-        box-shadow: inset -4px -6px 9px -6px;
+        box-shadow: inset -4px -6px 9px -6px #539890;
         padding-right: 50px;
         margin-bottom: -10px;
     }

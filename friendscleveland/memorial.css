@@ -14,6 +14,7 @@
     padding: 0 15px;
     min-height: 100vh;
     margin-bottom: 85px;
+    overflow: hidden;
 }
 
 .main-content {
@@ -27,6 +28,7 @@
 p {
     max-width: 50ch;
     line-height: 1.5;
+    font-size: 18px;
 }
 
 p img {
@@ -58,6 +60,7 @@ a.donate-button {
     margin: 20px auto;
     text-align: center;
     display: block;
+    font-size: 18px;
 }
 
 a.donate-button:hover {
@@ -214,7 +217,10 @@ a.donate-button:hover {
     text-align: center;
     margin: auto;
     padding: 1ch 16px;
-    -moz-appearance: textfield;
+
+    @supports (-moz-appearance: textfield) {
+        -moz-appearance: textfield;
+    }
 }
 
 .form-radio-other-input:focus {

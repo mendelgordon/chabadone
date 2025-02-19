@@ -13,7 +13,6 @@
     gap: 30px;
     padding: 0 15px;
     min-height: 100vh;
-    margin-bottom: 85px;
     overflow: hidden;
 }
 
@@ -98,6 +97,7 @@ a.donate-button:hover {
 
 @media (max-width: 767px) {
     .main-wrapper {
+        margin-bottom: 85px;
         display: block;
     }
 

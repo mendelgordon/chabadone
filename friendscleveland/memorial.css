@@ -37,6 +37,11 @@ p img {
     height: auto;
 }
 
+img.form-image {
+    max-width: 100%;
+    height: auto;
+}
+
 .sidebar-form {
     grid-column: 2;
     padding-top: 20px;

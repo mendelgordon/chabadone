@@ -1036,7 +1036,6 @@ body.cco_body #tabContentMain .co_submenu_container .co_column a,
 	border-radius: 20px;
 	background: rgb(16, 122, 140);
 	transition: background-color 0.3s ease;
-	background: #54AFCB;
 	border: none;
 	box-shadow: none;
 	text-shadow: none;
@@ -1046,7 +1045,6 @@ body.cco_body #tabContentMain .co_submenu_container .co_column a,
 	padding: 12px 30px;
 	font-size: 1.2em;
 	position: relative;
-	border-radius: 0;
 	letter-spacing: 1px;
   }
 
